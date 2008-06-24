@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.featureconf.FeaturesconfImpl" table="tbl_featureconf_featuresconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="parkext" column="parkext"/>	
+		<property name="parkpos" column="parkpos"/>	
+		<property name="context" column="context"/>	
+		<property name="parkingtime" column="parkingtime"/>	
+		<property name="transferdigittimeout" column="transferdigittimeout"/>	
+		<property name="courtesytone" column="courtesytone"/>	
+		<property name="xfersound" column="xfersound"/>	
+		<property name="xferfailsound" column="xferfailsound"/>	
+		<property name="adsipark" column="adsipark"/>	
+		<property name="pickupexten" column="pickupexten"/>	
+		<property name="featuredigittimeout" column="featuredigittimeout"/>	
+<!-- Agg -->
+	<many-to-one name="fFeaturemap" access="field"
+	class="com.useit.jact.model.featureconf.FeaturemapImpl"
+	 column="featuremap_fk"
+	 cascade="all" />
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

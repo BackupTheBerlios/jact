@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="misdnCards"/>
+			<item value="MisdncardPorts"/>
+			<item value="misdnDriverConf"/>
+		</list>
+		<section name="MisdncardPorts">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="MisdncardPorts"/>
+			<item key="JavaClassName" value="MisdncardPorts"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="portN"/>
+			</list>
+			<list key="TableMapFields" value="portN">
+			</list>
+			<list key="TableFields">
+				<item value="portN"/>
+				<item value="portOption"/>
+				<item value="mPortOption"/>
+			</list>
+			<section name="mPortOption">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="MPortOption"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="MPortOptionSet"/>
+				<item key="TblFieldName" value="mPortOption"/>
+			</section>
+			<section name="portN">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="PortN"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="portN"/>
+			</section>
+			<section name="portOption">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="PortOption"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="MisdnPortOptions"/>
+				<item key="TblFieldName" value="portOption"/>
+			</section>
+		</section>
+		<section name="misdnCards">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="misdnCards"/>
+			<item key="JavaClassName" value="MisdnCards"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="cardName"/>
+			</list>
+			<list key="TableMapFields" value="cardName">
+				<item value="MisdncardPorts"/>
+			</list>
+			<list key="TableFields" value="MisdncardPorts">
+				<item value="cardName"/>
+				<item value="cardType"/>
+				<item value="cardOptions"/>
+			</list>
+			<section name="cardType">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="CardType"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="MisdnCardTypes"/>
+				<item key="TblFieldName" value="cardType"/>
+			</section>
+			<section name="cardName">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="CardName"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="cardName"/>
+			</section>
+			<section name="cardOptions">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="CardOptions"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="MCardOptionSet"/>
+				<item key="TblFieldName" value="cardOptions"/>
+			</section>
+		</section>
+		<section name="misdnDriverConf">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="misdnDriverConf"/>
+			<item key="JavaClassName" value="MisdnDriverConf"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="fileid"/>
+			</list>
+			<list key="TableMapFields" value="fileid">
+				<item value="misdnCards"/>
+			</list>
+			<list key="TableFields" value="misdnCards">
+				<item value="fileid"/>
+				<item value="poll"/>
+				<item value="pcm"/>
+				<item value="debug"/>
+			</list>
+			<section name="debug">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Debug"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="debug"/>
+			</section>
+			<section name="pcm">
+				<item key="ElementDescription" value="Give the id of the PCM bus. All PCM busses with the same ID are expected to be connected and have equal slots. Only one chip of the PCM bus must be master, the others slave. -1 means no support of PCM bus."/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Pcm"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="pcm"/>
+			</section>
+			<section name="poll">
+				<item key="ElementDescription" value="Only one poll value must be given for all cards. Give the number of samples for each fifo process. By default 128 is used. Decrease to reduce delay, increase to reduce cpu load. If unsure, don&apos;t mess with it! Valid is 8, 16, 32, 64, 128, 256."/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Poll"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="poll"/>
+			</section>
+			<section name="fileid">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Fileid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fileid"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="D:\javaprojekte\workspaceE3\jact\dataModel\simpleTypemap.typemap"/>
+		<item key="ProjectName" value="misdndriverconf"/>
+	</section>
+</section>

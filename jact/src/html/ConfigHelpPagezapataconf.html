@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation zapataconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : zapataconf</h1>
+<p><h2></h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Other</h3>
+ <h4>other stuff</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >mailbox[String]</td><td valign="top">If this option is defined for a channel, then when the handset is lifted, Asterisk will check the voicemail mailbox(es) specified here for new (unheard) messages. If there are any unheard messages in any of the mailboxes, Asterisk will use a stutter dialtone rather than the ordinary dialtone. On supported hardware, the message waiting light will also be activated ? this probably requires that you also set adsi=yes. Update: This option does NOT require ADSI. It will send a standard FSK tone down the line that lights up the MWI on any capable analog phone. The parameters to this option are one or more comma-separated mailbox numbers, as defined in voicemail.conf.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >group[String]</td><td valign="top">Allows you to group together a number of channels so that the Dial command will treat the group as a single channel. When Dial tries to make a call on a Zap group, the Zap channel module will use the first available (i.e. non-busy) channel in the group for the call. Multiple group memberships may be specified with commas, and to signify no group membership, the portion after the equals sign may be omitted. Group numbers can range from 0 to 31. The default value is an empty string, i.e. no groups.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >language[String]</td><td valign="top">Each channel has a default language code that affects which language version of prerecorded sounds Asterisk uses for this channel. See Setting up a Multi-Language Asterisk Installation. The default is an empty string.</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Analog_Handset_Features</h3>
+ <h4>headset</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >adsi[String]</td><td valign="top">If your handset has ADSI (Analog Display Services Interface) capability, set set adsi=yes. The ADSI specification is system similar to Caller ID to pass encoded information to an analog handset. It allows the creation of interactive visual menus on a multiline display, offering access to services such as voicemail through a text interface.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >immediate[Boolean]</td><td valign="top">Normally (i.e. with immediate set to 'no', the default), when you lift an FXS handset, the Zaptel driver provides you a dialtone and listens for digits that you dial, passing them on to Asterisk. Asterisk waits until the number you've dialed matches an extension, and then begins executing the first command on the matching extension. If you set immediate=yes, then Asterisk will instruct the Zaptel driver to not generate a dialtone when you lift a handset, instead passing control immediately to Asterisk. Asterisk will start executing the commands for this channel's "s" extension. This is sometimes referred to as "batphone mode". Default no.    immediate=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callwaiting[Boolean]</td><td valign="top">If enabled, Asterisk will generate "call waiting pips" when you are already in a conversation on your FXS handset when someone tries to call you. If the channel has call waiting by default, you can temporarily disable it by lifting the handset and dialing *70, whereupon you will get a dialrecall tone and may then dial the intended number. There is no corresponding way to temporarily enable call waiting for channels that have it off by default. Default no.    callwaiting=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callwaitingcallerid[Boolean]</td><td valign="top">Sets whether Asterisk will send Caller ID data to the handset during call waiting indication. Requires also setting callwaiting=yes. Default no.    callwaitingcallerid=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >threewaycalling[Boolean]</td><td valign="top">If enabled, you can place a call on hold by pressing a hook flash, whereupon you get a dialrecall tone and can make another call. Default no.    threewaycalling=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >transfer[Boolean]</td><td valign="top">This option has effect only when threewaycalling=yes. If threewaycalling=yes and transfer=yes, then once you've placed a call on hold with a hook flash, you can transfer that call to another extension by dialing the extension and hanging up. Default no.    transfer=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >cancallforward[Boolean]</td><td valign="top">If enabled, you may activate "call forwarding immediate" by dialing *72 (whereupon you get a dialrecall tone) followed by the extension number you wish to forward your calls to. If someone dials your extension, the call will be redirected to the forwarding number. You may disable the call forwarding by dialing *73. Default no.    cancallforward=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callreturn[Boolean]</td><td valign="top">If enabled, you may dial *69 to have Asterisk read to you the caller ID of the last person to call. You will hear the dialrecall tone if there is no record of a last caller. Default no.    callreturn=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callgroup[String]</td><td valign="top">A channel may belong to zero or more callgroups. Callgroups specify who may answer this phone when it is ringing. If this channel is ringing, then any other channel whose pickupgroups include one of this channel's callgroups may answer the call by dialing *8#. This feature is supported by Zap, SIP, Skinny and MGCP channels. Group numbers can range from 0 to 31. The default value is an empty string, i.e. no groups.   group=1   callgroup=1,2,3</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pickupgroup[String]</td><td valign="top">A channel may belong to zero or more pickupgroups. Pickupgroups specify whose phones you may answer. If another channel is ringing, and this channel's pickupgroups include one of the ringing channel's callgroups, then this channel may answer the call by dialing *8#. Group numbers can range from 0 to 31. The default value is an empty string, i.e. no groups.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >useincomingcalleridonzaptransfer[String]</td><td valign="top">If you set this option (Use Incoming Caller ID On Zap Transfer) to 'yes', then when you transfer a call to another phone, the original caller's Caller ID will get forwarded on too. Default no.    useincomingcalleridonzaptransfer=yes</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Timing_Parameters</h3>
+ <h4>These keywords are used only with (non-PRI) T1 lines. All values are in milliseconds. These do not need to be set in most configurations, as the defaults work with most hardware. It has been noted that the common Adtran Atlas uses long winks of about 300 milliseconds, and channels from them should be configured accordingly.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >prewink[Integer]</td><td valign="top">Sets the pre-wink timing.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >preflash[Integer]</td><td valign="top">Sets the pre-flash timing.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >wink[Integer]</td><td valign="top">Sets the wink timing.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rxwink[Integer]</td><td valign="top">Sets the receive wink timing.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rxflash[Integer]</td><td valign="top">Sets the receive flash timing.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >flash[Integer]</td><td valign="top">Sets the flash timing.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >start[Integer]</td><td valign="top">Sets the start timing.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >debounce[Integer]</td><td valign="top">Sets the debounce timing. "The debounce settings in the Asterisk configuration affects how Asterisk handles hookswitch transitions on its FXO/FXS interfaces."</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Analog_Trunk_Features</h3>
+ <h4>analog features</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >usedistinctiveringdetection[Boolean]</td><td valign="top">Whether or not to attempt to recognize distinctive ring styles on incoming calls. This does not require audio analyisis because rings are simple transitions of the analog line. It's merely a matter of matching the transition pattern. Default no.    usedistinctiveringdetection=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dring1[String]</td><td valign="top">If you set usedistinctiveringdetection=yes, then you may define up to three different distinctive ring styles for Asterisk to attempt to recognize. Each style is defined as a comma separated list of up to three integers. Nobody has yet documented what these numbers mean, so you're on your own when it comes to trying to figure out what numbers to use for the distinctive ring syles used by your phone company in your country. But the tip is to use the Asterisk console in verbose mode, and apparently it reports numbers describing the ring patterns it sees. These patterns may be a starting point:</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dring2[String]</td><td valign="top">see 1</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dring3[String]</td><td valign="top">see 2</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dring1context[String]</td><td valign="top">Along with setting up to three distinctive ring patterns with dring1, dring2 and dring3, you also set corresponding contexts for incoming calls matching those distinctive ring patterns to jump into. If an incoming call does not match any of the distinctive ring patterns defined, then of course it will enter Asterisk with the default context defined for this channel.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dring2context[String]</td><td valign="top">see 1</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dring3context[String]</td><td valign="top">see 1 too</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >busydetect[Boolean]</td><td valign="top">If enabled, Asterisk will analyze the audio coming in on the line during a call or a dial attempt to attempt to recognize busy signals. This is useful on analog trunk interfaces both to detect a busy signal when dialing out, and for detecting when the person has hung up. See also Disconnect Supervision. Be sure that you don't use this on digital interfaces like QuadBri cards and so on. Otherwise you will run in "broken calls" problems. default=no    busydetect=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >busycount[Integer]</td><td valign="top">This option requires busydetect=yes. You can specify how many busy tones to wait before hanging up. The default is 3, but better results can be achieved if set to 6 or even 8. The higher the number, the more time is needed to detect a disconnected channel, but the lower the probability mistaking some other sound as being a busy tone.   busycount=5</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callprogress[Boolean]</td><td valign="top">Asterisk can attempt to monitor the state of the call to listen for a ringing tone, busy tone, congestion tone, and sounds indicating that the line has been answered. It appears that this feature is independent of the busydetect feature; it seems that both can run in parallel, and both will independently attempt to recognize a busy tone. The callprogress feature is highly experimental and can easily detect false answers, so don't count on it being very accurate. Also, it is currently configured only for standard U.S. phone tones. Default no.   callprogress = yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pulse[Boolean]</td><td valign="top">The standard installation of Asterisk does not permit you to specify that a Zaptel device use pulse dialing, even though the Zaptel driver supports pulse dialing. But you can apply a patch file to enable you to specify pulse dialing with the pulse keyword. See Pulse Dialing on Zap Channels for the patch.    pulse=yes</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;ISDN_PRI_Switch</h3>
+ <h4>If you have a PRI line, specify your type of switch here. (PRI is a type of ISDN typically used to connect a PBX to a telephone exchange. They have multiple channels on the one connection.)</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >switchtype[Switchtype]</td><td valign="top">Sets the type of PRI switch being used. Defaultnational. Acceptable values are:     * national:National ISDN type2 (common in the US)     * ni1:National ISDN type 1     * dms100:Nortel DMS100     * 4ess:AT&T 4ESS     * 5ess:Lucent 5ESS     * euroisdn:EuroISDN     * qsig:Minimalistic protocol to build a "network" with two or more PBX of different vendors!</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >overlapdial[String]</td><td valign="top">Whether Asterisk can dial this switch using overlap digits. Default    overlapdial=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pridialplan[String]</td><td valign="top">Sets an option required for some (rare) switches that require a dialplan parameter to be passed. This option is ignored by most PRI switches. It may be necessary on a few pieces of hardware. Valid options are unknown, local, private, national, and international. This option can almost always be left unchanged from the default. Default national.    pridialplan=local</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >priindication[String]</td><td valign="top">Tells how Asterisk should indicate Busy() and Congestion() to the switch/user. Default inband. Accepted values are:     * inband:Asterisk plays indication tones without answering; not available on all PRI/BRI subscription lines     * outofband:Asterisk disconnects with busy/congestion information code so the switch will play the indication tones to the caller. Busy() will now do same as setting PRI_CAUSE=17 and Hangup().     priindication=outofband</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >multilink_PPP[Multilink_PPP]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Multilink_PPP</h3>
+ <h4>If you have an ISDN PRI, you may be able to run multi-link PPP over it, to provide you with a data connection. Multi-link PPP is a technology that allows channels on a PRI to be dynamically allocated between voice and data. Asterisk can take voice channels allocated to it, dial a Remote Access Server, and dump the channels into a special extension that delivers the channel to the zaptel data layer. Configure the settings here, and then see the ZapRAS command to make it happen. PRI channels can have an idle extension and a minunused number. So long as at least minunused channels are idle, the Zap channel module will try to dial idledial on them, and then Asterisk will begin executing the commands for the context and extension specified by idleext. When channels are needed for voice calls, the "idle" calls are disconnected (so long as there are at least minidle calls still running, of course) to make more channels available. The primary use of this is to create a dynamic service, where idle channels are bundled through multilink PPP, thus more efficiently utilizing combined voice/data services than conventional fixed mappings/muxings.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >minunused[String]</td><td valign="top">The minimum number of unused channels available. If there are fewer channels available, Asterisk will not attempt to bundle any channels and give them to the data connection. Takes an integer.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >minidle[Integer]</td><td valign="top">The minimum number of idle channels to bundle for the data link. Asterisk will keep this number of channels open for data, rather than taking them back for voice channels when needed. Takes an integer.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >idledial[Integer]</td><td valign="top">The number to dial as the idle number. This is typically the number to dial a Remote Access Server (RAS). Channels being idled for data will be sent to this extension. Takes an integer that does not conflict with any other extension in the Dialplan, and has been defined as an idleext.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >idleext[String]</td><td valign="top">The extension to use as the idle extension. Takes a value in the form of exten@context. Typically, the extension would be an extension to run the ZapRAS command.</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Audio_Quality_Tuning_Options</h3>
+ <h4>These options adjust certain parameters of Asterisk that affect the audio quality of Zapata channels. See also:     * Echo Cancellation on the Wildcard X100P     * Echo Cancellation in Asterisk     * Asterisk Echo Cancellation<paraDesc>FXO and FXS lines     * Asterisk Echo Avoidance     * Echo Analysis for Voice over IP</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >relaxdtmf[Boolean]</td><td valign="top">If you are having trouble with DTMF detection, you can relax the DTMF detection parameters. Relaxing them may make the DTMF detector more likely to have "talkoff" where DTMF is detected when it shouldn't be. Default:no.    relaxdtmf=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >echocancel[Boolean]</td><td valign="top">Disable or enable echo cancellation (default is 'yes'). It is recommended that you do not turn this off. You may specify echocancel as 'yes' (128 taps), 'no' (0 taps, disabled), or a preset number of taps which are one of 16, 32, 64, 128, or 256. Each tap is one sample from the data stream, so on a T1 this will be 1/8000 of a second. Accordingly the number of taps equate to a 2ms, 4ms, 8ms, 16ms or 32ms tail length. Beware that if you set echocancel to a different value, Asterisk will fall back to the default of 128 taps without warning.    echocancel=no</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >echocancelwhenbridged[Boolean]</td><td valign="top">Enables or disables echo cancellation during a bridged TDM call. In principle, TDM bridged calls should not require echo cancellation, but often times audio performance is improved with this option enabled. Default:no.    echocancelwhenbridged=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >echotraining[Boolean]</td><td valign="top">In some cases, the echo canceller doesn't train quickly enough and there is echo at the beginning of the call which then quickly fades out. Enabling echo training will cause Asterisk to briefly mute the channel, send an impulse, and use the impulse response to pre-train the echo canceller so it can start out with a much closer idea of the actual echo. However, the characteristics of some trunks may change as the endpoints become connected and, if there is a considerable delay between the circuit being 'up' and the endpoints being finalised, the training impulse may measure the characteristics of the open trunk rather than the completed circuit. Accordingly you may either specify a value between 10ms and 4000ms to delay before starting the impulse response process or 'yes', which equates to 400ms. Default:undefined.    echotraining=no</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rxgain[Float]</td><td valign="top">Adjusts receive gain. This can be used to raise or lower the incoming volume to compensate for hardware differences. You specify gain as a decimal number from -100 to 100 representing 100% to 100% of capacity. Default value 0.0    rxgain=4.2</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >txgain[Float]</td><td valign="top">Adjusts transmit gain. This can be used to raise or lower the outgoing volume to compensate for hardware differences. Takes the same type of argument as rxgain. Default:0.0    txgain=-15.9</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Zaptelchannel</h3>
+ <h4>zaptel channel def</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >signalling[Signalling]</td><td valign="top">Sets the channel signaling type. These parameters should match the Zaptel driver configuration. The setting to use depends partly on which interface card you have. Asterisk will fail to start if a channel signaling definition is incorrect or unworkable, if the statements do not match the Zaptel driver configuration, or if the device is not present or properly configured. The correct setting to use is almost certainly one of the following four: fxs_ks, fxo_ks, pri_cpe or pri_net. This setting has no default value; you must set a value before allocating a channel.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top">This specifies which context a call will start in. The context controls how Asterisk will handle the call. Contexts are defined in the Dialplan. Default:"default".    context=internal</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >channel[String]</td><td valign="top">This keyword is unlike all the other keywords in this configuration file, because where all the other keywords merely specify settings to use, this keyword causes Asterisk to actually allocate a channel with the settings that have been specified earlier in the file. The channel keyword defines one or more channels. Each channel definition will inherit all options stated ahead of it in this file. Channels maybe specified individually, separated by commas, or as a range separated by a hyphen. Allocating a channel will not "clear" the settings, so any channels defined later on in this file will inherit the options for this channel unless you override settings.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >analog_Handset_Features[Analog_Handset_Features]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >analog_Trunk_Features[Analog_Trunk_Features]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >audio_Quality_Tuning_Options[Audio_Quality_Tuning_Options]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >call_Logging_Options[Call_Logging_Options]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >caller_ID_Options[Caller_ID_Options]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >iSDN_PRI_Switch[ISDN_PRI_Switch]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >timing_Parameters[Timing_Parameters]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >other[Other]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Call_Logging_Options</h3>
+ <h4>Asterisk normally generates Call Detail Records (CDR), being a log or database of the calls made through Asterisk. This data can be used for Automated Machine Accounting (AMA). See Asterisk Billing.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >accountcode[String]</td><td valign="top">Sets the data for the "account code" field in the CDR for calls placed from this channel. The account code may be any alphanumeric string. It may be overridden at call time with the (( Asterisk cmd SetAccount|SetAccount)) command.   accountcode=spencer145</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >amaflags[String]</td><td valign="top">Sets the AMA flags, affecting the categorization of entries in the call detail records. Possible values are:     * default:Let the CDR system use its default value.     * omit:Do not record calls.     * billing:Mark the entry for billing     * documentation:Mark the entry for documentation.    amaflags=billing</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Caller_ID_Options</h3>
+ <h4>caller id</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >callerid[String]</td><td valign="top">Sets the Caller ID string to forward to the recipient when calls come in from this channel. You normally use this to set the Caller ID for handsets. Specify the Caller ID name in double quotation marks, followed by the Caller ID number in <> symbols. For trunk lines, set to "asreceived" to pass the received Caller ID forward.   callerid="Mark Spencer" <256 428-6000>   callerid=   callerid=asreceived Important Note: :Caller ID can only be transmitted to the public phone network with supported hardware, such as a PRI. It is not possible to set external caller ID on analog lines.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >usecallerid[Boolean]</td><td valign="top">For handsets, this option will cause Asterisk to send Caller ID data to the handset when ringing it. For trunk lines, this option causes Asterisk to look for Caller ID on incoming calls. Default:yes.    usecallerid=no</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >hidecallerid[Boolean]</td><td valign="top">(Not for FXO trunk lines) For PRI channels, this will stop the sending of Caller ID on outgoing calls. For FXS handsets, this will stop Asterisk from sending this channel's Caller ID information to the called party when you make a call using this handset. FXS handset users may enable or disable sending of their Caller ID for the current call only by lifting the handset and dialing *82 (enable) or *67 (disable); you will then get a "dialrecall" tone whereupon you can dial the number of the extension you wish to contact. Default:no.    hidecallerid=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >restrictcid[Boolean]</td><td valign="top">(PRI channels only) This option has effect only when hidecallerid=no. If hidecallerid=no and restrictcid=yes, Asterisk will prevent the sending of the Caller ID data as a presentation number when making outgoing calls (ANI data is still sent). Default:no.    restrictcid=yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >usecallingpres[Boolean]</td><td valign="top">(PRI channels only) Whether or not to use the Caller ID presentation for the outgoing call that the calling switch is sending. See also the CallingPres command.    usecallingpres=no</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Zapataconf</h3>
+ <h4>The format of the zapata.conf file is unfortunately not as simple as it could be. Most keywords do not do anything by themselves; they merely set up the parameters of any channel definitions that follow. The channel keyword actually creates the channel, using the settings specified before it.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >zaptelchannelMap[Zaptelchannel]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

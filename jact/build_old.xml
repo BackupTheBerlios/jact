@@ -1,0 +1,330 @@
+<?xml version="1.0" ?>
+<project name="jact" default="compile" basedir=".">
+	<property name="source.dir" value="src" />
+	<property name="build.dir" value="bin" />
+<!--
+	<property name="test.build.dir" value="bin/com/beronet/App/iServer/test" />
+	<property name="test.src.dir" value="src/com/beronet/App/iServer/test" />
+-->
+
+	<property name="dist.dir" value="jar" />
+	<property name="docs.dir" value="docs" />
+	<property name="javacDebugInfo" value="on" />
+	<property name="javacVerbose" value="false" />
+	<property name="bootclasspath" value="" />
+	<property name="eclipsehome" value="C:\Programme\eclipse3\eclipse\plugins" />
+	<property name="deployment.dir" value="./../../building/${ant.project.name}/" />
+
+	<target name="properties" if="eclipse.running">
+		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter" />
+	</target>
+<!--
+	<property name="test" value="${source.dir}/com/beronet/App/iServer/test/" />
+	<property name="reports" value="${deployment.dir}/testreports" />
+	<property name="junit" value="${deployment.dir}/jar/junit.jar" />
+-->
+	<!-- modify according to your needs -->
+	<property name="packageName" value="iCafeServer" />
+	<property name="docpackageName" value="iCafeServer" />
+
+	<!-- set the version infos for jar building -->
+	<property name="major" value="0" />
+	<property name="minor" value="0" />
+	<property name="point" value="0" />
+	<property name="build" value="1" />
+
+
+
+	<!--set version tag-->
+	<property name="jarfile.name" value="${dist.dir}/${ant.project.name}.jar" />
+	<property name="version" value="${major}.${minor}.${point}.${build}" />
+	<property name="jarfile.nameversion" value="${dist.dir}/${ant.project.name}_${version}.jar" />
+
+	<path id="hibernate.userclasspath" >
+		<pathelement location="lib/hibernate3.jar/" />
+		<pathelement location="lib/xml-apis.jar/" />
+		<pathelement location="lib/asm.jar/" />
+		<pathelement location="lib/asm-attrs.jar/" />
+		<pathelement location="lib/cglib-2.1.3.jar/" />
+		<pathelement location="lib/commons-collections-2.1.1.jar/" />
+		<pathelement location="lib/commons-logging-1.0.4.jar/" />
+		<pathelement location="lib/dom4j-1.6.1.jar/" />
+		<pathelement location="lib/ehcache-1.1.jar/" />
+		<pathelement location="lib/jdbc2_0-stdext.jar/" />
+		<pathelement location="lib/jta.jar/" />
+		<pathelement location="lib/antlr-2.7.6rc1.jar/" />
+	</path>
+
+	<property name="classpath" value="lib/hsqldb.jar lib/hibernate3.jar 
+		lib/xml-apis.jar lib/asm.jar lib/asm-attrs.jar lib/cglib-2.1.3.jar lib/commons-collections-2.1.1.jar
+			lib/commons-logging-1.0.4.jar lib/dom4j-1.6.1.jar lib/ehcache-1.1.jar lib/jdbc2_0-stdext.jar lib/jta.jar lib/antlr-2.7.6rc1.jar"/>
+
+	<!-- source pattern(s) -->
+	<patternset id="fullsources">
+		<include name="${source.dir}/*.java" />
+	</patternset>
+
+	<!-- Set the time stamp and build directories, if required -->
+	<target name="prepare">
+
+		<echo message="Setting the time stamp and building dirs, if required" />
+
+		<echo message="Generating directory ${build.dir}, if it does not exist" />
+		<mkdir dir="${build.dir}" />
+
+		<echo message="Generating directory ${dist.dir}, if it does not exist" />
+		<mkdir dir="${dist.dir}" />
+
+		<echo message="Generating directory ${docs.dir}, if it does not exist" />
+		<mkdir dir="${docs.dir}" />
+
+		<antcall target="buildmanifest" />
+	</target>
+
+
+	<target name="buildmanifest">
+		<echo message="build Manifest ${hibernate.userclasspath}" />
+
+		<manifest file="MANIFEST.MF">
+
+			<attribute name="Built-By" value="${user.name}" />
+			<attribute name="Main-Class" value="com.useit.jact.gui.mainforms.SimpleConfigForm" />
+			<attribute name="Class-Path" value="log4j-1.2.8.jar 
+				useitAppFramework.jar ${classpath}" /> 
+			<section name="common">
+				<attribute name="Specification-Title" value="asterisk solution" />
+				<attribute name="Specification-Version" value="${version}" />
+				<attribute name="Specification-Vendor" value="beronet" />
+				<attribute name="Implementation-Title" value="common" />
+				<attribute name="Implementation-Version" value="${version} ${TODAY}" />
+				<attribute name="Implementation-Vendor" value="use-it" />
+			</section>
+					
+		</manifest>
+
+	</target>
+
+
+	<!--  make a version stamp -->
+	<target name="version">
+		<taskdef resource="version" />
+
+
+		<echo message="version : ${jarfile.nameversion}" />
+
+		<version-stamp dest="${source.dir}" versionId="com.beronet.App.CSS.application" overWrite="true">
+			<version major="${major}" minor="${minor}" point="${point}" buildNumber="${build}" />
+		</version-stamp>
+	</target>
+
+
+
+	<!-- Compile all developer sources -->
+	<target name="compile" depends="prepare">
+
+		<echo message="Compiling sources from ${source.dir} to ${build.dir}" />
+
+		<echo message="Compiling CSSGui core sources (if needed)" />
+		<javac srcdir="${source.dir}" destdir="${build.dir}" 
+			
+			failonerror="${javacFailOnError}" verbose="${javacVerbose}" debug="${javacDebugInfo}" includeAntRuntime="no" bootclasspath="${bootclasspath}" classpath="" excludes="${source.dir}/*.ucd">
+
+
+		</javac>
+		<copy todir="${build.dir}">
+			<fileset dir="${source.dir}" excludes="**/*.java,*.ucd" />
+		</copy>
+
+	</target>
+
+
+	<!-- Build a developer documentation  -->
+	<target name="docu">
+
+		<echo message="Building documentation src=${source.dir} in directory ${docs.dir}" />
+		<javadoc sourcepath="${source.dir}" destdir="${docs.dir}" packagenames="${docpackageName}.*" version="true" author="true" />
+	</target>
+
+	<!-- Build a distribution jar -->
+	<target name="jar" depends="compile">
+
+		<echo message="Building jar file ${jarfile.name} version : ${version}" />
+		<jar jarfile="${jarfile.name}" basedir="${build.dir}" manifest="MANIFEST.MF"
+			excludes="**/Test.class" >
+			<include name="**" />
+			<exclude name="**/*.ucd" />
+		</jar>
+		
+		
+	</target>
+
+	<!-- Build a version jar -->
+	<target name="versionjar">
+
+		<echo message="Building version jar file ${jarfile.nameversion}" />
+		<jar jarfile="${jarfile.nameversion}" basedir="${build.dir}" manifest="MANIFEST.MF"
+			
+			>
+			<include name="**" />
+			<exclude name="**/*.ucd" />
+		</jar>
+	</target>
+
+	<!-- Build das test Packet alleine jar -->
+	<target name="buildTestJar" depends="compile">
+
+		<echo message="Building jar file ${test.jarfile.name}" />
+		<jar jarfile="${test.jarfile.name}" basedir="${test.build.dir}">
+			<include name="**" />
+			<exclude name="**/*.ucd" />
+		</jar>
+	</target>
+
+
+
+
+	<!-- Clean up the sources -->
+	<target name="clean">
+
+		<echo message="Removing all backup files" />
+		<delete>
+			<fileset dir="${source.dir}" includes="**/*~" />
+			<fileset dir="${source.dir}" includes="**/*.bak" />
+		</delete>
+	</target>
+
+	<!-- Clean up the distribution -->
+	<target name="cleanDist">
+
+		<echo message="Removing build directory ${build.dir} with all subdirs" />
+		<delete dir="${build.dir}" />
+	</target>
+
+	<!-- Clean up the documentation -->
+	<target name="cleanDocu">
+
+		<echo message="Removing build directory ${docs.dir} with all subdirs" />
+		<delete dir="${docs.dir}" />
+
+	</target>
+
+	
+    <!-- ================================= 
+          target: signJar              
+         ================================= -->
+    <target name="signJar" description="-siges  the jar">
+        	<signjar alias="jop" 
+        		jar="${deployment.dir}/jar/${ant.project.name}.jar"
+        		signedjar="${deployment.dir}/jar/${ant.project.name}_signed.jar"
+        		storepass="jopjop"
+        		keystore="${deployment.dir}/jopKeystore"
+        		
+        		 />
+
+    </target>
+
+
+
+	<target name="makedeployment" depends="jar,zipDocu">
+		<echo message="make version and version jar" />
+		<!--
+     <antcall  target="version"/>
+
+		<antcall target="versionjar" />
+-->
+		<echo message="Removing build directory ${deployment.dir} with all subdirs" />
+		<!--	<delete excludes="cvs" dir="${deployment.dir}/docu" />
+		<mkdir dir="${deployment.dir}/docu" />
+		 <copy todir="${deployment.dir}/docu" file="${docs.dir}/${ant.project.name}Docu.zip"/>
+  
+   	<delete excludes="cvs"  dir="${deployment.dir}/jar"/>-->
+		<mkdir dir="${deployment.dir}/jar" />
+		<delete file="${deployment.dir}/jar/${jarfile.name}" />
+		<delete file="${deployment.dir}/jar/${jarfile.nameversion}" />
+		<copy todir="${deployment.dir}/jar">
+			<fileset dir="${dist.dir}" />
+		</copy>
+		<antcall target="signJar"/>
+	</target>
+
+	<target name="cleanAfterDeployment">
+		<delete file="MANIFEST.MF" />
+		<delete file="${jarfile.name}" />
+		<delete file="${docs.dir}/${ant.project.name}Docu.zip" />
+	</target>
+
+	<target name="zipDocu">
+		<zip destfile="${docs.dir}/${ant.project.name}Docu.zip" basedir="${docs.dir}" />
+
+	</target>
+
+	<target name="commitCVS">
+		<cvspass cvsroot=":pserver:urs@192.168.10.101:/home/cvsroot" password="urs" />
+
+
+		<cvs dest="${deployment.dir}docu/" command="commit">
+
+		</cvs>
+	</target>
+
+	
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: name                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="changelog">
+    	<cvschangelog  
+    	                destfile="changelog.xml"
+    	  />
+           
+    </target>
+
+
+	
+	<!-- Build all files and releases -->
+	<target name="all" depends="prepare">
+
+		<antcall target="clean" />
+		<antcall target="cleanDist" />
+		<antcall target="cleanDocu" />
+		<antcall target="compile" />
+		<!-- <antcall target="docu"/> -->
+		<antcall target="jar" />
+		<antcall target="makedeployment" />
+		<antcall target="cleanAfterDeployment" />
+	</target>
+
+
+
+	<target name="testImporter" depends="compile" description="Try running it.">
+		<echo>${test}</echo>
+		<junit dir="${test}" fork="true" printsummary="withOutAndErr">
+			<classpath>
+				<pathelement location="${deployment.dir}jar/ostermillerutils_1_03_00.jar"/>
+				<pathelement location="${junit}" />
+				<pathelement location="${build.dir}" />
+				<pathelement location="${test}" />
+				<pathelement location="${deployment.dir}jar/log4j-1.2.8.jar" />
+				<pathelement location="${deployment.dir}jar/pg73jdbc3.jar" />
+				<pathelement location="${deployment.dir}jar/jami.jar" />
+			</classpath>
+			<formatter type="plain" usefile="true" extension=".txt" />
+
+			<test name="com.beronet.App.CSS.test.importTests.TarifUpdateCheckerTest" todir="${reports}" />
+
+		</junit>
+	</target>
+
+	<!-- Display possible targets -->
+	<target name="help">
+
+		<echo>
+Possible primitives:
+  help -- display this help
+  clean -- clean up source files
+  cleanDist -- clean up distribution files
+  prepare -- set timestamp and build dirs
+  compile -- compile current version
+  jar -- assemble jar
+    </echo>
+	</target>
+</project>

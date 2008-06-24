@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.iaxconf.IaxpeerImpl" table="tbl_iaxconf_iaxpeer" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="iaxpeername" column="iaxpeername"/>	
+		<property name="peertype" column="peertype"/>	
+		<property name="callerid" column="callerid"/>	
+		<property name="auth" column="auth"/>	
+		<property name="secret" column="secret"/>	
+		<property name="inkeys" column="inkeys"/>	
+		<property name="host" column="host"/>	
+		<property name="defaultip" column="defaultip"/>	
+		<property name="context" column="context"/>	
+		<property name="dbsecret" column="dbsecret"/>	
+		<property name="setvar" column="setvar"/>	
+		<property name="peercontext" column="peercontext"/>	
+		<property name="qualify" column="qualify"/>	
+		<property name="trunk" column="trunk"/>	
+		<property name="timezone" column="timezone"/>	
+		<property name="regexten" column="regexten"/>	
+		<property name="disallow" column="disallow"/>	
+		<property name="allow" column="allow"/>	
+		<property name="mailbox" column="mailbox"/>	
+		<property name="accountcode" column="accountcode"/>	
+		<property name="outkey" column="outkey"/>	
+		<property name="notransfer" column="notransfer"/>	
+		<property name="qualifysmoothing" column="qualifysmoothing"/>	
+		<property name="qualifyfreqok" column="qualifyfreqok"/>	
+		<property name="qualifyfreqnotok" column="qualifyfreqnotok"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="iaxdenyMap" cascade="all" 
+		table="tbl_iaxconf_iaxpeer_iaxdeny">
+			<key column="iaxpeer_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.iaxconf.IaxdenyImpl"/>
+        </list>	
+	
+	
+ 		<list name="iaxpermitMap" cascade="all" 
+		table="tbl_iaxconf_iaxpeer_iaxpermit">
+			<key column="iaxpeer_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.iaxconf.IaxpermitImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

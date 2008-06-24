@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_HIjY8HVoEdqu-MgwmX9MXw" name="agentconf" appliedProfile="_HIjY9XVoEdqu-MgwmX9MXw">
+  <eAnnotations xmi:id="_HIjY8XVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_HIjY8nVoEdqu-MgwmX9MXw"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_HIjY83VoEdqu-MgwmX9MXw">
+    <body>agents</body>
+  </ownedComment>
+  <packageImport xmi:id="_HIjY9HVoEdqu-MgwmX9MXw">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_HIjY9XVoEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_HIjY9nVoEdqu-MgwmX9MXw" source="attributes">
+      <details xmi:id="_HIjY93VoEdqu-MgwmX9MXw" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_HIjY-HVoEdqu-MgwmX9MXw" name="types">
+    <eAnnotations xmi:id="_HIjY-XVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_HIjY-nVoEdqu-MgwmX9MXw"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_HIjY-3VoEdqu-MgwmX9MXw" name="Agents">
+    <eAnnotations xmi:id="_HIjY_HVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_HIjY_XVoEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_HIjY_nVoEdqu-MgwmX9MXw" javaFieldType="Agents" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_HIjY_3VoEdqu-MgwmX9MXw">
+      <body>this last section contains the definition of the agents.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_HIjZAHVoEdqu-MgwmX9MXw" name="agentid">
+      <eAnnotations xmi:id="_HIjZAXVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZAnVoEdqu-MgwmX9MXw" storageFieldname="agentid"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZA3VoEdqu-MgwmX9MXw">
+        <body>the agent id</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZBHVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZBXVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZBnVoEdqu-MgwmX9MXw" name="agentpassword">
+      <eAnnotations xmi:id="_HIjZB3VoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZCHVoEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="agentpassword"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZCXVoEdqu-MgwmX9MXw">
+        <body>the passwort</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZCnVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZC3VoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZDHVoEdqu-MgwmX9MXw" name="name">
+      <eAnnotations xmi:id="_HIjZDXVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZDnVoEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="name"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZD3VoEdqu-MgwmX9MXw">
+        <body>the name</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZEHVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZEXVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_HIjZEnVoEdqu-MgwmX9MXw" name="Agentsconf">
+    <eAnnotations xmi:id="_HIjZE3VoEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_HIjZFHVoEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_HIjZFXVoEdqu-MgwmX9MXw" javaFieldType="Agentsconf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_HIjZFnVoEdqu-MgwmX9MXw">
+      <body>ACD distributes incoming calls to the agents of a Queue.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_HIjZF3VoEdqu-MgwmX9MXw" name="autologoff">
+      <eAnnotations xmi:id="_HIjZGHVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZGXVoEdqu-MgwmX9MXw" storageFieldname="autologoff"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZGnVoEdqu-MgwmX9MXw">
+        <body>Define autologoff times if appropriate. This is how long
+
+the phone has to ring with no answer before the agent is
+
+automatically logged off (in seconds). Please note that if
+
+this value is greater than the timeout value in your queue
+
+that agents will not be removed!</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZG3VoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZHHVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZHXVoEdqu-MgwmX9MXw" name="ackcall">
+      <eAnnotations xmi:id="_HIjZHnVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZH3VoEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="ackcall"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZIHVoEdqu-MgwmX9MXw">
+        <body>Define ackcall to require an acknowledgement by '#' when
+
+an agent logs in over agentcallpark. Default is &quot;yes&quot;.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZIXVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZInVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZI3VoEdqu-MgwmX9MXw" name="wrapuptime">
+      <eAnnotations xmi:id="_HIjZJHVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZJXVoEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="wrapuptime"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZJnVoEdqu-MgwmX9MXw">
+        <body>Define wrapuptime. This is the minimum amount of time when
+
+after disconnecting before the caller can receive a new call
+
+note this is in milliseconds.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZJ3VoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZKHVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZKXVoEdqu-MgwmX9MXw" name="music_class">
+      <eAnnotations xmi:id="_HIjZKnVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZK3VoEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="music_class"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZLHVoEdqu-MgwmX9MXw">
+        <body>Define the default musiconhold for agents
+
+musiconhold</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZLXVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZLnVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZL3VoEdqu-MgwmX9MXw" name="custom_beep">
+      <eAnnotations xmi:id="_HIjZMHVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZMXVoEdqu-MgwmX9MXw" ordOrder="4" storageFieldname="custom_beep"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZMnVoEdqu-MgwmX9MXw">
+        <body>An optional custom beep sound file to play to always-connected agents.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZM3VoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZNHVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZNXVoEdqu-MgwmX9MXw" name="group">
+      <eAnnotations xmi:id="_HIjZNnVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZN3VoEdqu-MgwmX9MXw" ordOrder="5" storageFieldname="group_"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZOHVoEdqu-MgwmX9MXw">
+        <body>Group memberships for agents (may change in mid-file just)</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZOXVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZOnVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZO3VoEdqu-MgwmX9MXw" name="agentsMap" type="_HIjY-3VoEdqu-MgwmX9MXw" association="_HIjZRXVoEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_HIjZPHVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_HIjZPXVoEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZPnVoEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZP3VoEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZQHVoEdqu-MgwmX9MXw" name="agentsrecording" type="_HIjZSXVoEdqu-MgwmX9MXw" association="_HIpfknVoEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_HIjZQXVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_HIjZQnVoEdqu-MgwmX9MXw" storageFieldname="agentsrecording"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZQ3VoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZRHVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_HIjZRXVoEdqu-MgwmX9MXw" name="Agentsconf->Agents" memberEnd="_HIjZO3VoEdqu-MgwmX9MXw _HIjZRnVoEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_HIjZRnVoEdqu-MgwmX9MXw" type="_HIjZEnVoEdqu-MgwmX9MXw" association="_HIjZRXVoEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZR3VoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZSHVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_HIjZSXVoEdqu-MgwmX9MXw" name="Agentsrecording">
+    <eAnnotations xmi:id="_HIjZSnVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_HIjZS3VoEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_HIjZTHVoEdqu-MgwmX9MXw" javaFieldType="Agentsrecording" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_HIjZTXVoEdqu-MgwmX9MXw">
+      <body>This section is devoted to recording agent's calls The keywords are global to the chan_agent channel driver</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_HIjZTnVoEdqu-MgwmX9MXw" name="recordagentcalls">
+      <eAnnotations xmi:id="_HIjZT3VoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZUHVoEdqu-MgwmX9MXw" storageFieldname="recordagentcalls"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZUXVoEdqu-MgwmX9MXw">
+        <body>Enable recording calls addressed to agents. It's turned off by default.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZUnVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZU3VoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZVHVoEdqu-MgwmX9MXw" name="recordformat">
+      <eAnnotations xmi:id="_HIjZVXVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZVnVoEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="recordformat"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZV3VoEdqu-MgwmX9MXw">
+        <body>The format to be used to record the calls (wav, gsm, wav49)
+
+By default its &quot;wav&quot;.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZWHVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZWXVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZWnVoEdqu-MgwmX9MXw" name="createlink">
+      <eAnnotations xmi:id="_HIjZW3VoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZXHVoEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="createlink"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZXXVoEdqu-MgwmX9MXw">
+        <body>Insert into CDR userfield a name of the the created recording
+
+By default it's turned off.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZXnVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZX3VoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZYHVoEdqu-MgwmX9MXw" name="urlprefix">
+      <eAnnotations xmi:id="_HIjZYXVoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZYnVoEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="urlprefix"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZY3VoEdqu-MgwmX9MXw">
+        <body>The text to be added to the name of the recording. Allows forming a url link.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIjZZHVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIjZZXVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HIjZZnVoEdqu-MgwmX9MXw" name="savecallsin">
+      <eAnnotations xmi:id="_HIjZZ3VoEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_HIjZaHVoEdqu-MgwmX9MXw" ordOrder="4" storageFieldname="savecallsin"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_HIjZaXVoEdqu-MgwmX9MXw">
+        <body>The optional directory to save the conversations in. The default is
+
+/var/spool/asterisk/monitor</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIpfkHVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIpfkXVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_HIpfknVoEdqu-MgwmX9MXw" name="Agentsconf->Agentsrecording" memberEnd="_HIjZQHVoEdqu-MgwmX9MXw _HIpfk3VoEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_HIpfk3VoEdqu-MgwmX9MXw" type="_HIjZEnVoEdqu-MgwmX9MXw" association="_HIpfknVoEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIpflHVoEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIpflXVoEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

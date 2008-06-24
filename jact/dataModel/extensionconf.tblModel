@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="extension"/>
+			<item value="context"/>
+			<item value="extensionconf"/>
+			<item value="includecontext"/>
+			<item value="globalvars"/>
+			<item value="switch"/>
+			<item value="includeconfigs"/>
+		</list>
+		<section name="extension">
+			<item key="ElementDescription" value="Extension names may be numbers, letters, or combinations thereof. If an extension name is prefixed by a &apos;_&apos; character, it is interpreted as a pattern rather than a literal.  In patterns, some characters have special meanings:"/>
+			<item key="TableName" value="extension"/>
+			<item key="JavaClassName" value="Extension"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="exten"/>
+				<item value="priority"/>
+				<item value="offset"/>
+				<item value="alias"/>
+				<item value="application"/>
+				<item value="application_para"/>
+			</list>
+			<section name="application_para">
+				<item key="ElementDescription" value="the application paras"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Application_para"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="application_para"/>
+			</section>
+			<section name="exten">
+				<item key="ElementDescription" value="the extension"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Exten"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="exten"/>
+			</section>
+			<section name="offset">
+				<item key="ElementDescription" value="the offset"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Offset"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="offset"/>
+			</section>
+			<section name="priority">
+				<item key="ElementDescription" value="the priority"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Priority"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="priority"/>
+			</section>
+			<section name="application">
+				<item key="ElementDescription" value="the application"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Application"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="application"/>
+				<item key="TblFieldName" value="application"/>
+			</section>
+			<section name="alias">
+				<item key="ElementDescription" value="the alias"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Alias"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="alias"/>
+			</section>
+		</section>
+		<section name="context">
+			<item key="ElementDescription" value="The Dialplan constists of collection of contexts. These context definitions are the most important part of the extensions.conf file and are the most important part of Asterisk configuration. A context is just a collection of extensions."/>
+			<item key="TableName" value="context"/>
+			<item key="JavaClassName" value="Context"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+				<item value="extension"/>
+				<item value="includecontext"/>
+				<item value="switch"/>
+			</list>
+			<list key="TableFields" value="switch">
+				<item value="contexname"/>
+				<item value="ignorepat"/>
+			</list>
+			<section name="contexname">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Contexname"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="contexname"/>
+			</section>
+			<section name="ignorepat">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Ignorepat"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="ignorepat"/>
+			</section>
+		</section>
+		<section name="extensionconf">
+			<item key="ElementDescription" value="used by  the pbx_config module. This is where you configure all your   inbound and outbound calls in Asterisk.     This configuration file is reloaded   - With the &quot;extensions reload&quot; command in the CLI  - With the &quot;reload&quot; command (that reloads everything) in the CLI&#x0D;&#x0A;The &quot;General&quot; category is for certain variables."/>
+			<item key="TableName" value="extensionconf"/>
+			<item key="JavaClassName" value="Extensionconf"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="fileid"/>
+			</list>
+			<list key="TableMapFields" value="fileid">
+				<item value="context"/>
+				<item value="globalvars"/>
+				<item value="includeconfigs"/>
+			</list>
+			<list key="TableFields" value="includeconfigs">
+				<item value="static"/>
+				<item value="writeprotect"/>
+				<item value="autofallthrough"/>
+				<item value="clearglobalvars"/>
+				<item value="fileid"/>
+			</list>
+			<section name="writeprotect">
+				<item key="ElementDescription" value="if static yes and writeprotect no, you can save dialplan by CLI command &apos;save dialplan&apos; too"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Writeprotect"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="writeprotect"/>
+			</section>
+			<section name="clearglobalvars">
+				<item key="ElementDescription" value="If clearglobalvars is set, global variables will be cleared   and reparsed on an extensions reload, or Asterisk reload.&#x0D;&#x0A;If clearglobalvars is not set, then global variables will persist  through reloads, and even if deleted from the extensions.conf or  one if its included files, will remain set to the previous value."/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Clearglobalvars"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="clearglobalvars"/>
+			</section>
+			<section name="autofallthrough">
+				<item key="ElementDescription" value="If autofallthrough is set, then if an extension runs out of  things to do, it will terminate the call with BUSY, CONGESTION  or HANGUP depending on Asterisk&apos;s best guess (strongly recommended).If autofallthrough is not set, then if an extension runs out of   things to do, asterisk will wait for a new extension to be dialed   (this is the original behavior of Asterisk 1.0 and earlier)."/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Autofallthrough"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="autofallthrough"/>
+			</section>
+			<section name="fileid">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Fileid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fileid"/>
+			</section>
+			<section name="static">
+				<item key="ElementDescription" value="If static is set to no, or omitted, then the pbx_config will rewrite  this file when extensions are modified.  Remember that all comments  made in the file will be lost when that happens.  XXX Not yet implemented XXX"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Static"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="static"/>
+			</section>
+		</section>
+		<section name="includecontext">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="includecontext"/>
+			<item key="JavaClassName" value="Includecontext"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="contexname"/>
+				<item value="timeing"/>
+			</list>
+			<section name="contexname">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Contexname"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="contexname"/>
+			</section>
+			<section name="timeing">
+				<item key="ElementDescription" value="&lt;time range&gt;|&lt;days of week&gt;|&lt;days of month&gt;|&lt;months&gt;"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Timeing"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="timeing"/>
+			</section>
+		</section>
+		<section name="switch">
+			<item key="ElementDescription" value="The SWITCH statement permits a server to share the dialplain with another server. Use with care: Reciprocal switch statements are not allowed (e.g. both A -&gt; B and B -&gt; A), and the switched server needs to be on-line or else dialing can be severly delayed."/>
+			<item key="TableName" value="switch"/>
+			<item key="JavaClassName" value="Switch"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="switchdialstr"/>
+			</list>
+			<list key="TableMapFields" value="switchdialstr">
+			</list>
+			<list key="TableFields">
+				<item value="switchdialstr"/>
+			</list>
+			<section name="switchdialstr">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Switchdialstr"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="switchdialstr"/>
+			</section>
+		</section>
+		<section name="globalvars">
+			<item key="ElementDescription" value="The &quot;Globals&quot; category contains global variables that can be referenced in the dialplan with ${VARIABLE} or ${ENV(VARIABLE)} for Environmental variable ${${VARIABLE}} or ${text${VARIABLE}} or any hybrid"/>
+			<item key="TableName" value="globalvars"/>
+			<item key="JavaClassName" value="Globalvars"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="name"/>
+				<item value="value"/>
+			</list>
+			<section name="value">
+				<item key="ElementDescription" value="value"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Value"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="value"/>
+			</section>
+			<section name="name">
+				<item key="ElementDescription" value="name"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Name"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="name"/>
+			</section>
+		</section>
+		<section name="includeconfigs">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="includeconfigs"/>
+			<item key="JavaClassName" value="Includeconfigs"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="configname"/>
+			</list>
+			<section name="configname">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Configname"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="configname"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="D:\javaprojekte\workspaceE3\jact\dataModel\simpleTypemap.typemap"/>
+		<item key="ProjectName" value="extensionconf"/>
+	</section>
+</section>

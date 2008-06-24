@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="diagramm">
+		<section name="misdnconf">
+			<item key="y" value="25"/>
+			<item key="areah" value="277"/>
+			<item key="x" value="48"/>
+			<item key="areaw" value="225"/>
+		</section>
+		<section name="MisdnPorts">
+			<item key="y" value="529"/>
+			<item key="areah" value="80"/>
+			<item key="x" value="300"/>
+			<item key="areaw" value="187"/>
+		</section>
+		<section name="misdnCryptkey">
+			<item key="y" value="447"/>
+			<item key="areah" value="80"/>
+			<item key="x" value="134"/>
+			<item key="areaw" value="139"/>
+		</section>
+		<section name="misdnSections">
+			<item key="y" value="50"/>
+			<item key="areah" value="436"/>
+			<item key="x" value="418"/>
+			<item key="areaw" value="183"/>
+		</section>
+	</section>
+</section>

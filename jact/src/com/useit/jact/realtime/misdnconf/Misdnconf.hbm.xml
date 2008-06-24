@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.misdnconf.MisdnconfImpl" table="tbl_misdnconf_misdnconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="debug" column="debug"/>	
+		<property name="tracefile" column="tracefile"/>	
+		<property name="trace_calls" column="trace_calls"/>	
+		<property name="trace_dir" column="trace_dir"/>	
+		<property name="bridging" column="bridging"/>	
+		<property name="stop_tone_after_first_digit" column="stop_tone_after_first_digit"/>	
+		<property name="append_digits2exten" column="append_digits2exten"/>	
+		<property name="l1_info_ok" column="l1_info_ok"/>	
+		<property name="clear_l3" column="clear_l3"/>	
+		<property name="dynamic_crypt" column="dynamic_crypt"/>	
+		<property name="crypt_prefix" column="crypt_prefix"/>	
+		<property name="fileid" column="fileid"/>	
+		<property name="context" column="context"/>	
+<!-- Agg -->
+	<many-to-one name="fMisdnSections" access="field"
+	class="com.useit.jact.model.misdnconf.MisdnSectionsImpl"
+	 column="misdnSections_fk"
+	 cascade="all" />
+<!-- maps -->
+		<list name="misdnCryptkeyMap" cascade="all" 
+		table="tbl_misdnconf_misdnconf_misdncryptkey">
+			<key column="misdnconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.misdnconf.MisdnCryptkeyImpl"/>
+        </list>	
+	
+	
+ 		<list name="misdnSectionsMap" cascade="all" 
+		table="tbl_misdnconf_misdnconf_misdnsections">
+			<key column="misdnconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.misdnconf.MisdnSectionsImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

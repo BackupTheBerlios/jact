@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="iaxjitter"/>
+			<item value="iaxregister"/>
+			<item value="iaxdeny"/>
+			<item value="iaxpermit"/>
+			<item value="iaxpeer"/>
+			<item value="iaxgeneral"/>
+		</list>
+		<section name="iaxjitter">
+			<item key="ElementDescription" value="There are presently two jitterbuffer implementations available for * and chan_iax2&lt;para&gt;the classic and the new, channel/application independent implementation.  These&#x0D;&#x0A;are controlled at compile-time.  The new jitterbuffer additionally has support for PLC&#x0D;&#x0A;which greatly improves quality as the jitterbuffer adapts size, and in compensating for lost&#x0D;&#x0A;packets. All the jitter buffer settings except dropcount are in milliseconds. The jitter buffer works for INCOMING audio - the outbound audio will  be dejittered by the jitter buffer at the other end."/>
+			<item key="TableName" value="iaxjitter"/>
+			<item key="JavaClassName" value="Iaxjitter"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="jitterbuffer"/>
+				<item value="forcejitterbuffer"/>
+				<item value="dropcount"/>
+				<item value="maxjitterbuffer"/>
+				<item value="resyncthreshold"/>
+				<item value="maxjitterinterps"/>
+				<item value="maxexcessbuffer"/>
+				<item value="minexcessbuffer"/>
+				<item value="jittershrinkrate"/>
+			</list>
+			<section name="maxexcessbuffer">
+				<item key="ElementDescription" value="If conditions improve after a period of high jitter, the jitter buffer can end up bigger than necessary.  If it ends up more than &quot;maxexcessbuffer&quot; bigger than needed, Asterisk will start gradually decreasing the amount of jitter buffering. [This option is not applicable to, and ignored by the new jitterbuffer implementation]"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Maxexcessbuffer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="maxexcessbuffer"/>
+			</section>
+			<section name="forcejitterbuffer">
+				<item key="ElementDescription" value="yes|no"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Forcejitterbuffer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="forcejitterbuffer"/>
+			</section>
+			<section name="resyncthreshold">
+				<item key="ElementDescription" value="when the jitterbuffer notices a significant change in delay that continues over a few frames, it will resync, assuming that the change in delay was caused by a timestamping mix-up. The threshold for noticing a change in delay is measured as twice the measured jitter plus this resync threshold. Resycning can be disabled by setting this parameter to -1. [This option presently applies only to the new jitterbuffer implementation]"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Resyncthreshold"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="resyncthreshold"/>
+			</section>
+			<section name="dropcount">
+				<item key="ElementDescription" value="the jitter buffer is sized such that no more than &quot;dropcount&quot; frames would have been &quot;too late&quot; over the last 2 seconds. Set to a small number.  &quot;3&quot; represents 1.5% of frames dropped [This option is not applicable to, and ignored by the new jitterbuffer implementation]"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Dropcount"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="dropcount"/>
+			</section>
+			<section name="jitterbuffer">
+				<item key="ElementDescription" value="yes|no"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Jitterbuffer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="jitterbuffer"/>
+			</section>
+			<section name="minexcessbuffer">
+				<item key="ElementDescription" value="Sets a desired mimimum amount of headroom in  the jitter buffer.  If Asterisk has less headroom than this, then it will start gradually increasing the amount of jitter buffering. [This option is not applicable to, and ignored by the new jitterbuffer implementation]"/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Minexcessbuffer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="minexcessbuffer"/>
+			</section>
+			<section name="maxjitterinterps">
+				<item key="ElementDescription" value="the maximum number of interpolation frames the jitterbuffer should return in a row. Since some clients do not send CNG/DTX frames to indicate silence, the jitterbuffer will assume silence has begun after returning this many interpolations. This prevents interpolating throughout a long silence. [This option presently applies only to the new jitterbuffer implementation]"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Maxjitterinterps"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="maxjitterinterps"/>
+			</section>
+			<section name="maxjitterbuffer">
+				<item key="ElementDescription" value="a maximum size for the jitter buffer. Setting a reasonable maximum here will prevent the call delay from rising to silly values in extreme situations; you&apos;ll hear SOMETHING, even though it will be jittery."/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Maxjitterbuffer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="maxjitterbuffer"/>
+			</section>
+			<section name="jittershrinkrate">
+				<item key="ElementDescription" value="when the jitter buffer is being gradually shrunk  (or enlarged), how many millisecs shall we take off per 20ms frame received?  Use a small number, or you will be able to hear it changing.  An example"/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Jittershrinkrate"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="jittershrinkrate"/>
+			</section>
+		</section>
+		<section name="iaxregister">
+			<item key="ElementDescription" value="Register with a SIP provider"/>
+			<item key="TableName" value="iaxregister"/>
+			<item key="JavaClassName" value="Iaxregister"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="user"/>
+				<item value="authuser"/>
+				<item value="secret"/>
+				<item value="host"/>
+				<item value="port"/>
+				<item value="extension"/>
+			</list>
+			<section name="extension">
+				<item key="ElementDescription" value="the Asterisk contact extension. 1234 is put into the contact header in the SIP Register message. The contact extension is used by remote SIP server when it needs to send a call to Asterisk. See the example below. The default context extension is &quot;s&quot;."/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Extension"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="extension"/>
+			</section>
+			<section name="authuser">
+				<item key="ElementDescription" value="is the optional authorization user for the SIP server"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Authuser"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="authuser"/>
+			</section>
+			<section name="user">
+				<item key="ElementDescription" value="is the user id for this SIP server (ex 2345)"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="User"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="user"/>
+			</section>
+			<section name="host">
+				<item key="ElementDescription" value="is the domain or host name for the SIP server. This SIP server needs a definition in a section of its own in SIP.conf (mysipprovider.com)."/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Host"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="host"/>
+			</section>
+			<section name="port">
+				<item key="ElementDescription" value="send the register request to this port at host. Defaults to 5060"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Port"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="port"/>
+			</section>
+			<section name="secret">
+				<item key="ElementDescription" value="is the user&apos;s password"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="secret"/>
+			</section>
+		</section>
+		<section name="iaxdeny">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="iaxdeny"/>
+			<item key="JavaClassName" value="Iaxdeny"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="value"/>
+			</list>
+			<section name="value">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Value"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="value"/>
+			</section>
+		</section>
+		<section name="iaxpermit">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="iaxpermit"/>
+			<item key="JavaClassName" value="Iaxpermit"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="value"/>
+			</list>
+			<section name="value">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Value"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="value"/>
+			</section>
+		</section>
+		<section name="iaxpeer">
+			<item key="ElementDescription" value=" Further user sections may be added, specifying a context and a secret used for connections with that given authentication name. Limited IP based access control is allowed by use of &quot;allow&quot; and &quot;deny&quot; keywords.  Multiple rules are permitted.  Multiple permitted contexts may be specified, in which case the first will be the default. You can also override caller*ID so that when you receive a call you set the Caller*ID to be what you want instead of trusting what the remote user provides There are three authentication methods that are supported:  md5, plaintext, and rsa.  The least secure is &quot;plaintext&quot;, which sends passwords cleartext across the net.  &quot;md5&quot; uses a challenge/response md5 sum arrangement, but still requires both ends have plain text access to the secret.  &quot;rsa&quot; allows unidirectional secret knowledge through public/private keys.  If &quot;rsa&quot; authentication is used, &quot;inkeys&quot; is a list of acceptable public keys on the  local system that can be used to authenticate the remote peer, separated by the &quot;:&quot; character.  &quot;outkey&quot; is a single, private key to use to authenticate to the other side.  Public keys are named /var/lib/asterisk/keys/&lt;name&gt;.pub while private keys are named /var/lib/asterisk/keys/&lt;name&gt;.key.  Private keys should always be 3DES encrypted."/>
+			<item key="TableName" value="iaxpeer"/>
+			<item key="JavaClassName" value="Iaxpeer"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="iaxpeername"/>
+			</list>
+			<list key="TableMapFields" value="iaxpeername">
+				<item value="iaxdeny"/>
+				<item value="iaxpermit"/>
+			</list>
+			<list key="TableFields" value="iaxpermit">
+				<item value="iaxpeername"/>
+				<item value="peertype"/>
+				<item value="callerid"/>
+				<item value="auth"/>
+				<item value="secret"/>
+				<item value="inkeys"/>
+				<item value="host"/>
+				<item value="defaultip"/>
+				<item value="context"/>
+				<item value="dbsecret"/>
+				<item value="setvar"/>
+				<item value="peercontext"/>
+				<item value="qualify"/>
+				<item value="trunk"/>
+				<item value="timezone"/>
+				<item value="regexten"/>
+				<item value="disallow"/>
+				<item value="allow"/>
+				<item value="mailbox"/>
+				<item value="accountcode"/>
+				<item value="outkey"/>
+				<item value="notransfer"/>
+				<item value="qualifysmoothing"/>
+				<item value="qualifyfreqok"/>
+				<item value="qualifyfreqnotok"/>
+			</list>
+			<section name="peercontext">
+				<item key="ElementDescription" value="Default context to request for calls to peer"/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Peercontext"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="peercontext"/>
+			</section>
+			<section name="qualifyfreqok">
+				<item key="ElementDescription" value="how frequently to ping the peer when everything seems to be ok, in milliseconds"/>
+				<item key="OrdinalPosition" value="23"/>
+				<item key="JavaFieldName" value="Qualifyfreqok"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="qualifyfreqok"/>
+			</section>
+			<section name="peertype">
+				<item key="ElementDescription" value=" [user|peer|friend]: This line tells Asterisk how to interpret this entity. Users are things"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Peertype"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="PeerType"/>
+				<item key="TblFieldName" value="peertype"/>
+			</section>
+			<section name="regexten">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="15"/>
+				<item key="JavaFieldName" value="Regexten"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="regexten"/>
+			</section>
+			<section name="callerid">
+				<item key="ElementDescription" value="&lt;callerid&gt;: You may override the Caller*ID information passed by a user to you (if they choose to send it) in order that it always be accurate from the perspective of your server."/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Callerid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="callerid"/>
+			</section>
+			<section name="context">
+				<item key="ElementDescription" value="When used within a client definition, this keyword overrides the default incoming context set in the general section for the user only."/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Context"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="context"/>
+			</section>
+			<section name="host">
+				<item key="ElementDescription" value="Sets the expected outgoing host for this client. Can be set to an ip address or dynamic, which will allow incoming connections from any host (that is not explicitly denied.)"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Host"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="host"/>
+			</section>
+			<section name="iaxpeername">
+				<item key="ElementDescription" value="The peer name."/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Iaxpeername"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="iaxpeername"/>
+			</section>
+			<section name="defaultip">
+				<item key="ElementDescription" value="The default IP address for an IAX client. This field is consulted if Asterisk receives a call for an IAX client that is dynamic and has not registered to let Asterisk know the current IP address. Takes as itís argument an IP address."/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Defaultip"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="defaultip"/>
+			</section>
+			<section name="outkey">
+				<item key="ElementDescription" value="The private key to encrypt outgoing authentication communication for this client."/>
+				<item key="OrdinalPosition" value="20"/>
+				<item key="JavaFieldName" value="Outkey"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="outkey"/>
+			</section>
+			<section name="qualifysmoothing">
+				<item key="ElementDescription" value="use an average of the last two PONG results to reduce falsly detected LAGGED hosts Default: Off"/>
+				<item key="OrdinalPosition" value="22"/>
+				<item key="JavaFieldName" value="Qualifysmoothing"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="qualifysmoothing"/>
+			</section>
+			<section name="secret">
+				<item key="ElementDescription" value="&lt;secret&gt;: The &quot;secret&quot; line specifies the shared secret for md5 and plaintext authentication methods. It is never suggested to use plaintext except in some cases for debugging."/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="secret"/>
+			</section>
+			<section name="accountcode">
+				<item key="ElementDescription" value="When used within a client definition, sets the account code for that client only. This is used by the call logging service."/>
+				<item key="OrdinalPosition" value="19"/>
+				<item key="JavaFieldName" value="Accountcode"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="accountcode"/>
+			</section>
+			<section name="disallow">
+				<item key="ElementDescription" value="all :Disallow all codecs (global configuration)"/>
+				<item key="OrdinalPosition" value="16"/>
+				<item key="JavaFieldName" value="Disallow"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="disallow"/>
+			</section>
+			<section name="qualifyfreqnotok">
+				<item key="ElementDescription" value="how frequently to ping the peer when it&apos;s either LAGGED or UNAVAILABLE, in milliseconds"/>
+				<item key="OrdinalPosition" value="24"/>
+				<item key="JavaFieldName" value="Qualifyfreqnotok"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="qualifyfreqnotok"/>
+			</section>
+			<section name="dbsecret">
+				<item key="ElementDescription" value="Secrets can be stored in astdb, too (mysecrets/place)"/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="Dbsecret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="dbsecret"/>
+			</section>
+			<section name="trunk">
+				<item key="ElementDescription" value="Enables or disables trunking for a given user or peer. Trunk mode is a more efficient method of operating IAX if there are typically many calls running on the link. Trunk mode requires having a Zaptel interface in the Asterisk server."/>
+				<item key="OrdinalPosition" value="13"/>
+				<item key="JavaFieldName" value="Trunk"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="trunk"/>
+			</section>
+			<section name="setvar">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Setvar"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="setvar"/>
+			</section>
+			<section name="allow">
+				<item key="ElementDescription" value="Allow codecs in order of preference (Use DISALLOW=ALL first, before allowing other codecs)"/>
+				<item key="OrdinalPosition" value="17"/>
+				<item key="JavaFieldName" value="Allow"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="allow"/>
+			</section>
+			<section name="mailbox">
+				<item key="ElementDescription" value="Provides a mailbox to associate with a given peer, so that when it registers it can be notified of any pending messages waiting."/>
+				<item key="OrdinalPosition" value="18"/>
+				<item key="JavaFieldName" value="Mailbox"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="mailbox"/>
+			</section>
+			<section name="inkeys">
+				<item key="ElementDescription" value=" key1[:key2...]: The &quot;inkeys&quot; line specifies which keys we can use to authenticate the remote peer. If the peer&apos;s challenge passes with any of the given keys, then we accept its authentication. The key files live in /var/lib/asterisk/keys/&lt;name&gt;.pub and are *public keys*. Public keys are not typically DES3 encrypted and thus do not usually need initialization."/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Inkeys"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="inkeys"/>
+			</section>
+			<section name="notransfer">
+				<item key="ElementDescription" value="Disable IAX native transfer."/>
+				<item key="OrdinalPosition" value="21"/>
+				<item key="JavaFieldName" value="Notransfer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="notransfer"/>
+			</section>
+			<section name="qualify">
+				<item key="ElementDescription" value="Tells Asterisk whether to test whether the peer is alive before attempting to connect the call. If set to yes Asterisk will periodically contact the peer before forwarding any call information. The argument specified is the maximum number of milliseconds that a peer can take to respond before it is considered unavailable."/>
+				<item key="OrdinalPosition" value="12"/>
+				<item key="JavaFieldName" value="Qualify"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="qualify"/>
+			</section>
+			<section name="timezone">
+				<item key="ElementDescription" value="Set a timezone for the date/time IE"/>
+				<item key="OrdinalPosition" value="14"/>
+				<item key="JavaFieldName" value="Timezone"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="timezone"/>
+			</section>
+			<section name="auth">
+				<item key="ElementDescription" value=" [md5|plaintext|rsa]: You may select which authentication methods are permitted to be used by the user to authenticate to us. Multiple methods may be specified, separated by commas. If md5 or plaintext authentication is selected, a secret must be provided. If RSA authentication is specified, then one or more key names must be specifed with &quot;inkeys&quot; If no secret is specified and no authentication method is specified, then no authentication will be required."/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Auth"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="auth"/>
+			</section>
+		</section>
+		<section name="iaxgeneral">
+			<item key="ElementDescription" value="Global settings  Inter-Asterisk eXchange driver definition This configuration is re-read at reload or with the CLI command reload chan_iax2.so General settings, like port number to bind to, and an option address (the default is to bind to all local addresses)."/>
+			<item key="TableName" value="iaxgeneral"/>
+			<item key="JavaClassName" value="Iaxgeneral"/>
+			<list key="aggfields">
+				<item value="iaxjitter"/>
+			</list>
+			<list key="TableFKFields" value="iaxjitter">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+				<item value="iaxpeer"/>
+				<item value="iaxregister"/>
+			</list>
+			<list key="TableFields" value="iaxregister">
+				<item value="bindport"/>
+				<item value="bindaddr"/>
+				<item value="iaxcompat"/>
+				<item value="nochecksums"/>
+				<item value="delayreject"/>
+				<item value="amaflags"/>
+				<item value="accountcode"/>
+				<item value="language"/>
+				<item value="bandwidth"/>
+				<item value="trunktimestamps"/>
+				<item value="authdebug"/>
+				<item value="tos"/>
+				<item value="mailboxdetail"/>
+				<item value="regcontext"/>
+				<item value="autokill"/>
+				<item value="codecpriority"/>
+				<item value="rtcachefriends"/>
+				<item value="rtupdate"/>
+				<item value="rtautoclear"/>
+				<item value="rtignoreexpire"/>
+				<item value="trunkfreq"/>
+				<item value="disallow"/>
+				<item value="allow"/>
+				<item value="minregexpire"/>
+				<item value="maxregexpire"/>
+				<item value="notransfer"/>
+			</list>
+			<section name="mailboxdetail">
+				<item key="ElementDescription" value="If mailboxdetail is set to &quot;yes&quot;, the user receives the actual new/old message counts, not just a yes/no as to whether they have messages.  this can be set on a per-peer basis as well"/>
+				<item key="OrdinalPosition" value="12"/>
+				<item key="JavaFieldName" value="Mailboxdetail"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="mailboxdetail"/>
+			</section>
+			<section name="bindaddr">
+				<item key="ElementDescription" value="addresses, but the first will be the  default"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Bindaddr"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="bindaddr"/>
+			</section>
+			<section name="nochecksums">
+				<item key="ElementDescription" value="Disable UDP checksums (if nochecksums is set, then no checkums will be calculated/checked on systems supporting this feature)"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Nochecksums"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="nochecksums"/>
+			</section>
+			<section name="iaxcompat">
+				<item key="ElementDescription" value="Set iaxcompat to yes if you plan to use layered switches or some other scenario which may cause some delay when doing a lookup in the dialplan. It incurs a small performance hit to enable it. This option causes Asterisk to spawn a separate thread when it receives an IAX DPREQ (Dialplan Request) instead of blocking while it waits for a response."/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Iaxcompat"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="iaxcompat"/>
+			</section>
+			<section name="regcontext">
+				<item key="ElementDescription" value="If regcontext is specified, Asterisk will dynamically  create and destroy a NoOp priority 1 extension for a given peer who registers or unregisters with us.  The actual extension is the &apos;regexten&apos; parameter of the registering peer or its name if &apos;regexten&apos; is not provided.  More than one regexten may be supplied if they are separated by &apos;&amp;&apos;.  Patterns may be used in regexten."/>
+				<item key="OrdinalPosition" value="13"/>
+				<item key="JavaFieldName" value="Regcontext"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="regcontext"/>
+			</section>
+			<section name="autokill">
+				<item key="ElementDescription" value="If we don&apos;t get ACK to our NEW within 2000ms, and autokill is set to yes, then we cancel the whole thing (that&apos;s enough time for one  retransmission only).  This is used to keep things from stalling for a long time for a host that is not available, but would be ill advised for bad  connections.  In addition to &apos;yes&apos; or &apos;no&apos; you can also specify a number of milliseconds.  See &apos;qualify&apos; for individual peers to turn on for just a specific peer."/>
+				<item key="OrdinalPosition" value="14"/>
+				<item key="JavaFieldName" value="Autokill"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="autokill"/>
+			</section>
+			<section name="rtignoreexpire">
+				<item key="ElementDescription" value="when reading a peer from Realtime, if the peer&apos;s registration has expired based on its registration interval, used the stored  address information regardless"/>
+				<item key="OrdinalPosition" value="19"/>
+				<item key="JavaFieldName" value="Rtignoreexpire"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="rtignoreexpire"/>
+			</section>
+			<section name="rtautoclear">
+				<item key="ElementDescription" value="Auto-Expire friends created on the fly on the same schedule as if it had just registered when the registration expires the friend will vanish from the configuration until requested again.  If set to an integer, friends expire within this number of seconds instead of the same as the registration interval"/>
+				<item key="OrdinalPosition" value="18"/>
+				<item key="JavaFieldName" value="Rtautoclear"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="rtautoclear"/>
+			</section>
+			<section name="amaflags">
+				<item key="ElementDescription" value="You may specify a global default AMA flag for iaxtel calls.  It must be one of &apos;default&apos;, &apos;omit&apos;, &apos;billing&apos;, or &apos;documentation&apos;.  These flags are used in the generation of call detail records."/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Amaflags"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="amaflags"/>
+			</section>
+			<section name="bandwidth">
+				<item key="ElementDescription" value="Specify bandwidth of low, medium, or high to control which codecs are used in general."/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Bandwidth"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="bandwidth"/>
+			</section>
+			<section name="minregexpire">
+				<item key="ElementDescription" value="Minimum and maximum amounts of time that IAX peers can request as a registration expiration interval (in seconds)."/>
+				<item key="OrdinalPosition" value="23"/>
+				<item key="JavaFieldName" value="Minregexpire"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="minregexpire"/>
+			</section>
+			<section name="rtupdate">
+				<item key="ElementDescription" value="Send registry updates to database using realtime? (yes|no) If set to yes, when a IAX2 peer registers successfully, the ip address,the origination port, the registration period, and the username of the origination port, the registration period, and the username of  the peer will be set to database via realtime. If not present, defaults to &apos;yes&apos;."/>
+				<item key="OrdinalPosition" value="17"/>
+				<item key="JavaFieldName" value="Rtupdate"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="rtupdate"/>
+			</section>
+			<section name="trunktimestamps">
+				<item key="ElementDescription" value="Should we send timestamps for the individual sub-frames within trunk frames? There is a small bandwidth use for these (less than 1kbps/call), but they ensure that frame timestamps get sent end-to-end properly.  If both ends of all your trunks go directly to TDM, _and_ your trunkfreq equals the frame length for your codecs, you  can probably suppress these.  The receiver must also support this feature, although they do not also need to have it enabled."/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="Trunktimestamps"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="trunktimestamps"/>
+			</section>
+			<section name="bindport">
+				<item key="ElementDescription" value="bindport and bindaddr may be specified NOTE: bindport must be specified BEFORE bindaddr or may be specified on a specific bindaddr if followed by"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Bindport"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="bindport"/>
+			</section>
+			<section name="tos">
+				<item key="ElementDescription" value="Finally, you can set values for your TOS bits to help improve  performance.  Valid values are:   lowdelay&#x09;&#x09;-- Minimize delay   throughput&#x09;&#x09;-- Maximize throughput   reliability&#x09;&#x09;-- Maximize reliability   mincost&#x09;&#x09;-- Minimize cost   none&#x09;&#x09;-- No flags"/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Tos"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="tos"/>
+			</section>
+			<section name="accountcode">
+				<item key="ElementDescription" value="You may specify a default account for Call Detail Records in addition to specifying on a per-user basis"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Accountcode"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="accountcode"/>
+			</section>
+			<section name="trunkfreq">
+				<item key="ElementDescription" value="How frequently to send trunk msgs (in ms)"/>
+				<item key="OrdinalPosition" value="20"/>
+				<item key="JavaFieldName" value="Trunkfreq"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="trunkfreq"/>
+			</section>
+			<section name="disallow">
+				<item key="ElementDescription" value="all :Disallow all codecs (global configuration)"/>
+				<item key="OrdinalPosition" value="21"/>
+				<item key="JavaFieldName" value="Disallow"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="disallow"/>
+			</section>
+			<section name="allow">
+				<item key="ElementDescription" value="Allow codecs in order of preference (Use DISALLOW=ALL first, before allowing other codecs)"/>
+				<item key="OrdinalPosition" value="22"/>
+				<item key="JavaFieldName" value="Allow"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="allow"/>
+			</section>
+			<section name="maxregexpire">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="24"/>
+				<item key="JavaFieldName" value="Maxregexpire"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="maxregexpire"/>
+			</section>
+			<section name="language">
+				<item key="ElementDescription" value="You may specify a global default language for users.  Can be specified also on a per-user basis If omitted, will fallback to english"/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Language"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="language"/>
+			</section>
+			<section name="notransfer">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="25"/>
+				<item key="JavaFieldName" value="Notransfer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="notransfer"/>
+			</section>
+			<section name="rtcachefriends">
+				<item key="ElementDescription" value="Cache realtime friends by adding them to the internal list just like friends added from the config file only on a as-needed basis."/>
+				<item key="OrdinalPosition" value="16"/>
+				<item key="JavaFieldName" value="Rtcachefriends"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="rtcachefriends"/>
+			</section>
+			<section name="delayreject">
+				<item key="ElementDescription" value="For increased security against brute force password attacks enable &quot;delayreject&quot; which will delay the sending of authentication reject for REGREQ or AUTHREP if there is a password."/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Delayreject"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="delayreject"/>
+			</section>
+			<section name="authdebug">
+				<item key="ElementDescription" value="You can disable authentication debugging to reduce the amount of  debugging traffic."/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Authdebug"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="authdebug"/>
+			</section>
+			<section name="codecpriority">
+				<item key="ElementDescription" value="codecpriority controls the codec negotiation of an inbound IAX call. This option is inherited to all user entities.  It can also be defined  in each user entity separately which will override the setting in general.&#x0D;&#x0A;The valid values are: caller   - Consider the callers preferred order ahead of the host&apos;s. host     - Consider the host&apos;s preferred order ahead of the caller&apos;s. disabled - Disable the consideration of codec preference alltogether.            (this is the original behaviour before preferences were added) reqonly  - Same as disabled, only do not consider capabilities if            the requested format is not available the call will only            be accepted if the requested format is available.&#x0D;&#x0A;The default value is &apos;host&apos;"/>
+				<item key="OrdinalPosition" value="15"/>
+				<item key="JavaFieldName" value="Codecpriority"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="codecpriority"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="\jact\dataModel\simpleTypemap.typemap"/>
+		<item key="ProjectName" value="iaxconf"/>
+	</section>
+</section>

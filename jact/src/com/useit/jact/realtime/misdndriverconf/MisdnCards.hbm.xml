@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.misdndriverconf.MisdnCardsImpl" table="tbl_misdndriverconf_misdncards" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="cardName" column="cardName"/>	
+		<property name="cardType" column="cardType"/>	
+		<property name="cardOptions" column="cardOptions"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="misdncardPortsMap" cascade="all" 
+		table="tbl_misdndriverconf_misdncards_misdncardports">
+			<key column="misdncards_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.misdndriverconf.MisdncardPortsImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

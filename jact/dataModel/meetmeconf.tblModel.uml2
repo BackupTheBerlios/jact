@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_OKXrUHVnEdqu-MgwmX9MXw" name="meetmeconf" appliedProfile="_OKXrVXVnEdqu-MgwmX9MXw">
+  <eAnnotations xmi:id="_OKXrUXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_OKXrUnVnEdqu-MgwmX9MXw"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_OKXrU3VnEdqu-MgwmX9MXw"/>
+  <packageImport xmi:id="_OKXrVHVnEdqu-MgwmX9MXw">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_OKXrVXVnEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_OKXrVnVnEdqu-MgwmX9MXw" source="attributes">
+      <details xmi:id="_OKXrV3VnEdqu-MgwmX9MXw" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_OKXrWHVnEdqu-MgwmX9MXw" name="types">
+    <eAnnotations xmi:id="_OKXrWXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_OKXrWnVnEdqu-MgwmX9MXw"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OKXrW3VnEdqu-MgwmX9MXw" name="Meetmeconf">
+    <eAnnotations xmi:id="_OKXrXHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OKXrXXVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OKXrXnVnEdqu-MgwmX9MXw" javaFieldType="Meetmeconf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OKXrX3VnEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_OKXrYHVnEdqu-MgwmX9MXw" name="fileid">
+      <eAnnotations xmi:id="_OKXrYXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OKXrYnVnEdqu-MgwmX9MXw" storageFieldname="fileid"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_OKXrY3VnEdqu-MgwmX9MXw"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OKXrZHVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OKXrZXVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OKXrZnVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OKXrZ3VnEdqu-MgwmX9MXw" name="meetmeroomsMap" type="_OKXrbHVnEdqu-MgwmX9MXw" association="_OKXrg3VnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_OKXraHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_OKXraXVnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OKXranVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OKXra3VnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OKXrbHVnEdqu-MgwmX9MXw" name="Meetmerooms">
+    <eAnnotations xmi:id="_OKXrbXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OKXrbnVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OKXrb3VnEdqu-MgwmX9MXw" javaFieldType="Meetmerooms" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OKXrcHVnEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_OKXrcXVnEdqu-MgwmX9MXw" name="confno">
+      <eAnnotations xmi:id="_OKXrcnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OKXrc3VnEdqu-MgwmX9MXw" storageFieldname="confno"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OKXrdHVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OKXrdXVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OKXrdnVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OKXrd3VnEdqu-MgwmX9MXw" name="pincode">
+      <eAnnotations xmi:id="_OKXreHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OKXreXVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="pincode"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OKXrenVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OKXre3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OKXrfHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OKXrfXVnEdqu-MgwmX9MXw" name="adminpin">
+      <eAnnotations xmi:id="_OKXrfnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OKXrf3VnEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="adminpin"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OKXrgHVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OKXrgXVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OKXrgnVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_OKXrg3VnEdqu-MgwmX9MXw" name="Meetmeconf->Meetmerooms" memberEnd="_OKXrZ3VnEdqu-MgwmX9MXw _OKXrhHVnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_OKXrhHVnEdqu-MgwmX9MXw" type="_OKXrW3VnEdqu-MgwmX9MXw" association="_OKXrg3VnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OKXrhXVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OKXrhnVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

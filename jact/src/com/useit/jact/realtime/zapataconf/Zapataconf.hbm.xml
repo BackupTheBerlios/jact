@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.zapataconf.ZapataconfImpl" table="tbl_zapataconf_zapataconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="zaptelchannelMap" cascade="all" 
+		table="tbl_zapataconf_zapataconf_zaptelchannel">
+			<key column="zapataconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.zapataconf.ZaptelchannelImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

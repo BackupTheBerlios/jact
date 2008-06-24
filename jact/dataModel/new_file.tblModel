@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="switchtype"/>
+			<item value="signalling"/>
+			<item value="amaflags"/>
+		</list>
+		<section name="switchtype">
+			<item key="ElementDescription" value="Sets the type of PRI switch being used. Default: national."/>
+			<item key="TableName" value="switchtype"/>
+			<item key="JavaClassName" value=""/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="national"/>
+				<item value="ni1"/>
+				<item value="dms100"/>
+				<item value="4ess"/>
+				<item value="5ess"/>
+				<item value="euroisdn"/>
+				<item value="qsig"/>
+			</list>
+			<section name="national">
+				<item key="ElementDescription" value="National ISDN type2 (common in the US)"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="national"/>
+			</section>
+			<section name="euroisdn">
+				<item key="ElementDescription" value="EuroISDN"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="euroisdn"/>
+			</section>
+			<section name="dms100">
+				<item key="ElementDescription" value="Nortel DMS100"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="dms100"/>
+			</section>
+			<section name="qsig">
+				<item key="ElementDescription" value="Minimalistic protocol to build a &quot;network&quot; with two or more PBX of different vendors!"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="qsig"/>
+			</section>
+			<section name="5ess">
+				<item key="ElementDescription" value="Lucent 5ESS"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="5ess"/>
+			</section>
+			<section name="ni1">
+				<item key="ElementDescription" value="National ISDN type 1"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="ni1"/>
+			</section>
+			<section name="4ess">
+				<item key="ElementDescription" value="AT&amp;T 4ESS"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="4ess"/>
+			</section>
+		</section>
+		<section name="signalling">
+			<item key="ElementDescription" value="The signalling type to use with your interface is the only mandatory setting. You must set a signalling type before allocating a channel. If you are connecting analog telephone equipment, note that analog phone signalling can be a source of some confusion. FXS channels are signalled with FXO signalling, and vice versa. Asterisk &apos;talks&apos; to internal devices as the opposite side. An FXO interface card is signalled with FXS signalling by Asterisk, and should be configured as such. signalling&lt;paraDesc&gt;Sets the channel signaling type. These parameters should match the Zaptel driver configuration. The setting to use depends partly on which interface card you have. Asterisk will fail to start if a channel signaling definition is incorrect or unworkable, if the statements do not match the Zaptel driver configuration, or if the device is not present or properly configured. The correct setting to use is almost certainly one of the following four&lt;paraDesc&gt;fxs_ks, fxo_ks, pri_cpe or pri_net. This setting has no default value; you must set a value before allocating a channel."/>
+			<item key="TableName" value="signalling"/>
+			<item key="JavaClassName" value=""/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="em"/>
+				<item value="em_w"/>
+				<item value="em_e1"/>
+				<item value="featd"/>
+				<item value="featdmf"/>
+				<item value="featb"/>
+				<item value="fxs_ls"/>
+				<item value="fxs_gs"/>
+				<item value="fxs_ks"/>
+				<item value="fxo_ls"/>
+				<item value="fxo_gs"/>
+				<item value="fxo_ks"/>
+				<item value="pri_cpe"/>
+				<item value="pri_net"/>
+				<item value="sf"/>
+				<item value="sf_w"/>
+				<item value="sf_featd"/>
+				<item value="sf_featdmf"/>
+				<item value="sf_featb"/>
+				<item value="e911"/>
+				<item value="fxs_rx"/>
+				<item value="fxs_tx"/>
+				<item value="fxo_rx"/>
+				<item value="fxo_tx"/>
+				<item value="em_rx"/>
+				<item value="em_tx"/>
+				<item value="em_txrx"/>
+				<item value="em_rxtx"/>
+				<item value="sf_rx"/>
+				<item value="sf_tx"/>
+				<item value="sf_txrx"/>
+				<item value="sf_rxtx"/>
+			</list>
+			<section name="em_e1">
+				<item key="ElementDescription" value="E &amp; M CAS signalling for E1 lines"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="em_e1"/>
+			</section>
+			<section name="sf_featb">
+				<item key="ElementDescription" value="SF Feature Group B (MF (domestic, US))"/>
+				<item key="OrdinalPosition" value="18"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_featb"/>
+			</section>
+			<section name="fxo_tx">
+				<item key="ElementDescription" value="Transmit audio/PTT on an FXO groundstart interface (FXS at the channel bank)"/>
+				<item key="OrdinalPosition" value="23"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxo_tx"/>
+			</section>
+			<section name="featd">
+				<item key="ElementDescription" value="Feature Group D (The fake, Adtran style, DTMF)"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="featd"/>
+			</section>
+			<section name="fxo_rx">
+				<item key="ElementDescription" value="Receive audio/COR on an FXO loopstart interface (FXS at the channel bank)"/>
+				<item key="OrdinalPosition" value="22"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxo_rx"/>
+			</section>
+			<section name="sf_rx">
+				<item key="ElementDescription" value="Receive audio/COR on an SF interface (1-way)"/>
+				<item key="OrdinalPosition" value="28"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_rx"/>
+			</section>
+			<section name="pri_net">
+				<item key="ElementDescription" value="PRI signalling, Network side"/>
+				<item key="OrdinalPosition" value="13"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="pri_net"/>
+			</section>
+			<section name="fxs_rx">
+				<item key="ElementDescription" value="Receive audio/COR on an FXS kewlstart interface (FXO at the channel bank)"/>
+				<item key="OrdinalPosition" value="20"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxs_rx"/>
+			</section>
+			<section name="em_rxtx">
+				<item key="ElementDescription" value="same as em_txrx (for our dyslexic friends)"/>
+				<item key="OrdinalPosition" value="27"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="em_rxtx"/>
+			</section>
+			<section name="em_w">
+				<item key="ElementDescription" value="E &amp; M Wink"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="em_w"/>
+			</section>
+			<section name="fxo_gs">
+				<item key="ElementDescription" value="FXO (Ground Start)"/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxo_gs"/>
+			</section>
+			<section name="fxs_gs">
+				<item key="ElementDescription" value="FXS (Ground Start)"/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxs_gs"/>
+			</section>
+			<section name="sf_featd">
+				<item key="ElementDescription" value="SF Feature Group D (The fake, Adtran style, DTMF)"/>
+				<item key="OrdinalPosition" value="16"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_featd"/>
+			</section>
+			<section name="fxo_ls">
+				<item key="ElementDescription" value="FXO (Loop Start)"/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxo_ls"/>
+			</section>
+			<section name="sf_w">
+				<item key="ElementDescription" value="SF Wink"/>
+				<item key="OrdinalPosition" value="15"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_w"/>
+			</section>
+			<section name="em_rx">
+				<item key="ElementDescription" value="Receive audio/COR on an E&amp;M interface (1-way)"/>
+				<item key="OrdinalPosition" value="24"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="em_rx"/>
+			</section>
+			<section name="featb">
+				<item key="ElementDescription" value="Feature Group B (MF (domestic, US))"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="featb"/>
+			</section>
+			<section name="sf_tx">
+				<item key="ElementDescription" value="Transmit audio/PTT on an SF interface (1-way)"/>
+				<item key="OrdinalPosition" value="29"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_tx"/>
+			</section>
+			<section name="em_txrx">
+				<item key="ElementDescription" value="Receive audio/COR AND Transmit audio/PTT on an E&amp;M interface (2-way)"/>
+				<item key="OrdinalPosition" value="26"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="em_txrx"/>
+			</section>
+			<section name="featdmf">
+				<item key="ElementDescription" value="Feature Group D (The real thing, MF (domestic, US))"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="featdmf"/>
+			</section>
+			<section name="em_tx">
+				<item key="ElementDescription" value="Transmit audio/PTT on an E&amp;M interface (1-way)"/>
+				<item key="OrdinalPosition" value="25"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="em_tx"/>
+			</section>
+			<section name="sf_txrx">
+				<item key="ElementDescription" value="Receive audio/COR AND Transmit audio/PTT on an SF interface (2-way)"/>
+				<item key="OrdinalPosition" value="30"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_txrx"/>
+			</section>
+			<section name="sf_featdmf">
+				<item key="ElementDescription" value="SF Feature Group D (The real thing, MF (domestic, US))"/>
+				<item key="OrdinalPosition" value="17"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_featdmf"/>
+			</section>
+			<section name="em">
+				<item key="ElementDescription" value="E &amp; M"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="em"/>
+			</section>
+			<section name="e911">
+				<item key="ElementDescription" value="E911 (MF) style signalling"/>
+				<item key="OrdinalPosition" value="19"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="e911"/>
+			</section>
+			<section name="fxs_ls">
+				<item key="ElementDescription" value="FXS (Loop Start)"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxs_ls"/>
+			</section>
+			<section name="sf">
+				<item key="ElementDescription" value="SF (Inband Tone) Signalling"/>
+				<item key="OrdinalPosition" value="14"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf"/>
+			</section>
+			<section name="fxo_ks">
+				<item key="ElementDescription" value="FXO (Kewl Start)"/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxo_ks"/>
+			</section>
+			<section name="fxs_ks">
+				<item key="ElementDescription" value="FXS (Kewl Start)"/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxs_ks"/>
+			</section>
+			<section name="fxs_tx">
+				<item key="ElementDescription" value="Transmit audio/PTT on an FXS loopstart interface (FXO at the channel bank)"/>
+				<item key="OrdinalPosition" value="21"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fxs_tx"/>
+			</section>
+			<section name="sf_rxtx">
+				<item key="ElementDescription" value="same as sf_txrx (for our dyslexic friends)"/>
+				<item key="OrdinalPosition" value="31"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sf_rxtx"/>
+			</section>
+			<section name="pri_cpe">
+				<item key="ElementDescription" value="PRI signalling, CPE side"/>
+				<item key="OrdinalPosition" value="12"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="pri_cpe"/>
+			</section>
+		</section>
+		<section name="amaflags">
+			<item key="ElementDescription" value="Sets the AMA flags, affecting the categorization of entries in the call detail records."/>
+			<item key="TableName" value="amaflags"/>
+			<item key="JavaClassName" value=""/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="default"/>
+				<item value="omit"/>
+				<item value="billing"/>
+				<item value="documentation"/>
+			</list>
+			<section name="billing">
+				<item key="ElementDescription" value="Mark the entry for billing"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="billing"/>
+			</section>
+			<section name="documentation">
+				<item key="ElementDescription" value="Mark the entry for documentation."/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="documentation"/>
+			</section>
+			<section name="default">
+				<item key="ElementDescription" value="Let the CDR system use its default value."/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="default"/>
+			</section>
+			<section name="omit">
+				<item key="ElementDescription" value="Do not record calls."/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="omit"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value=""/>
+		<item key="ProjectName" value=""/>
+	</section>
+</section>

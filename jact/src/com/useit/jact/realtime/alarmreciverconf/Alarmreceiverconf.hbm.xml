@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.alarmreciverconf.AlarmreceiverconfImpl" table="tbl_alarmreciverconf_alarmreceiverconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="timestampformat" column="timestampformat"/>	
+		<property name="eventcmd" column="eventcmd"/>	
+		<property name="eventspooldir" column="eventspooldir"/>	
+		<property name="logindividualevents" column="logindividualevents"/>	
+		<property name="fdtimeout" column="fdtimeout"/>	
+		<property name="sdtimeout" column="sdtimeout"/>	
+		<property name="loudness" column="loudness"/>	
+		<property name="dbfamily" column="dbfamily"/>	
+<!-- Agg -->
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

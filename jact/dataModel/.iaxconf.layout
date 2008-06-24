@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="diagramm">
+		<section name="iaxjitter">
+			<item key="y" value="21"/>
+			<item key="areah" value="231"/>
+			<item key="x" value="288"/>
+			<item key="areaw" value="161"/>
+		</section>
+		<section name="iaxregister">
+			<item key="y" value="351"/>
+			<item key="areah" value="155"/>
+			<item key="x" value="236"/>
+			<item key="areaw" value="131"/>
+		</section>
+		<section name="iaxdeny">
+			<item key="y" value="541"/>
+			<item key="areah" value="55"/>
+			<item key="x" value="592"/>
+			<item key="areaw" value="100"/>
+		</section>
+		<section name="iaxpermit">
+			<item key="y" value="547"/>
+			<item key="areah" value="48"/>
+			<item key="x" value="415"/>
+			<item key="areaw" value="133"/>
+		</section>
+		<section name="iaxpeer">
+			<item key="y" value="5"/>
+			<item key="areah" value="510"/>
+			<item key="x" value="457"/>
+			<item key="areaw" value="166"/>
+		</section>
+		<section name="iaxgeneral">
+			<item key="y" value="15"/>
+			<item key="areah" value="523"/>
+			<item key="x" value="6"/>
+			<item key="areaw" value="173"/>
+		</section>
+	</section>
+</section>

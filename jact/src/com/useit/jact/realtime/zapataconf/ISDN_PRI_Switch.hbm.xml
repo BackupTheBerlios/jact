@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.zapataconf.ISDN_PRI_SwitchImpl" table="tbl_zapataconf_isdn_pri_switch" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="switchtype" column="switchtype"/>	
+		<property name="overlapdial" column="overlapdial"/>	
+		<property name="pridialplan" column="pridialplan"/>	
+		<property name="priindication" column="priindication"/>	
+<!-- Agg -->
+	<many-to-one name="fMultilink_PPP" access="field"
+	class="com.useit.jact.model.zapataconf.Multilink_PPPImpl"
+	 column="multilink_PPP_fk"
+	 cascade="all" />
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

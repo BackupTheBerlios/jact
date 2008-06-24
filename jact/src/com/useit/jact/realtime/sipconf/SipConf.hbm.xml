@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.sipconf.SipConfImpl" table="tbl_sipconf_sipconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+<!-- Agg -->
+	<many-to-one name="fSipgeneral" access="field"
+	class="com.useit.jact.model.sipconf.SipgeneralImpl"
+	 column="sipgeneral_fk"
+	 cascade="all" />
+<!-- maps -->
+		<list name="sippeersMap" cascade="all" 
+		table="tbl_sipconf_sipconf_sippeers">
+			<key column="sipconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.sipconf.SippeersImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation featureconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : featureconf</h1>
+<p><h2>featureconf</h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Featuremap</h3>
+ <h4>additinal</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >blindxfer[String]</td><td valign="top">Blind transfer</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >disconnect[String]</td><td valign="top">Disconnect</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >automon[String]</td><td valign="top">One Touch Record</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >atxfer[String]</td><td valign="top">Attended transfer</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Featuresconf</h3>
+ <h4>By default extension 700 is used to park a call. While in a conversation, press # to initiate a transfer, then dial 700. Asterisk will now announce the parking extension, most probably 701 or 702. Now hang up - the caller will be left on hold at the announced extention. Walk up to a different phone, dial 701 and voil? - the conversation can be continued. If a caller has been parked for a longer time than the specified time limit then Asterisk will again ring the originally dialed extension.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >parkext[String]</td><td valign="top">What ext. to dial to park</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >parkpos[String]</td><td valign="top">What extensions to park calls on</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top">Which context parked calls are in</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >parkingtime[Integer]</td><td valign="top">Number of seconds a call can be parked for (default is 45 seconds)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >transferdigittimeout[Integer]</td><td valign="top">Number of seconds to wait between digits when transfering a call</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >courtesytone[String]</td><td valign="top">Sound file to play to the parked caller</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >xfersound[String]</td><td valign="top">to indicate an attended transfer is complete</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >xferfailsound[String]</td><td valign="top">to indicate a failed transfer</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >adsipark[Boolean]</td><td valign="top">if you want ADSI parking announcements</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pickupexten[String]</td><td valign="top">Configure the pickup extension.  Default is *8</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >featuredigittimeout[Integer]</td><td valign="top">Max time (ms) between digits for feature activation.  Default is 500</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >featuremap[Featuremap]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

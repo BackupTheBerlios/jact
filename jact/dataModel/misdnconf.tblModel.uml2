@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_WE0ZMHVCEdq-GezyEkG4OQ" name="misdnconf" appliedProfile="_WE0ZNXVCEdq-GezyEkG4OQ">
+  <eAnnotations xmi:id="_WE0ZMXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_WE0ZMnVCEdq-GezyEkG4OQ"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_WE0ZM3VCEdq-GezyEkG4OQ"/>
+  <packageImport xmi:id="_WE0ZNHVCEdq-GezyEkG4OQ">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_WE0ZNXVCEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_WE0ZNnVCEdq-GezyEkG4OQ" source="attributes">
+      <details xmi:id="_WE0ZN3VCEdq-GezyEkG4OQ" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_WE0ZOHVCEdq-GezyEkG4OQ" name="types">
+    <eAnnotations xmi:id="_WE0ZOXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_WE0ZOnVCEdq-GezyEkG4OQ"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_WE0ZO3VCEdq-GezyEkG4OQ" name="Misdnconf">
+    <eAnnotations xmi:id="_WE0ZPHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_WE0ZPXVCEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_WE0ZPnVCEdq-GezyEkG4OQ" javaFieldType="Misdnconf" import="com.useit.jact.model.misdnconf.*" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_WE0ZP3VCEdq-GezyEkG4OQ">
+      <body>chan_misdn sample config general section:  for debugging and general setup, things that are not bound to port groups</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_WE0ZQHVCEdq-GezyEkG4OQ" name="debug">
+      <eAnnotations xmi:id="_WE0ZQXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZQnVCEdq-GezyEkG4OQ" storageFieldname="debug"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZQ3VCEdq-GezyEkG4OQ">
+        <body>set debugging flag:  0 - No Debug  1 - mISDN Messages and * - Messages, and * - State changes  2 - Messages + Message specific Informations (e.g. bearer capability)  3 - very Verbose, the above + lots of Driver specific infos 4 - even more Verbose than 3</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZRHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZRXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZRnVCEdq-GezyEkG4OQ" name="tracefile">
+      <eAnnotations xmi:id="_WE0ZR3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZSHVCEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="tracefile"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZSXVCEdq-GezyEkG4OQ">
+        <body>the big trace</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZSnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZS3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZTHVCEdq-GezyEkG4OQ" name="trace_calls">
+      <eAnnotations xmi:id="_WE0ZTXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZTnVCEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="trace_calls"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZT3VCEdq-GezyEkG4OQ">
+        <body>single call trace files set to true if you want to have them  they depend on debug level</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZUHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZUXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZUnVCEdq-GezyEkG4OQ" name="trace_dir">
+      <eAnnotations xmi:id="_WE0ZU3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZVHVCEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="trace_dir"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZVXVCEdq-GezyEkG4OQ">
+        <body>single call trace files  set to true if you want to have them  they depend on debug level</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZVnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZV3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZWHVCEdq-GezyEkG4OQ" name="bridging">
+      <eAnnotations xmi:id="_WE0ZWXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZWnVCEdq-GezyEkG4OQ" ordOrder="4" storageFieldname="bridging"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZW3VCEdq-GezyEkG4OQ">
+        <body>set to yes if you want mISDN_dsp to bridge the calls in HW</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZXHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZXXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZXnVCEdq-GezyEkG4OQ" name="stop_tone_after_first_digit">
+      <eAnnotations xmi:id="_WE0ZX3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZYHVCEdq-GezyEkG4OQ" ordOrder="5" storageFieldname="stop_tone_after_first_digit"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZYXVCEdq-GezyEkG4OQ">
+        <body>Stops dialtone after getting first digit on nt Port</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZYnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZY3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZZHVCEdq-GezyEkG4OQ" name="append_digits2exten">
+      <eAnnotations xmi:id="_WE0ZZXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZZnVCEdq-GezyEkG4OQ" ordOrder="6" storageFieldname="append_digits2exten"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZZ3VCEdq-GezyEkG4OQ">
+        <body>Wether to append overlapdialed Digits to Extension or not</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZaHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZaXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZanVCEdq-GezyEkG4OQ" name="l1_info_ok">
+      <eAnnotations xmi:id="_WE0Za3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZbHVCEdq-GezyEkG4OQ" ordOrder="7" storageFieldname="l1_info_ok"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZbXVCEdq-GezyEkG4OQ">
+        <body>set this to yes if you have jollys mISDN which sends correct L1 Infos</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZbnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Zb3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZcHVCEdq-GezyEkG4OQ" name="clear_l3">
+      <eAnnotations xmi:id="_WE0ZcXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZcnVCEdq-GezyEkG4OQ" ordOrder="8" storageFieldname="clear_l3"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Zc3VCEdq-GezyEkG4OQ">
+        <body>set this to yes if you want to clear the l3 in case the l2 deactivates some environments have a flickering l2 which causes this option to  damage active calls .. highly experimental</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZdHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZdXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZdnVCEdq-GezyEkG4OQ" name="dynamic_crypt">
+      <eAnnotations xmi:id="_WE0Zd3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZeHVCEdq-GezyEkG4OQ" ordOrder="9" storageFieldname="dynamic_crypt"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZeXVCEdq-GezyEkG4OQ">
+        <body>CRYPTION STUFF  Wether to look for dynamic crypting attempt</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZenVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Ze3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZfHVCEdq-GezyEkG4OQ" name="crypt_prefix">
+      <eAnnotations xmi:id="_WE0ZfXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZfnVCEdq-GezyEkG4OQ" ordOrder="10" storageFieldname="crypt_prefix"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Zf3VCEdq-GezyEkG4OQ">
+        <body>crypt_prefix, what is used for crypting Protocol</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZgHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZgXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZgnVCEdq-GezyEkG4OQ" name="fileid">
+      <eAnnotations xmi:id="_WE0Zg3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZhHVCEdq-GezyEkG4OQ" ordOrder="11" storageFieldname="fileid"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_WE0ZhXVCEdq-GezyEkG4OQ"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZhnVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Zh3VCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZiHVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZiXVCEdq-GezyEkG4OQ" name="context">
+      <eAnnotations xmi:id="_WE0ZinVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Zi3VCEdq-GezyEkG4OQ" ordOrder="12" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZjHVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_uM9T0EWgEdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZjXVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZjnVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Zj3VCEdq-GezyEkG4OQ" name="misdnCryptkeyMap" type="_WE0ZnnVCEdq-GezyEkG4OQ" association="_WE0Zr3VCEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_WE0ZkHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_WE0ZkXVCEdq-GezyEkG4OQ" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZknVCEdq-GezyEkG4OQ" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Zk3VCEdq-GezyEkG4OQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZlHVCEdq-GezyEkG4OQ" name="misdnSectionsMap" type="_WE0Zs3VCEdq-GezyEkG4OQ" association="_WE0aNnVCEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_WE0ZlXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_WE0ZlnVCEdq-GezyEkG4OQ" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Zl3VCEdq-GezyEkG4OQ" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZmHVCEdq-GezyEkG4OQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZmXVCEdq-GezyEkG4OQ" name="misdnSections" type="_WE0Zs3VCEdq-GezyEkG4OQ" association="_WE0aOnVCEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_WE0ZmnVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_WE0Zm3VCEdq-GezyEkG4OQ" storageFieldname="misdnSections"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZnHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZnXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_WE0ZnnVCEdq-GezyEkG4OQ" name="MisdnCryptkey">
+    <eAnnotations xmi:id="_WE0Zn3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_WE0ZoHVCEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_WE0ZoXVCEdq-GezyEkG4OQ" javaFieldType="MisdnCryptkey" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_WE0ZonVCEdq-GezyEkG4OQ">
+      <body>Keys for cryption, you reference them in the dialplan later also in dynamic encr.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_WE0Zo3VCEdq-GezyEkG4OQ" name="keyname">
+      <eAnnotations xmi:id="_WE0ZpHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZpXVCEdq-GezyEkG4OQ" storageFieldname="keyname"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZpnVCEdq-GezyEkG4OQ">
+        <body>key name</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Zp3VCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZqHVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZqXVCEdq-GezyEkG4OQ" name="keyvalue">
+      <eAnnotations xmi:id="_WE0ZqnVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Zq3VCEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="keyvalue"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZrHVCEdq-GezyEkG4OQ">
+        <body>key value</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZrXVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZrnVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_WE0Zr3VCEdq-GezyEkG4OQ" name="Misdnconf->MisdnCryptkey" memberEnd="_WE0Zj3VCEdq-GezyEkG4OQ _WE0ZsHVCEdq-GezyEkG4OQ">
+    <ownedEnd xmi:id="_WE0ZsHVCEdq-GezyEkG4OQ" type="_WE0ZO3VCEdq-GezyEkG4OQ" association="_WE0Zr3VCEdq-GezyEkG4OQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZsXVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZsnVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_WE0Zs3VCEdq-GezyEkG4OQ" name="MisdnSections">
+    <eAnnotations xmi:id="_WE0ZtHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_WE0ZtXVCEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_WE0ZtnVCEdq-GezyEkG4OQ" javaFieldType="MisdnSections" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_WE0Zt3VCEdq-GezyEkG4OQ">
+      <body>name your sections as you which but not &quot;general&quot; !  the secions are Groups, you can dial out in extensions.conf with Dial(mISDN/g:extern/101) where extern is a section name,  chan_misdn tries every port in this section to find a  new free channel The default section is not a group section, it just contains config elements  which are inherited by group sections.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_WE0ZuHVCEdq-GezyEkG4OQ" name="context">
+      <eAnnotations xmi:id="_WE0ZuXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZunVCEdq-GezyEkG4OQ" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Zu3VCEdq-GezyEkG4OQ">
+        <body>define your default context here</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_uM9T0EWgEdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZvHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZvXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZvnVCEdq-GezyEkG4OQ" name="language">
+      <eAnnotations xmi:id="_WE0Zv3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZwHVCEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="language"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZwXVCEdq-GezyEkG4OQ">
+        <body>Group Specific Language</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZwnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Zw3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZxHVCEdq-GezyEkG4OQ" name="nationalprefix">
+      <eAnnotations xmi:id="_WE0ZxXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZxnVCEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="nationalprefix"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Zx3VCEdq-GezyEkG4OQ">
+        <body>Prefixes for national and international, those are putted before the 
+  oad if an according dialplan is set by the other end.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZyHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0ZyXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0ZynVCEdq-GezyEkG4OQ" name="internationalprefix">
+      <eAnnotations xmi:id="_WE0Zy3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0ZzHVCEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="internationalprefix"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0ZzXVCEdq-GezyEkG4OQ">
+        <body>Prefixes for national and international, those are putted before the  oad if an according dialplan is set by the other end.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0ZznVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Zz3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z0HVCEdq-GezyEkG4OQ" name="rxgain">
+      <eAnnotations xmi:id="_WE0Z0XVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z0nVCEdq-GezyEkG4OQ" ordOrder="4" storageFieldname="rxgain"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z03VCEdq-GezyEkG4OQ">
+        <body>set rx/tx gains between -8 and 8 to change the RX/TX Gain</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z1HVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z1XVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z1nVCEdq-GezyEkG4OQ" name="txgain">
+      <eAnnotations xmi:id="_WE0Z13VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z2HVCEdq-GezyEkG4OQ" ordOrder="5" storageFieldname="txgain"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z2XVCEdq-GezyEkG4OQ">
+        <body>set rx/tx gains between -8 and 8 to change the RX/TX Gain</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z2nVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z23VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z3HVCEdq-GezyEkG4OQ" name="te_choose_channel">
+      <eAnnotations xmi:id="_WE0Z3XVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z3nVCEdq-GezyEkG4OQ" ordOrder="6" storageFieldname="te_choose_channel"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z33VCEdq-GezyEkG4OQ">
+        <body>Some telcos espacially in NL seem to need this set to yes, this is disabled  by default, also in switzerland this seems to be important</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z4HVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z4XVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z4nVCEdq-GezyEkG4OQ" name="early_bconnect">
+      <eAnnotations xmi:id="_WE0Z43VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z5HVCEdq-GezyEkG4OQ" ordOrder="7" storageFieldname="early_bconnect"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z5XVCEdq-GezyEkG4OQ">
+        <body>wether to connect bchannel when getting proceeding</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z5nVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z53VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z6HVCEdq-GezyEkG4OQ" name="dialplan">
+      <eAnnotations xmi:id="_WE0Z6XVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z6nVCEdq-GezyEkG4OQ" ordOrder="8" storageFieldname="dialplan"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z63VCEdq-GezyEkG4OQ">
+        <body>dialplan options:   0 - unknown  1 - National  2 - International  4 - Subscriber This setting is used for outgoing calls</body>
+      </ownedComment>
+      <type xmi:type="uml:Enumeration" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e50e-EWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z7HVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z7XVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z7nVCEdq-GezyEkG4OQ" name="use_callingpres">
+      <eAnnotations xmi:id="_WE0Z73VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z8HVCEdq-GezyEkG4OQ" ordOrder="9" storageFieldname="use_callingpres"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z8XVCEdq-GezyEkG4OQ">
+        <body>This is only for asterisk head and will result in only considering  misdn.confs and misdn_set_opts callingpresentation informations if set to no. Otherwise asterisks callingpresentation overwrites misdn.confs settings.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z8nVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z83VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z9HVCEdq-GezyEkG4OQ" name="always_immediate">
+      <eAnnotations xmi:id="_WE0Z9XVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z9nVCEdq-GezyEkG4OQ" ordOrder="10" storageFieldname="always_immediate"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z93VCEdq-GezyEkG4OQ">
+        <body>uncomment the following to get into s extension at extension conf
+  there you can use DigitTimeout if you can't or don't want to use
+  isdn overlap dial. 
+  note: This will jump into the s exten for every exten !</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z-HVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z-XVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0Z-nVCEdq-GezyEkG4OQ" name="immediate">
+      <eAnnotations xmi:id="_WE0Z-3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0Z_HVCEdq-GezyEkG4OQ" ordOrder="11" storageFieldname="immediate"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0Z_XVCEdq-GezyEkG4OQ">
+        <body>uncomment the following if you want callers which called exactly the 
+  base number (so no extension is set) jump to the s extension.
+  if the user dials something more it jumps to the correct extension 
+  instead</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0Z_nVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0Z_3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aAHVCEdq-GezyEkG4OQ" name="hold_allowed">
+      <eAnnotations xmi:id="_WE0aAXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aAnVCEdq-GezyEkG4OQ" ordOrder="12" storageFieldname="hold_allowed"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aA3VCEdq-GezyEkG4OQ">
+        <body>uncomment the following to have hold and retrieve support hold_allowed</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aBHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aBXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aBnVCEdq-GezyEkG4OQ" name="pickgroup">
+      <eAnnotations xmi:id="_WE0aB3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aCHVCEdq-GezyEkG4OQ" ordOrder="13" storageFieldname="pickgroup"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aCXVCEdq-GezyEkG4OQ">
+        <body>Pickup and Callgroup</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aCnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aC3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aDHVCEdq-GezyEkG4OQ" name="callgroup">
+      <eAnnotations xmi:id="_WE0aDXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aDnVCEdq-GezyEkG4OQ" ordOrder="14" storageFieldname="callgroup"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aD3VCEdq-GezyEkG4OQ">
+        <body>Pickup and Callgroup</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aEHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aEXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aEnVCEdq-GezyEkG4OQ" name="presentation">
+      <eAnnotations xmi:id="_WE0aE3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aFHVCEdq-GezyEkG4OQ" ordOrder="15" storageFieldname="presentation"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aFXVCEdq-GezyEkG4OQ">
+        <body>Allows/Screens Callerid  possible values:  allowed not_screened be aware, if you set to allowed you need to set a correct  callerid in the dialplan or set it here in the misdn.conf Some Telcos don't care about wrong callerids, others do !</body>
+      </ownedComment>
+      <type xmi:type="uml:Enumeration" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e50fLkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aFnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aF3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aGHVCEdq-GezyEkG4OQ" name="echocancel">
+      <eAnnotations xmi:id="_WE0aGXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aGnVCEdq-GezyEkG4OQ" ordOrder="16" storageFieldname="echocancel"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aG3VCEdq-GezyEkG4OQ">
+        <body>this enables echocancelation, with the given number of taps  be aware, move this setting only to outgoing portgroups !</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aHHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aHXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aHnVCEdq-GezyEkG4OQ" name="echocancelwhenbridged">
+      <eAnnotations xmi:id="_WE0aH3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aIHVCEdq-GezyEkG4OQ" ordOrder="17" storageFieldname="echocancelwhenbridged"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aIXVCEdq-GezyEkG4OQ">
+        <body>this disables echocancellation when the call is bridged between  mISDN channels</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aInVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aI3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aJHVCEdq-GezyEkG4OQ" name="echotraining">
+      <eAnnotations xmi:id="_WE0aJXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aJnVCEdq-GezyEkG4OQ" ordOrder="18" storageFieldname="echotraining"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aJ3VCEdq-GezyEkG4OQ">
+        <body>Set this to 0 to disable echotraining</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aKHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aKXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aKnVCEdq-GezyEkG4OQ" name="sectionname">
+      <eAnnotations xmi:id="_WE0aK3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aLHVCEdq-GezyEkG4OQ" ordOrder="20" storageFieldname="sectionname"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_WE0aLXVCEdq-GezyEkG4OQ"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aLnVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aL3VCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aMHVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aMXVCEdq-GezyEkG4OQ" name="misdnPortsMap" type="_WE0aPnVCEdq-GezyEkG4OQ" association="_WE0aUHVCEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_WE0aMnVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_WE0aM3VCEdq-GezyEkG4OQ" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aNHVCEdq-GezyEkG4OQ" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aNXVCEdq-GezyEkG4OQ"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_WE0aNnVCEdq-GezyEkG4OQ" name="Misdnconf->MisdnSections" memberEnd="_WE0ZlHVCEdq-GezyEkG4OQ _WE0aN3VCEdq-GezyEkG4OQ">
+    <ownedEnd xmi:id="_WE0aN3VCEdq-GezyEkG4OQ" type="_WE0ZO3VCEdq-GezyEkG4OQ" association="_WE0aNnVCEdq-GezyEkG4OQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aOHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aOXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_WE0aOnVCEdq-GezyEkG4OQ" name="Misdnconf->MisdnSections" memberEnd="_WE0ZmXVCEdq-GezyEkG4OQ _WE0aO3VCEdq-GezyEkG4OQ">
+    <ownedEnd xmi:id="_WE0aO3VCEdq-GezyEkG4OQ" type="_WE0ZO3VCEdq-GezyEkG4OQ" association="_WE0aOnVCEdq-GezyEkG4OQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aPHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aPXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_WE0aPnVCEdq-GezyEkG4OQ" name="MisdnPorts">
+    <eAnnotations xmi:id="_WE0aP3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_WE0aQHVCEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_WE0aQXVCEdq-GezyEkG4OQ" javaFieldType="MisdnPorts" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_WE0aQnVCEdq-GezyEkG4OQ"/>
+    <ownedAttribute xmi:id="_WE0aQ3VCEdq-GezyEkG4OQ" name="portN">
+      <eAnnotations xmi:id="_WE0aRHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aRXVCEdq-GezyEkG4OQ" storageFieldname="portN"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_WE0aRnVCEdq-GezyEkG4OQ"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aR3VCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aSHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aSXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WE0aSnVCEdq-GezyEkG4OQ" name="portOption">
+      <eAnnotations xmi:id="_WE0aS3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_WE0aTHVCEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="portOption"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_WE0aTXVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:Enumeration" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYPEWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aTnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aT3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_WE0aUHVCEdq-GezyEkG4OQ" name="MisdnSections->MisdnPorts" memberEnd="_WE0aMXVCEdq-GezyEkG4OQ _WE0aUXVCEdq-GezyEkG4OQ">
+    <ownedEnd xmi:id="_WE0aUXVCEdq-GezyEkG4OQ" type="_WE0Zs3VCEdq-GezyEkG4OQ" association="_WE0aUHVCEdq-GezyEkG4OQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WE0aUnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WE0aU3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

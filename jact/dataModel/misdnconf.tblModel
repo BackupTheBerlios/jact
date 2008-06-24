@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="misdnconf"/>
+			<item value="MisdnPorts"/>
+			<item value="misdnCryptkey"/>
+			<item value="misdnSections"/>
+		</list>
+		<section name="misdnconf">
+			<item key="ElementDescription" value="chan_misdn sample config general section:  for debugging and general setup, things that are not bound to port groups"/>
+			<item key="TableName" value="misdnconf"/>
+			<item key="JavaClassName" value="Misdnconf"/>
+			<list key="aggfields">
+				<item value="misdnSections"/>
+			</list>
+			<list key="TableFKFields" value="misdnSections">
+				<item value="misdnSections"/>
+			</list>
+			<list key="TablePKFields" value="misdnSections">
+				<item value="fileid"/>
+			</list>
+			<list key="TableMapFields" value="fileid">
+				<item value="misdnCryptkey"/>
+				<item value="misdnSections"/>
+			</list>
+			<list key="TableFields" value="misdnSections">
+				<item value="debug"/>
+				<item value="tracefile"/>
+				<item value="trace_calls"/>
+				<item value="trace_dir"/>
+				<item value="bridging"/>
+				<item value="stop_tone_after_first_digit"/>
+				<item value="append_digits2exten"/>
+				<item value="l1_info_ok"/>
+				<item value="clear_l3"/>
+				<item value="dynamic_crypt"/>
+				<item value="crypt_prefix"/>
+				<item value="fileid"/>
+				<item value="context"/>
+			</list>
+			<section name="trace_dir">
+				<item key="ElementDescription" value="single call trace files  set to true if you want to have them  they depend on debug level"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Trace_dir"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="trace_dir"/>
+			</section>
+			<section name="stop_tone_after_first_digit">
+				<item key="ElementDescription" value="Stops dialtone after getting first digit on nt Port"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Stop_tone_after_first_digit"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="stop_tone_after_first_digit"/>
+			</section>
+			<section name="dynamic_crypt">
+				<item key="ElementDescription" value="CRYPTION STUFF  Wether to look for dynamic crypting attempt"/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="Dynamic_crypt"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="dynamic_crypt"/>
+			</section>
+			<section name="tracefile">
+				<item key="ElementDescription" value="the big trace"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Tracefile"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="tracefile"/>
+			</section>
+			<section name="l1_info_ok">
+				<item key="ElementDescription" value="set this to yes if you have jollys mISDN which sends correct L1 Infos"/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="L1_info_ok"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="l1_info_ok"/>
+			</section>
+			<section name="fileid">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Fileid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fileid"/>
+			</section>
+			<section name="debug">
+				<item key="ElementDescription" value="set debugging flag:  0 - No Debug  1 - mISDN Messages and * - Messages, and * - State changes  2 - Messages + Message specific Informations (e.g. bearer capability)  3 - very Verbose, the above + lots of Driver specific infos 4 - even more Verbose than 3"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Debug"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="debug"/>
+			</section>
+			<section name="bridging">
+				<item key="ElementDescription" value="set to yes if you want mISDN_dsp to bridge the calls in HW"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Bridging"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="bridging"/>
+			</section>
+			<section name="append_digits2exten">
+				<item key="ElementDescription" value="Wether to append overlapdialed Digits to Extension or not"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Append_digits2exten"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="append_digits2exten"/>
+			</section>
+			<section name="crypt_prefix">
+				<item key="ElementDescription" value="crypt_prefix, what is used for crypting Protocol"/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Crypt_prefix"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="crypt_prefix"/>
+			</section>
+			<section name="context">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="12"/>
+				<item key="JavaFieldName" value="Context"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="context"/>
+			</section>
+			<section name="clear_l3">
+				<item key="ElementDescription" value="set this to yes if you want to clear the l3 in case the l2 deactivates some environments have a flickering l2 which causes this option to  damage active calls .. highly experimental"/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Clear_l3"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="clear_l3"/>
+			</section>
+			<section name="trace_calls">
+				<item key="ElementDescription" value="single call trace files set to true if you want to have them  they depend on debug level"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Trace_calls"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="trace_calls"/>
+			</section>
+		</section>
+		<section name="MisdnPorts">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="MisdnPorts"/>
+			<item key="JavaClassName" value="MisdnPorts"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="portN"/>
+			</list>
+			<list key="TableMapFields" value="portN">
+			</list>
+			<list key="TableFields">
+				<item value="portN"/>
+				<item value="portOption"/>
+			</list>
+			<section name="portN">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="PortN"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="portN"/>
+			</section>
+			<section name="portOption">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="PortOption"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="MisdnPortOptions"/>
+				<item key="TblFieldName" value="portOption"/>
+			</section>
+		</section>
+		<section name="misdnCryptkey">
+			<item key="ElementDescription" value="Keys for cryption, you reference them in the dialplan later also in dynamic encr."/>
+			<item key="TableName" value="misdnCryptkey"/>
+			<item key="JavaClassName" value="MisdnCryptkey"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="keyname"/>
+				<item value="keyvalue"/>
+			</list>
+			<section name="keyvalue">
+				<item key="ElementDescription" value="key value"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Keyvalue"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="keyvalue"/>
+			</section>
+			<section name="keyname">
+				<item key="ElementDescription" value="key name"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Keyname"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="keyname"/>
+			</section>
+		</section>
+		<section name="misdnSections">
+			<item key="ElementDescription" value="name your sections as you which but not &quot;general&quot; !  the secions are Groups, you can dial out in extensions.conf with Dial(mISDN/g:extern/101) where extern is a section name,  chan_misdn tries every port in this section to find a  new free channel The default section is not a group section, it just contains config elements  which are inherited by group sections."/>
+			<item key="TableName" value="misdnSections"/>
+			<item key="JavaClassName" value="MisdnSections"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="sectionname"/>
+			</list>
+			<list key="TableMapFields" value="sectionname">
+				<item value="MisdnPorts"/>
+			</list>
+			<list key="TableFields" value="MisdnPorts">
+				<item value="context"/>
+				<item value="language"/>
+				<item value="nationalprefix"/>
+				<item value="internationalprefix"/>
+				<item value="rxgain"/>
+				<item value="txgain"/>
+				<item value="te_choose_channel"/>
+				<item value="early_bconnect"/>
+				<item value="dialplan"/>
+				<item value="use_callingpres"/>
+				<item value="always_immediate"/>
+				<item value="immediate"/>
+				<item value="hold_allowed"/>
+				<item value="pickgroup"/>
+				<item value="callgroup"/>
+				<item value="presentation"/>
+				<item value="echocancel"/>
+				<item value="echocancelwhenbridged"/>
+				<item value="echotraining"/>
+				<item value="sectionname"/>
+			</list>
+			<section name="presentation">
+				<item key="ElementDescription" value="Allows/Screens Callerid  possible values:  allowed not_screened be aware, if you set to allowed you need to set a correct  callerid in the dialplan or set it here in the misdn.conf Some Telcos don&apos;t care about wrong callerids, others do !"/>
+				<item key="OrdinalPosition" value="15"/>
+				<item key="JavaFieldName" value="Presentation"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="Presentation"/>
+				<item key="TblFieldName" value="presentation"/>
+			</section>
+			<section name="callgroup">
+				<item key="ElementDescription" value="Pickup and Callgroup"/>
+				<item key="OrdinalPosition" value="14"/>
+				<item key="JavaFieldName" value="Callgroup"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="callgroup"/>
+			</section>
+			<section name="echotraining">
+				<item key="ElementDescription" value="Set this to 0 to disable echotraining"/>
+				<item key="OrdinalPosition" value="18"/>
+				<item key="JavaFieldName" value="Echotraining"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="echotraining"/>
+			</section>
+			<section name="sectionname">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="20"/>
+				<item key="JavaFieldName" value="Sectionname"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sectionname"/>
+			</section>
+			<section name="echocancel">
+				<item key="ElementDescription" value="this enables echocancelation, with the given number of taps  be aware, move this setting only to outgoing portgroups !"/>
+				<item key="OrdinalPosition" value="16"/>
+				<item key="JavaFieldName" value="Echocancel"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="echocancel"/>
+			</section>
+			<section name="dialplan">
+				<item key="ElementDescription" value="dialplan options:   0 - unknown  1 - National  2 - International  4 - Subscriber This setting is used for outgoing calls"/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Dialplan"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="Dialplan"/>
+				<item key="TblFieldName" value="dialplan"/>
+			</section>
+			<section name="language">
+				<item key="ElementDescription" value="Group Specific Language"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Language"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="language"/>
+			</section>
+			<section name="use_callingpres">
+				<item key="ElementDescription" value="This is only for asterisk head and will result in only considering  misdn.confs and misdn_set_opts callingpresentation informations if set to no. Otherwise asterisks callingpresentation overwrites misdn.confs settings."/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="Use_callingpres"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="use_callingpres"/>
+			</section>
+			<section name="internationalprefix">
+				<item key="ElementDescription" value="Prefixes for national and international, those are putted before the  oad if an according dialplan is set by the other end."/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Internationalprefix"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="internationalprefix"/>
+			</section>
+			<section name="echocancelwhenbridged">
+				<item key="ElementDescription" value="this disables echocancellation when the call is bridged between  mISDN channels"/>
+				<item key="OrdinalPosition" value="17"/>
+				<item key="JavaFieldName" value="Echocancelwhenbridged"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="echocancelwhenbridged"/>
+			</section>
+			<section name="immediate">
+				<item key="ElementDescription" value="uncomment the following if you want callers which called exactly the &#x0D;  base number (so no extension is set) jump to the s extension.&#x0D;  if the user dials something more it jumps to the correct extension &#x0D;  instead"/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Immediate"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="immediate"/>
+			</section>
+			<section name="hold_allowed">
+				<item key="ElementDescription" value="uncomment the following to have hold and retrieve support hold_allowed"/>
+				<item key="OrdinalPosition" value="12"/>
+				<item key="JavaFieldName" value="Hold_allowed"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="hold_allowed"/>
+			</section>
+			<section name="context">
+				<item key="ElementDescription" value="define your default context here"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Context"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="context"/>
+			</section>
+			<section name="te_choose_channel">
+				<item key="ElementDescription" value="Some telcos espacially in NL seem to need this set to yes, this is disabled  by default, also in switzerland this seems to be important"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Te_choose_channel"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="te_choose_channel"/>
+			</section>
+			<section name="nationalprefix">
+				<item key="ElementDescription" value="Prefixes for national and international, those are putted before the &#x0D;  oad if an according dialplan is set by the other end."/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Nationalprefix"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="nationalprefix"/>
+			</section>
+			<section name="txgain">
+				<item key="ElementDescription" value="set rx/tx gains between -8 and 8 to change the RX/TX Gain"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Txgain"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="txgain"/>
+			</section>
+			<section name="pickgroup">
+				<item key="ElementDescription" value="Pickup and Callgroup"/>
+				<item key="OrdinalPosition" value="13"/>
+				<item key="JavaFieldName" value="Pickgroup"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="pickgroup"/>
+			</section>
+			<section name="rxgain">
+				<item key="ElementDescription" value="set rx/tx gains between -8 and 8 to change the RX/TX Gain"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Rxgain"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="rxgain"/>
+			</section>
+			<section name="always_immediate">
+				<item key="ElementDescription" value="uncomment the following to get into s extension at extension conf&#x0D;  there you can use DigitTimeout if you can&apos;t or don&apos;t want to use&#x0D;  isdn overlap dial. &#x0D;  note: This will jump into the s exten for every exten !"/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Always_immediate"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="always_immediate"/>
+			</section>
+			<section name="early_bconnect">
+				<item key="ElementDescription" value="wether to connect bchannel when getting proceeding"/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Early_bconnect"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="early_bconnect"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value=""/>
+		<item key="ProjectName" value=""/>
+	</section>
+</section>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation agentconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : agentconf</h1>
+<p><h2>agents</h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Agents</h3>
+ <h4>this last section contains the definition of the agents.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >agentid[String]</td><td valign="top">the agent id</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >agentpassword[String]</td><td valign="top">the passwort</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >name[String]</td><td valign="top">the name</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Agentsconf</h3>
+ <h4>ACD distributes incoming calls to the agents of a Queue.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >autologoff[String]</td><td valign="top">Define autologoff times if appropriate. This is how long
+
+the phone has to ring with no answer before the agent is
+
+automatically logged off (in seconds). Please note that if
+
+this value is greater than the timeout value in your queue
+
+that agents will not be removed!</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >ackcall[String]</td><td valign="top">Define ackcall to require an acknowledgement by '#' when
+
+an agent logs in over agentcallpark. Default is "yes".</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >wrapuptime[String]</td><td valign="top">Define wrapuptime. This is the minimum amount of time when
+
+after disconnecting before the caller can receive a new call
+
+note this is in milliseconds.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >music_class[String]</td><td valign="top">Define the default musiconhold for agents
+
+musiconhold</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >custom_beep[String]</td><td valign="top">An optional custom beep sound file to play to always-connected agents.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >group[String]</td><td valign="top">Group memberships for agents (may change in mid-file just)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >agentsrecording[Agentsrecording]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >agentsMap[Agents]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Agentsrecording</h3>
+ <h4>This section is devoted to recording agent's calls The keywords are global to the chan_agent channel driver</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >recordagentcalls[Boolean]</td><td valign="top">Enable recording calls addressed to agents. It's turned off by default.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >recordformat[String]</td><td valign="top">The format to be used to record the calls (wav, gsm, wav49)
+
+By default its "wav".</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >createlink[String]</td><td valign="top">Insert into CDR userfield a name of the the created recording
+
+By default it's turned off.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >urlprefix[String]</td><td valign="top">The text to be added to the name of the recording. Allows forming a url link.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >savecallsin[String]</td><td valign="top">The optional directory to save the conversations in. The default is
+
+/var/spool/asterisk/monitor</td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

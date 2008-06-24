@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="diagramm">
+		<section name="voicemailgeneral">
+			<item key="y" value="157"/>
+			<item key="areah" value="635"/>
+			<item key="x" value="-5"/>
+			<item key="areaw" value="207"/>
+		</section>
+		<section name="VoicemailConf">
+			<item key="y" value="3"/>
+			<item key="areah" value="64"/>
+			<item key="x" value="180"/>
+			<item key="areaw" value="150"/>
+		</section>
+		<section name="zonemessages">
+			<item key="y" value="83"/>
+			<item key="areah" value="128"/>
+			<item key="x" value="575"/>
+			<item key="areaw" value="140"/>
+		</section>
+		<section name="voicemailcontextentry">
+			<item key="y" value="502"/>
+			<item key="areah" value="158"/>
+			<item key="x" value="272"/>
+			<item key="areaw" value="170"/>
+		</section>
+		<section name="voicemailcontext">
+			<item key="y" value="291"/>
+			<item key="areah" value="-1"/>
+			<item key="x" value="372"/>
+			<item key="areaw" value="-1"/>
+		</section>
+	</section>
+</section>

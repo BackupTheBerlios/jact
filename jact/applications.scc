@@ -1,0 +1,580 @@
+Package de.urszeidler.jact.model.applicationParser; 
+
+Helpers
+
+
+  a = 'a' | 'A' ; // this could also be written as ['a' + 'A']
+  b = 'b' | 'B' ; // but I prefer the old lex style
+  c = 'c' | 'C' ;	
+  d = 'd' | 'D' ;
+  e = 'e' | 'E' ;
+  f = 'f' | 'F' ;
+  g = 'g' | 'G' ;
+  h = 'h' | 'H' ;
+  i = 'i' | 'I' ;
+  j = 'j' | 'J' ;
+  k = 'k' | 'K' ;
+  l = 'l' | 'L' ;
+  m = 'm' | 'M' ;
+  n = 'n' | 'N' ;
+  o = 'o' | 'O' ;
+  p = 'p' | 'P' ;
+  q = 'q' | 'Q' ;
+  r = 'r' | 'R' ;
+  s = 's' | 'S' ;
+  t = 't' | 'T' ;
+  u = 'u' | 'U' ;
+  v = 'v' | 'V' ;
+  w = 'w' | 'W' ;
+  x = 'x' | 'X' ;
+  y = 'y' | 'Y' ;
+  z = 'z' | 'Z' ;
+
+tab = 9;
+cr=13 ; 
+lf=10 ; 
+whitespace = (' ' | tab )+;
+letter=[ [ ['A'..'Z'] + ['a'..'z'] ] + [ ['$'+'{']+  ['-' + '}' ] ] ] ;  
+digit=['0'..'9'] ; 
+not_cr_lf=[[32..127] - [cr + lf]] ;
+dot = '.' ;
+at = '@' ;
+//equal = '=';
+slash = '/';
+
+ 
+sepc = '?' | '|' | '\' | '=' | '&'   ;
+
+Tokens
+
+
+
+// application names
+goto = g o t o ;
+resetcdr = r e s e t c d r ;
+read = r e a d ;
+dbget = d b g e t ;
+nocdr = n o c d r ;
+testserver = t e s t s e r v e r ;
+macro = m a c r o ;
+dbdeltree = d b d e l t r e e ;
+stopplaytones = s t o p p l a y t o n e s ;
+ices = i c e s ;
+startmusiconhold = s t a r t m u s i c o n h o l d ;
+endwhile = e n d w h i l e ;
+lookupcidname = l o o k u p c i d n a m e ;
+sipgetheader = s i p g e t h e a d e r ;
+deadagi = d e a d a g i ;
+random = r a n d o m ;
+lookupblacklist = l o o k u p b l a c k l i s t ;
+md5check = m d 5 c h e c k ;
+sipaddheader = s i p a d d h e a d e r ;
+macroexit = m a c r o e x i t ;
+zapateller = z a p a t e l l e r ;
+datetime = d a t e t i m e ;
+gotoif = g o t o i f ;
+setlanguage = s e t l a n g u a g e ;
+monitor = m o n i t o r ;
+stopmusiconhold = s t o p m u s i c o n h o l d ;
+dial = d i a l ;
+background = b a c k g r o u n d ;
+setcdruserfield = s e t c d r u s e r f i e l d ;
+exec = e x e c ;
+park = p a r k ;
+controlplayback = c o n t r o l p l a y b a c k ;
+retrydial = r e t r y d i a l ;
+system = s y s t e m ;
+playback = p l a y b a c k ;
+responsetimeout = r e s p o n s e t i m e o u t ;
+sayphonetic = s a y p h o n e t i c ;
+agentcallbacklogin = a g e n t c a l l b a c k l o g i n ;
+striplsd = s t r i p l s d ;
+dbdel = d b d e l ;
+setgroup = s e t g r o u p ;
+record = r e c o r d ;
+pausequeuemember = p a u s e q u e u e m e m b e r ;
+agi = a g i ;
+directory = d i r e c t o r y ;
+dundilookup = d u n d i l o o k u p ;
+sendimage = s e n d i m a g e ;
+removequeuemember = r e m o v e q u e u e m e m b e r ;
+zapscan = z a p s c a n ;
+flash = f l a s h ;
+getcpeid = g e t c p e i d ;
+senddtmf = s e n d d t m f ;
+agentlogin = a g e n t l o g i n ;
+agentmonitoroutgoing = a g e n t m o n i t o r o u t g o i n g ;
+sayunixtime = s a y u n i x t i m e ;
+cut = c u t ;
+authenticate = a u t h e n t i c a t e ;
+queue = q u e u e ;
+substring = s u b s t r i n g ;
+nbscat = n b s c a t ;
+userevent = u s e r e v e n t ;
+sendurl = s e n d u r l ;
+forkcdr = f o r k c d r ;
+hasvoicemail = h a s v o i c e m a i l ;
+softhangup = s o f t h a n g u p ;
+noop = n o o p ;
+sipdtmfmode = s i p d t m f m o d e ;
+md5 = m d 5 ;
+realtimeupdate = r e a l t i m e u p d a t e ;
+testclient = t e s t c l i e n t ;
+checkgroup = c h e c k g r o u p ;
+changemonitor = c h a n g e m o n i t o r ;
+gotoiftime = g o t o i f t i m e ;
+vmauthenticate = v m a u t h e n t i c a t e ;
+saydigits = s a y d i g i t s ;
+playtones = p l a y t o n e s ;
+setglobalvar = s e t g l o b a l v a r ;
+saycountpl = s a y c o u n t p l ;
+while = w h i l e ;
+stopmonitor = s t o p m o n i t o r ;
+getgroupmatchcount = g e t g r o u p m a t c h c o u n t ;
+parkandannounce = p a r k a n d a n n o u n c e ;
+waitmusiconhold = w a i t m u s i c o n h o l d ;
+getgroupcount = g e t g r o u p c o u n t ;
+parkedcall = p a r k e d c a l l ;
+saynumber = s a y n u m b e r ;
+realtime = r e a l t i m e ;
+adsiprog = a d s i p r o g ;
+waitexten = w a i t e x t e n ;
+setrdnis = s e t r d n i s ;
+dbput = d b p u t ;
+execif = e x e c i f ;
+ringing = r i n g i n g ;
+unpausequeuemember = u n p a u s e q u e u e m e m b e r ;
+congestion = c o n g e s t i o n ;
+setvar = s e t v a r ;
+answer = a n s w e r ;
+sayalpha = s a y a l p h a ;
+prefix = p r e f i x ;
+hangup = h a n g u p ;
+setamaflags = s e t a m a f l a g s ;
+backgrounddetect = b a c k g r o u n d d e t e c t ;
+sendtext = s e n d t e x t ;
+meetme = m e e t m e ;
+appendcdruserfield = a p p e n d c d r u s e r f i e l d ;
+digittimeout = d i g i t t i m e o u t ;
+absolutetimeout = a b s o l u t e t i m e o u t ;
+wait = w a i t ;
+zapbarge = z a p b a r g e ;
+sms = s m s ;
+milliwatt = m i l l i w a t t ;
+waitforsilence = w a i t f o r s i l e n c e ;
+voicemailmain = v o i c e m a i l m a i n ;
+txtcidname = t x t c i d n a m e ;
+waitforring = w a i t f o r r i n g ;
+progress = p r o g r e s s ;
+importvar = i m p o r t v a r ;
+privacymanager = p r i v a c y m a n a g e r ;
+macroif = m a c r o i f ;
+busy = b u s y ;
+verbose = v e r b o s e ;
+echo = e c h o ;
+festival = f e s t i v a l ;
+setmusiconhold = s e t m u s i c o n h o l d ;
+meetmeadmin = m e e t m e a d m i n ;
+setcallerid = s e t c a l l e r i d ;
+stripmsd = s t r i p m s d ;
+setcidname = s e t c i d n a m e ;
+setcallerpres = s e t c a l l e r p r e s ;
+transfer = t r a n s f e r ;
+dumpchan = d u m p c h a n ;
+disa = d i s a ;
+math = m a t h ;
+setaccount = s e t a c c o u n t ;
+eagi = e a g i ;
+mp3player = m p 3 p l a y e r ;
+suffix = s u f f i x ;
+zapras = z a p r a s ;
+iax2provision = i a x 2 p r o v i s i o n ;
+eval = e v a l ;
+meetmecount = m e e t m e c o u n t ;
+mailboxexists = m a i l b o x e x i s t s ;
+voicemail = v o i c e m a i l ;
+hasnewvoicemail = h a s n e w v o i c e m a i l ;
+readfile = r e a d f i l e ;
+setcidnum = s e t c i d n u m ;
+enumlookup = e n u m l o o k u p ;
+execiftime = e x e c i f t i m e ;
+musiconhold = m u s i c o n h o l d ;
+trysystem = t r y s y s t e m ;
+addqueuemember = a d d q u e u e m e m b e r ;
+alarmreceiver = a l a r m r e c e i v e r ;
+chanisavail = c h a n i s a v a i l ;
+
+
+blank =whitespace ; 
+url = letter* '://'  (letter | digit) (letter | digit | dot | at | '/' )* ;
+dialstr =  letter (letter | digit )* '/' (letter | digit)(letter | digit | dot | at | '/' )*;
+identifier =letter (letter | digit | dot | at)* ; 
+number=digit+ ; 
+string_lit = ('"' | ''') (letter | digit | dot | at)* ('"' | ''') ; 	
+
+r_par=')' ; 
+l_par='(' ; 
+r_op=']' ;
+l_op='[' ;
+stsep = ''' ;
+comma = ',';
+
+doublep = ':';
+sep = sepc  ;
+
+
+
+
+Ignored Tokens
+blank ;
+
+Productions
+//all posibilities 
+
+app =
+{goto_app} goto_app  
+|{resetcdr_app} resetcdr_app 
+|{read_app} read_app 
+|{dbget_app} dbget_app 
+|{nocdr_app} nocdr_app 
+|{testserver_app} testserver_app 
+|{macro_app} macro_app 
+|{dbdeltree_app} dbdeltree_app 
+|{stopplaytones_app} stopplaytones_app 
+|{ices_app} ices_app 
+|{startmusiconhold_app} startmusiconhold_app 
+|{endwhile_app} endwhile_app 
+|{lookupcidname_app} lookupcidname_app 
+|{sipgetheader_app} sipgetheader_app 
+|{deadagi_app} deadagi_app 
+|{random_app} random_app 
+|{lookupblacklist_app} lookupblacklist_app 
+|{md5check_app} md5check_app 
+|{sipaddheader_app} sipaddheader_app 
+|{macroexit_app} macroexit_app 
+|{zapateller_app} zapateller_app 
+|{datetime_app} datetime_app 
+|{gotoif_app} gotoif_app 
+|{setlanguage_app} setlanguage_app 
+|{monitor_app} monitor_app 
+|{stopmusiconhold_app} stopmusiconhold_app 
+|{dial_app} dial_app 
+|{background_app} background_app 
+|{setcdruserfield_app} setcdruserfield_app 
+|{exec_app} exec_app 
+|{park_app} park_app 
+|{controlplayback_app} controlplayback_app 
+|{retrydial_app} retrydial_app 
+|{system_app} system_app 
+|{playback_app} playback_app 
+|{responsetimeout_app} responsetimeout_app 
+|{sayphonetic_app} sayphonetic_app 
+|{agentcallbacklogin_app} agentcallbacklogin_app 
+|{striplsd_app} striplsd_app 
+|{dbdel_app} dbdel_app 
+|{setgroup_app} setgroup_app 
+|{record_app} record_app 
+|{pausequeuemember_app} pausequeuemember_app 
+|{agi_app} agi_app 
+|{directory_app} directory_app 
+|{dundilookup_app} dundilookup_app 
+|{sendimage_app} sendimage_app 
+|{removequeuemember_app} removequeuemember_app 
+|{zapscan_app} zapscan_app 
+|{flash_app} flash_app 
+|{getcpeid_app} getcpeid_app 
+|{senddtmf_app} senddtmf_app 
+|{agentlogin_app} agentlogin_app 
+|{agentmonitoroutgoing_app} agentmonitoroutgoing_app 
+|{sayunixtime_app} sayunixtime_app 
+|{cut_app} cut_app 
+|{authenticate_app} authenticate_app 
+|{queue_app} queue_app 
+|{substring_app} substring_app 
+|{nbscat_app} nbscat_app 
+|{userevent_app} userevent_app 
+|{sendurl_app} sendurl_app 
+|{forkcdr_app} forkcdr_app 
+|{hasvoicemail_app} hasvoicemail_app 
+|{softhangup_app} softhangup_app 
+|{noop_app} noop_app 
+|{sipdtmfmode_app} sipdtmfmode_app 
+|{md5_app} md5_app 
+|{realtimeupdate_app} realtimeupdate_app 
+|{testclient_app} testclient_app 
+|{checkgroup_app} checkgroup_app 
+|{changemonitor_app} changemonitor_app 
+|{gotoiftime_app} gotoiftime_app 
+|{vmauthenticate_app} vmauthenticate_app 
+|{saydigits_app} saydigits_app 
+|{playtones_app} playtones_app 
+|{setglobalvar_app} setglobalvar_app 
+|{saycountpl_app} saycountpl_app 
+|{while_app} while_app 
+|{stopmonitor_app} stopmonitor_app 
+|{getgroupmatchcount_app} getgroupmatchcount_app 
+|{parkandannounce_app} parkandannounce_app 
+|{waitmusiconhold_app} waitmusiconhold_app 
+|{getgroupcount_app} getgroupcount_app 
+|{parkedcall_app} parkedcall_app 
+|{saynumber_app} saynumber_app 
+|{realtime_app} realtime_app 
+|{adsiprog_app} adsiprog_app 
+|{waitexten_app} waitexten_app 
+|{setrdnis_app} setrdnis_app 
+|{dbput_app} dbput_app 
+|{execif_app} execif_app 
+|{ringing_app} ringing_app 
+|{unpausequeuemember_app} unpausequeuemember_app 
+|{congestion_app} congestion_app 
+|{setvar_app} setvar_app 
+|{answer_app} answer_app 
+|{sayalpha_app} sayalpha_app 
+|{prefix_app} prefix_app 
+|{hangup_app} hangup_app 
+|{setamaflags_app} setamaflags_app 
+|{backgrounddetect_app} backgrounddetect_app 
+|{sendtext_app} sendtext_app 
+|{meetme_app} meetme_app 
+|{appendcdruserfield_app} appendcdruserfield_app 
+|{digittimeout_app} digittimeout_app 
+|{absolutetimeout_app} absolutetimeout_app 
+|{wait_app} wait_app 
+|{zapbarge_app} zapbarge_app 
+|{sms_app} sms_app 
+|{milliwatt_app} milliwatt_app 
+|{waitforsilence_app} waitforsilence_app 
+|{voicemailmain_app} voicemailmain_app 
+|{txtcidname_app} txtcidname_app 
+|{waitforring_app} waitforring_app 
+|{progress_app} progress_app 
+|{importvar_app} importvar_app 
+|{privacymanager_app} privacymanager_app 
+|{macroif_app} macroif_app 
+|{busy_app} busy_app 
+|{verbose_app} verbose_app 
+|{echo_app} echo_app 
+|{festival_app} festival_app 
+|{setmusiconhold_app} setmusiconhold_app 
+|{meetmeadmin_app} meetmeadmin_app 
+|{setcallerid_app} setcallerid_app 
+|{stripmsd_app} stripmsd_app 
+|{setcidname_app} setcidname_app 
+|{setcallerpres_app} setcallerpres_app 
+|{transfer_app} transfer_app 
+|{dumpchan_app} dumpchan_app 
+|{disa_app} disa_app 
+|{math_app} math_app 
+|{setaccount_app} setaccount_app 
+|{eagi_app} eagi_app 
+|{mp3player_app} mp3player_app 
+|{suffix_app} suffix_app 
+|{zapras_app} zapras_app 
+|{iax2provision_app} iax2provision_app 
+|{eval_app} eval_app 
+|{meetmecount_app} meetmecount_app 
+|{mailboxexists_app} mailboxexists_app 
+|{voicemail_app} voicemail_app 
+|{hasnewvoicemail_app} hasnewvoicemail_app 
+|{readfile_app} readfile_app 
+|{setcidnum_app} setcidnum_app 
+|{enumlookup_app} enumlookup_app 
+|{execiftime_app} execiftime_app 
+|{musiconhold_app} musiconhold_app 
+|{trysystem_app} trysystem_app 
+|{addqueuemember_app} addqueuemember_app 
+|{alarmreceiver_app} alarmreceiver_app 
+|{chanisavail_app} chanisavail_app 
+
+;
+
+//app = 	{dbget_app} dbget_app 
+//		|{backgroung_app} backgroung_app ;
+
+// the applications
+goto_app = goto paralist ;
+
+resetcdr_app = resetcdr paralist ;
+read_app = read paralist ;
+dbget_app = dbget paralist ;
+nocdr_app = nocdr paralist ;
+testserver_app = testserver paralist ;
+macro_app = macro paralist ;
+dbdeltree_app = dbdeltree paralist ;
+stopplaytones_app = stopplaytones paralist ;
+ices_app = ices paralist ;
+startmusiconhold_app = startmusiconhold paralist ;
+endwhile_app = endwhile paralist ;
+lookupcidname_app = lookupcidname paralist ;
+sipgetheader_app = sipgetheader paralist ;
+deadagi_app = deadagi paralist ;
+random_app = random paralist ;
+lookupblacklist_app = lookupblacklist paralist ;
+md5check_app = md5check paralist ;
+sipaddheader_app = sipaddheader paralist ;
+macroexit_app = macroexit paralist ;
+zapateller_app = zapateller paralist ;
+datetime_app = datetime paralist ;
+gotoif_app = gotoif paralist ;
+setlanguage_app = setlanguage paralist ;
+monitor_app = monitor paralist ;
+stopmusiconhold_app = stopmusiconhold paralist ;
+dial_app = dial paralist ;
+background_app = background paralist ;
+setcdruserfield_app = setcdruserfield paralist ;
+exec_app = exec paralist ;
+park_app = park paralist ;
+controlplayback_app = controlplayback paralist ;
+retrydial_app = retrydial paralist ;
+system_app = system paralist ;
+playback_app = playback paralist ;
+responsetimeout_app = responsetimeout paralist ;
+sayphonetic_app = sayphonetic paralist ;
+agentcallbacklogin_app = agentcallbacklogin paralist ;
+striplsd_app = striplsd paralist ;
+dbdel_app = dbdel paralist ;
+setgroup_app = setgroup paralist ;
+record_app = record paralist ;
+pausequeuemember_app = pausequeuemember paralist ;
+agi_app = agi paralist ;
+directory_app = directory paralist ;
+dundilookup_app = dundilookup paralist ;
+sendimage_app = sendimage paralist ;
+removequeuemember_app = removequeuemember paralist ;
+zapscan_app = zapscan paralist ;
+flash_app = flash paralist ;
+getcpeid_app = getcpeid paralist ;
+senddtmf_app = senddtmf paralist ;
+agentlogin_app = agentlogin paralist ;
+agentmonitoroutgoing_app = agentmonitoroutgoing paralist ;
+sayunixtime_app = sayunixtime paralist ;
+cut_app = cut paralist ;
+authenticate_app = authenticate paralist ;
+queue_app = queue paralist ;
+substring_app = substring paralist ;
+nbscat_app = nbscat paralist ;
+userevent_app = userevent paralist ;
+sendurl_app = sendurl paralist ;
+forkcdr_app = forkcdr paralist ;
+hasvoicemail_app = hasvoicemail paralist ;
+softhangup_app = softhangup paralist ;
+noop_app = noop paralist ;
+sipdtmfmode_app = sipdtmfmode paralist ;
+md5_app = md5 paralist ;
+realtimeupdate_app = realtimeupdate paralist ;
+testclient_app = testclient paralist ;
+checkgroup_app = checkgroup paralist ;
+changemonitor_app = changemonitor paralist ;
+gotoiftime_app = gotoiftime paralist ;
+vmauthenticate_app = vmauthenticate paralist ;
+saydigits_app = saydigits paralist ;
+playtones_app = playtones paralist ;
+setglobalvar_app = setglobalvar paralist ;
+saycountpl_app = saycountpl paralist ;
+while_app = while paralist ;
+stopmonitor_app = stopmonitor paralist ;
+getgroupmatchcount_app = getgroupmatchcount paralist ;
+parkandannounce_app = parkandannounce paralist ;
+waitmusiconhold_app = waitmusiconhold paralist ;
+getgroupcount_app = getgroupcount paralist ;
+parkedcall_app = parkedcall paralist ;
+saynumber_app = saynumber paralist ;
+realtime_app = realtime paralist ;
+adsiprog_app = adsiprog paralist ;
+waitexten_app = waitexten paralist ;
+setrdnis_app = setrdnis paralist ;
+dbput_app = dbput paralist ;
+execif_app = execif paralist ;
+ringing_app = ringing paralist ;
+unpausequeuemember_app = unpausequeuemember paralist ;
+congestion_app = congestion paralist ;
+setvar_app = setvar paralist ;
+answer_app = answer paralist ;
+sayalpha_app = sayalpha paralist ;
+prefix_app = prefix paralist ;
+hangup_app = hangup paralist ;
+setamaflags_app = setamaflags paralist ;
+backgrounddetect_app = backgrounddetect paralist ;
+sendtext_app = sendtext paralist ;
+meetme_app = meetme paralist ;
+appendcdruserfield_app = appendcdruserfield paralist ;
+digittimeout_app =  digittimeout paralist;
+absolutetimeout_app = absolutetimeout paralist ;
+wait_app = wait paralist ;
+zapbarge_app = zapbarge paralist ;
+sms_app = sms paralist ;
+milliwatt_app = milliwatt paralist ;
+waitforsilence_app = waitforsilence paralist ;
+voicemailmain_app = voicemailmain paralist ;
+txtcidname_app = txtcidname paralist ;
+waitforring_app = waitforring paralist ;
+progress_app = progress paralist ;
+importvar_app = importvar paralist ;
+privacymanager_app = privacymanager paralist ;
+macroif_app = macroif paralist ;
+busy_app = busy paralist ;
+verbose_app = verbose paralist ;
+echo_app = echo paralist ;
+festival_app = festival paralist ;
+setmusiconhold_app = setmusiconhold paralist ;
+meetmeadmin_app = meetmeadmin paralist ;
+setcallerid_app = setcallerid paralist ;
+stripmsd_app = stripmsd paralist ;
+setcidname_app = setcidname paralist ;
+setcallerpres_app = setcallerpres paralist ;
+transfer_app = transfer paralist ;
+dumpchan_app = dumpchan paralist ;
+disa_app = disa paralist ;
+math_app = math paralist ;
+setaccount_app = setaccount paralist ;
+eagi_app = eagi paralist ;
+mp3player_app = mp3player paralist ;
+suffix_app = suffix paralist ;
+zapras_app = zapras paralist ;
+iax2provision_app = iax2provision paralist ;
+eval_app = eval paralist ;
+meetmecount_app = meetmecount paralist ;
+mailboxexists_app = mailboxexists paralist ;
+voicemail_app = voicemail paralist ;
+hasnewvoicemail_app = hasnewvoicemail paralist ;
+readfile_app = readfile paralist ;
+setcidnum_app = setcidnum paralist ;
+enumlookup_app = enumlookup paralist ;
+execiftime_app = execiftime paralist ;
+musiconhold_app = musiconhold paralist ;
+trysystem_app = trysystem paralist ;
+addqueuemember_app = addqueuemember paralist ;
+alarmreceiver_app = alarmreceiver paralist ;
+chanisavail_app = chanisavail paralist ;
+
+
+
+//the para lists
+paralist =  {commaparalist} commaparalist
+			|{currparalist} currparalist 
+			|{empty};  
+
+commaparalist = comma spara+ ; //opara* spara* ;
+
+currparalist = l_par spara+  r_par;
+
+
+spara =  para sep 
+|	{cpara} cpara 
+|   {dpara} dpara
+|	 {para}	para;
+	 
+cpara = para comma ;
+dpara = para doublep ;
+
+//simple parameter
+para =  
+{string_lit} string_lit
+|{url} url
+|{dialstr} dialstr
+|identifier  
+|{number} number
+; 
+
+
+ 	

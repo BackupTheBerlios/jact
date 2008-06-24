@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="diagramm">
+		<section name="MisdncardPorts">
+			<item key="y" value="431"/>
+			<item key="areah" value="84"/>
+			<item key="x" value="126"/>
+			<item key="areaw" value="188"/>
+		</section>
+		<section name="misdnCards">
+			<item key="y" value="216"/>
+			<item key="areah" value="-1"/>
+			<item key="x" value="104"/>
+			<item key="areaw" value="-1"/>
+		</section>
+		<section name="misdnDriverConf">
+			<item key="y" value="29"/>
+			<item key="areah" value="-1"/>
+			<item key="x" value="44"/>
+			<item key="areaw" value="-1"/>
+		</section>
+	</section>
+</section>

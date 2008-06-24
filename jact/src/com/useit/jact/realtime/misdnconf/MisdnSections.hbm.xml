@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.misdnconf.MisdnSectionsImpl" table="tbl_misdnconf_misdnsections" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="context" column="context"/>	
+		<property name="language" column="language"/>	
+		<property name="nationalprefix" column="nationalprefix"/>	
+		<property name="internationalprefix" column="internationalprefix"/>	
+		<property name="rxgain" column="rxgain"/>	
+		<property name="txgain" column="txgain"/>	
+		<property name="te_choose_channel" column="te_choose_channel"/>	
+		<property name="early_bconnect" column="early_bconnect"/>	
+		<property name="dialplan" column="dialplan"/>	
+		<property name="use_callingpres" column="use_callingpres"/>	
+		<property name="always_immediate" column="always_immediate"/>	
+		<property name="immediate" column="immediate"/>	
+		<property name="hold_allowed" column="hold_allowed"/>	
+		<property name="pickgroup" column="pickgroup"/>	
+		<property name="callgroup" column="callgroup"/>	
+		<property name="presentation" column="presentation"/>	
+		<property name="echocancel" column="echocancel"/>	
+		<property name="echocancelwhenbridged" column="echocancelwhenbridged"/>	
+		<property name="echotraining" column="echotraining"/>	
+		<property name="sectionname" column="sectionname"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="misdnPortsMap" cascade="all" 
+		table="tbl_misdnconf_misdnsections_misdnports">
+			<key column="misdnsections_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.misdnconf.MisdnPortsImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

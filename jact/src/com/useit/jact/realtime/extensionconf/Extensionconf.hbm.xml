@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.extensionconf.ExtensionconfImpl" table="tbl_extensionconf_extensionconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="static_" column="static"/>	
+		<property name="writeprotect" column="writeprotect"/>	
+		<property name="autofallthrough" column="autofallthrough"/>	
+		<property name="clearglobalvars" column="clearglobalvars"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="contextMap" cascade="all" 
+		table="tbl_extensionconf_extensionconf_context">
+			<key column="extensionconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.extensionconf.ContextImpl"/>
+        </list>	
+	
+	
+ 		<list name="globalvarsMap" cascade="all" 
+		table="tbl_extensionconf_extensionconf_globalvars">
+			<key column="extensionconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.extensionconf.GlobalvarsImpl"/>
+        </list>	
+	
+	
+ 		<list name="includeconfigsMap" cascade="all" 
+		table="tbl_extensionconf_extensionconf_includeconfigs">
+			<key column="extensionconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.extensionconf.IncludeconfigsImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

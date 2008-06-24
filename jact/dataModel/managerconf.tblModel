@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="managerSection"/>
+			<item value="managerdeny"/>
+			<item value="managerpermit"/>
+			<item value="managergeneralSection"/>
+		</list>
+		<section name="managerSection">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="managerSection"/>
+			<item key="JavaClassName" value="ManagerSection"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="username"/>
+			</list>
+			<list key="TableMapFields" value="username">
+				<item value="managerdeny"/>
+				<item value="managerpermit"/>
+			</list>
+			<list key="TableFields" value="managerpermit">
+				<item value="username"/>
+				<item value="secret"/>
+				<item value="read"/>
+				<item value="write"/>
+			</list>
+			<section name="write">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Write"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="write"/>
+			</section>
+			<section name="username">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Username"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="username"/>
+			</section>
+			<section name="read">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Read"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="read"/>
+			</section>
+			<section name="secret">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="secret"/>
+			</section>
+		</section>
+		<section name="managerdeny">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="managerdeny"/>
+			<item key="JavaClassName" value="Managerdeny"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="value"/>
+			</list>
+			<section name="value">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Value"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="value"/>
+			</section>
+		</section>
+		<section name="managerpermit">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="managerpermit"/>
+			<item key="JavaClassName" value="Managerpermit"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="value"/>
+			</list>
+			<section name="value">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Value"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="value"/>
+			</section>
+		</section>
+		<section name="managergeneralSection">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="managergeneralSection"/>
+			<item key="JavaClassName" value="ManagergeneralSection"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="fileid"/>
+			</list>
+			<list key="TableMapFields" value="fileid">
+				<item value="managerSection"/>
+			</list>
+			<list key="TableFields" value="managerSection">
+				<item value="generalid"/>
+				<item value="enabled"/>
+				<item value="portno"/>
+				<item value="bindaddr"/>
+				<item value="port"/>
+				<item value="fileid"/>
+			</list>
+			<section name="bindaddr">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Bindaddr"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="bindaddr"/>
+			</section>
+			<section name="enabled">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Enabled"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="enabled"/>
+			</section>
+			<section name="port">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Port"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="port"/>
+			</section>
+			<section name="fileid">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Fileid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fileid"/>
+			</section>
+			<section name="portno">
+				<item key="ElementDescription" value="Note: &quot;portno&quot; is changing to &quot;port&quot; in a forthcoming CVS version. "/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Portno"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="portno"/>
+			</section>
+			<section name="generalid">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Generalid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="generalid"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="D:\javaprojekte\workspaceE3\jact\dataModel\simpleTypemap.typemap"/>
+		<item key="ProjectName" value="managerconf"/>
+	</section>
+</section>

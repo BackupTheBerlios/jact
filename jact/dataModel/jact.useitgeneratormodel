@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="ASCII"?>
+<com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:ModelProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.useit.eclipse.plugin.javagenerator.useitGeneratorModel="http:///com/useit/eclipse/plugin/javagenerator/useitGeneratorModel.ecore" modelName="jact" loaded="true" baseModelPath="/jact/src/com/useit/jact" baseContainer="/jact" baseDeploymentPath="/jact/src" velocityLibPath="/javaGenerator/lib/includeParts" velocityMarcoPath="D:\javaprojekte\workspaceE3\javaGenerator\lib\marcos\">
+  <modelBuilder modelText="rootBuild" override="true">
+    <containingBuilder modelText="dataModel" override="true">
+      <containingBuilder modelText="build Configs" override="true" buildType="BT_ROLE_EXPANDER" buildChilds="true" selection="//@selections.4">
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        <containingBuilder modelText="dataclass" override="true" buildType="BT_ROLE_EXPANDER" selection="//@selections.4">
+          <roles modelText="dataclass role" targetPackage="" enabled="true">
+            <containingRoles modelText="dataObject" targetPackage="" enabled="true">
+              <containingRoles modelText="dataClass" template="//@templates/@containers.1/@templates.2" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              </containingRoles>
+              <containingRoles modelText="dataMap" template="//@templates/@containers.1/@templates.1" targetPackage="%%baseMod%%/model" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+                <excludeFilter xsi:nil="true"/>
+              </containingRoles>
+              <containingRoles modelText="hibernateDescriptor" template="//@templates/@templates.4" targetPackage="%%baseMod%%/realtime" enabled="true" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              </containingRoles>
+              <containingRoles modelText="dataInterface" template="//@templates/@containers.1/@templates.9" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              </containingRoles>
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            </containingRoles>
+            <containingRoles modelText="dlg" targetPackage="" enabled="true">
+              <containingRoles modelText="configDataPanel" template="//@templates/@containers.2/@templates.4" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+                <excludeFilter xsi:nil="true"/>
+              </containingRoles>
+              <containingRoles modelText="resFile" template="//@templates/@containers.2/@templates.10" targetPackage="%%baseDep%%/resourceBundels" enabled="true">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+                <excludeFilter xsi:nil="true"/>
+              </containingRoles>
+              <containingRoles modelText="TableModel" template="//@templates/@containers.2/@templates.5" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+                <excludeFilter xsi:nil="true"/>
+              </containingRoles>
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <excludeFilter xsi:nil="true"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+        <containingBuilder modelText="impl" buildType="BT_ROLE_EXPANDER">
+          <roles modelText="impl role" targetPackage="">
+            <containingRoles modelText="dlgImpl" targetPackage="">
+              <containingRoles modelText="dataPanelImpl" template="//@templates/@containers.2/@templates.3" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              </containingRoles>
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            </containingRoles>
+            <containingRoles modelText="dataObject" targetPackage="">
+              <containingRoles modelText="dataClassImpl" template="//@templates/@containers.1/@templates.0" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+                <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+                <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+                <excludeFilter xsi:nil="true"/>
+              </containingRoles>
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <excludeFilter xsi:nil="true"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+        <containingBuilder modelText="setsImpl" buildType="BT_ROLE_EXPANDER">
+          <roles modelText="setsImpl role" targetPackage="">
+            <containingRoles modelText="ConfReaderImpl" template="//@templates/@containers.3/@templates.5" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            </containingRoles>
+            <containingRoles modelText="ConfWriterImpl" template="//@templates/@containers.3/@templates.0" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            </containingRoles>
+            <containingRoles modelText="TreeModelImpl" template="//@templates/@containers.2/@templates.0" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            </containingRoles>
+            <containingRoles modelText="defaultTreeDialog" template="//@templates/@containers.2/@templates.1" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <containingRoles modelText="XmlHandlerImpl" template="//@templates/@containers.3/@templates.1" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            </containingRoles>
+            <containingRoles modelText="DataCellRendereImpl" template="//@templates/@containers.2/@templates.2" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            </containingRoles>
+            <containingRoles modelText="simple Tree panel" template="//@templates/@containers.2/@templates.9" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <containingRoles modelText="ModelFactoryPOJOImpl" template="//@templates/@containers.1/@templates.12" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+        <containingBuilder modelText="sets" override="true" buildType="BT_ROLE_EXPANDER">
+          <roles modelText="sets role" targetPackage="" enabled="true" filterEnabled="true">
+            <containingRoles modelText="XmlWriter" template="//@templates/@containers.3/@templates.2" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="GuiClassFactory" template="//@templates/@containers.2/@templates.6" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="XmlHandler" template="//@templates/@containers.3/@templates.3" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="TreeModel" template="//@templates/@containers.2/@templates.7" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="DataCellRendere" template="//@templates/@containers.2/@templates.8" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="ConfReader" template="//@templates/@containers.3/@templates.6" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="ConfWriter" template="//@templates/@containers.3/@templates.4" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="ModelManangerFactory" template="//@templates/@containers.1/@templates.11" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <containingRoles modelText="ModelFactoryPOJO" template="//@templates/@containers.1/@templates.6" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="ioTest">
+            <containingRoles modelText="ModelIOtest" template="//@templates/@containers.1/@templates.7" targetPackage="%%baseMod%%/test/io" enabled="true" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+          </roles>
+          <roles modelText="reports">
+            <containingRoles modelText="simple model report" template="//@templates/@containers.1/@templates.8"/>
+          </roles>
+          <roles modelText="IoModelFactory">
+            <containingRoles modelText="XmlHandlerMF" template="//@templates/@containers.4/@templates.0" targetPackage="%%baseMod%%/io" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+              <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+            </containingRoles>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+      </containingBuilder>
+    </containingBuilder>
+    <containingBuilder modelText="pbxtypes" override="true" buildType="BT_ROLE_EXPANDER" buildChilds="true" selection="//@selections.1">
+      <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      <containingBuilder modelText="set" override="true" buildType="BT_ROLE_EXPANDER" buildChilds="true">
+        <roles enabled="true">
+          <containingRoles modelText="ModelFactoryPOJOTypes" template="//@templates/@containers.1/@templates.13" targetPackage="%%baseMod%%/model/types" enabled="true" recursive="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+      <containingBuilder modelText="datatypes" override="true" buildType="BT_ROLE_EXPANDER" buildChilds="true">
+        <roles modelText="pbxtypes role" targetPackage="" enabled="true">
+          <containingRoles modelText="other" targetPackage="" enabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+            <excludeFilter xsi:nil="true"/>
+          </containingRoles>
+          <containingRoles modelText="types" targetPackage="" enabled="true">
+            <containingRoles modelText="simpleEnum" template="//@templates/@containers.1/@templates.4" targetPackage="%%baseMod%%/model/types" enabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter xsi:nil="true"/>
+            </containingRoles>
+            <containingRoles modelText="simpleEnumSet" template="//@templates/@containers.1/@templates.5" targetPackage="%%baseMod%%/model/types" enabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter xsi:nil="true"/>
+            </containingRoles>
+            <containingRoles modelText="dataInterface" template="//@templates/@containers.1/@templates.9" targetPackage="%%baseMod%%/model/types" enabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+            <excludeFilter xsi:nil="true"/>
+          </containingRoles>
+          <containingRoles modelText="widgets" targetPackage="" enabled="true">
+            <containingRoles modelText="EnumSetTextField" template="//@templates/@containers.2/@templates.11" targetPackage="%%baseMod%%/gui/widgets" enabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter xsi:nil="true"/>
+            </containingRoles>
+            <containingRoles modelText="simpleEnumWidget" template="//@templates/@containers.2/@templates.12" targetPackage="%%baseMod%%/gui/widgets" enabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+              <excludeFilter xsi:nil="true"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+            <excludeFilter xsi:nil="true"/>
+          </containingRoles>
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Enumeration"/>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+      <containingBuilder modelText="setImpl" buildType="BT_ROLE_EXPANDER">
+        <roles modelText="ModelFactoryPOJOImpl" template="//@templates/@containers.1/@templates.12" targetPackage="%%baseMod%%/model/types" enabled="true">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+    </containingBuilder>
+    <containingBuilder modelText="allModels" override="true" buildType="BT_ROLE_EXPANDER" selection="//@selections.0">
+      <roles modelText="allModels role" targetPackage="">
+        <containingRoles modelText="ConfigHelpPage" template="//@templates/@templates.1" targetPackage="%%baseDep%%/html" enabled="true">
+          <containingRoles modelText="ConfigHelpPage" template="//@templates/@templates.1" targetPackage="%%baseDep%%/html" enabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </containingRoles>
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+        </containingRoles>
+        <containingRoles modelText="model Report" template="//@templates/@templates.3" targetPackage="%%model%%/temp" enabled="true">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+        </containingRoles>
+      </roles>
+      <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+    </containingBuilder>
+    <containingBuilder modelText="database" override="true" buildType="BT_ROLE_EXPANDER" selection="//@selections.0">
+      <roles modelText="ddt">
+        <containingRoles modelText="createTable" template="//@templates/@templates.2" targetPackage="%%model%%/ddt_sql" enabled="true" filterEnabled="true">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+        </containingRoles>
+      </roles>
+      <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+    </containingBuilder>
+    <containingBuilder modelText="extendetModels" override="true" buildType="BT_ROLE_EXPANDER" buildChilds="true" selection="//@selections.3">
+      <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      <containingBuilder modelText="impl" buildType="BT_ROLE_EXPANDER">
+        <roles modelText="dataObject" targetPackage="" enabled="true">
+          <containingRoles modelText="dataClassImpl" template="//@templates/@containers.1/@templates.0" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </containingRoles>
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+      <containingBuilder modelText="dataclass" override="true" buildType="BT_ROLE_EXPANDER">
+        <roles modelText="dataObject" targetPackage="" enabled="true">
+          <containingRoles modelText="dataClass" template="//@templates/@containers.1/@templates.2" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </containingRoles>
+          <containingRoles modelText="hibernateDescriptor" template="//@templates/@templates.4" targetPackage="%%baseMod%%/realtime" enabled="true" recursive="true" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </containingRoles>
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+      <containingBuilder modelText="staticModels" override="true" buildType="BT_ROLE_EXPANDER">
+        <roles modelText="dlg" enabled="true">
+          <containingRoles modelText="abstractActionMananger" template="//@templates/@containers.0/@templates.1" targetPackage="%%baseMod%%/gui/globalmodel" enabled="true" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+          <containingRoles modelText="dialogFactory" template="//@templates/@containers.0/@templates.2" targetPackage="%%baseMod%%/gui/globalmodel" enabled="true" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+          <containingRoles modelText="actionResourceSet" template="//@templates/@containers.0/@templates.4" targetPackage="%%baseDep%%/resourceBundels" enabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </containingRoles>
+          <containingRoles modelText="guiModelResolver" template="//@templates/@containers.0/@templates.5" targetPackage="%%baseMod%%/gui/globalmodel" enabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </containingRoles>
+        </roles>
+        <roles modelText="model">
+          <containingRoles modelText="modelfactory" template="//@templates/@containers.0/@templates.0" targetPackage="%%baseMod%%/model/globalmodel" enabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </containingRoles>
+        </roles>
+        <roles modelText="io">
+          <containingRoles modelText="hibernatmapping" template="//@templates/@containers.0/@templates.6" targetPackage="%%model%%/temp" enabled="true" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+          <containingRoles modelText="hibernateActionMananger" template="//@templates/@containers.0/@templates.7" targetPackage="%%baseMod%%/gui/globalmodel" enabled="true" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+          <containingRoles modelText="hibernateLoader" template="//@templates/@containers.0/@templates.8" targetPackage="%%baseMod%%/io/globalmodel" enabled="true" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+        </roles>
+        <roles modelText="Tests">
+          <containingRoles modelText="ioTest" template="//@templates/@containers.0/@templates.9" targetPackage="%%baseMod%%/test" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+      <containingBuilder modelText="staticModels impl" buildType="BT_ROLE_EXPANDER">
+        <roles modelText="model">
+          <containingRoles modelText="modelFactoryImpl" template="//@templates/@containers.0/@templates.3" targetPackage="%%baseMod%%/model/globalmodel" enabled="true" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </containingRoles>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+    </containingBuilder>
+    <containingBuilder modelText="application" override="true">
+      <containingBuilder modelText="build Configs" override="true" buildType="BT_ROLE_EXPANDER" buildChilds="true" selection="//@selections.5">
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        <containingBuilder modelText="dataclass" override="true" buildType="BT_ROLE_EXPANDER">
+          <roles modelText="dataclass role" targetPackage="" enabled="true">
+            <containingRoles modelText="resFile" template="//@templates/@containers.2/@templates.10" targetPackage="%%baseDep%%/resourceBundels" enabled="true">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <containingRoles modelText="dataInterface" template="//@templates/@containers.1/@templates.9" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <containingRoles modelText="dataClass_application" template="//@templates/@containers.1/@templates.15" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </roles>
+          <roles modelText="dlg" targetPackage="" enabled="true">
+            <containingRoles modelText="configDataPanel" template="//@templates/@containers.2/@templates.4" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+          </roles>
+          <roles modelText="dataObject" targetPackage="" enabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+        <containingBuilder modelText="impl" buildType="BT_ROLE_EXPANDER">
+          <roles modelText="impl role" targetPackage="">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+          </roles>
+          <roles modelText="dataObject" targetPackage="">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+          </roles>
+          <roles modelText="dataClassImpl" template="//@templates/@containers.1/@templates.0" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </roles>
+          <roles modelText="dlgImpl" targetPackage="">
+            <containingRoles modelText="dataPanelImpl" template="//@templates/@containers.2/@templates.3" targetPackage="%%baseMod%%/gui" enabled="true" packageExpression="/%%pname%%">
+              <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+              <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            </containingRoles>
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Class"/>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+        <containingBuilder modelText="setsImpl" buildType="BT_ROLE_EXPANDER">
+          <roles modelText="setsImpl role" targetPackage="">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </roles>
+          <roles modelText="defaultTreeDialog" template="//@templates/@containers.2/@templates.1" targetPackage="%%baseMod%%/gui" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </roles>
+          <roles modelText="ConfWriterImpl" template="//@templates/@containers.3/@templates.0" targetPackage="%%baseMod%%/io" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </roles>
+          <roles modelText="ConfReaderImpl" template="//@templates/@containers.3/@templates.5" targetPackage="%%baseMod%%/io" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </roles>
+          <roles modelText="ModelFactoryPOJOImpl" template="//@templates/@containers.1/@templates.12" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="DataCellRendereImpl" template="//@templates/@containers.2/@templates.2" targetPackage="%%baseMod%%/gui" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </roles>
+          <roles modelText="TreeModelImpl" template="//@templates/@containers.2/@templates.0" targetPackage="%%baseMod%%/gui" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </roles>
+          <roles modelText="simple Tree panel" template="//@templates/@containers.2/@templates.9" targetPackage="%%baseMod%%/gui" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          </roles>
+          <roles modelText="XmlHandlerImpl" template="//@templates/@containers.3/@templates.1" targetPackage="%%baseMod%%/io" packageExpression="/%%pname%%">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+        <containingBuilder modelText="sets" override="true" buildType="BT_ROLE_EXPANDER">
+          <roles modelText="sets role" targetPackage="" enabled="true" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="ioTest"/>
+          <roles modelText="reports"/>
+          <roles modelText="GuiClassFactory" template="//@templates/@containers.2/@templates.6" targetPackage="%%baseMod%%/gui" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="ModelManangerFactory" template="//@templates/@containers.1/@templates.11" targetPackage="%%baseMod%%/model" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="XmlHandler" template="//@templates/@containers.3/@templates.3" targetPackage="%%baseMod%%/io" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="ConfReader" template="//@templates/@containers.3/@templates.6" targetPackage="%%baseMod%%/io" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="DataCellRendere" template="//@templates/@containers.2/@templates.8" targetPackage="%%baseMod%%/gui" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="ConfWriter" template="//@templates/@containers.3/@templates.4" targetPackage="%%baseMod%%/io" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="ModelFactoryPOJO_applications" template="//@templates/@containers.1/@templates.14" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="TreeModel" template="//@templates/@containers.2/@templates.7" targetPackage="%%baseMod%%/gui" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="XmlWriter" template="//@templates/@containers.3/@templates.2" targetPackage="%%baseMod%%/io" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="simple model report" template="//@templates/@containers.1/@templates.8"/>
+          <roles modelText="ModelIOtest" template="//@templates/@containers.1/@templates.7" targetPackage="%%baseMod%%/test/io" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <roles modelText="GuiAdapter" template="//@templates/@containers.1/@templates.16" targetPackage="%%baseMod%%/model" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+            <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+            <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+            <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+          </roles>
+          <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+        </containingBuilder>
+      </containingBuilder>
+    </containingBuilder>
+    <containingBuilder modelText="emf" selection="//@selections.6">
+      <containingBuilder modelText="set" override="true" buildType="BT_ROLE_EXPANDER" selection="//@selections.6">
+        <roles modelText="ModelFactoryEMF" template="//@templates/@containers.5/@templates.0" targetPackage="de.urszeidler.eclipse.asterisk.jact/src/de/urszeidler/eclipse/asterisk/jact" enabled="true" packageExpression="/%%pname%%">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+        </roles>
+        <roles modelText="XmlHandlerEMF" template="//@templates/@containers.5/@templates.3" targetPackage="de.urszeidler.eclipse.asterisk.jact/src/de/urszeidler/eclipse/asterisk/jact" enabled="true" packageExpression="/%%pname%%">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+        </roles>
+        <roles modelText="ModelXmlImporterEMF" template="//@templates/@containers.5/@templates.4" targetPackage="%%model%%/src/de/urszeidler/eclipse/asterisk/jact" enabled="true" packageExpression="/%%pname%%">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+      <containingBuilder modelText="set iml" buildType="BT_ROLE_EXPANDER" selection="//@selections.6">
+        <roles modelText="ModelFactoryPOJOImpl" template="//@templates/@containers.1/@templates.12" targetPackage="de.urszeidler.eclipse.asterisk.jact/src/de/urszeidler/eclipse/asterisk/jact" enabled="true" packageExpression="/%%pname%%" filterEnabled="true">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+        </roles>
+        <roles modelText="XmlHandlerImpl" template="//@templates/@containers.3/@templates.1" targetPackage="de.urszeidler.eclipse.asterisk.jact/src/de/urszeidler/eclipse/asterisk/jact" enabled="true" packageExpression="/%%pname%%">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+      <containingBuilder modelText="EMFTypes" override="true" buildType="BT_ROLE_EXPANDER" selection="//@selections.1">
+        <roles modelText="ModelFactoryPOJOTypes" template="//@templates/@containers.1/@templates.13" targetPackage="de.urszeidler.eclipse.asterisk.jact/src/de/urszeidler/eclipse/asterisk/jact" enabled="true" recursive="true">
+          <elementType href="http://www.eclipse.org/uml2/1.0.0/UML#//Model"/>
+          <filenameFeature href="http://www.eclipse.org/uml2/1.0.0/UML#//NamedElement/name"/>
+          <excludeFilter href="file:/D:/javaprojekte/workspaceE31/.metadata/.plugins/com.useit.eclipse.plugin.javagenerator/globalRepository.rep#//@repository/@filters.0"/>
+        </roles>
+        <transformDelegate xsi:type="com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:BTRoleExpander"/>
+      </containingBuilder>
+    </containingBuilder>
+  </modelBuilder>
+  <selections modelText="all configs">
+    <model href="/jact/dataModel/mISDNDriverConf.tblModel.uml2#_SW0dcHVCEdq-GezyEkG4OQ"/>
+    <model href="/jact/dataModel/iaxconf.tblModel.uml2#_BSR-AGs0EdqeEY-gi9uYEA"/>
+    <model href="/jact/dataModel/misdnconf.tblModel.uml2#_WE0ZMHVCEdq-GezyEkG4OQ"/>
+    <model href="/jact/dataModel/sipconf.tblModel.uml2#_et_qcGy7EdqPw_h2i4HL0g"/>
+    <model href="/jact/dataModel/zapataconf.tblModel.uml2#_OuceAHVBEdq-GezyEkG4OQ"/>
+    <model href="/jact/dataModel/zaptelconf.tblModel.uml2#_5nigQHVBEdq-GezyEkG4OQ"/>
+    <model href="/jact/dataModel/extensionconf.tblModel.uml2#_1Y5gUHVnEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/managerconf.tblModel.uml2#_HlqoMHVnEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/voicemail.tblModel.uml2#_vlGLIHVmEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/indicationsconf.tblModel.uml2#_UslbIHVnEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/musiconholdconf.tblModel.uml2#_5dVbkHVmEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/featureconf.tblModel.uml2#_hWXmIHVnEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/meetmeconf.tblModel.uml2#_OKXrUHVnEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/queueconf.tblModel.uml2#_2rgNIHVmEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/alarmreciverconf.tblModel.uml2#__MjywHVnEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/agentsConf.tblModel.uml2#_HIjY8HVoEdqu-MgwmX9MXw"/>
+  </selections>
+  <selections modelText="pbxtypes">
+    <model href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </selections>
+  <selections modelText="new Model selection"/>
+  <selections modelText="extendetModel">
+    <model href="/jact/dataModel/BaseConfig.uml2#_8XxhgHVoEdqu-MgwmX9MXw"/>
+  </selections>
+  <selections modelText="new configs">
+    <model href="/jact/dataModel/extensionconf.tblModel.uml2#_1Y5gUHVnEdqu-MgwmX9MXw"/>
+  </selections>
+  <selections modelText="application">
+    <model href="/jact/dataModel/application.tblModel.uml2#_t2pAQMifEdqKbsHgCeX4yg"/>
+  </selections>
+  <selections modelText="emf models">
+    <model href="/jact/dataModel/extensionconf.tblModel.uml2#_1Y5gUHVnEdqu-MgwmX9MXw"/>
+    <model href="/jact/dataModel/misdnconf.tblModel.uml2#_WE0ZMHVCEdq-GezyEkG4OQ"/>
+    <model href="/jact/dataModel/sipconf.tblModel.uml2#_et_qcGy7EdqPw_h2i4HL0g"/>
+    <model href="/jact/dataModel/application.tblModel.uml2#_t2pAQMifEdqKbsHgCeX4yg"/>
+  </selections>
+  <templates>
+    <containers name="static models" description="die staischen modelle">
+      <templates templateName="ModelFactory" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/modelFactory.vm" prefix="ModelFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="ActionMananger" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/abstractActionManager.vm" prefix="AbstractActionMananger" posfilx="" fileExtension="java"/>
+      <templates templateName="DialogFactory" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/DialogFactory.vm" prefix="DialogFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="ModelFactoryImpl" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/ModelFactoryImpl.vm" prefix="ModelFactory" posfilx="Impl" fileExtension="java"/>
+      <templates templateName="actionManagerResourceBundel" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/actionResourceSet.vm" prefix="actionMananger" posfilx="" fileExtension="properties"/>
+      <templates templateName="guiResolver" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/guiModelResolver.vm" prefix="GuiModelResolver" posfilx="" fileExtension="java"/>
+      <templates templateName="hibernateMapping" templateFileName="/javaGenerator/lib/databaseTemplates/hibernatMapping.vm" prefix="hibernatemappconf" posfilx="" fileExtension="tmp"/>
+      <templates templateName="hibernateActionMananger" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/HibernateActionManager.vm" prefix="HibernateActionMananger" posfilx="" fileExtension="java"/>
+      <templates templateName="HibernateObjectLoader" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/HibernateObjectLoader.vm" prefix="HibernateObjectLoader" posfilx="" fileExtension="java"/>
+      <templates templateName="ioTest" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/ioTest.vm" prefix="IO" posfilx="Test" fileExtension="java"/>
+    </containers>
+    <containers name="models" description="die model elemente">
+      <templates templateName="dataClassImpl" templateFileName="/javaGenerator/lib/ImplementierungsKlasse.vm" prefix="" posfilx="Impl" fileExtension="java"/>
+      <templates templateName="dataMap" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataMap.vm" prefix="" posfilx="Map" fileExtension="java"/>
+      <templates templateName="simpleDataClass" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataClass.vm" prefix="" posfilx="" fileExtension="java"/>
+      <templates templateName="enumtypemap" templateFileName="/javaGenerator/lib/types/simpleEnumTypemap.vm" prefix="simpleTypemap" posfilx="" fileExtension="typemap"/>
+      <templates templateName="simpleEnum" templateFileName="/javaGenerator/lib/types/simpleEnum.vm" prefix="" posfilx="" fileExtension="java"/>
+      <templates templateName="simpleEnumSet" templateFileName="/javaGenerator/lib/types/simpleEnumSet.vm" prefix="" posfilx="Set" fileExtension="java"/>
+      <templates templateName="ModelfactoryPOJO" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/ModelFactoryPOJO.vm" prefix="ModelFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="modelIOtest" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/modelIOtest.vm" prefix="IO" posfilx="Test" fileExtension="java"/>
+      <templates templateName="simpleModelreport" templateFileName="/javaGenerator/lib/modeltemplates/simplemodelreport.vm" fileExtension=".html"/>
+      <templates templateName="simpleDataInterface" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataInterface.vm" prefix="I" posfilx="" fileExtension="java"/>
+      <templates templateName="ModelFactory" templateFileName="/javaGenerator/lib/simpleModelTemplates/Models/modelFactory.vm" prefix="ModelFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="modelmanagerFactory" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/modelmanagerFactory.vm" prefix="MMF" posfilx="" fileExtension="java"/>
+      <templates templateName="ModelfactoryPOJOImpl" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/ModelFactoryPOJOImpl.vm" prefix="ModelFactory" posfilx="Impl" fileExtension="java"/>
+      <templates templateName="ModelfactoryPOJOTypes" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/ModelFactoryPOJOTypes.vm" prefix="ModelFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="ModelfactoryPOJO_Applications" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/ModelFactoryPOJO_Applications.vm" prefix="ModelFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="simpleDataClass_application" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataClass_application.vm" prefix="" posfilx="" fileExtension="java"/>
+      <templates templateName="GuiAdapter" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/guiAdapter.vm" prefix="GuiAdapter" posfilx="" fileExtension="java"/>
+    </containers>
+    <containers name="swing gui">
+      <templates templateName="TreeModel" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleTreeModelImpl.vm" prefix="SimpleTreeModelImpl" posfilx="" fileExtension="java"/>
+      <templates templateName="DefaultTreeDialog" templateFileName="/javaGenerator/lib/simpleModelTemplates/DefaultTreeDialog.vm" prefix="Default" posfilx="TreeDialog" fileExtension="java"/>
+      <templates templateName="DataCellRendere" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataObjectCellRendereImpl.vm" prefix="DataClassRendereImpl" posfilx="" fileExtension="java"/>
+      <templates templateName="dataPanelImpl" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataPanelImpl.vm" prefix="" posfilx="DataPanelImpl" fileExtension="java"/>
+      <templates templateName="configDataPanel" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataPanel.vm" prefix="" posfilx="DataPanel" fileExtension="java"/>
+      <templates templateName="TableModel" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleTableModel.vm" prefix="" posfilx="TableModel" fileExtension="java"/>
+      <templates templateName="GuiClassFactory" templateFileName="/javaGenerator/lib/simpleModelTemplates/GuiClassFactory.vm" prefix="GuiClassFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="TreeModel" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleTreeModel.vm" prefix="SimpleTreeModel" posfilx="" fileExtension="java"/>
+      <templates templateName="DataCellRendere" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataObjectCellRendere.vm" prefix="DataClassRendere" posfilx="" fileExtension="java"/>
+      <templates templateName="SimpleTreePanel" templateFileName="/javaGenerator/lib/simpleModelTemplates/SimpleTreePanel.vm" prefix="Simple" posfilx="TreePanel" fileExtension="java"/>
+      <templates templateName="resFile" templateFileName="/javaGenerator/lib/resourcen.vm" prefix="" posfilx="ResFile" fileExtension="properties"/>
+      <templates templateName="EnumSetTextField" templateFileName="/javaGenerator/lib/types/simpleEnumSetTextField.vm" prefix="EnumSetTextField" posfilx="" fileExtension="java"/>
+      <templates templateName="enumCombobox" templateFileName="/javaGenerator/lib/types/simpleEnumCombobox.vm" prefix="JEnumCombobox" posfilx="" fileExtension="java"/>
+    </containers>
+    <containers name="io">
+      <templates templateName="ConfWriterImpl" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleWriterImpl.vm" prefix="ConfWriterImpl" posfilx="" fileExtension="java"/>
+      <templates templateName="XmlHandlerImpl" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleXmlHandlerImpl.vm" prefix="" posfilx="XmlHandlerImpl" fileExtension="java"/>
+      <templates templateName="XmlWriter" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleXMLwriter.vm" prefix="XmlWriter" posfilx="" fileExtension="java"/>
+      <templates templateName="XmlHandler" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleXmlHandler.vm" prefix="XmlHandler" posfilx="" fileExtension="java"/>
+      <templates templateName="simpleWriter" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleDataClassWriter.vm" prefix="" posfilx="ConfWriter" fileExtension="java"/>
+      <templates templateName="ConfReaderImpl" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleConfReaderImpl.vm" prefix="ConfReaderImpl" posfilx="" fileExtension="java"/>
+      <templates templateName="ConfReader" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleConfReader.vm" prefix="ConfReader" posfilx="" fileExtension="java"/>
+    </containers>
+    <containers name="io ModelFactory">
+      <templates templateName="XmlHandlerMF" templateFileName="/javaGenerator/lib/simpleModelTemplates/ModelFactoryXmlHandler.vm" prefix="XmlHandlerMF" posfilx="" fileExtension="java"/>
+    </containers>
+    <containers name="EMF">
+      <templates templateName="ModelfactoryEMF" templateFileName="/javaGenerator/lib/simpleModelTemplates/newGenModel/ModelFactoryEMF.vm" prefix="ModelFactory" posfilx="" fileExtension="java"/>
+      <templates templateName="XmlHandlerImpl" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleXmlHandlerImpl.vm" prefix="" posfilx="XmlHandlerImpl" fileExtension="java"/>
+      <templates templateName="XmlWriter" templateFileName="/javaGenerator/lib/simpleModelTemplates/simpleXMLwriter.vm" prefix="XmlWriter" posfilx="" fileExtension="java"/>
+      <templates templateName="XmlHandlerEMF" templateFileName="/javaGenerator/lib/simpleModelTemplates/otherEMF/simpleXmlHandlerEMF.vm" prefix="XmlHandler" posfilx="" fileExtension="java"/>
+      <templates templateName="XmlImporterEMF" templateFileName="/javaGenerator/lib/simpleModelTemplates/otherEMF/XmlImporterEMF.vm" prefix="ImportWizardXml" posfilx="" fileExtension="java"/>
+    </containers>
+    <templates templateName="writerTest" templateFileName="/javaGenerator/lib/simpleModelTemplates/ConfWriterImplTest.vm" prefix="" posfilx="ConfReaderWriterImplTest" fileExtension="java"/>
+    <templates templateName="ConfigHelpPage" templateFileName="/javaGenerator/lib/configTemplates/ConfigDoku.vm" prefix="ConfigHelpPage" posfilx="" fileExtension="html"/>
+    <templates templateName="createTableSQL" templateFileName="/javaGenerator/lib/databaseTemplates/createTable.vm" prefix="ddt_" posfilx="" fileExtension="sql"/>
+    <templates templateName="modelReport" templateFileName="/javaGenerator/lib/modeltemplates/modelreport.vm" prefix="" posfilx="Report" fileExtension="html"/>
+    <templates templateName="hibernateDescriptor" templateFileName="/javaGenerator/lib/databaseTemplates/hibernateDescriptor.vm" prefix="" posfilx=".hbm" fileExtension="xml"/>
+  </templates>
+  <resources>
+    <recurces filename="/jact/dataModel/mISDNDriverConf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/alarmreciverconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/iaxconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/agentsConf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/extensionconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/featureconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/meetmeconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/queueconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/misdnconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/sipconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/zapataconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/iaxconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/managerconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/voicemail.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/pbxTypes.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/zaptelconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/indicationsconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/musiconholdconf.tblModel.uml2"/>
+    <recurces filename="/jact/dataModel/ChannelConfig.uml2"/>
+    <recurces filename="/jact/dataModel/BaseConfig.uml2"/>
+    <recurces filename="/jact/dataModel/application.tblModel.uml2"/>
+  </resources>
+</com.useit.eclipse.plugin.javagenerator.useitGeneratorModel:ModelProject>

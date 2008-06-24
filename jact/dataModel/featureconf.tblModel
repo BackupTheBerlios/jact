@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="featuremap"/>
+			<item value="featuresconf"/>
+		</list>
+		<section name="featuremap">
+			<item key="ElementDescription" value="additinal"/>
+			<item key="TableName" value="featuremap"/>
+			<item key="JavaClassName" value="Featuremap"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="blindxfer"/>
+				<item value="disconnect"/>
+				<item value="automon"/>
+				<item value="atxfer"/>
+			</list>
+			<section name="atxfer">
+				<item key="ElementDescription" value="Attended transfer"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Atxfer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="atxfer"/>
+			</section>
+			<section name="disconnect">
+				<item key="ElementDescription" value="Disconnect"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Disconnect"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="disconnect"/>
+			</section>
+			<section name="automon">
+				<item key="ElementDescription" value="One Touch Record"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Automon"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="automon"/>
+			</section>
+			<section name="blindxfer">
+				<item key="ElementDescription" value="Blind transfer"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Blindxfer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="blindxfer"/>
+			</section>
+		</section>
+		<section name="featuresconf">
+			<item key="ElementDescription" value="By default extension 700 is used to park a call. While in a conversation, press # to initiate a transfer, then dial 700. Asterisk will now announce the parking extension, most probably 701 or 702. Now hang up - the caller will be left on hold at the announced extention. Walk up to a different phone, dial 701 and voil? - the conversation can be continued. If a caller has been parked for a longer time than the specified time limit then Asterisk will again ring the originally dialed extension."/>
+			<item key="TableName" value="featuresconf"/>
+			<item key="JavaClassName" value="Featuresconf"/>
+			<list key="aggfields">
+				<item value="featuremap"/>
+			</list>
+			<list key="TableFKFields" value="featuremap">
+			</list>
+			<list key="TablePKFields">
+				<item value="fileid"/>
+			</list>
+			<list key="TableMapFields" value="fileid">
+			</list>
+			<list key="TableFields">
+				<item value="parkext"/>
+				<item value="parkpos"/>
+				<item value="context"/>
+				<item value="parkingtime"/>
+				<item value="transferdigittimeout"/>
+				<item value="courtesytone"/>
+				<item value="xfersound"/>
+				<item value="xferfailsound"/>
+				<item value="adsipark"/>
+				<item value="pickupexten"/>
+				<item value="featuredigittimeout"/>
+				<item value="fileid"/>
+			</list>
+			<section name="parkext">
+				<item key="ElementDescription" value="What ext. to dial to park"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Parkext"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="parkext"/>
+			</section>
+			<section name="transferdigittimeout">
+				<item key="ElementDescription" value="Number of seconds to wait between digits when transfering a call"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Transferdigittimeout"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="transferdigittimeout"/>
+			</section>
+			<section name="parkingtime">
+				<item key="ElementDescription" value="Number of seconds a call can be parked for (default is 45 seconds)"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Parkingtime"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="parkingtime"/>
+			</section>
+			<section name="xferfailsound">
+				<item key="ElementDescription" value="to indicate a failed transfer"/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Xferfailsound"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="xferfailsound"/>
+			</section>
+			<section name="adsipark">
+				<item key="ElementDescription" value="if you want ADSI parking announcements"/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="Adsipark"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="adsipark"/>
+			</section>
+			<section name="context">
+				<item key="ElementDescription" value="Which context parked calls are in"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Context"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="context"/>
+				<item key="TblFieldName" value="context"/>
+			</section>
+			<section name="courtesytone">
+				<item key="ElementDescription" value="Sound file to play to the parked caller"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Courtesytone"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="courtesytone"/>
+			</section>
+			<section name="featuredigittimeout">
+				<item key="ElementDescription" value="Max time (ms) between digits for feature activation.  Default is 500"/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Featuredigittimeout"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="featuredigittimeout"/>
+			</section>
+			<section name="pickupexten">
+				<item key="ElementDescription" value="Configure the pickup extension.  Default is *8"/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Pickupexten"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="pickupexten"/>
+			</section>
+			<section name="xfersound">
+				<item key="ElementDescription" value="to indicate an attended transfer is complete"/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Xfersound"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="xfersound"/>
+			</section>
+			<section name="parkpos">
+				<item key="ElementDescription" value="What extensions to park calls on"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Parkpos"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="parkpos"/>
+			</section>
+			<section name="fileid">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Fileid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fileid"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="D:\javaprojekte\workspaceE3\jact\dataModel\simpleTypemap.typemap"/>
+		<item key="ProjectName" value="featureconf"/>
+	</section>
+</section>

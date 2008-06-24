@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation queueconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : queueconf</h1>
+<p><h2></h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Queuegeneral</h3>
+ <h4>Global settings for call queues</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >persistentmembers[Boolean]</td><td valign="top">Persistent Members
+
+    Store each dynamic agent in each queue in the astdb so that  when asterisk is restarted, each agent will be automatically  readded into their recorded queues. Default is 'yes'.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >queuesectionMap[Queuesection]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Queuesection</h3>
+ <h4>call queue</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >sectionname[String]</td><td valign="top">the section name</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >musiconhold[String]</td><td valign="top">Musiconhold sets which music applies for this particula call queue (configure classes in musiconhold.conf)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >announce[String]</td><td valign="top">An announcement may be specified which is played for the member as soon as they answer a call, typically to indicate to them which queue
+
+ this call should be answered as, so that agents or members who are listening to more than one queue can differentiated how they should engage the customer</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >strategy[String]</td><td valign="top">ringall - ring all available channels until one answers (default) roundrobin - take turns ringing each available interface  leastrecent - ring interface which was least recently called by this queue fewestcalls - ring the one with fewest completed calls from this queue random - ring random interface rrmemory - round robin with memory, remember where we left off last ring pass</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >servicelevel[Integer]</td><td valign="top">Second settings for service level (default 0) Used for service level statistics (calls completed within service level time frame)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top">A context may be specified, in which if the user types a SINGLE
+
+ digit extension while they are in the queue, they will be taken out
+
+ of the queue and sent to that extension in this context.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >timeout[Integer]</td><td valign="top">How long do we let the phone ring before we consider this a timeout...</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >retry[Integer]</td><td valign="top">How long do we wait before trying all the members again?</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >weight[String]</td><td valign="top">Weight of queue - when compared to other queues, higher weights get  first shot at available channels when the same channel is included in  more than one queue.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >wrapuptime[Integer]</td><td valign="top">After a successful call, how long to wait before sending a potentially free member another call (default is 0, or no delay)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >maxlen[Integer]</td><td valign="top">Maximum number of people waiting in the queue (0 for unlimited)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >announcefrequency[Integer]</td><td valign="top">How often to announce queue position and/or estimated holdtime to caller (0=off)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >announceholdtime[Boolean]</td><td valign="top">Should we include estimated hold time in position announcements? Either yes, no, or only once. Hold time will be announced as the estimated time,  or "less than 2 minutes" when appropriate.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >announceroundseconds[String]</td><td valign="top">What's the rounding time for the seconds? If this is non zero then we announce the seconds as well as the minutes rounded to this value</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >monitorformat[String]</td><td valign="top">Calls may be recorded using Asterisk's monitor resource This can be enabled from within the Queue application, starting recording when the call is actually picked up thus, only successful calls are
+
+ recorded, and you are not recording while people are listening to MOH.
+
+ To enable monitoring, simply specify "monitor-format"  it will be disabled
+
+ otherwise. You can specify the monitor filename with by calling Set(MONITOR_FILENAME=foo)
+
+ Otherwise it will use ${UNIQUEID}</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >monitorjoin[Boolean]</td><td valign="top">If you wish to have the two files joined together when the call ends set this to yes</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >joinempty[String]</td><td valign="top">This setting controls whether callers can join a queue with no members. There are three
+
+ choices:
+
+yes - callers can join a queue with no members or only unavailable members no - callers cannot join a queue with no members strict - callers cannot join a queue with no members or only unavailable members</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >leavewhenempty[String]</td><td valign="top">If you wish to remove callers from the queue when new callers cannot join, set this setting to one of the same choices for 'joinempty'</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >eventwhencalled[Boolean]</td><td valign="top">If this is set to yes, the following manager events will be generated:
+
+ AgentCalled, AgentDump, AgentConnect, AgentComplete (may generate some extra manager events, but probably ones you want)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >eventmemberstatusoff[Boolean]</td><td valign="top">If this is set to no, the following manager events will be generated: QueueMemberStatus (may generate a WHOLE LOT of extra manager events)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >reportholdtime[Boolean]</td><td valign="top">If you wish to report the caller's hold time to the member before they are connected to the caller, set this to yes.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >memberdelay[Integer]</td><td valign="top">If you wish to have a delay before the member is connected to the caller (or before the member hears any announcement messages), set this to the number of seconds to delay.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >timeoutrestart[Boolean]</td><td valign="top">If timeoutrestart is set to yes, then the timeout for an agent to answer is reset if a BUSY or CONGESTION is received.  This can be useful if agents are able to cancel a call with reject or similar.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >queuememberMap[Queuemember]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Queuemember</h3>
+ <h4>Each member of this call queue is listed on a separate line in the form technology/dialstring.  "member" means a normal member of a queue.  An optional penalty may be specified after a comma, such that entries with higher penalties are considered last.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >tech[String]</td><td valign="top">the technology</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dialstring[String]</td><td valign="top">the dial string</td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

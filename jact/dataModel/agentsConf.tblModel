@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="agents"/>
+			<item value="agentsconf"/>
+			<item value="agentsrecording"/>
+		</list>
+		<section name="agents">
+			<item key="ElementDescription" value="this last section contains the definition of the agents."/>
+			<item key="TableName" value="agents"/>
+			<item key="JavaClassName" value="Agents"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="agentid"/>
+				<item value="agentpassword"/>
+				<item value="name"/>
+			</list>
+			<section name="agentid">
+				<item key="ElementDescription" value="the agent id"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Agentid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="agentid"/>
+			</section>
+			<section name="agentpassword">
+				<item key="ElementDescription" value="the passwort"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Agentpassword"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="agentpassword"/>
+			</section>
+			<section name="name">
+				<item key="ElementDescription" value="the name"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Name"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="name"/>
+			</section>
+		</section>
+		<section name="agentsconf">
+			<item key="ElementDescription" value="ACD distributes incoming calls to the agents of a Queue."/>
+			<item key="TableName" value="agentsconf"/>
+			<item key="JavaClassName" value="Agentsconf"/>
+			<list key="aggfields">
+				<item value="agentsrecording"/>
+			</list>
+			<list key="TableFKFields" value="agentsrecording">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+				<item value="agents"/>
+			</list>
+			<list key="TableFields" value="agents">
+				<item value="autologoff"/>
+				<item value="ackcall"/>
+				<item value="wrapuptime"/>
+				<item value="music_class"/>
+				<item value="custom_beep"/>
+				<item value="group"/>
+			</list>
+			<section name="group">
+				<item key="ElementDescription" value="Group memberships for agents (may change in mid-file just)"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Group"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="group"/>
+			</section>
+			<section name="custom_beep">
+				<item key="ElementDescription" value="An optional custom beep sound file to play to always-connected agents."/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Custom_beep"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="custom_beep"/>
+			</section>
+			<section name="wrapuptime">
+				<item key="ElementDescription" value="Define wrapuptime. This is the minimum amount of time when&#x0D;&#x0A;after disconnecting before the caller can receive a new call&#x0D;&#x0A;note this is in milliseconds."/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Wrapuptime"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="wrapuptime"/>
+			</section>
+			<section name="ackcall">
+				<item key="ElementDescription" value="Define ackcall to require an acknowledgement by &apos;#&apos; when&#x0D;&#x0A;an agent logs in over agentcallpark. Default is &quot;yes&quot;."/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Ackcall"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="ackcall"/>
+			</section>
+			<section name="autologoff">
+				<item key="ElementDescription" value="Define autologoff times if appropriate. This is how long&#x0D;&#x0A;the phone has to ring with no answer before the agent is&#x0D;&#x0A;automatically logged off (in seconds). Please note that if&#x0D;&#x0A;this value is greater than the timeout value in your queue&#x0D;&#x0A;that agents will not be removed!"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Autologoff"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="autologoff"/>
+			</section>
+			<section name="music_class">
+				<item key="ElementDescription" value="Define the default musiconhold for agents&#x0D;&#x0A;musiconhold"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Music_class"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="music_class"/>
+			</section>
+		</section>
+		<section name="agentsrecording">
+			<item key="ElementDescription" value="This section is devoted to recording agent&apos;s calls The keywords are global to the chan_agent channel driver"/>
+			<item key="TableName" value="agentsrecording"/>
+			<item key="JavaClassName" value="Agentsrecording"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="recordagentcalls"/>
+				<item value="recordformat"/>
+				<item value="createlink"/>
+				<item value="urlprefix"/>
+				<item value="savecallsin"/>
+			</list>
+			<section name="savecallsin">
+				<item key="ElementDescription" value="The optional directory to save the conversations in. The default is&#x0D;&#x0A;/var/spool/asterisk/monitor"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Savecallsin"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="savecallsin"/>
+			</section>
+			<section name="urlprefix">
+				<item key="ElementDescription" value="The text to be added to the name of the recording. Allows forming a url link."/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Urlprefix"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="urlprefix"/>
+			</section>
+			<section name="createlink">
+				<item key="ElementDescription" value="Insert into CDR userfield a name of the the created recording&#x0D;&#x0A;By default it&apos;s turned off."/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Createlink"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="createlink"/>
+			</section>
+			<section name="recordagentcalls">
+				<item key="ElementDescription" value="Enable recording calls addressed to agents. It&apos;s turned off by default."/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Recordagentcalls"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="recordagentcalls"/>
+			</section>
+			<section name="recordformat">
+				<item key="ElementDescription" value="The format to be used to record the calls (wav, gsm, wav49)&#x0D;&#x0A;By default its &quot;wav&quot;."/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Recordformat"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="recordformat"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="D:\javaprojekte\workspaceE3\jact\dataModel\simpleTypemap.typemap"/>
+		<item key="ProjectName" value="agents"/>
+	</section>
+</section>

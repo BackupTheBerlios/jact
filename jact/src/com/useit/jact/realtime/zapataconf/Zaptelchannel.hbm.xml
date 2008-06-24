@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.zapataconf.ZaptelchannelImpl" table="tbl_zapataconf_zaptelchannel" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="signalling" column="signalling"/>	
+		<property name="context" column="context"/>	
+		<property name="channel" column="channel"/>	
+<!-- Agg -->
+	<many-to-one name="fAnalog_Handset_Features" access="field"
+	class="com.useit.jact.model.zapataconf.Analog_Handset_FeaturesImpl"
+	 column="analog_Handset_Features_fk"
+	 cascade="all" />
+	<many-to-one name="fAnalog_Trunk_Features" access="field"
+	class="com.useit.jact.model.zapataconf.Analog_Trunk_FeaturesImpl"
+	 column="analog_Trunk_Features_fk"
+	 cascade="all" />
+	<many-to-one name="fAudio_Quality_Tuning_Options" access="field"
+	class="com.useit.jact.model.zapataconf.Audio_Quality_Tuning_OptionsImpl"
+	 column="audio_Quality_Tuning_Options_fk"
+	 cascade="all" />
+	<many-to-one name="fCall_Logging_Options" access="field"
+	class="com.useit.jact.model.zapataconf.Call_Logging_OptionsImpl"
+	 column="call_Logging_Options_fk"
+	 cascade="all" />
+	<many-to-one name="fCaller_ID_Options" access="field"
+	class="com.useit.jact.model.zapataconf.Caller_ID_OptionsImpl"
+	 column="caller_ID_Options_fk"
+	 cascade="all" />
+	<many-to-one name="fISDN_PRI_Switch" access="field"
+	class="com.useit.jact.model.zapataconf.ISDN_PRI_SwitchImpl"
+	 column="iSDN_PRI_Switch_fk"
+	 cascade="all" />
+	<many-to-one name="fTiming_Parameters" access="field"
+	class="com.useit.jact.model.zapataconf.Timing_ParametersImpl"
+	 column="timing_Parameters_fk"
+	 cascade="all" />
+	<many-to-one name="fOther" access="field"
+	class="com.useit.jact.model.zapataconf.OtherImpl"
+	 column="other_fk"
+	 cascade="all" />
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

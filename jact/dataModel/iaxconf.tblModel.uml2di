@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0">
+  <model href="iaxconf.tblModel.uml2#_BSR-AGs0EdqeEY-gi9uYEA"/>
+  <diagrams position="0,0" size="100,100" name="iaxconf.tblModel" viewport="0,0">
+    <property key="pageFormatName" value="A4"/>
+    <property key="diagramWidth" value="840"/>
+    <property key="diagramHeight" value="1188"/>
+    <property key="pageMarginName" value="Small Margin"/>
+    <property key="diagramTopMargin" value="20"/>
+    <property key="diagramBottomMargin" value="20"/>
+    <property key="diagramLeftMargin" value="20"/>
+    <property key="diagramRightMargin" value="20"/>
+    <property key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" presentation="org.topcased.modeler.uml2.classdiagram">
+      <element href="iaxconf.tblModel.uml2#_BSR-AGs0EdqeEY-gi9uYEA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" position="479,239" size="197,177">
+      <anchorage graphEdge="//@diagrams.0/@contained.2"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge">
+        <element href="iaxconf.tblModel.uml2#_BSR-C2s0EdqeEY-gi9uYEA"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode">
+        <property key="eStructuralFeatureID" value="40"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge">
+          <element href="iaxconf.tblModel.uml2#_BSR-C2s0EdqeEY-gi9uYEA"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-EGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-Fms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-HGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-Ims0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-KGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-Lms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-NGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-Oms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR-QGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode">
+        <property key="eStructuralFeatureID" value="45"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge">
+          <element href="iaxconf.tblModel.uml2#_BSR-C2s0EdqeEY-gi9uYEA"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" position="99,149" size="221,477">
+      <anchorage graphEdge="//@diagrams.0/@contained.2"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge">
+        <element href="iaxconf.tblModel.uml2#_BSR_M2s0EdqeEY-gi9uYEA"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode">
+        <property key="eStructuralFeatureID" value="40"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge">
+          <element href="iaxconf.tblModel.uml2#_BSR_M2s0EdqeEY-gi9uYEA"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_OGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_Pms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_RGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_Sms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_UGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_Vms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_XGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSR_Yms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYEoms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYEqGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYErms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYEtGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYEums0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYEwGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYExms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYEzGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE0ms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE2Gs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE3ms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE5Gs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE6ms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE8Gs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE9ms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYE_Gs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYFAms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYFCGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYFDms0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYFE2s0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" position="0,0" size="0,0">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge">
+            <element href="iaxconf.tblModel.uml2#_BSYFGGs0EdqeEY-gi9uYEA"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode">
+        <property key="eStructuralFeatureID" value="45"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge">
+          <element href="iaxconf.tblModel.uml2#_BSR_M2s0EdqeEY-gi9uYEA"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphEdge" anchor="//@diagrams.0/@contained.0/@anchorage.0 //@diagrams.0/@contained.1/@anchorage.0">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge">
+        <element href="iaxconf.tblModel.uml2#_BSYFJWs0EdqeEY-gi9uYEA"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectUV" id="srcNameEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectUV" id="srcCountEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectUV" id="targetNameEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectUV" id="targetCountEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectOffset" id="middleNameEdgeObject"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

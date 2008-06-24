@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.iaxconf.IaxgeneralImpl" table="tbl_iaxconf_iaxgeneral" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="bindport" column="bindport"/>	
+		<property name="bindaddr" column="bindaddr"/>	
+		<property name="iaxcompat" column="iaxcompat"/>	
+		<property name="nochecksums" column="nochecksums"/>	
+		<property name="delayreject" column="delayreject"/>	
+		<property name="amaflags" column="amaflags"/>	
+		<property name="accountcode" column="accountcode"/>	
+		<property name="language" column="language"/>	
+		<property name="bandwidth" column="bandwidth"/>	
+		<property name="trunktimestamps" column="trunktimestamps"/>	
+		<property name="authdebug" column="authdebug"/>	
+		<property name="tos" column="tos"/>	
+		<property name="mailboxdetail" column="mailboxdetail"/>	
+		<property name="regcontext" column="regcontext"/>	
+		<property name="autokill" column="autokill"/>	
+		<property name="codecpriority" column="codecpriority"/>	
+		<property name="rtcachefriends" column="rtcachefriends"/>	
+		<property name="rtupdate" column="rtupdate"/>	
+		<property name="rtautoclear" column="rtautoclear"/>	
+		<property name="rtignoreexpire" column="rtignoreexpire"/>	
+		<property name="trunkfreq" column="trunkfreq"/>	
+		<property name="disallow" column="disallow"/>	
+		<property name="allow" column="allow"/>	
+		<property name="minregexpire" column="minregexpire"/>	
+		<property name="maxregexpire" column="maxregexpire"/>	
+		<property name="notransfer" column="notransfer"/>	
+<!-- Agg -->
+	<many-to-one name="fIaxjitter" access="field"
+	class="com.useit.jact.model.iaxconf.IaxjitterImpl"
+	 column="iaxjitter_fk"
+	 cascade="all" />
+<!-- maps -->
+		<list name="iaxpeerMap" cascade="all" 
+		table="tbl_iaxconf_iaxgeneral_iaxpeer">
+			<key column="iaxgeneral_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.iaxconf.IaxpeerImpl"/>
+        </list>	
+	
+	
+ 		<list name="iaxregisterMap" cascade="all" 
+		table="tbl_iaxconf_iaxgeneral_iaxregister">
+			<key column="iaxgeneral_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.iaxconf.IaxregisterImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

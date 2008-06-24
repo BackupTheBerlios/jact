@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.zapataconf.Audio_Quality_Tuning_OptionsImpl" table="tbl_zapataconf_audio_quality_tuning_options" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="relaxdtmf" column="relaxdtmf"/>	
+		<property name="echocancel" column="echocancel"/>	
+		<property name="echocancelwhenbridged" column="echocancelwhenbridged"/>	
+		<property name="echotraining" column="echotraining"/>	
+		<property name="rxgain" column="rxgain"/>	
+		<property name="txgain" column="txgain"/>	
+<!-- Agg -->
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

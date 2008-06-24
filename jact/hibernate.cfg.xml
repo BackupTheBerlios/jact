@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">
+			org.hsqldb.jdbcDriver
+		</property>
+		<property name="hibernate.connection.url">
+			jdbc:hsqldb:file:db/testdb
+		</property>
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.HSQLDialect
+		</property>
+		<property name="hibernate.current_session_context_class">
+			org.hibernate.context.ThreadLocalSessionContext
+		</property>
+		
+		<property name="connection.username">sa</property>
+		<property name="connection.password"></property>
+		<!-- Echo all executed SQL to stdout -->
+       <property name="show_sql">true</property>
+       <property name="hibernate.use_sql_comments">true</property>
+       <property name="hibernate.generate_statistics">true</property>
+			
+ 		<!--
+  
+       				<property name="hbm2ddl.auto">create</property>
+			<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+			<property name="hibernate.connection.url">jdbc:postgresql://172.20.16.3:25432/jact</property>
+			<property name="hibernate.connection.username">postgres</property>
+			<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+			<property name="hibernate.connection.autocommit">true</property>
+			Drop and re-create the database schema on startup
+			
+			
+			
+			<mapping resource="com/useit/jact/realtime/iaxconf/Iaxdeny.hbm.xml" />
+			<mapping resource="com/useit/jact/realtime/iaxconf/Iaxgeneral.hbm.xml" />
+			<mapping resource="com/useit/jact/realtime/iaxconf/Iaxjitter.hbm.xml" />
+			<mapping resource="com/useit/jact/realtime/iaxconf/Iaxpeer.hbm.xml" />
+			<mapping resource="com/useit/jact/realtime/iaxconf/Iaxpermit.hbm.xml" />
+			<mapping resource="com/useit/jact/realtime/iaxconf/Iaxregister.hbm.xml" />
+			//-->
+
+		<mapping
+			resource="com/useit/jact/realtime/alarmreciverconf/Alarmreceiverconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/extensionconf/Extension.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/extensionconf/Context.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/extensionconf/Includecontext.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/extensionconf/Switch.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/extensionconf/Extensionconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/extensionconf/Globalvars.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/extensionconf/Includeconfigs.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/featureconf/Featuremap.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/featureconf/Featuresconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/queueconf/Queuegeneral.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/queueconf/Queuesection.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/queueconf/Queuemember.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/misdnconf/Misdnconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/misdnconf/MisdnCryptkey.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/misdnconf/MisdnSections.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/misdnconf/MisdnPorts.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/musiconholdconf/MohClasses.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/musiconholdconf/Music_on_HoldConf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/agentconf/Agents.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/agentconf/Agentsconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/agentconf/Agentsrecording.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/iaxconf/Iaxjitter.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/iaxconf/Iaxregister.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/iaxconf/Iaxdeny.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/iaxconf/Iaxpermit.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/iaxconf/Iaxpeer.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/iaxconf/Iaxgeneral.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/meetmeconf/Meetmeconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/meetmeconf/Meetmerooms.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/misdndriverconf/MisdncardPorts.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/misdndriverconf/MisdnCards.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/misdndriverconf/MisdnDriverConf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/indicationsconf/ToneDefinitions.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/indicationsconf/CustomTone.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/indicationsconf/Indicationsconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Other.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Analog_Handset_Features.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Timing_Parameters.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Analog_Trunk_Features.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/ISDN_PRI_Switch.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Multilink_PPP.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Audio_Quality_Tuning_Options.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Zaptelchannel.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Call_Logging_Options.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Caller_ID_Options.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zapataconf/Zapataconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/managerconf/ManagerSection.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/managerconf/Managerdeny.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/managerconf/Managerpermit.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/managerconf/ManagergeneralSection.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/sipconf/Sipregister.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/sipconf/Sipauth.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/sipconf/SipConf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/sipconf/Sippeers.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/sipconf/Sipgeneral.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zaptelconf/Zaptelchannels.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zaptelconf/Zapteltonezone.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zaptelconf/Zaptelspan.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zaptelconf/Zapteldynamicspan.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/zaptelconf/Zaptelconf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/voicemailconf/Voicemailgeneral.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/voicemailconf/VoicemailConf.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/voicemailconf/Voicemailcontext.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/voicemailconf/Zonemessages.hbm.xml" />
+		<mapping
+			resource="com/useit/jact/realtime/voicemailconf/Voicemailcontextentry.hbm.xml" />
+
+
+	</session-factory>
+</hibernate-configuration>

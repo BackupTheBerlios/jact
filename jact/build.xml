@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<!-- ====================================================================== 
+     08.03.2006 17:38:37                                                        
+
+     project    
+     description
+                   
+     urs                                                                
+     ====================================================================== -->
+<project name="jact" default="jar" basedir=".">
+	<description>
+            java asterisk configuration tool
+    </description>
+
+	<taskdef resource="net/sf/ant4eclipse/antlib.xml" />
+	<taskdef resource="net/sf/antcontrib/antlib.xml" />
+	<property name="source.dir" value="src" />
+	<property name="build.dir" value="bin" />
+	<property name="dist.dir" value="jar" />
+	<property name="docs.dir" value="docs" />
+	<property name="javacDebugInfo" value="off" />
+	<property name="javacVerbose" value="false" />
+	<property name="bootclasspath" value="" />
+
+	<!-- - - - - - - - - - - - - - - - - - 
+	          setup additional propertys                      
+	         - - - - - - - - - - - - - - - - - -->
+	<target name="prepare">
+		<userLibraries userlibraries="../buildresources/eclipse31.userlibraries" />
+
+		<property name="deployment.base" value="./../../building" />
+		<property name="deployment.dir"
+		          value="./../../building/${ant.project.name}" />
+		<property name="dest.dir" value="${deployment.dir}/deploy/lib" />
+		<property name="project.dir" value="${basedir}" />
+		<property name="lib.path" value="./../../" />
+		<property name="workspace" value="./../" />
+		<getEclipseClasspath property="classpath" project="${basedir}" />
+
+	</target>
+
+	<!-- ================================= 
+          target: auto-build              
+         ================================= -->
+	<target name="auto-build"
+	        description="--> makes the building for the aut ant script">
+		<mkdir dir="${deployment.dir}" />
+		<mkdir dir="${deployment.dir}/deploy" />
+
+		<antcall target="copy_jars-intern"
+		         inheritall="true"
+		         inheritrefs="true" />
+		<antcall target="intern-jar" inheritall="true" inheritrefs="true" />
+		<antcall target="makedeployment" inheritall="true" inheritrefs="true" />
+
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: intern-compile                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="intern-compile">
+		<echo message="Compiling ${ant.project.name} sources from ${source.dir} to ${build.dir}" />
+
+		<javac srcdir="${project.dir}/output/"
+		       destdir="${build.dir}"
+		       failonerror="${javacFailOnError}"
+		       verbose="true"
+		       debug="${javacDebugInfo}"
+		       includeAntRuntime="no"
+		       bootclasspath="${bootclasspath}"
+		       classpath="${classpath}"
+			
+			>
+			</javac>
+
+		
+		<javac srcdir="${source.dir}"
+		       destdir="${build.dir}"
+		       failonerror="${javacFailOnError}"
+		       verbose="${javacVerbose}"
+		       debug="${javacDebugInfo}"
+		       includeAntRuntime="no"
+		       bootclasspath="${bootclasspath}"
+		       classpath="${classpath}">
+
+
+		</javac>
+		<copy todir="${build.dir}">
+			<fileset dir="${source.dir}" excludes="**/*.java" />
+		</copy>
+
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: intern-jar                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="intern-jar" depends="intern-compile">
+		<antcall target="buildmanifest">
+		</antcall>
+		<echo message="Building jar file ${jarfile.name}" />
+		<jar jarfile="${deployment.dir}/deploy/test_${ant.project.name}.jar"
+		     basedir="${build.dir}"
+		     manifest="MANIFEST.MF">
+			<include name="**" />
+		</jar>
+		<jar jarfile="${deployment.dir}/deploy/${ant.project.name}.jar"
+		     basedir="${build.dir}"
+		     manifest="MANIFEST.MF">
+			<include name="**" />
+			<exclude name="**\test\**" />
+		</jar>
+		<jar jarfile="${deployment.dir}/deploy/${ant.project.name}_core.jar"
+		     basedir="${build.dir}"
+		     manifest="MANIFEST.MF">
+			<include name="**" />
+			<exclude name="**\test\**" />
+			<exclude name="**\realtime\**" />
+			<exclude name="**\gui\**" />
+
+		</jar>
+		<antcall target="makedeployment" />
+
+	</target>
+	<!-- Build a distribution jar -->
+	<target name="jar"
+	        depends="compile,copy_jars"
+	        description="creates the jars">
+		<antcall target="intern-jar" />
+
+	</target>
+	<!-- Compile all developer sources -->
+	<target name="compile" depends="prepare" description="comiles the code">
+		<getEclipseClasspath property="classpath" project="${basedir}" />
+		<echo message="${classpath}" />
+
+		<antcall target="intern-compile" />
+
+	</target>
+	<target name="copy_jars" depends="prepare">
+		<getEclipseClasspath project="${basedir}"
+		                     property="classpath.copy"
+		                     relative="false"
+		                     runtime="true"
+		                     pathseparator="#" />
+		<antcall target="copy_jars-intern" />
+	</target>
+	<target name="copy_jars-intern">
+		<echo message="dest dir : ${dest.dir}" />
+		<!-- iterate over all classpath entries -->
+		<foreach list="${classpath.copy}"
+		         delimiter="#"
+		         target="copy_jar_file"
+		         param="classpath.entry"
+		         inheritall="true"
+		         inheritrefs="true" />
+		<!--  Get referenced projects to copy their jars -->
+		<getReferencedProjects property="referencedProjects"
+		                       project="${project.dir}"
+		                       separator="#" />
+
+		<!-- Echo the dependent projects to the console -->
+		<echo>Classpath: ${referencedProjects}</echo>
+		<foreach list="${referencedProjects}"
+		         delimiter="#"
+		         target="copy_ref_jar_file"
+		         param="project.entry"
+		         inheritall="true"
+		         inheritrefs="true" />
+
+	</target>
+	<target name="copy_ref_jar_file">
+		<echo message="copy : ${project.entry}" />
+		<copy todir="${dest.dir}" flatten="true">
+			<fileset dir="${deployment.base}/${project.entry}/deploy"
+			         includes="*.jar">
+				<exclude name="test_*.jar" />
+				<exclude name="${ant.project.name}.jar" />
+			</fileset>
+			<fileset dir="${deployment.base}/${project.entry}/deploy/lib"
+			         includes="*.jar">
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="copy_jar_file">
+		<echo message="copy : ${classpath.entry}" />
+		<if>
+			<isfileselected file="${classpath.entry}">
+				<type type="file" />
+			</isfileselected>
+			<then>
+				<!-- copy the jar file to a destination directory -->
+				<copy file="${classpath.entry}"
+				      todir="${dest.dir}"
+				      verbose="false" />
+			</then>
+		</if>
+	</target>
+	<!-- ================================= 
+					          target: start_test              
+					         ================================= -->
+	<target name="start_test"
+	        depends="prepare"
+	        description="--> starts the tests">
+		<antcall target="auto-test" inheritall="true" inheritrefs="true">
+		</antcall>
+	</target>
+
+
+
+	<!-- - - - - - - - - - - - - - - - - - 
+					          target: auto-test                      
+					         - - - - - - - - - - - - - - - - - -->
+	<target name="auto-test" description="test">
+		<copydir dest="${basedir}/testEnv" src="${project.dir}/testEnv">
+		</copydir>
+		<if>
+			<available file="${project.dir}/launchConfigs/" type="dir" />
+			<then>
+				<foreach target="run_test"
+				         param="launch.Config"
+				         inheritall="true"
+				         inheritrefs="true">
+					<path>
+						<fileset dir="${project.dir}/launchConfigs/">
+						</fileset>
+					</path>
+				</foreach>
+			</then>
+		</if>
+	</target>
+
+
+	<!-- - - - - - - - - - - - - - - - - - 
+					          target: run_test                      
+					         - - - - - - - - - - - - - - - - - -->
+	<target name="run_test">
+		<launchJunit launchFile="${launch.Config}"
+		             workspace="${workspace}"
+		             forkmode="once"
+		             tempdir="${project.dir}">
+			<formatter type="xml" usefile="true" />
+		</launchJunit>
+
+	</target>
+
+	<target name="buildmanifest">
+		<delete file="MANIFEST.MF" />
+		<echo message="build Manifest" />
+
+		<path id="testp">
+			<fileset dir="${dest.dir}" includes="*.jar">
+			</fileset>
+		</path>
+		<pathconvert refid="testp" property="classpath.m" pathsep=" ">
+			<chainedmapper>
+				<flattenmapper />
+				<globmapper from="*" to="lib/*" />
+			</chainedmapper>
+		</pathconvert >
+		<echo message="ManifestPath : ${classpath.m}" />
+
+
+		<manifest file="MANIFEST.MF">
+
+			<attribute name="Built-By" value="${user.name}" />
+			<attribute name="Main-Class"
+			           value="com.useit.jact.gui.mainforms.SimpleConfigForm" />
+			<!--    <attribute name="Class-Path" value="log4j-1.2.8.jar commons-cli-1.0.jar"/> -->
+			<attribute name="Class-Path" value="${classpath.m}" />
+			<section name="common">
+				<attribute name="Specification-Title" value="Example" />
+				<attribute name="Specification-Version" value="${version}" />
+				<attribute name="Specification-Vendor" value="urs zeidler" />
+				<attribute name="Implementation-Title" value="common" />
+				<attribute name="Implementation-Version"
+				           value="${version} ${TODAY}" />
+				<attribute name="Implementation-Vendor" value="use IT" />
+			</section>
+
+		</manifest>
+
+	</target>
+
+	<!-- copies other files and so on -->
+	<target name="makedeployment">
+		<copy file="${project.dir}\hibernate.cfg.xml"
+		      todir="${deployment.dir}/deploy/"
+		      verbose="false" />
+		<copy file="${project.dir}/readmes/jact_all.readme"
+		      todir="${deployment.dir}/deploy/"
+		      verbose="false" />
+
+		<copy todir="${deployment.dir}/deploy/">
+			<fileset dir="${project.dir}">
+				<include name="ddt_sql**" />
+			</fileset>
+		</copy>
+		<antcall target="zip_distibutions">
+		</antcall>
+	</target>
+
+	<target name="zip_distibutions">
+
+		<fileset id="jj" includes="jact.jar hibernate.cfg.xml" />
+		<!--
+	<zip basedir="${deployment.dir}/deploy/"
+		     destfile="${deployment.dir}/jact_all.zip" >
+		<fileset dir="${deployment.dir}/deploy/">
+			<filename name="readme-jactall.txt" />
+			<filename name="jact.jar" />
+			<filename name="hibernate.cfg.xml" />
+			<filename name="lib/useitAppFrameWork.jar" />
+		</fileset>
+		<fileset dir="${deployment.dir}/deploy/ddt_sql/">
+			<include name="*.sql" />
+		</fileset>
+	</zip>
+	-->
+		<zip basedir="${project.dir}/src/"
+		     destfile="${deployment.dir}/deploy/jact_allsrc.zip">
+			<fileset dir="${project.dir}/src/" includes="**/*.java" />
+		</zip>
+
+		<zip basedir="${project.dir}/dataModel/"
+		     destfile="${deployment.dir}/deploy/jact_basemodels.zip">
+			<fileset dir="${project.dir}/dataModel/" includes="*.uml2" />
+		</zip>
+
+	</target>
+</project>
+

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_UslbIHVnEdqu-MgwmX9MXw" name="indicationsconf" appliedProfile="_UslbJXVnEdqu-MgwmX9MXw">
+  <eAnnotations xmi:id="_UslbIXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_UslbInVnEdqu-MgwmX9MXw"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_UslbI3VnEdqu-MgwmX9MXw"/>
+  <packageImport xmi:id="_UslbJHVnEdqu-MgwmX9MXw">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_UslbJXVnEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_UslbJnVnEdqu-MgwmX9MXw" source="attributes">
+      <details xmi:id="_UslbJ3VnEdqu-MgwmX9MXw" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_UslbKHVnEdqu-MgwmX9MXw" name="types">
+    <eAnnotations xmi:id="_UslbKXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_UslbKnVnEdqu-MgwmX9MXw"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_UslbK3VnEdqu-MgwmX9MXw" name="ToneDefinitions">
+    <eAnnotations xmi:id="_UslbLHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_UslbLXVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_UslbLnVnEdqu-MgwmX9MXw" javaFieldType="ToneDefinitions" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_UslbL3VnEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_UslbMHVnEdqu-MgwmX9MXw" name="countrycode">
+      <eAnnotations xmi:id="_UslbMXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbMnVnEdqu-MgwmX9MXw" storageFieldname="countrycode"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbM3VnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbNHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbNXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbNnVnEdqu-MgwmX9MXw" name="description">
+      <eAnnotations xmi:id="_UslbN3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbOHVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="description"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbOXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbOnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbO3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbPHVnEdqu-MgwmX9MXw" name="alias">
+      <eAnnotations xmi:id="_UslbPXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbPnVnEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="alias"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbP3VnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbQHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbQXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbQnVnEdqu-MgwmX9MXw" name="ringcadence">
+      <eAnnotations xmi:id="_UslbQ3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbRHVnEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="ringcadence"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbRXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbRnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbR3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbSHVnEdqu-MgwmX9MXw" name="dial">
+      <eAnnotations xmi:id="_UslbSXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbSnVnEdqu-MgwmX9MXw" ordOrder="4" storageFieldname="dial"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbS3VnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbTHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbTXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbTnVnEdqu-MgwmX9MXw" name="busy">
+      <eAnnotations xmi:id="_UslbT3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbUHVnEdqu-MgwmX9MXw" ordOrder="5" storageFieldname="busy"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbUXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbUnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbU3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbVHVnEdqu-MgwmX9MXw" name="ring">
+      <eAnnotations xmi:id="_UslbVXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbVnVnEdqu-MgwmX9MXw" ordOrder="6" storageFieldname="ring"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbV3VnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbWHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbWXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbWnVnEdqu-MgwmX9MXw" name="congestion">
+      <eAnnotations xmi:id="_UslbW3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbXHVnEdqu-MgwmX9MXw" ordOrder="7" storageFieldname="congestion"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbXXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbXnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbX3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbYHVnEdqu-MgwmX9MXw" name="callwaiting">
+      <eAnnotations xmi:id="_UslbYXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbYnVnEdqu-MgwmX9MXw" ordOrder="8" storageFieldname="callwaiting"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbY3VnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbZHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbZXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbZnVnEdqu-MgwmX9MXw" name="dialrecall">
+      <eAnnotations xmi:id="_UslbZ3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbaHVnEdqu-MgwmX9MXw" ordOrder="9" storageFieldname="dialrecall"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbaXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbanVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Uslba3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbbHVnEdqu-MgwmX9MXw" name="record">
+      <eAnnotations xmi:id="_UslbbXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbbnVnEdqu-MgwmX9MXw" ordOrder="10" storageFieldname="record"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Uslbb3VnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbcHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbcXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbcnVnEdqu-MgwmX9MXw" name="info">
+      <eAnnotations xmi:id="_Uslbc3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbdHVnEdqu-MgwmX9MXw" ordOrder="11" storageFieldname="info"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbdXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbdnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Uslbd3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbeHVnEdqu-MgwmX9MXw" name="customToneMap" type="_UslbfXVnEdqu-MgwmX9MXw" association="_UslbjnVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_UslbeXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_UslbenVnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Uslbe3VnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbfHVnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_UslbfXVnEdqu-MgwmX9MXw" name="CustomTone">
+    <eAnnotations xmi:id="_UslbfnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_Uslbf3VnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_UslbgHVnEdqu-MgwmX9MXw" javaFieldType="CustomTone" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_UslbgXVnEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_UslbgnVnEdqu-MgwmX9MXw" name="tonecode">
+      <eAnnotations xmi:id="_Uslbg3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbhHVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="tonecode"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbhXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbhnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Uslbh3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbiHVnEdqu-MgwmX9MXw" name="name">
+      <eAnnotations xmi:id="_UslbiXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbinVnEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="name"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Uslbi3VnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbjHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbjXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_UslbjnVnEdqu-MgwmX9MXw" name="ToneDefinitions->CustomTone" memberEnd="_UslbeHVnEdqu-MgwmX9MXw _Uslbj3VnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_Uslbj3VnEdqu-MgwmX9MXw" type="_UslbK3VnEdqu-MgwmX9MXw" association="_UslbjnVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbkHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbkXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_UslbknVnEdqu-MgwmX9MXw" name="Indicationsconf">
+    <eAnnotations xmi:id="_Uslbk3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_UslblHVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_UslblXVnEdqu-MgwmX9MXw" javaFieldType="Indicationsconf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_UslblnVnEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_Uslbl3VnEdqu-MgwmX9MXw" name="country">
+      <eAnnotations xmi:id="_UslbmHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_UslbmXVnEdqu-MgwmX9MXw" storageFieldname="country"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_UslbmnVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Uslbm3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbnHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UslbnXVnEdqu-MgwmX9MXw" name="toneDefinitionsMap" type="_UslbK3VnEdqu-MgwmX9MXw" association="_UslbonVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_UslbnnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_Uslbn3VnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslboHVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslboXVnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_UslbonVnEdqu-MgwmX9MXw" name="Indicationsconf->ToneDefinitions" memberEnd="_UslbnXVnEdqu-MgwmX9MXw _Uslbo3VnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_Uslbo3VnEdqu-MgwmX9MXw" type="_UslbknVnEdqu-MgwmX9MXw" association="_UslbonVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UslbpHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslbpXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation iaxconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : iaxconf</h1>
+<p><h2>iaxconf</h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Iaxjitter</h3>
+ <h4>There are presently two jitterbuffer implementations available for * and chan_iax2<para>the classic and the new, channel/application independent implementation.  These
+
+are controlled at compile-time.  The new jitterbuffer additionally has support for PLC
+
+which greatly improves quality as the jitterbuffer adapts size, and in compensating for lost packets. All the jitter buffer settings except dropcount are in milliseconds. The jitter buffer works for INCOMING audio - the outbound audio will  be dejittered by the jitter buffer at the other end.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >jitterbuffer[Boolean]</td><td valign="top">yes|no</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >forcejitterbuffer[Boolean]</td><td valign="top">yes|no</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dropcount[Integer]</td><td valign="top">the jitter buffer is sized such that no more than "dropcount" frames would have been "too late" over the last 2 seconds. Set to a small number.  "3" represents 1.5% of frames dropped [This option is not applicable to, and ignored by the new jitterbuffer implementation]</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >maxjitterbuffer[Integer]</td><td valign="top">a maximum size for the jitter buffer. Setting a reasonable maximum here will prevent the call delay from rising to silly values in extreme situations; you'll hear SOMETHING, even though it will be jittery.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >resyncthreshold[Integer]</td><td valign="top">when the jitterbuffer notices a significant change in delay that continues over a few frames, it will resync, assuming that the change in delay was caused by a timestamping mix-up. The threshold for noticing a change in delay is measured as twice the measured jitter plus this resync threshold. Resycning can be disabled by setting this parameter to -1. [This option presently applies only to the new jitterbuffer implementation]</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >maxjitterinterps[Integer]</td><td valign="top">the maximum number of interpolation frames the jitterbuffer should return in a row. Since some clients do not send CNG/DTX frames to indicate silence, the jitterbuffer will assume silence has begun after returning this many interpolations. This prevents interpolating throughout a long silence. [This option presently applies only to the new jitterbuffer implementation]</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >maxexcessbuffer[Integer]</td><td valign="top">If conditions improve after a period of high jitter, the jitter buffer can end up bigger than necessary.  If it ends up more than "maxexcessbuffer" bigger than needed, Asterisk will start gradually decreasing the amount of jitter buffering. [This option is not applicable to, and ignored by the new jitterbuffer implementation]</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >minexcessbuffer[Integer]</td><td valign="top">Sets a desired mimimum amount of headroom in  the jitter buffer.  If Asterisk has less headroom than this, then it will start gradually increasing the amount of jitter buffering. [This option is not applicable to, and ignored by the new jitterbuffer implementation]</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >jittershrinkrate[Integer]</td><td valign="top">when the jitter buffer is being gradually shrunk  (or enlarged), how many millisecs shall we take off per 20ms frame received?  Use a small number, or you will be able to hear it changing.  An example</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Iaxregister</h3>
+ <h4>Register with a SIP provider</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >user[String]</td><td valign="top">is the user id for this SIP server (ex 2345)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >authuser[String]</td><td valign="top">is the optional authorization user for the SIP server</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >secret[String]</td><td valign="top">is the user's password</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >host[String]</td><td valign="top">is the domain or host name for the SIP server. This SIP server needs a definition in a section of its own in SIP.conf (mysipprovider.com).</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >port[Integer]</td><td valign="top">send the register request to this port at host. Defaults to 5060</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >extension[String]</td><td valign="top">the Asterisk contact extension. 1234 is put into the contact header in the SIP Register message. The contact extension is used by remote SIP server when it needs to send a call to Asterisk. See the example below. The default context extension is "s".</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Iaxdeny</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >value[String]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Iaxpermit</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >value[String]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Iaxpeer</h3>
+ <h4> Further user sections may be added, specifying a context and a secret used for connections with that given authentication name. Limited IP based access control is allowed by use of "allow" and "deny" keywords.  Multiple rules are permitted.  Multiple permitted contexts may be specified, in which case the first will be the default. You can also override caller*ID so that when you receive a call you set the Caller*ID to be what you want instead of trusting what the remote user provides There are three authentication methods that are supported:  md5, plaintext, and rsa.  The least secure is "plaintext", which sends passwords cleartext across the net.  "md5" uses a challenge/response md5 sum arrangement, but still requires both ends have plain text access to the secret.  "rsa" allows unidirectional secret knowledge through public/private keys.  If "rsa" authentication is used, "inkeys" is a list of acceptable public keys on the  local system that can be used to authenticate the remote peer, separated by the ":" character.  "outkey" is a single, private key to use to authenticate to the other side.  Public keys are named /var/lib/asterisk/keys/<name>.pub while private keys are named /var/lib/asterisk/keys/<name>.key.  Private keys should always be 3DES encrypted.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >iaxpeername[String]</td><td valign="top">The peer name.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >peertype[PeerType]</td><td valign="top"> [user|peer|friend]: This line tells Asterisk how to interpret this entity. Users are things</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callerid[String]</td><td valign="top"><callerid>: You may override the Caller*ID information passed by a user to you (if they choose to send it) in order that it always be accurate from the perspective of your server.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >auth[String]</td><td valign="top"> [md5|plaintext|rsa]: You may select which authentication methods are permitted to be used by the user to authenticate to us. Multiple methods may be specified, separated by commas. If md5 or plaintext authentication is selected, a secret must be provided. If RSA authentication is specified, then one or more key names must be specifed with "inkeys" If no secret is specified and no authentication method is specified, then no authentication will be required.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >secret[String]</td><td valign="top"><secret>: The "secret" line specifies the shared secret for md5 and plaintext authentication methods. It is never suggested to use plaintext except in some cases for debugging.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >inkeys[String]</td><td valign="top"> key1[:key2...]: The "inkeys" line specifies which keys we can use to authenticate the remote peer. If the peer's challenge passes with any of the given keys, then we accept its authentication. The key files live in /var/lib/asterisk/keys/<name>.pub and are *public keys*. Public keys are not typically DES3 encrypted and thus do not usually need initialization.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >host[String]</td><td valign="top">Sets the expected outgoing host for this client. Can be set to an ip address or dynamic, which will allow incoming connections from any host (that is not explicitly denied.)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >defaultip[String]</td><td valign="top">The default IP address for an IAX client. This field is consulted if Asterisk receives a call for an IAX client that is dynamic and has not registered to let Asterisk know the current IP address. Takes as itís argument an IP address.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top">When used within a client definition, this keyword overrides the default incoming context set in the general section for the user only.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dbsecret[String]</td><td valign="top">Secrets can be stored in astdb, too (mysecrets/place)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >setvar[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >peercontext[PbxContext]</td><td valign="top">Default context to request for calls to peer</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >qualify[Integer]</td><td valign="top">Tells Asterisk whether to test whether the peer is alive before attempting to connect the call. If set to yes Asterisk will periodically contact the peer before forwarding any call information. The argument specified is the maximum number of milliseconds that a peer can take to respond before it is considered unavailable.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >trunk[Boolean]</td><td valign="top">Enables or disables trunking for a given user or peer. Trunk mode is a more efficient method of operating IAX if there are typically many calls running on the link. Trunk mode requires having a Zaptel interface in the Asterisk server.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >timezone[String]</td><td valign="top">Set a timezone for the date/time IE</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >regexten[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >disallow[CodecsSet]</td><td valign="top">all :Disallow all codecs (global configuration)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >allow[CodecsSet]</td><td valign="top">Allow codecs in order of preference (Use DISALLOW=ALL first, before allowing other codecs)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >mailbox[String]</td><td valign="top">Provides a mailbox to associate with a given peer, so that when it registers it can be notified of any pending messages waiting.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >accountcode[String]</td><td valign="top">When used within a client definition, sets the account code for that client only. This is used by the call logging service.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >outkey[String]</td><td valign="top">The private key to encrypt outgoing authentication communication for this client.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >notransfer[Boolean]</td><td valign="top">Disable IAX native transfer.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >qualifysmoothing[Boolean]</td><td valign="top">use an average of the last two PONG results to reduce falsly detected LAGGED hosts Default: Off</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >qualifyfreqok[Integer]</td><td valign="top">how frequently to ping the peer when everything seems to be ok, in milliseconds</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >qualifyfreqnotok[Integer]</td><td valign="top">how frequently to ping the peer when it's either LAGGED or UNAVAILABLE, in milliseconds</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >iaxdenyMap[Iaxdeny]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >iaxpermitMap[Iaxpermit]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Iaxgeneral</h3>
+ <h4>Global settings  Inter-Asterisk eXchange driver definition This configuration is re-read at reload or with the CLI command reload chan_iax2.so General settings, like port number to bind to, and an option address (the default is to bind to all local addresses).</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >bindport[Integer]</td><td valign="top">bindport and bindaddr may be specified NOTE: bindport must be specified BEFORE bindaddr or may be specified on a specific bindaddr if followed by</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >bindaddr[String]</td><td valign="top">addresses, but the first will be the  default</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >iaxcompat[String]</td><td valign="top">Set iaxcompat to yes if you plan to use layered switches or some other scenario which may cause some delay when doing a lookup in the dialplan. It incurs a small performance hit to enable it. This option causes Asterisk to spawn a separate thread when it receives an IAX DPREQ (Dialplan Request) instead of blocking while it waits for a response.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >nochecksums[Boolean]</td><td valign="top">Disable UDP checksums (if nochecksums is set, then no checkums will be calculated/checked on systems supporting this feature)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >delayreject[Boolean]</td><td valign="top">For increased security against brute force password attacks enable "delayreject" which will delay the sending of authentication reject for REGREQ or AUTHREP if there is a password.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >amaflags[Amaflags]</td><td valign="top">You may specify a global default AMA flag for iaxtel calls.  It must be one of 'default', 'omit', 'billing', or 'documentation'.  These flags are used in the generation of call detail records.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >accountcode[String]</td><td valign="top">You may specify a default account for Call Detail Records in addition to specifying on a per-user basis</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >language[String]</td><td valign="top">You may specify a global default language for users.  Can be specified also on a per-user basis If omitted, will fallback to english</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >bandwidth[String]</td><td valign="top">Specify bandwidth of low, medium, or high to control which codecs are used in general.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >trunktimestamps[Integer]</td><td valign="top">Should we send timestamps for the individual sub-frames within trunk frames? There is a small bandwidth use for these (less than 1kbps/call), but they ensure that frame timestamps get sent end-to-end properly.  If both ends of all your trunks go directly to TDM, _and_ your trunkfreq equals the frame length for your codecs, you  can probably suppress these.  The receiver must also support this feature, although they do not also need to have it enabled.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >authdebug[String]</td><td valign="top">You can disable authentication debugging to reduce the amount of  debugging traffic.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >tos[String]</td><td valign="top">Finally, you can set values for your TOS bits to help improve  performance.  Valid values are:   lowdelay		-- Minimize delay   throughput		-- Maximize throughput   reliability		-- Maximize reliability   mincost		-- Minimize cost   none		-- No flags</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >mailboxdetail[Boolean]</td><td valign="top">If mailboxdetail is set to "yes", the user receives the actual new/old message counts, not just a yes/no as to whether they have messages.  this can be set on a per-peer basis as well</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >regcontext[String]</td><td valign="top">If regcontext is specified, Asterisk will dynamically  create and destroy a NoOp priority 1 extension for a given peer who registers or unregisters with us.  The actual extension is the 'regexten' parameter of the registering peer or its name if 'regexten' is not provided.  More than one regexten may be supplied if they are separated by '&'.  Patterns may be used in regexten.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >autokill[Boolean]</td><td valign="top">If we don't get ACK to our NEW within 2000ms, and autokill is set to yes, then we cancel the whole thing (that's enough time for one  retransmission only).  This is used to keep things from stalling for a long time for a host that is not available, but would be ill advised for bad  connections.  In addition to 'yes' or 'no' you can also specify a number of milliseconds.  See 'qualify' for individual peers to turn on for just a specific peer.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >codecpriority[String]</td><td valign="top">codecpriority controls the codec negotiation of an inbound IAX call. This option is inherited to all user entities.  It can also be defined  in each user entity separately which will override the setting in general.
+
+The valid values are: caller   - Consider the callers preferred order ahead of the host's. host     - Consider the host's preferred order ahead of the caller's. disabled - Disable the consideration of codec preference alltogether.            (this is the original behaviour before preferences were added) reqonly  - Same as disabled, only do not consider capabilities if            the requested format is not available the call will only            be accepted if the requested format is available.
+
+The default value is 'host'</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtcachefriends[Integer]</td><td valign="top">Cache realtime friends by adding them to the internal list just like friends added from the config file only on a as-needed basis.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtupdate[Boolean]</td><td valign="top">Send registry updates to database using realtime? (yes|no) If set to yes, when a IAX2 peer registers successfully, the ip address,the origination port, the registration period, and the username of the origination port, the registration period, and the username of  the peer will be set to database via realtime. If not present, defaults to 'yes'.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtautoclear[Boolean]</td><td valign="top">Auto-Expire friends created on the fly on the same schedule as if it had just registered when the registration expires the friend will vanish from the configuration until requested again.  If set to an integer, friends expire within this number of seconds instead of the same as the registration interval</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtignoreexpire[Boolean]</td><td valign="top">when reading a peer from Realtime, if the peer's registration has expired based on its registration interval, used the stored  address information regardless</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >trunkfreq[Integer]</td><td valign="top">How frequently to send trunk msgs (in ms)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >disallow[CodecsSet]</td><td valign="top">all :Disallow all codecs (global configuration)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >allow[CodecsSet]</td><td valign="top">Allow codecs in order of preference (Use DISALLOW=ALL first, before allowing other codecs)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >minregexpire[Integer]</td><td valign="top">Minimum and maximum amounts of time that IAX peers can request as a registration expiration interval (in seconds).</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >maxregexpire[Integer]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >notransfer[Boolean]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >iaxjitter[Iaxjitter]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >iaxpeerMap[Iaxpeer]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >iaxregisterMap[Iaxregister]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

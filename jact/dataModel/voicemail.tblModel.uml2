@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_vlGLIHVmEdqu-MgwmX9MXw" name="voicemailconf" appliedProfile="_vlGLJXVmEdqu-MgwmX9MXw">
+  <eAnnotations xmi:id="_vlGLIXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+    <eAnnotations xmi:id="_dr27YJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dr27YZGDEdqJzd8pNSOzOg" key="uuid" value="11386204779741"/>
+    </eAnnotations>
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_vlGLInVmEdqu-MgwmX9MXw"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_drquIJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+    <details xmi:id="_drquIZGDEdqJzd8pNSOzOg" key="uuid" value="11386204779540"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_vlGLI3VmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_dr27YpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dr27Y5GDEdqJzd8pNSOzOg" key="uuid" value="11386204779743"/>
+    </eAnnotations>
+    <body>voicemailconf</body>
+  </ownedComment>
+  <packageImport xmi:id="_vlGLJHVmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_dr27ZJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dr27ZZGDEdqJzd8pNSOzOg" key="uuid" value="11386204779744"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_vlGLJXVmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_vlGLJnVmEdqu-MgwmX9MXw" source="attributes">
+      <eAnnotations xmi:id="_dr9CApGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dr9CA5GDEdqJzd8pNSOzOg" key="uuid" value="11386204779846"/>
+      </eAnnotations>
+      <details xmi:id="_vlGLJ3VmEdqu-MgwmX9MXw" key="version" value="0"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dr9CAJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dr9CAZGDEdqJzd8pNSOzOg" key="uuid" value="11386204779845"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_vlGLKHVmEdqu-MgwmX9MXw" name="types">
+    <eAnnotations xmi:id="_vlGLKXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dr9CBpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dr9CB5GDEdqJzd8pNSOzOg" key="uuid" value="11386204779849"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_vlGLKnVmEdqu-MgwmX9MXw"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dr9CBJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dr9CBZGDEdqJzd8pNSOzOg" key="uuid" value="11386204779848"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_vlGLK3VmEdqu-MgwmX9MXw" name="Voicemailgeneral">
+    <eAnnotations xmi:id="_vlGLLHVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dr9CCpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dr9CC5GDEdqJzd8pNSOzOg" key="uuid" value="113862047798412"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_vlGLLXVmEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_vlGLLnVmEdqu-MgwmX9MXw" javaFieldType="Voicemailgeneral" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dr9CCJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dr9CCZGDEdqJzd8pNSOzOg" key="uuid" value="113862047798411"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_vlGLL3VmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dr9CDJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dr9CDZGDEdqJzd8pNSOzOg" key="uuid" value="113862047798415"/>
+      </eAnnotations>
+      <body>Lets first discuss the contents of the general section. This section contains configuration settings which will apply as a common policy across all users. The general section must be defined and present in voicemail.conf. Configuration entries are coded in setting=value format. The configuration settings available in the general section are as follows:
+
+</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_vlGLMHVmEdqu-MgwmX9MXw" name="attach">
+      <eAnnotations xmi:id="_vlGLMXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsDIopGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDIo5GDEdqJzd8pNSOzOg" key="uuid" value="113862047799417"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLMnVmEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="attach"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsDIoJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsDIoZGDEdqJzd8pNSOzOg" key="uuid" value="113862047799416"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLM3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dsDIpJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDIpZGDEdqJzd8pNSOzOg" key="uuid" value="113862047799419"/>
+        </eAnnotations>
+        <body>Attach causes Asterisk to copy a voicemail message to an audio file and send it to the user as an attachment in an e-mail  voicemail notification message.  The default is not to do this. Attach takes two values yes or no.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLNHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dsDIppGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDIp5GDEdqJzd8pNSOzOg" key="uuid" value="113862047799420"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLNXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dsDIqJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDIqZGDEdqJzd8pNSOzOg" key="uuid" value="113862047799421"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLNnVmEdqu-MgwmX9MXw" name="delete">
+      <eAnnotations xmi:id="_vlGLN3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsJPQJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJPQZGDEdqJzd8pNSOzOg" key="uuid" value="113862047800423"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLOHVmEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="delete"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsDIqpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsDIq5GDEdqJzd8pNSOzOg" key="uuid" value="113862047799422"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLOXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dsJPQpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJPQ5GDEdqJzd8pNSOzOg" key="uuid" value="113862047800425"/>
+        </eAnnotations>
+        <body>If set to &amp;quot;yes&amp;quot; the message will be deleted from the voicemailbox (after having been emailed).
+
+The delete flag, when used alone (instead of with voicemail broadcast), provides functionality that allows a user to receive their voicemail via email alone.
+
+Note This settting does not always work as a global setting. It is recommended to put this as an option for each voice mailbox that's messages are to be deleted after being emailed.
+
+Note This setting needs to be prefixed with a | not a , in order to set it on a user's extension if other settings are being configured.  For example 823 =&amp;gt; 1234,office,office@demo.local,,attach=yes|delete=1</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLOnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dsJPRJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJPRZGDEdqJzd8pNSOzOg" key="uuid" value="113862047800426"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLO3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dsJPRpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJPR5GDEdqJzd8pNSOzOg" key="uuid" value="113862047800427"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLPHVmEdqu-MgwmX9MXw" name="mailcmd">
+      <eAnnotations xmi:id="_vlGLPXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsJPSpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJPS5GDEdqJzd8pNSOzOg" key="uuid" value="113862047800429"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLPnVmEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="mailcmd"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsJPSJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsJPSZGDEdqJzd8pNSOzOg" key="uuid" value="113862047800428"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLP3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dsJPTJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJPTZGDEdqJzd8pNSOzOg" key="uuid" value="113862047800431"/>
+        </eAnnotations>
+        <body>Mailcmd allows the administrator to override the default mailer command with a defined command. Mailcmd takes a string value set to the desired command line to execute when a user needs to be notified of a voice mail message. The default command line is: '/usr/sbin/sendmail -t'</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLQHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtM_MJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtM_MZGDEdqJzd8pNSOzOg" key="uuid" value="113862047811532"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLQXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtM_MpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtM_M5GDEdqJzd8pNSOzOg" key="uuid" value="113862047811533"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLQnVmEdqu-MgwmX9MXw" name="maxsilence">
+      <eAnnotations xmi:id="_vlGLQ3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtM_NpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtM_N5GDEdqJzd8pNSOzOg" key="uuid" value="113862047811535"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLRHVmEdqu-MgwmX9MXw" ordOrder="4" storageFieldname="maxsilence"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtM_NJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtM_NZGDEdqJzd8pNSOzOg" key="uuid" value="113862047811534"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLRXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dtTF0JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtTF0ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047812537"/>
+        </eAnnotations>
+        <body>Maxsilence defines how long Asterisk will wait for a contiguous period of silence before terminating an incoming call to voice mail. The default value is 0, which means the silence detector is disabled and the wait time is infinite. Maxsilence takes a value of zero or a positive integer value which is the number of seconds of silence to wait before disconnecting.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLRnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtTF0pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtTF05GDEdqJzd8pNSOzOg" key="uuid" value="113862047812538"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLR3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtTF1JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtTF1ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047812539"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLSHVmEdqu-MgwmX9MXw" name="envelope">
+      <eAnnotations xmi:id="_vlGLSXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtTF2JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtTF2ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047812541"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLSnVmEdqu-MgwmX9MXw" ordOrder="5" storageFieldname="envelope"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtTF1pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtTF15GDEdqJzd8pNSOzOg" key="uuid" value="113862047812540"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLS3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dtTF2pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtTF25GDEdqJzd8pNSOzOg" key="uuid" value="113862047812543"/>
+        </eAnnotations>
+        <body>Envelope controls whether or not Asterisk will play the message envelope (date/time) before playing the voicemail message. This settng does not affect the operation of the envelope option in the advanced voicemail menu. Envelope takes two values yes or no.  The default value is yes. Note: this is only in the Asterisk CVS version dated 5/19/04 or later.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLTHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtTF3JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtTF3ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047812544"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLTXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtZMcJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtZMcZGDEdqJzd8pNSOzOg" key="uuid" value="113862047813545"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLTnVmEdqu-MgwmX9MXw" name="externnotify">
+      <eAnnotations xmi:id="_vlGLT3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtZMdJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtZMdZGDEdqJzd8pNSOzOg" key="uuid" value="113862047813547"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLUHVmEdqu-MgwmX9MXw" ordOrder="6" storageFieldname="externnotify"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtZMcpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtZMc5GDEdqJzd8pNSOzOg" key="uuid" value="113862047813546"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLUXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dtZMdpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtZMd5GDEdqJzd8pNSOzOg" key="uuid" value="113862047813549"/>
+        </eAnnotations>
+        <body>Want to run an external program whenever a caller leaves a voice mail message for a user? This is where the externnotify command comes in handy. Externnotify takes a string value which is the command line you want to execute when the caller finishes leaving a message.
+
+Note: see a poorly written, but functional example of an external notification script &lt;a class='wiki'  href='http://mikecathey.com/code/vmnotify/'>here&lt;/a>.
+
+The way it works is basically any time that somebody leaves a voicemail on the system (regardless of mailbox number), the command specified for externnotify is run with the arguments (in this order): context, extension, and number of voicemails in that mailbox. These arguments are passed to the program that you set in the externnotify variable.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLUnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtZMeJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtZMeZGDEdqJzd8pNSOzOg" key="uuid" value="113862047813550"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLU3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtfTEJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtfTEZGDEdqJzd8pNSOzOg" key="uuid" value="113862047813551"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLVHVmEdqu-MgwmX9MXw" name="silencethreshold">
+      <eAnnotations xmi:id="_vlGLVXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtfTFJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtfTFZGDEdqJzd8pNSOzOg" key="uuid" value="113862047814553"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLVnVmEdqu-MgwmX9MXw" ordOrder="7" storageFieldname="silencethreshold"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtfTEpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtfTE5GDEdqJzd8pNSOzOg" key="uuid" value="113862047814552"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLV3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dtfTFpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtfTF5GDEdqJzd8pNSOzOg" key="uuid" value="113862047814555"/>
+        </eAnnotations>
+        <body>When using the maxsilence setting, it is sometimes necessary to adjust the silence detection threshold to eliminate false triggering on background noise.
+
+Silencethreshold allows the adminstrator to do just that. The default silencethreshold value is 128.  Higher numbers raise the threshold so that more background noise is needed to cause the silence detector to reset. When employing this setting, some experimentation will be necessary to find the best result.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLWHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtfTGJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtfTGZGDEdqJzd8pNSOzOg" key="uuid" value="113862047814556"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLWXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtfTGpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtfTG5GDEdqJzd8pNSOzOg" key="uuid" value="113862047814557"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLWnVmEdqu-MgwmX9MXw" name="serveremail">
+      <eAnnotations xmi:id="_vlGLW3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtlZsJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtlZsZGDEdqJzd8pNSOzOg" key="uuid" value="113862047815559"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLXHVmEdqu-MgwmX9MXw" ordOrder="8" storageFieldname="serveremail"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtfTHJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtfTHZGDEdqJzd8pNSOzOg" key="uuid" value="113862047814558"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLXXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dtlZspGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtlZs5GDEdqJzd8pNSOzOg" key="uuid" value="113862047815561"/>
+        </eAnnotations>
+        <body>This setting can be used to identify the source of a voicemail  notification message. The value is a string which can be encoded one of two ways. If the string is of the form &lt;i>someone@host.com&lt;/i>, then the string will be used as the source address for all voicemail notification emails. If the string is of the form &lt;i>someone&lt;/i>, then the host name of the machine running Asterisk will be postpended to the string after insertion of a '@'.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLXnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtlZtJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtlZtZGDEdqJzd8pNSOzOg" key="uuid" value="113862047815562"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLX3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtlZtpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtlZt5GDEdqJzd8pNSOzOg" key="uuid" value="113862047815563"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLYHVmEdqu-MgwmX9MXw" name="maxmessage">
+      <eAnnotations xmi:id="_vlGLYXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtlZupGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtlZu5GDEdqJzd8pNSOzOg" key="uuid" value="113862047815565"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLYnVmEdqu-MgwmX9MXw" ordOrder="9" storageFieldname="maxmessage"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtlZuJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtlZuZGDEdqJzd8pNSOzOg" key="uuid" value="113862047815564"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLY3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dtrgUJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtrgUZGDEdqJzd8pNSOzOg" key="uuid" value="113862047816567"/>
+        </eAnnotations>
+        <body>This defines the maximum amount of time in seconds of an incoming message. Use this when there are many users and disk space is limited. The default value for this setting is 0 which means there will be no maximum time limit enforced.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLZHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtrgUpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtrgU5GDEdqJzd8pNSOzOg" key="uuid" value="113862047816568"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLZXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtrgVJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtrgVZGDEdqJzd8pNSOzOg" key="uuid" value="113862047816569"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLZnVmEdqu-MgwmX9MXw" name="minmessage">
+      <eAnnotations xmi:id="_vlGLZ3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtrgWJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtrgWZGDEdqJzd8pNSOzOg" key="uuid" value="113862047816571"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLaHVmEdqu-MgwmX9MXw" ordOrder="10" storageFieldname="minmessage"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtrgVpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtrgV5GDEdqJzd8pNSOzOg" key="uuid" value="113862047816570"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLaXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dtrgWpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtrgW5GDEdqJzd8pNSOzOg" key="uuid" value="113862047816573"/>
+        </eAnnotations>
+        <body>This setting can be used to elimiinate messages which are shorter than a given amount of time in seconds. The default value for this setting is 0 which means there will be no minimum time limit enforced.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLanVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtrgXJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtrgXZGDEdqJzd8pNSOzOg" key="uuid" value="113862047816574"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLa3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dtrgXpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtrgX5GDEdqJzd8pNSOzOg" key="uuid" value="113862047816575"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLbHVmEdqu-MgwmX9MXw" name="format">
+      <eAnnotations xmi:id="_vlGLbXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dt90MJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt90MZGDEdqJzd8pNSOzOg" key="uuid" value="113862047819577"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLbnVmEdqu-MgwmX9MXw" ordOrder="11" storageFieldname="format"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtrgYJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtrgYZGDEdqJzd8pNSOzOg" key="uuid" value="113862047816576"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLb3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dt90MpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt90M5GDEdqJzd8pNSOzOg" key="uuid" value="113862047819579"/>
+        </eAnnotations>
+        <body>The format setting selects audio file format(s) to use when storing voice mail messages. The value is a string defining the audio format(s) of the message file. The default format string is &lt;i>wav49|gsm|wav&lt;/i>, meaning that Asterisk will save the voicemail message in all three supported formats. When emailing the attachment, however, it will send only the first of the formats defined here. What the value of saving in more than one format is, I don't know.
+
+ wav49: In this format, the file size will be small, the quality good, and it's a good choice for sending voicemail messages in email. The file will have a .wav extension, which all Windows users should have no problems with, and users on other platforms should also be able to easily play these sound files.
+
+ gsm: Voicemail saved in this format will have about the same file size and same audio quality as wav49. It may be less well supported by client operating systems if sent to users in email, however.
+
+ wav: This is an uncompressed sound format, so the file size is very large. Not recommended.
+
+ g723sf: The sample voicemail.conf file has this option commented out. If you try to activate it, you will find that it doesn't work.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLcHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dt90NJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt90NZGDEdqJzd8pNSOzOg" key="uuid" value="113862047819580"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLcXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dt90NpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt90N5GDEdqJzd8pNSOzOg" key="uuid" value="113862047819581"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLcnVmEdqu-MgwmX9MXw" name="maxgreet">
+      <eAnnotations xmi:id="_vlGLc3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duD60JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duD60ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047820583"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLdHVmEdqu-MgwmX9MXw" ordOrder="12" storageFieldname="maxgreet"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dt90OJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dt90OZGDEdqJzd8pNSOzOg" key="uuid" value="113862047819582"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLdXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_duD60pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duD605GDEdqJzd8pNSOzOg" key="uuid" value="113862047820585"/>
+        </eAnnotations>
+        <body>This setting allows the adminstrator to limit the length of the user-recordable voicemail greeting. Use this option on systems with a large number of users and limited disk space. The value is an integer defining the maximum length in seconds of a  greeting message. The default value is 0 which means that the greeting message can be any length. This setting will control the lengths of the unavailable greeting, busy greeting, and user name messages.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLdnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duD61JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duD61ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047820586"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLd3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duD61pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duD615GDEdqJzd8pNSOzOg" key="uuid" value="113862047820587"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLeHVmEdqu-MgwmX9MXw" name="skipms">
+      <eAnnotations xmi:id="_vlGLeXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duD62pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duD625GDEdqJzd8pNSOzOg" key="uuid" value="113862047820589"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLenVmEdqu-MgwmX9MXw" ordOrder="13" storageFieldname="skipms"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duD62JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duD62ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047820588"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLe3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_duD63JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duD63ZGDEdqJzd8pNSOzOg" key="uuid" value="113862047820591"/>
+        </eAnnotations>
+        <body>This setting defines an interval in milliseconds to use when skipping forward or reverse while a voicemail message is being played. The value entered here should be a positive integer. The default value for this setting is 3000 (3 seconds).</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLfHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duD63pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duD635GDEdqJzd8pNSOzOg" key="uuid" value="113862047820592"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLfXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duD64JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duKBcJGDEdqJzd8pNSOzOg" key="uuid" value="113862047820593"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLfnVmEdqu-MgwmX9MXw" name="maxlogins">
+      <eAnnotations xmi:id="_vlGLf3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duKBc5GDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duKBdJGDEdqJzd8pNSOzOg" key="uuid" value="113862047821595"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLgHVmEdqu-MgwmX9MXw" ordOrder="14" storageFieldname="maxlogins"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duKBcZGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duKBcpGDEdqJzd8pNSOzOg" key="uuid" value="113862047821594"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLgXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_duKBdZGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duKBdpGDEdqJzd8pNSOzOg" key="uuid" value="113862047821597"/>
+        </eAnnotations>
+        <body>This setting defines the number of retries a user has to enter voicemail passwords before Asterisk will disconnect the user. The value should be a positive integer. The default value for this setting is 3.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLgnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duKBd5GDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duKBeJGDEdqJzd8pNSOzOg" key="uuid" value="113862047821598"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLg3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duKBeZGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duKBepGDEdqJzd8pNSOzOg" key="uuid" value="113862047821599"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLhHVmEdqu-MgwmX9MXw" name="cidinternalcontexts">
+      <eAnnotations xmi:id="_vlGLhXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duQIEpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duQIE5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478225101"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLhnVmEdqu-MgwmX9MXw" ordOrder="15" storageFieldname="cidinternalcontexts"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duQIEJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duQIEZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478225100"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLh3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_duQIFJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duQIFZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478225103"/>
+        </eAnnotations>
+        <body>This setting defines the internal contexts used to determine the type of voice announcement to play when reading back the caller ID in a message envelope, or when the saycid advanced feature is enabled. In case of an internal call the voice prompt reads &amp;quot;Call from extension ...&amp;quot; instead of &amp;quot;Call from 12345678&amp;quot;. This setting is only available in versions of Asterisk with advanced voicemail feature support. The value is a string listing the internal contexts. Each additional internal context should be separated from the previous one with a comma. The default value is an empty string, and no internal contexts defined.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLiHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duWOsJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duWOsZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478235104"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLiXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duWOspGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duWOs5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478235105"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLinVmEdqu-MgwmX9MXw" name="review">
+      <eAnnotations xmi:id="_vlGLi3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duWOtpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duWOt5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478235107"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLjHVmEdqu-MgwmX9MXw" ordOrder="16" storageFieldname="review"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duWOtJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duWOtZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478235106"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLjXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_duWOuJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duWOuZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478235109"/>
+        </eAnnotations>
+        <body>Sometimes it is nice to let a caller review their message before committing it to a mailbox. This setting takes a yes or no value. If set to yes, then the caller will be asked to review the message, or save it as is after they have pressed '#'. If set to no, the message will be saved and the voice maill system will disconnect the caller. The default value for review is no. This setting is only available in versions of Asterisk with advanced voicemail feature support.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLjnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duWOupGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duWOu5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478235110"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLj3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duWOvJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duWOvZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478235111"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLkHVmEdqu-MgwmX9MXw" name="operator">
+      <eAnnotations xmi:id="_vlGLkXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duupMJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duupMZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478275113"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLknVmEdqu-MgwmX9MXw" ordOrder="17" storageFieldname="operator"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duWOvpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duWOv5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478235112"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLk3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_duupMpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duupM5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478275115"/>
+        </eAnnotations>
+        <body>This setting enables the user to reach an operator during the time the voicemail message is being recorded, or once a voicemail message has been left, if the review option has been set to yes.  This setting takes a yes or no value. The operator must be specified at extension 'o' in extensions.conf. This setting is only available in versions of Asterisk with advanced voicemail feature support.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLlHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duupNJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duupNZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478275116"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLlXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duupNpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duupN5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478275117"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLlnVmEdqu-MgwmX9MXw" name="saycid">
+      <eAnnotations xmi:id="_vlGLl3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duupOpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duupO5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478275119"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLmHVmEdqu-MgwmX9MXw" ordOrder="18" storageFieldname="saycid"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duupOJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duupOZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478275118"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLmXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_duupPJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duupPZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478275121"/>
+        </eAnnotations>
+        <body>Read back caller's telephone number prior to playing the incoming message, and just after announcing the date and time the message was left. This setting takes a yes or no value. If the administrator wants the caller's phone number to be heard prior to playing back a voicemail message, this option should be set  to yes. The default value for saycid is no. This setting is only available in versions of Asterisk with advanced voicemail feature support.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLmnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_duupPpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duupP5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478275122"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLm3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_du0v0JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du0v0ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478285123"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLnHVmEdqu-MgwmX9MXw" name="dialout">
+      <eAnnotations xmi:id="_vlGLnXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_du0v1JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du0v1ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478285125"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLnnVmEdqu-MgwmX9MXw" ordOrder="19" storageFieldname="dialout"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_du0v0pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_du0v05GDEdqJzd8pNSOzOg" key="uuid" value="1138620478285124"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLn3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_du0v1pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du0v15GDEdqJzd8pNSOzOg" key="uuid" value="1138620478285127"/>
+        </eAnnotations>
+        <body>Specify a context to be used from the &amp;quot;place an outgoing call&amp;quot;  feature in the advanced voicemail features menu. This setting takes a string value set to the outgoing context to be used. The default value for this setting is an empty string. This setting is only available in versions of Asterisk with advanced voicemail feature support.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLoHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_du0v2JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du0v2ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478285128"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLoXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_du0v2pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du0v25GDEdqJzd8pNSOzOg" key="uuid" value="1138620478285129"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLonVmEdqu-MgwmX9MXw" name="callback">
+      <eAnnotations xmi:id="_vlGLo3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_du0v3pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du0v35GDEdqJzd8pNSOzOg" key="uuid" value="1138620478285131"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLpHVmEdqu-MgwmX9MXw" ordOrder="20" storageFieldname="callback"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_du0v3JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_du0v3ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478285130"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLpXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_du62cJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du62cZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478295133"/>
+        </eAnnotations>
+        <body>Specify a context to be used from the &amp;quot;return phone call&amp;quot;  feature in the advanced voicemail features menu. This setting takes a string value set to the outgoing context to be used. The default value for this setting is an empty string. This setting is only available in versions of Asterisk with advanced voicemail feature support.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLpnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_du62cpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du62c5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478295134"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLp3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_du62dJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du62dZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478295135"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLqHVmEdqu-MgwmX9MXw" name="dbuser">
+      <eAnnotations xmi:id="_vlGLqXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_du62eJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du62eZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478295137"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlGLqnVmEdqu-MgwmX9MXw" ordOrder="21" storageFieldname="dbuser"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_du62dpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_du62d5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478295136"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlGLq3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_du62epGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du62e5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478295139"/>
+        </eAnnotations>
+        <body>Specify the Mysql database user name for the voicemail application to use. The value is a string. The default value is &amp;quot;test&amp;quot;. Note that Asterisk has to be compiled for Mysql support for this option to be meaningful.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlGLrHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_du62fJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du62fZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478295140"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlGLrXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_du62fpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du62f5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478295141"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlGLrnVmEdqu-MgwmX9MXw" name="dbpass">
+      <eAnnotations xmi:id="_vlMRwHVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvA9EJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvA9EZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478305143"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMRwXVmEdqu-MgwmX9MXw" ordOrder="22" storageFieldname="dbpass"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_du62gJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_du62gZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478295142"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMRwnVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvA9EpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvA9E5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478305145"/>
+        </eAnnotations>
+        <body>Specify the Mysql database password for the voicemail application to use. The value is a string. The default value is &amp;quot;test&amp;quot;. Note that Asterisk has to be compiled for Mysql support for this option to be meaningful.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMRw3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvA9FJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvA9FZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478305146"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMRxHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvA9FpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvA9F5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478305147"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMRxXVmEdqu-MgwmX9MXw" name="dbhost">
+      <eAnnotations xmi:id="_vlMRxnVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvA9GpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvA9G5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478305149"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMRx3VmEdqu-MgwmX9MXw" ordOrder="23" storageFieldname="dbhost"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvA9GJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvA9GZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478305148"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMRyHVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvHDsJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvHDsZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478315151"/>
+        </eAnnotations>
+        <body>Specify the Mysql database server hostname for the voicemail application to use. The value is a string. The default value is an empty string. Note that Asterisk has to be compiled for Mysql support for this option to be meaningful.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMRyXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvHDspGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvHDs5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478315152"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMRynVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvHDtJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvHDtZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478315153"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMRy3VmEdqu-MgwmX9MXw" name="dbname">
+      <eAnnotations xmi:id="_vlMRzHVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvNKUJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvNKUZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478325155"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMRzXVmEdqu-MgwmX9MXw" ordOrder="24" storageFieldname="dbname"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvHDtpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvHDt5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478315154"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMRznVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvNKUpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvNKU5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478325157"/>
+        </eAnnotations>
+        <body>Specify the Mysql database name.  The value is a string. The default value is &amp;quot;vmdb&amp;quot;. Note that Asterisk has to be compiled for Mysql support for this option to be meaningful.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMRz3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvNKVJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvNKVZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478325158"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR0HVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvNKVpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvNKV5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478325159"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMR0XVmEdqu-MgwmX9MXw" name="dboption">
+      <eAnnotations xmi:id="_vlMR0nVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvNKWpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvNKW5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478325161"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMR03VmEdqu-MgwmX9MXw" ordOrder="25" storageFieldname="dboption"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvNKWJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvNKWZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478325160"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMR1HVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvNKXJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvNKXZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478325163"/>
+        </eAnnotations>
+        <body>Specify the Postgres database option. The value is a string. The default value is an empty string. Note that Asterisk has to be compiled for Postgres support for this option to be meaningfu1, and this option must be specified if Postgres support is enabled.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMR1XVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvZXkJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvZXkZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478345164"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR1nVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvZXkpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvZXk5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478345165"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMR13VmEdqu-MgwmX9MXw" name="pbxskip">
+      <eAnnotations xmi:id="_vlMR2HVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvZXlpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvZXl5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478345167"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMR2XVmEdqu-MgwmX9MXw" ordOrder="26" storageFieldname="pbxskip"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvZXlJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvZXlZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478345166"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMR2nVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvZXmJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvZXmZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478345169"/>
+        </eAnnotations>
+        <body>This setting changes the &lt;i>Subject:&lt;/i> line in a voicemail notification message. This setting takes a yes or no value.  The default value is no. When set to yes the &lt;i>Subject:&lt;/i> line will read &amp;quot;Subject: New message &lt;i>M&lt;/i> in mailbox &lt;i>B&lt;/i>&amp;quot;. When set to no the &lt;i>Subject:&lt;/i> line will read &amp;quot;Subject: [PBX]: New message &lt;i>M&lt;/i> in mailbox &lt;i>B&lt;/i>&amp;quot;.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMR23VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvfeMJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvfeMZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478355170"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR3HVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvfeMpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvfeM5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478355171"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMR3XVmEdqu-MgwmX9MXw" name="fromstring">
+      <eAnnotations xmi:id="_vlMR3nVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvfeNpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvfeN5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478355173"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMR33VmEdqu-MgwmX9MXw" ordOrder="27" storageFieldname="fromstring"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvfeNJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvfeNZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478355172"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMR4HVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvfeOJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvfeOZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478355175"/>
+        </eAnnotations>
+        <body>This setting allows the adminstrator to override a portion of the From: line in the voicemail notification message. By default, Asterisk sends the string &amp;quot;From: Asterisk PBX &amp;lt;who&amp;gt;.  The &amp;quot;Asterisk PBX&amp;quot; portion of the From: line can be overridden by specifying your own string as the value for this setting.  One might use this  to customize the voicemail notification message and/or remove the reference to &amp;quot;Asterisk PBX&amp;quot;.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMR4XVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvfeOpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvfeO5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478355176"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR4nVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvfePJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvfePZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478355177"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMR43VmEdqu-MgwmX9MXw" name="emailsubject">
+      <eAnnotations xmi:id="_vlMR5HVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvlk0JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvlk0ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478365179"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMR5XVmEdqu-MgwmX9MXw" ordOrder="28" storageFieldname="emailsubject"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvfePpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvfeP5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478355178"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMR5nVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvlk0pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvlk05GDEdqJzd8pNSOzOg" key="uuid" value="1138620478365181"/>
+        </eAnnotations>
+        <body>This setting completely overrides &lt;i>Subject:&lt;/i> line in the voicemail notification message, and substitutes its own text in place of it. The value passed is a string containing the text to send in place of the &lt;i>Subject:&lt;/i> line.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMR53VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvlk1JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvlk1ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478365182"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR6HVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvlk1pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvlk15GDEdqJzd8pNSOzOg" key="uuid" value="1138620478365183"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMR6XVmEdqu-MgwmX9MXw" name="emailbody">
+      <eAnnotations xmi:id="_vlMR6nVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvlk2pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvlk25GDEdqJzd8pNSOzOg" key="uuid" value="1138620478365185"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMR63VmEdqu-MgwmX9MXw" ordOrder="29" storageFieldname="emailbody"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvlk2JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvlk2ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478365184"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMR7HVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvlk3JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvlk3ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478365187"/>
+        </eAnnotations>
+        <body>This setting overrides the normal message text seen in the body of a voicemail notification message.  It also supports variable substitution which can be used to make the message more meaningful. The workings of variable substitution may be covered in a separate section in a future version of this document.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMR7XVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvlk3pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvlk35GDEdqJzd8pNSOzOg" key="uuid" value="1138620478365188"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR7nVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvrrcJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvrrcZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478375189"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMR73VmEdqu-MgwmX9MXw" name="exitcontext">
+      <eAnnotations xmi:id="_vlMR8HVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvrrdJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvrrdZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478375191"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMR8XVmEdqu-MgwmX9MXw" ordOrder="30" storageFieldname="exitcontext"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvrrcpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvrrc5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478375190"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMR8nVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvrrdpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvrrd5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478375193"/>
+        </eAnnotations>
+        <body>Optional context to drop the user into after he/she has pressed * or 0 to exit voicemail</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMR83VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvrreJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvrreZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478375194"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR9HVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvrrepGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvrre5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478375195"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMR9XVmEdqu-MgwmX9MXw" name="nextaftercmd">
+      <eAnnotations xmi:id="_vlMR9nVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvxyEJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvxyEZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478375197"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMR93VmEdqu-MgwmX9MXw" ordOrder="31" storageFieldname="nextaftercmd"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvrrfJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvrrfZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478375196"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMR-HVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dvxyEpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvxyE5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478385199"/>
+        </eAnnotations>
+        <body>If set to &amp;quot;yes,&amp;quot; after deleting a voicemail message, the system will automatically play the next message.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMR-XVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvxyFJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvxyFZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478385200"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMR-nVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dvxyFpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvxyF5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478385201"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_vlMR-3VmEdqu-MgwmX9MXw" name="VoicemailConf">
+    <eAnnotations xmi:id="_vlMR_HVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dvxyGpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvxyG5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478385203"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_vlMR_XVmEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_vlMR_nVmEdqu-MgwmX9MXw" javaFieldType="VoicemailConf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dvxyGJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dvxyGZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478385202"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_vlMR_3VmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dvxyHJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvxyHZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478385206"/>
+      </eAnnotations>
+      <body>The voicemail.conf file contains one general section, one zonemessages section and one or more user-defined context sections. The general section holds global configuration informaton. The zonemessages section defines time zones and time reporting formats, and the context sections which follow define groups of users within a specific context. For example, in the above case, two context sections are defined: default and another_context. </body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_vlMSBnVmEdqu-MgwmX9MXw" name="voicemailcontextMap" type="_vlMSFXVmEdqu-MgwmX9MXw" association="_vlMSJXVmEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_vlMSB3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dv34sJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv34sZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478395208"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_vlMSCHVmEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvxyHpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvxyH5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478385207"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSCXVmEdqu-MgwmX9MXw" value="-1">
+        <eAnnotations xmi:id="_dv34spGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv34s5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478395210"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSCnVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dv34tJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv34tZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478395211"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSC3VmEdqu-MgwmX9MXw" name="zonemessagesMap" type="_vlMSKXVmEdqu-MgwmX9MXw" association="_vlMSR3VmEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_vlMSDHVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dv34uJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv34uZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478395213"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_vlMSDXVmEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dv34tpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dv34t5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478395212"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSDnVmEdqu-MgwmX9MXw" value="-1">
+        <eAnnotations xmi:id="_dv34upGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv34u5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478395215"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSD3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dv34vJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv34vZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478395216"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSEHVmEdqu-MgwmX9MXw" name="voicemailgeneral" type="_vlGLK3VmEdqu-MgwmX9MXw" association="_vlMSS3VmEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_vlMSEXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dv9_UJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv9_UZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478405218"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_vlMSEnVmEdqu-MgwmX9MXw" storageFieldname="voicemailgeneral"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dv34vpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dv34v5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478395217"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSE3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dv9_UpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv9_U5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478405220"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSFHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dv9_VJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv9_VZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478405221"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_vlMSFXVmEdqu-MgwmX9MXw" name="Voicemailcontext">
+    <eAnnotations xmi:id="_vlMSFnVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dwEF8ZGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwEF8pGDEdqJzd8pNSOzOg" key="uuid" value="1138620478415223"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_vlMSF3VmEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_vlMSGHVmEdqu-MgwmX9MXw" javaFieldType="Voicemailcontext" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dv9_VpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dwEF8JGDEdqJzd8pNSOzOg" key="uuid" value="1138620478405222"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_vlMSGXVmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dwEF85GDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwEF9JGDEdqJzd8pNSOzOg" key="uuid" value="1138620478415226"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_vlMSGnVmEdqu-MgwmX9MXw" name="contextname">
+      <eAnnotations xmi:id="_vlMSG3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwEF95GDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEF-JGDEdqJzd8pNSOzOg" key="uuid" value="1138620478415228"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSHHVmEdqu-MgwmX9MXw" storageFieldname="contextname"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwEF9ZGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwEF9pGDEdqJzd8pNSOzOg" key="uuid" value="1138620478415227"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSHXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dwEF-ZGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEF-pGDEdqJzd8pNSOzOg" key="uuid" value="1138620478415230"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSHnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwEF-5GDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEF_JGDEdqJzd8pNSOzOg" key="uuid" value="1138620478415231"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSH3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwEF_ZGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEF_pGDEdqJzd8pNSOzOg" key="uuid" value="1138620478415232"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSIHVmEdqu-MgwmX9MXw" name="voicemailcontextentryMap" type="_vlMST3VmEdqu-MgwmX9MXw" association="_vlMScnVmEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_vlMSIXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwKMkpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwKMk5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478425234"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_vlMSInVmEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwKMkJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwKMkZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478425233"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSI3VmEdqu-MgwmX9MXw" value="-1">
+        <eAnnotations xmi:id="_dwKMlJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwKMlZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478425236"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSJHVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dwKMlpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwKMl5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478425237"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_vlMSJXVmEdqu-MgwmX9MXw" name="VoicemailConf->Voicemailcontext" memberEnd="_vlMSBnVmEdqu-MgwmX9MXw _vlMSJnVmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_dwKMmJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dwKMmZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478425238"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_vlMSJnVmEdqu-MgwmX9MXw" type="_vlMR-3VmEdqu-MgwmX9MXw" association="_vlMSJXVmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dwQTMJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwQTMZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478435239"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSJ3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwQTMpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwQTM5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478435240"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSKHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwQTNJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwQTNZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478435241"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_vlMSKXVmEdqu-MgwmX9MXw" name="Zonemessages">
+    <eAnnotations xmi:id="_vlMSKnVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dwQTOJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwQTOZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478435243"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_vlMSK3VmEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_vlMSLHVmEdqu-MgwmX9MXw" javaFieldType="Zonemessages" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dwQTNpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dwQTN5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478435242"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_vlMSLXVmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dwQTOpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwQTO5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478435246"/>
+      </eAnnotations>
+      <body>the zonemessages section allows the adminstrator to define custom time zones, and to change the way time is announced in a particular time zone. Users may have different time zone settings, and also different formats for announcing the date and time of voicemail messages. When a time zone is defined here, you may use it in individual malboxes by specifying a tz= option on the individual mailbox entry (Mailbox entries are discussed in the next section on contexts). </body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_vlMSLnVmEdqu-MgwmX9MXw" name="timezonename">
+      <eAnnotations xmi:id="_vlMSL3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwotsJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwotsZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478475248"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSMHVmEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="timezonename"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_vlMSMXVmEdqu-MgwmX9MXw"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwWZ0JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwWZ0ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478445247"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSMnVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dwotspGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwots5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478475251"/>
+        </eAnnotations>
+        <body>The Timezonename field is a name you pick for your custom time zone</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSM3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwottJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwottZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478475252"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSNHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwottpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwott5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478475253"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSNXVmEdqu-MgwmX9MXw" name="country">
+      <eAnnotations xmi:id="_vlMSNnVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwotupGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwotu5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478475255"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSN3VmEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="country"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwotuJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwotuZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478475254"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSOHVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dwotvJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwotvZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478475257"/>
+        </eAnnotations>
+        <body>The Country field contains the name of the country where the time zone is located</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSOXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwotvpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwotv5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478475258"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSOnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwotwJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwotwZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478475259"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSO3VmEdqu-MgwmX9MXw" name="city">
+      <eAnnotations xmi:id="_vlMSPHVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwu0UJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0UZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478485261"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSPXVmEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="city"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwotwpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwotw5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478475260"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSPnVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dwu0UpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0U5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478485263"/>
+        </eAnnotations>
+        <body>The City field contains the name of the city within the country,</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSP3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwu0VJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0VZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478485264"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSQHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwu0VpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0V5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478485265"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSQXVmEdqu-MgwmX9MXw" name="options">
+      <eAnnotations xmi:id="_vlMSQnVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwu0WpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0W5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478485267"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSQ3VmEdqu-MgwmX9MXw" ordOrder="4" storageFieldname="options"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwu0WJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwu0WZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478485266"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSRHVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dwu0XJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0XZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478485269"/>
+        </eAnnotations>
+        <body> the Options field contains a set of options you choose to customize the time announcement format.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSRXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwu0XpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0X5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478485270"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSRnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dwu0YJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwu0YZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478485271"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_vlMSR3VmEdqu-MgwmX9MXw" name="VoicemailConf->Zonemessages" memberEnd="_vlMSC3VmEdqu-MgwmX9MXw _vlMSSHVmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_dwu0YpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dwu0Y5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478485272"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_vlMSSHVmEdqu-MgwmX9MXw" type="_vlMR-3VmEdqu-MgwmX9MXw" association="_vlMSR3VmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dwu0ZJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwu0ZZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478485273"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSSXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dw068JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw068ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478495274"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSSnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dw068pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw0685GDEdqJzd8pNSOzOg" key="uuid" value="1138620478495275"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_vlMSS3VmEdqu-MgwmX9MXw" name="VoicemailConf->Voicemailgeneral" memberEnd="_vlMSEHVmEdqu-MgwmX9MXw _vlMSTHVmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_dw069JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dw069ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478495276"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_vlMSTHVmEdqu-MgwmX9MXw" type="_vlMR-3VmEdqu-MgwmX9MXw" association="_vlMSS3VmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dw069pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw0695GDEdqJzd8pNSOzOg" key="uuid" value="1138620478495277"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSTXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dw06-JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw06-ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478495278"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSTnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dw06-pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw06-5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478495279"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_vlMST3VmEdqu-MgwmX9MXw" name="Voicemailcontextentry">
+    <eAnnotations xmi:id="_vlMSUHVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dw7BkpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw7Bk5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478505281"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_vlMSUXVmEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_vlMSUnVmEdqu-MgwmX9MXw" javaFieldType="Voicemailcontextentry" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dw7BkJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dw7BkZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478505280"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_vlMSU3VmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dw7BlJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw7BlZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478505284"/>
+      </eAnnotations>
+      <body>The final part of the voicemail.conf configuration file contains one or more context sections where voice mail boxes are defined and configured. (Remember that context sections are sections which are named after contexts defined elsewhere in Asterisk). Multiple voice mail boxes may be defined in a context section. </body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_6LdyoIRpEdqDddwF67_Tmw" name="mailbox">
+      <eAnnotations xmi:id="_6LdyoYRpEdqDddwF67_Tmw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dw7BmJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7BmZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478505286"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_6LdyooRpEdqDddwF67_Tmw" ordOrder="1" storageFieldname="mailbox"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dw7BlpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw7Bl5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478505285"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_6Ldyo4RpEdqDddwF67_Tmw">
+        <eAnnotations xmi:id="_dw7BmpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7Bm5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478505288"/>
+        </eAnnotations>
+        <body>the mailbox name</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6LdypIRpEdqDddwF67_Tmw" value="1">
+        <eAnnotations xmi:id="_dw7BnJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7BnZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478505289"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6LdypYRpEdqDddwF67_Tmw" value="1">
+        <eAnnotations xmi:id="_dw7BnpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7Bn5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478505290"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSVHVmEdqu-MgwmX9MXw" name="voicemail_password">
+      <eAnnotations xmi:id="_vlMSVXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dw7BopGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7Bo5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478505292"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSVnVmEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="voicemail_password"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dw7BoJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw7BoZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478505291"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSV3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dw7BpJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7BpZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478505294"/>
+        </eAnnotations>
+        <body> field contains the numeric
+
+password for this voice mail box entry. The voicemail system will
+
+compare the password entered by the user against this value.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSWHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dw7BppGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7Bp5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478505295"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSWXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dw7BqJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw7BqZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478505296"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSWnVmEdqu-MgwmX9MXw" name="user_name">
+      <eAnnotations xmi:id="_vlMSW3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxBIMJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIMZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515298"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSXHVmEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="user_name"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dw7BqpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw7Bq5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478505297"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSXXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dxBIMpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIM5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515300"/>
+        </eAnnotations>
+        <body> is an alpha field which is usually set to the first and last name of the user of this voice mail box.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSXnVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBINJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBINZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515301"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSX3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBINpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIN5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515302"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSYHVmEdqu-MgwmX9MXw" name="user_email_address">
+      <eAnnotations xmi:id="_vlMSYXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxBIOpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIO5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515304"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSYnVmEdqu-MgwmX9MXw" ordOrder="4" storageFieldname="user_email_address"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxBIOJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxBIOZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515303"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSY3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dxBIPJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIPZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515306"/>
+        </eAnnotations>
+        <body> can be set to the email address
+
+of the user so that when a voice mail message is left by a caller, an
+
+e-maill notification will be sent to the address defined in this field.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSZHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBIPpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIP5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515307"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSZXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBIQJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIQZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515308"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSZnVmEdqu-MgwmX9MXw" name="pager_email_address">
+      <eAnnotations xmi:id="_vlMSZ3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxBIRJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIRZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515310"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSaHVmEdqu-MgwmX9MXw" ordOrder="5" storageFieldname="pager_email_address"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxBIQpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxBIQ5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515309"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSaXVmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dxBIRpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIR5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515312"/>
+        </eAnnotations>
+        <body> can be set to the email
+
+address of a pager so that when a voice mail message is left by a
+
+caller, a page will be sent to the pager email address defined in this
+
+field.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSanVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBISJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBISZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515313"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSa3VmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBISpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIS5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515314"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vlMSbHVmEdqu-MgwmX9MXw" name="user_options">
+      <eAnnotations xmi:id="_vlMSbXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxBITpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIT5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515316"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_vlMSbnVmEdqu-MgwmX9MXw" ordOrder="6" storageFieldname="user_options"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxBITJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxBITZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515315"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_vlMSb3VmEdqu-MgwmX9MXw">
+        <eAnnotations xmi:id="_dxBIUJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIUZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515318"/>
+        </eAnnotations>
+        <body> field can be used to override
+
+default settings defined in the general section, or set a specific time
+
+zone for this user. Specifically, there are 9 &lt;i>setting=value&lt;/i> pairs which can be specified in the user_option(s) field. There can be multiple &lt;i>setting=value&lt;/i> pairs defined in the user_option(s) field. Each &lt;i>setting=value&lt;/i> pair after the first must be delimited with a vertical bar (|). The nine settings which may be used are: &lt;b>attach,  serveremail, tz, saycid, review, operator, callback, dialout</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMScHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBIUpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIU5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515319"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMScXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxBIVJGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBIVZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478515320"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_vlMScnVmEdqu-MgwmX9MXw" name="Voicemailcontext->Voicemailcontextentry" memberEnd="_vlMSIHVmEdqu-MgwmX9MXw _vlMSc3VmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_dxBIVpGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dxBIV5GDEdqJzd8pNSOzOg" key="uuid" value="1138620478515321"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_vlMSc3VmEdqu-MgwmX9MXw" type="_vlMSFXVmEdqu-MgwmX9MXw" association="_vlMScnVmEdqu-MgwmX9MXw">
+      <eAnnotations xmi:id="_dxHO0JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxHO0ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478525322"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vlMSdHVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxHO0pGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxHO05GDEdqJzd8pNSOzOg" key="uuid" value="1138620478525323"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlMSdXVmEdqu-MgwmX9MXw" value="1">
+        <eAnnotations xmi:id="_dxHO1JGDEdqJzd8pNSOzOg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxHO1ZGDEdqJzd8pNSOzOg" key="uuid" value="1138620478525324"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

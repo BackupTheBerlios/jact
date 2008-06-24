@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_t2pAQMifEdqKbsHgCeX4yg" name="applications" appliedProfile="_t2pARcifEdqKbsHgCeX4yg">
+  <eAnnotations xmi:id="_t2pAQcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_t2pAQsifEdqKbsHgCeX4yg"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_t2pAQ8ifEdqKbsHgCeX4yg">
+    <body>applications</body>
+  </ownedComment>
+  <packageImport xmi:id="_t2pARMifEdqKbsHgCeX4yg">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_t2pARcifEdqKbsHgCeX4yg">
+    <eAnnotations xmi:id="_t2pARsifEdqKbsHgCeX4yg" source="attributes">
+      <details xmi:id="_t2pAR8ifEdqKbsHgCeX4yg" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_t2pASMifEdqKbsHgCeX4yg" name="types">
+    <eAnnotations xmi:id="_t2pAScifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_t2pASsifEdqKbsHgCeX4yg"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pATsifEdqKbsHgCeX4yg" name="ChanIsAvail">
+    <eAnnotations xmi:id="_t2pAT8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pAUMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pAUcifEdqKbsHgCeX4yg" javaFieldType="ChanIsAvail" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pAUsifEdqKbsHgCeX4yg">
+      <body>Checks is any of the requested channels are available. If none of the requested channels are available the new priority will be n+101 (unless such a priority does not exist or on error, in which case ChanIsAvail will return -1). If any of the requested channels are available, the next priority will be n+1, the channel variable ${AVAILCHAN} will be set to the name of the available channel and the ChanIsAvail app will return 0. ${AVAILORIGCHAN} is the canonical channel name that was used to create the channel. ${AVAILSTATUS} is the status code for the channel. If the option 's' is specified (state), will consider channel unavailable when the channel is in use at all, even if it can take another call.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pAU8ifEdqKbsHgCeX4yg" name="technology">
+      <eAnnotations xmi:id="_t2pAVMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pAVcifEdqKbsHgCeX4yg" storageFieldname="technology"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pAVsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pAV8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pAWMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pAWcifEdqKbsHgCeX4yg" name="resource">
+      <eAnnotations xmi:id="_t2pAWsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pAW8ifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="resource"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pAXMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pAXcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pAXsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pAX8ifEdqKbsHgCeX4yg" name="technology2">
+      <eAnnotations xmi:id="_t2pAYMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pAYcifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="technology2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pAYsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pAY8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pAZMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pAZcifEdqKbsHgCeX4yg" name="resource2">
+      <eAnnotations xmi:id="_t2pAZsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pAZ8ifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="resource2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pAaMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pAacifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pAasifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pAa8ifEdqKbsHgCeX4yg" name="option">
+      <eAnnotations xmi:id="_t2pAbMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pAbcifEdqKbsHgCeX4yg" ordOrder="4" storageFieldname="option"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pAbsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pAb8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pAcMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pA6MifEdqKbsHgCeX4yg" name="Transfer">
+    <eAnnotations xmi:id="_t2pA6cifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pA6sifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pA68ifEdqKbsHgCeX4yg" javaFieldType="Transfer" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pA7MifEdqKbsHgCeX4yg">
+      <body>Requests the remote caller be transferred a given extension. Returns -1 on hangup, or 0 on completion regardless of whether the transfer was successful. If the transfer was *not* supported or successful and there exists a priority n + 101, then that priority will be taken next.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pA7cifEdqKbsHgCeX4yg" name="tech">
+      <eAnnotations xmi:id="_t2pA7sifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pA78ifEdqKbsHgCeX4yg" storageFieldname="tech"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pA8MifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pA8cifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pA8sifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pA88ifEdqKbsHgCeX4yg" name="dest">
+      <eAnnotations xmi:id="_t2pA9MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pA9cifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="dest"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pA9sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pA98ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pA-MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pBXMifEdqKbsHgCeX4yg" name="ParkedCall">
+    <eAnnotations xmi:id="_t2pBXcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pBXsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pBX8ifEdqKbsHgCeX4yg" javaFieldType="ParkedCall" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pBYMifEdqKbsHgCeX4yg">
+      <body>Used to connect to a parked call. This application is always registered internally and does not need to be explicitly added into the dialplan, although you should include the 'parkedcalls' context.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pBYcifEdqKbsHgCeX4yg" name="exten">
+      <eAnnotations xmi:id="_t2pBYsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBY8ifEdqKbsHgCeX4yg" storageFieldname="exten"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBZMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBZcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBZsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pBh8ifEdqKbsHgCeX4yg" name="Dial">
+    <eAnnotations xmi:id="_t2pBiMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pBicifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pBisifEdqKbsHgCeX4yg" javaFieldType="Dial" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pBi8ifEdqKbsHgCeX4yg">
+      <body>Requests one or more channels and places specified outgoing calls on them. As soon as a channel answers, the Dial app will answer the originating channel (if it needs to be answered) and will bridge a call with the channel which first answered. All other calls placed by the Dial app will be hung up. If a timeout is not specified, the Dial application will wait indefinitely until either one of the called channels answers, the user hangs up, or all channels return busy or error. In general, the dialer will return 0 if it was unable to place the call, or the timeout expired. However, if all channels were busy, and there exists an extension with priority n+101 (where n is the priority of the dialer instance), then it will be the next executed extension (this allows you to setup different behavior on busy from no-answer).  This application returns -1 if the originating channel hangs up, or if the call is bridged and either of the parties in the bridge terminate the call. The option string may contain zero or more of the following characters:  'd' -- allow the calling user to dial a 1 digit extension while waiting for a call to  be answered exiting to that extension if it exists in the context defined by  ${EXITCONTEXT} or the current context.  't' -- allow the called user to transfer the calling user by hitting #.  'T' -- allow the calling user to transfer the call by hitting #.  'w' -- allow the called user to write the conversation to disk via app_monitor  'W' -- allow the calling user to write the conversation to disk via app_monitor  'f' -- Forces callerid to be set as the extension of the line   making/redirecting the outgoing call. For example, some PSTNs  don't allow callerids from other extensions then the ones  that are assigned to you.  'o' -- Original (inbound) Caller*ID should be placed on the outbound leg of the call  instead of using the destination extension (old style asterisk behavior)  'r' -- indicate ringing to the calling party, pass no audio until answered.  'm[(class)]' -- provide hold music to the calling party until answered (optionally  with the specified class.  'M(x[^arg]) -- Executes the macro (x with ^ delim arg list) upon connect of the call.  Also, the macro can set the MACRO_RESULT variable to do the following:  -- ABORT - Hangup both legs of the call.  -- CONGESTION - Behave as if line congestion was encountered.  -- BUSY - Behave as if a busy signal was encountered. (n+101)  -- CONTINUE - Hangup the called party and continue on in the dialplan.  -- GOTO:&lt;context>^&lt;exten>^&lt;priority> - Transfer the call.  'h' -- allow callee to hang up by hitting *.  'H' -- allow caller to hang up by hitting *.  'C' -- reset call detail record for this call.  'P[(x)]' -- privacy mode, using 'x' as database if provided.  'g' -- goes on in context if the destination channel hangs up  'A(x)' -- play an announcement to the called party, using x as file  'S(x)' -- hangup the call after x seconds AFTER called party picked up  'D([digits])' -- Send DTMF digit string *after* called party has answered  but before the bridge. (w=500ms sec pause)  'L(x[:y][:z])' -- Limit the call to 'x' ms warning when 'y' ms are left  repeated every 'z' ms) Only 'x' is required, 'y' and 'z' are optional.  The following special variables are optional:  * LIMIT_PLAYAUDIO_CALLER yes|no (default yes)  Play sounds to the caller.  * LIMIT_PLAYAUDIO_CALLEE yes|no  Play sounds to the callee.  * LIMIT_TIMEOUT_FILE File to play when time is up.  * LIMIT_CONNECT_FILE File to play when call begins.  * LIMIT_WARNING_FILE File to play as warning if 'y' is defined.  'timeleft' is a special sound macro to auto-say the time   left and is the default.   In addition to transferring the call, a call may be parked and then picked up by another user.  The optional URL will be sent to the called party if the channel supports it.  If the OUTBOUND_GROUP variable is set, all peer channels created by this  application will be put into that group (as in SetGroup).  This application sets the following channel variables upon completion:  DIALEDTIME Time from dial to answer  ANSWEREDTIME Time for actual call  DIALSTATUS The status of the call as a text string, one of  CHANUNAVAIL | CONGESTION | NOANSWER | BUSY | ANSWER | CANCEL</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pBjMifEdqKbsHgCeX4yg" name="technology">
+      <eAnnotations xmi:id="_t2pBjcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBjsifEdqKbsHgCeX4yg" storageFieldname="technology"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBj8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBkMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBkcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBksifEdqKbsHgCeX4yg" name="resource">
+      <eAnnotations xmi:id="_t2pBk8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBlMifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="resource"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBlcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBlsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBl8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBmMifEdqKbsHgCeX4yg" name="technology2">
+      <eAnnotations xmi:id="_t2pBmcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBmsifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="technology2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBm8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBnMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBncifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBnsifEdqKbsHgCeX4yg" name="resource2">
+      <eAnnotations xmi:id="_t2pBn8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBoMifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="resource2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBocifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBosifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBo8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBpMifEdqKbsHgCeX4yg" name="timeout">
+      <eAnnotations xmi:id="_t2pBpcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBpsifEdqKbsHgCeX4yg" ordOrder="4" storageFieldname="timeout"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBp8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBqMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBqcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBqsifEdqKbsHgCeX4yg" name="options">
+      <eAnnotations xmi:id="_t2pBq8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBrMifEdqKbsHgCeX4yg" ordOrder="5" storageFieldname="options"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBrcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBrsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBr8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBsMifEdqKbsHgCeX4yg" name="uRL">
+      <eAnnotations xmi:id="_t2pBscifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBssifEdqKbsHgCeX4yg" ordOrder="6" storageFieldname="uRL"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBs8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBtMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBtcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pBtsifEdqKbsHgCeX4yg" name="DBput">
+    <eAnnotations xmi:id="_t2pBt8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pBuMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pBucifEdqKbsHgCeX4yg" javaFieldType="DBput" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pBusifEdqKbsHgCeX4yg">
+      <body>Stores the given value in the Asterisk database. Always returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pBu8ifEdqKbsHgCeX4yg" name="family">
+      <eAnnotations xmi:id="_t2pBvMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBvcifEdqKbsHgCeX4yg" storageFieldname="family"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBvsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBv8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBwMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBwcifEdqKbsHgCeX4yg" name="key">
+      <eAnnotations xmi:id="_t2pBwsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBw8ifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="key"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBxMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBxcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBxsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pBx8ifEdqKbsHgCeX4yg" name="value">
+      <eAnnotations xmi:id="_t2pByMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pBycifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="value"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pBysifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pBy8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pBzMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pBzcifEdqKbsHgCeX4yg" name="ExecIfTime">
+    <eAnnotations xmi:id="_t2pBzsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pBz8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pB0MifEdqKbsHgCeX4yg" javaFieldType="ExecIfTime" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pB0cifEdqKbsHgCeX4yg">
+      <body>If the current time matches the specified time, then execute the specified application. Each of the elements may be specified either as '*' (for always) or as a range. See the 'include' syntax for details.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pB0sifEdqKbsHgCeX4yg" name="times">
+      <eAnnotations xmi:id="_t2pB08ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pB1MifEdqKbsHgCeX4yg" storageFieldname="times"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pB1cifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pB1sifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pB18ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pB2MifEdqKbsHgCeX4yg" name="weekdays">
+      <eAnnotations xmi:id="_t2pB2cifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pB2sifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="weekdays"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pB28ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pB3MifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pB3cifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pB3sifEdqKbsHgCeX4yg" name="mdays">
+      <eAnnotations xmi:id="_t2pB38ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pB4MifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="mdays"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pB4cifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pB4sifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pB48ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pB5MifEdqKbsHgCeX4yg" name="months">
+      <eAnnotations xmi:id="_t2pB5cifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pB5sifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="months"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pB58ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pB6MifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pB6cifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pB6sifEdqKbsHgCeX4yg" name="appname">
+      <eAnnotations xmi:id="_t2pB68ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pB7MifEdqKbsHgCeX4yg" ordOrder="4" storageFieldname="appname"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pB7cifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pB7sifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pB78ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pB8MifEdqKbsHgCeX4yg" name="appdata">
+      <eAnnotations xmi:id="_t2pB8cifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pB8sifEdqKbsHgCeX4yg" ordOrder="5" storageFieldname="appdata"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pB88ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pB9MifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pB9cifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pCKMifEdqKbsHgCeX4yg" name="WaitForSilence">
+    <eAnnotations xmi:id="_t2pCKcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pCKsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pCK8ifEdqKbsHgCeX4yg" javaFieldType="WaitForSilence" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pCLMifEdqKbsHgCeX4yg">
+      <body>Wait for Silence: Waits for up to 'x'  milliseconds of silence, 'y' times or 1 if omitted Examples:  - WaitForSilence(500,2) will wait for 1/2 second of silence, twice  - WaitForSilence(1000) will wait for 1 second of silence, once</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pCLcifEdqKbsHgCeX4yg" name="x">
+      <eAnnotations xmi:id="_t2pCLsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCL8ifEdqKbsHgCeX4yg" storageFieldname="x"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCMMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCMcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCMsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pCM8ifEdqKbsHgCeX4yg" name="y">
+      <eAnnotations xmi:id="_t2pCNMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCNcifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="y"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCNsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCN8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCOMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pCUMifEdqKbsHgCeX4yg" name="MusicOnHold">
+    <eAnnotations xmi:id="_t2pCUcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pCUsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pCU8ifEdqKbsHgCeX4yg" javaFieldType="MusicOnHold" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pCVMifEdqKbsHgCeX4yg">
+      <body>Plays hold music specified by class. If omitted, the default music source for the channel will be used. Set the default  class with the SetMusicOnHold() application. Returns -1 on hangup. Never returns otherwise.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pCVcifEdqKbsHgCeX4yg" name="class">
+      <eAnnotations xmi:id="_t2pCVsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCV8ifEdqKbsHgCeX4yg" storageFieldname="class"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCWMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCWcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCWsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pCW8ifEdqKbsHgCeX4yg" name="Busy">
+    <eAnnotations xmi:id="_t2pCXMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pCXcifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pCXsifEdqKbsHgCeX4yg" javaFieldType="Busy" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pCX8ifEdqKbsHgCeX4yg">
+      <body>Requests that the channel indicate busy condition and then waits for the user to hang up or the optional timeout to expire. Always returns -1.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pCYMifEdqKbsHgCeX4yg" name="timeout">
+      <eAnnotations xmi:id="_t2pCYcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCYsifEdqKbsHgCeX4yg" storageFieldname="timeout"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCY8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCZMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCZcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2pCZsifEdqKbsHgCeX4yg" name="GotoIfTime">
+    <eAnnotations xmi:id="_t2pCZ8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2pCaMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2pCacifEdqKbsHgCeX4yg" javaFieldType="GotoIfTime" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2pCasifEdqKbsHgCeX4yg">
+      <body>If the current time matches the specified time, then branch to the specified extension. Each of the elements may be specified either as '*' (for always) or as a range. See the 'include' syntax for details.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2pCa8ifEdqKbsHgCeX4yg" name="times">
+      <eAnnotations xmi:id="_t2pCbMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCbcifEdqKbsHgCeX4yg" storageFieldname="times"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCbsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCb8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCcMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pCccifEdqKbsHgCeX4yg" name="weekdays">
+      <eAnnotations xmi:id="_t2pCcsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCc8ifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="weekdays"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCdMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCdcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCdsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pCd8ifEdqKbsHgCeX4yg" name="mdays">
+      <eAnnotations xmi:id="_t2pCeMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCecifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="mdays"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCesifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCe8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCfMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pCfcifEdqKbsHgCeX4yg" name="months">
+      <eAnnotations xmi:id="_t2pCfsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pCf8ifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="months"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pCgMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2pCgcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2pCgsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2pCg8ifEdqKbsHgCeX4yg" name="context">
+      <eAnnotations xmi:id="_t2pChMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2pChcifEdqKbsHgCeX4yg" ordOrder="4" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2pChsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vG4MifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vG4cifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vG4sifEdqKbsHgCeX4yg" name="extension">
+      <eAnnotations xmi:id="_t2vG48ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vG5MifEdqKbsHgCeX4yg" ordOrder="5" storageFieldname="extension"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vG5cifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vG5sifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vG58ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vG6MifEdqKbsHgCeX4yg" name="pri">
+      <eAnnotations xmi:id="_t2vG6cifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vG6sifEdqKbsHgCeX4yg" ordOrder="6" storageFieldname="pri"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vG68ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vG7MifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vG7cifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vG7sifEdqKbsHgCeX4yg" name="Congestion">
+    <eAnnotations xmi:id="_t2vG78ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vG8MifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vG8cifEdqKbsHgCeX4yg" javaFieldType="Congestion" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vG8sifEdqKbsHgCeX4yg">
+      <body>Requests that the channel indicate congestion and then waits for the user to hang up or for the optional timeout to expire. Always returns -1.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vG88ifEdqKbsHgCeX4yg" name="timeout">
+      <eAnnotations xmi:id="_t2vG9MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vG9cifEdqKbsHgCeX4yg" storageFieldname="timeout"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vG9sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vG98ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vG-MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vHs8ifEdqKbsHgCeX4yg" name="EndWhile">
+    <eAnnotations xmi:id="_t2vHtMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vHtcifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vHtsifEdqKbsHgCeX4yg" javaFieldType="EndWhile" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vHt8ifEdqKbsHgCeX4yg">
+      <body>Return to the previous called While</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vHzsifEdqKbsHgCeX4yg" name="SetCDRUserField">
+    <eAnnotations xmi:id="_t2vHz8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vH0MifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vH0cifEdqKbsHgCeX4yg" javaFieldType="SetCDRUserField" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vH0sifEdqKbsHgCeX4yg">
+      <body>[Description] SetCDRUserField(value): Set the CDR 'user field' to value  The Call Data Record (CDR) user field is an extra field you  can use for data not stored anywhere else in the record.  CDR records can be used for billing or storing other arbitrary data  (I.E. telephone survey responses)  Also see AppendCDRUserField().  Always returns 0</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vH08ifEdqKbsHgCeX4yg" name="value">
+      <eAnnotations xmi:id="_t2vH1MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vH1cifEdqKbsHgCeX4yg" storageFieldname="value"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vH1sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vH18ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vH2MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vIKcifEdqKbsHgCeX4yg" name="Park">
+    <eAnnotations xmi:id="_t2vIKsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vIK8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vILMifEdqKbsHgCeX4yg" javaFieldType="Park" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vILcifEdqKbsHgCeX4yg">
+      <body>Used to park yourself (typically in combination with a supervised transfer to know the parking space). This application is always registered internally and does not need to be explicitly added into the dialplan, although you should include the 'parkedcalls' context.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vILsifEdqKbsHgCeX4yg" name="exten">
+      <eAnnotations xmi:id="_t2vIL8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIMMifEdqKbsHgCeX4yg" storageFieldname="exten"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIMcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIMsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIM8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vINMifEdqKbsHgCeX4yg" name="StartMusicOnHold">
+    <eAnnotations xmi:id="_t2vINcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vINsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vIN8ifEdqKbsHgCeX4yg" javaFieldType="StartMusicOnHold" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vIOMifEdqKbsHgCeX4yg">
+      <body>Starts playing music on hold, uses default music class for channel. Starts playing music specified by class. If omitted, the default music source for the channel will be used. Always returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vIOcifEdqKbsHgCeX4yg" name="class">
+      <eAnnotations xmi:id="_t2vIOsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIO8ifEdqKbsHgCeX4yg" storageFieldname="class"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIPMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIPcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIPsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vIg8ifEdqKbsHgCeX4yg" name="SayNumber">
+    <eAnnotations xmi:id="_t2vIhMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vIhcifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vIhsifEdqKbsHgCeX4yg" javaFieldType="SayNumber" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vIh8ifEdqKbsHgCeX4yg">
+      <body>Says the passed number. SayNumber is using the current language setting for the channel. (See app SetLanguage).</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vIiMifEdqKbsHgCeX4yg" name="digits">
+      <eAnnotations xmi:id="_t2vIicifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIisifEdqKbsHgCeX4yg" storageFieldname="digits"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIi8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIjMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIjcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vIjsifEdqKbsHgCeX4yg" name="gender">
+      <eAnnotations xmi:id="_t2vIj8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIkMifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="gender"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIkcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIksifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIk8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vIlMifEdqKbsHgCeX4yg" name="Background">
+    <eAnnotations xmi:id="_t2vIlcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vIlsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vIl8ifEdqKbsHgCeX4yg" javaFieldType="Background" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vImMifEdqKbsHgCeX4yg">
+      <body>Plays given files, while simultaneously waiting for the user to begin typing an extension. The timeouts do not count until the last BackGround application has ended. Options may also be included following a pipe  symbol. The 'skip' option causes the playback of the message to be  skipped if the channel is not in the 'up' state (i.e. it hasn't been answered yet. If 'skip' is specified, the application will return immediately should the channel not be off hook. Otherwise, unless  'noanswer' is specified, the channel channel will be answered before the sound is played. Not all channels support playing messages while still hook. The 'langoverride' may be a language to use for playing the prompt which differs from the current language of the channel. Returns -1 if  the channel was hung up, or if the file does not exist. Returns 0 otherwise.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vImcifEdqKbsHgCeX4yg" name="filename1">
+      <eAnnotations xmi:id="_t2vImsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIm8ifEdqKbsHgCeX4yg" storageFieldname="filename1"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vInMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIncifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vInsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vIn8ifEdqKbsHgCeX4yg" name="filename2">
+      <eAnnotations xmi:id="_t2vIoMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIocifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="filename2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIosifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIo8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIpMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vIpcifEdqKbsHgCeX4yg" name="options">
+      <eAnnotations xmi:id="_t2vIpsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIp8ifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="options"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIqMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIqcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIqsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vIq8ifEdqKbsHgCeX4yg" name="langoverride">
+      <eAnnotations xmi:id="_t2vIrMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIrcifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="langoverride"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIrsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIr8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIsMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vItsifEdqKbsHgCeX4yg" name="HasNewVoicemail">
+    <eAnnotations xmi:id="_t2vIt8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vIuMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vIucifEdqKbsHgCeX4yg" javaFieldType="HasNewVoicemail" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vIusifEdqKbsHgCeX4yg">
+      <body>Branches to priority + 101, if there is voicemail in folder 'folder' or INBOX. if folder is not specified. Optionally sets &lt;varname> to the number of messages in that folder.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vIu8ifEdqKbsHgCeX4yg" name="vmbox">
+      <eAnnotations xmi:id="_t2vIvMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIvcifEdqKbsHgCeX4yg" storageFieldname="vmbox"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIvsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIv8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIwMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vIwcifEdqKbsHgCeX4yg" name="folder">
+      <eAnnotations xmi:id="_t2vIwsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIw8ifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="folder"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIxMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIxcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIxsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vIx8ifEdqKbsHgCeX4yg" name="context">
+      <eAnnotations xmi:id="_t2vIyMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIycifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vIysifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vIy8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vIzMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vIzcifEdqKbsHgCeX4yg" name="varname">
+      <eAnnotations xmi:id="_t2vIzsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vIz8ifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="varname"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vI0MifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vI0cifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vI0sifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vI3sifEdqKbsHgCeX4yg" name="GotoIf">
+    <eAnnotations xmi:id="_t2vI38ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vI4MifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vI4cifEdqKbsHgCeX4yg" javaFieldType="GotoIf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vI4sifEdqKbsHgCeX4yg">
+      <body>Go to label 1 if condition is true, to label2 if condition is false. Either label1 or label2 may be omitted (in that case, we just don't take the particular branch) but not both. Look for the condition syntax in examples or documentation.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vI48ifEdqKbsHgCeX4yg" name="condition">
+      <eAnnotations xmi:id="_t2vI5MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vI5cifEdqKbsHgCeX4yg" storageFieldname="condition"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vI5sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vI58ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vI6MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vI6cifEdqKbsHgCeX4yg" name="label1">
+      <eAnnotations xmi:id="_t2vI6sifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vI68ifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="label1"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vI7MifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vI7cifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vI7sifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vI78ifEdqKbsHgCeX4yg" name="label2">
+      <eAnnotations xmi:id="_t2vI8MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vI8cifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="label2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vI8sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vI88ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vI9MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_lGs_MMigEdqKbsHgCeX4yg" name="extension1">
+      <eAnnotations xmi:id="_lGs_McigEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_lGs_MsigEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="label1"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_lGs_M8igEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_94vxsMk-EdqSzop7az5EPg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lGs_NMigEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lGs_NcigEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_naLBMMihEdqKbsHgCeX4yg" name="extension2">
+      <eAnnotations xmi:id="_naLBMcihEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_naLBMsihEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="label1"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_naLBM8ihEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_94vxsMk-EdqSzop7az5EPg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_naLBNMihEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_naLBNcihEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vJAMifEdqKbsHgCeX4yg" name="ExecIF">
+    <eAnnotations xmi:id="_t2vJAcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vJAsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vJA8ifEdqKbsHgCeX4yg" javaFieldType="ExecIF" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vJBMifEdqKbsHgCeX4yg">
+      <body>If &lt;expr> is true, execute and return the result of &lt;app>(&lt;data>)</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vJBcifEdqKbsHgCeX4yg" name="expr">
+      <eAnnotations xmi:id="_t2vJBsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJB8ifEdqKbsHgCeX4yg" storageFieldname="expr"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJCMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJCcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJCsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJC8ifEdqKbsHgCeX4yg" name="app">
+      <eAnnotations xmi:id="_t2vJDMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJDcifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="app"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJDsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJD8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJEMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJEcifEdqKbsHgCeX4yg" name="data">
+      <eAnnotations xmi:id="_t2vJEsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJE8ifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="data"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJFMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJFcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJFsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vJLsifEdqKbsHgCeX4yg" name="SetMusicOnHold">
+    <eAnnotations xmi:id="_t2vJL8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vJMMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vJMcifEdqKbsHgCeX4yg" javaFieldType="SetMusicOnHold" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vJMsifEdqKbsHgCeX4yg">
+      <body>Sets the default class for music on hold for a given channel. When music on hold is activated, this class will be used to select which music is played.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vJM8ifEdqKbsHgCeX4yg" name="class">
+      <eAnnotations xmi:id="_t2vJNMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJNcifEdqKbsHgCeX4yg" storageFieldname="class"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJNsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJN8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJOMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vJOcifEdqKbsHgCeX4yg" name="VoiceMail">
+    <eAnnotations xmi:id="_t2vJOsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vJO8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vJPMifEdqKbsHgCeX4yg" javaFieldType="VoiceMail" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vJPcifEdqKbsHgCeX4yg">
+      <body>Leavesvoicemail for a given extension (must be configured in voicemail.conf).  If the extension is preceded by  * 's' then instructions for leaving the message will be skipped. * 'u' then the &quot;unavailable&quot; message will be played.  (/var/lib/asterisk/sounds/vm/&lt;exten>/unavail) if it exists. * 'b' then the the busy message will be played (that is, busy instead of unavail). If the caller presses '0' (zero) during the prompt, the call jumps to extension 'o' in the current context. If the caller presses '*' during the prompt, the call jumps to extension 'a' in the current context. If the requested mailbox does not exist, and there exists a priority n + 101, then that priority will be taken next. When multiple mailboxes are specified, the unavailable or busy message will be taken from the first mailbox specified. Returns -1 on error or mailbox not found, or if the user hangs up. Otherwise, it returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vJPsifEdqKbsHgCeX4yg" name="s">
+      <eAnnotations xmi:id="_t2vJP8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJQMifEdqKbsHgCeX4yg" storageFieldname="s"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJQcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJQsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJQ8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJRMifEdqKbsHgCeX4yg" name="u">
+      <eAnnotations xmi:id="_t2vJRcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJRsifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="u"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJR8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJSMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJScifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJSsifEdqKbsHgCeX4yg" name="b">
+      <eAnnotations xmi:id="_t2vJS8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJTMifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="b"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJTcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJTsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJT8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJUMifEdqKbsHgCeX4yg" name="extension">
+      <eAnnotations xmi:id="_t2vJUcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJUsifEdqKbsHgCeX4yg" ordOrder="5" storageFieldname="extension"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJU8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJVMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJVcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJVsifEdqKbsHgCeX4yg" name="context">
+      <eAnnotations xmi:id="_t2vJV8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJWMifEdqKbsHgCeX4yg" ordOrder="6" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJWcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJWsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJW8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vJZ8ifEdqKbsHgCeX4yg" name="Playtones">
+    <eAnnotations xmi:id="_t2vJaMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vJacifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vJasifEdqKbsHgCeX4yg" javaFieldType="Playtones" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vJa8ifEdqKbsHgCeX4yg">
+      <body>PlayTone(arg): Plays a tone list. Execution will continue with the next step immediately, while the tones continue to play. Arg is either the tone name defined in the indications.conf configuration file, or a directly specified list of frequencies and durations. See indications.conf for a description of the specification of a tonelist.  Use the StopPlaytones application to stop the tones playing.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vJh8ifEdqKbsHgCeX4yg" name="Wait">
+    <eAnnotations xmi:id="_t2vJiMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vJicifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vJisifEdqKbsHgCeX4yg" javaFieldType="Wait" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vJi8ifEdqKbsHgCeX4yg">
+      <body>Waits for a specified number of seconds, then returns 0. seconds can be passed with fractions of a second. (eg: 1.5 = 1.5 seconds)</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vJjMifEdqKbsHgCeX4yg" name="seconds">
+      <eAnnotations xmi:id="_t2vJjcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJjsifEdqKbsHgCeX4yg" storageFieldname="seconds"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJj8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJkMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJkcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vJncifEdqKbsHgCeX4yg" name="Exec">
+    <eAnnotations xmi:id="_t2vJnsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vJn8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vJoMifEdqKbsHgCeX4yg" javaFieldType="Exec(appname" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vJocifEdqKbsHgCeX4yg">
+      <body>Allows an arbitrary application to be invoked even when not hardcoded into the dialplan. Returns whatever value the app returns or -2 when the app cannot be found.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_JnBAkMlIEdqYtvvQTQe83A" name="appname">
+      <eAnnotations xmi:id="_JnBAkclIEdqYtvvQTQe83A" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_JnBAkslIEdqYtvvQTQe83A" storageFieldname="arguments"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_JnBAk8lIEdqYtvvQTQe83A"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JnBAlMlIEdqYtvvQTQe83A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JnBAlclIEdqYtvvQTQe83A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJosifEdqKbsHgCeX4yg" name="arguments">
+      <eAnnotations xmi:id="_t2vJo8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJpMifEdqKbsHgCeX4yg" storageFieldname="arguments"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJpcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJpsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJp8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vJ8cifEdqKbsHgCeX4yg" name="Goto">
+    <eAnnotations xmi:id="_t2vJ8sifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vJ88ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vJ9MifEdqKbsHgCeX4yg" javaFieldType="Goto" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vJ9cifEdqKbsHgCeX4yg">
+      <body>Set the priority to the specified value, optionally setting the extension and optionally the context as well. The extension BYEXTENSION is special in that it uses the current extension, thus permitting you to go to a different context, without specifying a specific extension. Always returns 0, even if the given context, extension, or priority is invalid.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vJ9sifEdqKbsHgCeX4yg" name="context">
+      <eAnnotations xmi:id="_t2vJ98ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJ-MifEdqKbsHgCeX4yg" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJ-cifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vJ-sifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vJ-8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vJ_MifEdqKbsHgCeX4yg" name="extension">
+      <eAnnotations xmi:id="_t2vJ_cifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vJ_sifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="extension"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vJ_8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_94vxsMk-EdqSzop7az5EPg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vKAMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vKAcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vKAsifEdqKbsHgCeX4yg" name="priority">
+      <eAnnotations xmi:id="_t2vKA8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vKBMifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="priority"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vKBcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vKBsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vKB8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vKMMifEdqKbsHgCeX4yg" name="DBdeltree">
+    <eAnnotations xmi:id="_t2vKMcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vKMsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vKM8ifEdqKbsHgCeX4yg" javaFieldType="DBdeltree" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vKNMifEdqKbsHgCeX4yg">
+      <body>Deletes a family or keytree from the Asterisk database. Always returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t2vKNcifEdqKbsHgCeX4yg" name="family">
+      <eAnnotations xmi:id="_t2vKNsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vKN8ifEdqKbsHgCeX4yg" storageFieldname="family"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vKOMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vKOcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vKOsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t2vKO8ifEdqKbsHgCeX4yg" name="keytree">
+      <eAnnotations xmi:id="_t2vKPMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t2vKPcifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="keytree"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t2vKPsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2vKP8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2vKQMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vKUsifEdqKbsHgCeX4yg" name="NoOp">
+    <eAnnotations xmi:id="_t2vKU8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vKVMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vKVcifEdqKbsHgCeX4yg" javaFieldType="NoOp" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vKVsifEdqKbsHgCeX4yg">
+      <body>No-operation; Does nothing.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vKysifEdqKbsHgCeX4yg" name="Progress">
+    <eAnnotations xmi:id="_t2vKy8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vKzMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vKzcifEdqKbsHgCeX4yg" javaFieldType="Progress" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vKzsifEdqKbsHgCeX4yg">
+      <body>Request that the channel indicate in-band progress is  available to the user. Always returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t2vK7MifEdqKbsHgCeX4yg" name="Hangup">
+    <eAnnotations xmi:id="_t2vK7cifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t2vK7sifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t2vK78ifEdqKbsHgCeX4yg" javaFieldType="Hangup" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t2vK8MifEdqKbsHgCeX4yg">
+      <body>Unconditionally hangs up a given channel by returning -1 always.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21NhsifEdqKbsHgCeX4yg" name="SayDigits">
+    <eAnnotations xmi:id="_t21Nh8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21NiMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21NicifEdqKbsHgCeX4yg" javaFieldType="SayDigits" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21NisifEdqKbsHgCeX4yg">
+      <body>Says the passed digits. SayDigits is using the current language setting for the channel. (See app setLanguage)</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21Ni8ifEdqKbsHgCeX4yg" name="digits">
+      <eAnnotations xmi:id="_t21NjMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21NjcifEdqKbsHgCeX4yg" storageFieldname="digits"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21NjsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Nj8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21NkMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21NlsifEdqKbsHgCeX4yg" name="SoftHangup">
+    <eAnnotations xmi:id="_t21Nl8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21NmMifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21NmcifEdqKbsHgCeX4yg" javaFieldType="SoftHangup" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21NmsifEdqKbsHgCeX4yg">
+      <body>Hangs up the requested channel. Always returns 0 - 'options' may contain the following letter:  'a' : hang up all channels on a specified device instead of a single resource</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21Nm8ifEdqKbsHgCeX4yg" name="technology">
+      <eAnnotations xmi:id="_t21NnMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21NncifEdqKbsHgCeX4yg" storageFieldname="technology"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21NnsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Nn8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21NoMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21NocifEdqKbsHgCeX4yg" name="resource">
+      <eAnnotations xmi:id="_t21NosifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21No8ifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="resource"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21NpMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21NpcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21NpsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Np8ifEdqKbsHgCeX4yg" name="options">
+      <eAnnotations xmi:id="_t21NqMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21NqcifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="options"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21NqsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Nq8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21NrMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21NvcifEdqKbsHgCeX4yg" name="Echo">
+    <eAnnotations xmi:id="_t21NvsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21Nv8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21NwMifEdqKbsHgCeX4yg" javaFieldType="Echo" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21NwcifEdqKbsHgCeX4yg">
+      <body>Echo audio read from channel back to the channel. Returns 0 if the user exits with the '#' key, or -1 if the user hangs up.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21OAMifEdqKbsHgCeX4yg" name="WaitMusicOnHold">
+    <eAnnotations xmi:id="_t21OAcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21OAsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21OA8ifEdqKbsHgCeX4yg" javaFieldType="WaitMusicOnHold" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21OBMifEdqKbsHgCeX4yg">
+      <body>Plays hold music specified number of seconds. Returns 0 when done, or -1 on hangup. If no hold music is available, the delay will still occur with no sound.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21OBcifEdqKbsHgCeX4yg" name="delay">
+      <eAnnotations xmi:id="_t21OBsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OB8ifEdqKbsHgCeX4yg" storageFieldname="delay"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OCMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OCcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OCsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21OC8ifEdqKbsHgCeX4yg" name="Queue">
+    <eAnnotations xmi:id="_t21ODMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21ODcifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21ODsifEdqKbsHgCeX4yg" javaFieldType="Queue" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21OD8ifEdqKbsHgCeX4yg">
+      <body>Queues an incoming call in a particular call queue as defined in queues.conf.  This application returns -1 if the originating channel hangs up, or if the call is bridged and either of the parties in the bridge terminate the call. Returns 0 if the queue is full, nonexistant, or has no members. The option string may contain zero or more of the following characters:  't' -- allow the called user transfer the calling user  'T' -- to allow the calling user to transfer the call.  'd' -- data-quality (modem) call (minimum delay).  'h' -- allow callee to hang up by hitting *.  'H' -- allow caller to hang up by hitting *.  'n' -- no retries on the timeout; will exit this application and    go to the next step.  'r' -- ring instead of playing MOH  In addition to transferring the call, a call may be parked and then picked up by another user.  The optional URL will be sent to the called party if the channel supports it.  The timeout will cause the queue to fail out after a specified number of seconds, checked between each queues.conf 'timeout' and 'retry' cycle.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21OEMifEdqKbsHgCeX4yg" name="queuename">
+      <eAnnotations xmi:id="_t21OEcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OEsifEdqKbsHgCeX4yg" storageFieldname="queuename"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OE8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OFMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OFcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21OFsifEdqKbsHgCeX4yg" name="options">
+      <eAnnotations xmi:id="_t21OF8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OGMifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="options"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OGcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OGsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OG8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21OHMifEdqKbsHgCeX4yg" name="uRL">
+      <eAnnotations xmi:id="_t21OHcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OHsifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="uRL"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OH8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OIMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OIcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21OIsifEdqKbsHgCeX4yg" name="announceoverride">
+      <eAnnotations xmi:id="_t21OI8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OJMifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="announceoverride"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OJcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OJsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OJ8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21OKMifEdqKbsHgCeX4yg" name="timeout">
+      <eAnnotations xmi:id="_t21OKcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OKsifEdqKbsHgCeX4yg" ordOrder="4" storageFieldname="timeout"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OK8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OLMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OLcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21OXMifEdqKbsHgCeX4yg" name="HasVoicemail">
+    <eAnnotations xmi:id="_t21OXcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21OXsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21OX8ifEdqKbsHgCeX4yg" javaFieldType="HasVoicemail" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21OYMifEdqKbsHgCeX4yg">
+      <body>Branches to priority + 101, if there is voicemail in folder indicated. Optionally sets &lt;varname> to the number of messages in that folder. Assumes folder of INBOX if not specified.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21OYcifEdqKbsHgCeX4yg" name="vmbox">
+      <eAnnotations xmi:id="_t21OYsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OY8ifEdqKbsHgCeX4yg" storageFieldname="vmbox"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OZMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OZcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OZsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21OZ8ifEdqKbsHgCeX4yg" name="context">
+      <eAnnotations xmi:id="_t21OaMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OacifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OasifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Oa8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21ObMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21ObcifEdqKbsHgCeX4yg" name="folder">
+      <eAnnotations xmi:id="_t21ObsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Ob8ifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="folder"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OcMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OccifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OcsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Oc8ifEdqKbsHgCeX4yg" name="varname">
+      <eAnnotations xmi:id="_t21OdMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OdcifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="varname"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OdsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Od8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OeMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21OecifEdqKbsHgCeX4yg" name="AbsoluteTimeout">
+    <eAnnotations xmi:id="_t21OesifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21Oe8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21OfMifEdqKbsHgCeX4yg" javaFieldType="AbsoluteTimeout" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21OfcifEdqKbsHgCeX4yg">
+      <body>Set the absolute maximum amount of time permitted for a call. A setting of 0 disables the timeout. Always returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21OfsifEdqKbsHgCeX4yg" name="seconds">
+      <eAnnotations xmi:id="_t21Of8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OgMifEdqKbsHgCeX4yg" storageFieldname="seconds"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OgcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OgsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21Og8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21OvMifEdqKbsHgCeX4yg" name="MacroIf">
+    <eAnnotations xmi:id="_t21OvcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21OvsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21Ov8ifEdqKbsHgCeX4yg" javaFieldType="MacroIf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21OwMifEdqKbsHgCeX4yg">
+      <body>Executes macro defined in &lt;macroname_a> if &lt;expr> is true (otherwise &lt;macroname_b> if provided) Arguments and return values as in application macro()</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21OwcifEdqKbsHgCeX4yg" name="expr">
+      <eAnnotations xmi:id="_t21OwsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Ow8ifEdqKbsHgCeX4yg" storageFieldname="expr"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OxMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21OxcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OxsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Ox8ifEdqKbsHgCeX4yg" name="macroname_a">
+      <eAnnotations xmi:id="_t21OyMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21OycifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="macroname_a"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21OysifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Oy8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21OzMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21OzcifEdqKbsHgCeX4yg" name="macroname_b">
+      <eAnnotations xmi:id="_t21OzsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Oz8ifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="macroname_b"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21O0MifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21O0cifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21O0sifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21O08ifEdqKbsHgCeX4yg" name="arg1">
+      <eAnnotations xmi:id="_t21O1MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21O1cifEdqKbsHgCeX4yg" ordOrder="4" storageFieldname="arg1"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21O1sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21O18ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21O2MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21PKcifEdqKbsHgCeX4yg" name="Answer">
+    <eAnnotations xmi:id="_t21PKsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21PK8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21PLMifEdqKbsHgCeX4yg" javaFieldType="Answer" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21PLcifEdqKbsHgCeX4yg">
+      <body>If the channel is ringing, answer it, otherwise do nothing.  If delay is specified, asterisk will pause execution for the specified amount of milliseconds if an answer is required, in order to give audio a chance to become ready. Returns 0 unless it tries to answer the channel and fails.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21PLsifEdqKbsHgCeX4yg" name="delay">
+      <eAnnotations xmi:id="_t21PL8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PMMifEdqKbsHgCeX4yg" storageFieldname="delay"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PMcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PMsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PM8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21PNMifEdqKbsHgCeX4yg" name="SayPhonetic">
+    <eAnnotations xmi:id="_t21PNcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21PNsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21PN8ifEdqKbsHgCeX4yg" javaFieldType="SayPhonetic" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21POMifEdqKbsHgCeX4yg">
+      <body>Spells the passed string with phonetic alphabet</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21POcifEdqKbsHgCeX4yg" name="string">
+      <eAnnotations xmi:id="_t21POsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PO8ifEdqKbsHgCeX4yg" storageFieldname="string"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PPMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PPcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PPsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21PVcifEdqKbsHgCeX4yg" name="While">
+    <eAnnotations xmi:id="_t21PVsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21PV8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21PWMifEdqKbsHgCeX4yg" javaFieldType="While" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21PWcifEdqKbsHgCeX4yg">
+      <body>Start a While Loop. Execution will return to this point when EndWhile is called until expr is no longer true.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21PWsifEdqKbsHgCeX4yg" name="expr">
+      <eAnnotations xmi:id="_t21PW8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PXMifEdqKbsHgCeX4yg" storageFieldname="expr"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PXcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PXsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PX8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21PYMifEdqKbsHgCeX4yg" name="MailboxExists">
+    <eAnnotations xmi:id="_t21PYcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21PYsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21PY8ifEdqKbsHgCeX4yg" javaFieldType="MailboxExists" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21PZMifEdqKbsHgCeX4yg">
+      <body>Conditionally branches to priority n+101 if the specified voice mailbox exists.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21PZcifEdqKbsHgCeX4yg" name="mailbox">
+      <eAnnotations xmi:id="_t21PZsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PZ8ifEdqKbsHgCeX4yg" storageFieldname="mailbox"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PaMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PacifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PasifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Pa8ifEdqKbsHgCeX4yg" name="context">
+      <eAnnotations xmi:id="_t21PbMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PbcifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PbsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Pb8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PcMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21PiMifEdqKbsHgCeX4yg" name="DBget">
+    <eAnnotations xmi:id="_t21PicifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21PisifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21Pi8ifEdqKbsHgCeX4yg" javaFieldType="DBget" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21PjMifEdqKbsHgCeX4yg">
+      <body>Retrieves a value from the Asterisk database and stores it in the given variable. Always returns 0. If the requested key is not found, jumps to priority n+101 if available.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21PjcifEdqKbsHgCeX4yg" name="varname">
+      <eAnnotations xmi:id="_t21PjsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Pj8ifEdqKbsHgCeX4yg" storageFieldname="varname"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PkMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PkcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PksifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Pk8ifEdqKbsHgCeX4yg" name="family">
+      <eAnnotations xmi:id="_t21PlMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PlcifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="family"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PlsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Pl8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PmMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21PmcifEdqKbsHgCeX4yg" name="key">
+      <eAnnotations xmi:id="_t21PmsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Pm8ifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="key"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PnMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PncifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PnsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21Pn8ifEdqKbsHgCeX4yg" name="Ringing">
+    <eAnnotations xmi:id="_t21PoMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21PocifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21PosifEdqKbsHgCeX4yg" javaFieldType="Ringing" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21Po8ifEdqKbsHgCeX4yg">
+      <body>Request that the channel indicate ringing tone to the user. Always returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21PpMifEdqKbsHgCeX4yg" name="RetryDial">
+    <eAnnotations xmi:id="_t21PpcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21PpsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21Pp8ifEdqKbsHgCeX4yg" javaFieldType="RetryDial" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21PqMifEdqKbsHgCeX4yg">
+      <body>Attempt to place a call. If no channel can be reached, play the file defined by 'announce' waiting 'sleep' seconds to retry the call. If the specified number of attempts matches  'loops' the call will continue in the dialplan. If 'loops' is set to 0, the call will retry endlessly.  While waiting, a 1 digit extension may be dialed. If that extension exists in either the context defined in ${EXITCONTEXT} or the current one, The call will transfer to that extension immmediately.  All arguments after 'loops' are passed directly to the Dial() application.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21PqcifEdqKbsHgCeX4yg" name="announce">
+      <eAnnotations xmi:id="_t21PqsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Pq8ifEdqKbsHgCeX4yg" storageFieldname="announce"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PrMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PrcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PrsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Pr8ifEdqKbsHgCeX4yg" name="sleep">
+      <eAnnotations xmi:id="_t21PsMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PscifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="sleep"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PssifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Ps8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PtMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21PtcifEdqKbsHgCeX4yg" name="loops">
+      <eAnnotations xmi:id="_t21PtsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Pt8ifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="loops"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PuMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PucifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PusifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Pu8ifEdqKbsHgCeX4yg" name="technology">
+      <eAnnotations xmi:id="_t21PvMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PvcifEdqKbsHgCeX4yg" ordOrder="3" storageFieldname="technology"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PvsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Pv8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PwMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21PwcifEdqKbsHgCeX4yg" name="resource">
+      <eAnnotations xmi:id="_t21PwsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Pw8ifEdqKbsHgCeX4yg" ordOrder="4" storageFieldname="resource"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PxMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21PxcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PxsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21Px8ifEdqKbsHgCeX4yg" name="technology2">
+      <eAnnotations xmi:id="_t21PyMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21PycifEdqKbsHgCeX4yg" ordOrder="5" storageFieldname="technology2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21PysifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21Py8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21PzMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21PzcifEdqKbsHgCeX4yg" name="resource2">
+      <eAnnotations xmi:id="_t21PzsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21Pz8ifEdqKbsHgCeX4yg" ordOrder="6" storageFieldname="resource2"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21P0MifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21P0cifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21P0sifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21P08ifEdqKbsHgCeX4yg" name="timeout">
+      <eAnnotations xmi:id="_t21P1MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21P1cifEdqKbsHgCeX4yg" ordOrder="7" storageFieldname="timeout"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21P1sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21P18ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21P2MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21P2cifEdqKbsHgCeX4yg" name="options">
+      <eAnnotations xmi:id="_t21P2sifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21P28ifEdqKbsHgCeX4yg" ordOrder="8" storageFieldname="options"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21P3MifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21P3cifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21P3sifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21P38ifEdqKbsHgCeX4yg" name="uRL">
+      <eAnnotations xmi:id="_t21P4MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21P4cifEdqKbsHgCeX4yg" ordOrder="9" storageFieldname="uRL"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21P4sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21P48ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21P5MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21P6sifEdqKbsHgCeX4yg" name="SayAlpha">
+    <eAnnotations xmi:id="_t21P68ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21P7MifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21P7cifEdqKbsHgCeX4yg" javaFieldType="SayAlpha" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21P7sifEdqKbsHgCeX4yg">
+      <body>Spells the passed string</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21P78ifEdqKbsHgCeX4yg" name="string">
+      <eAnnotations xmi:id="_t21P8MifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21P8cifEdqKbsHgCeX4yg" storageFieldname="string"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21P8sifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21P88ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21P9MifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21P9cifEdqKbsHgCeX4yg" name="VoiceMailMain">
+    <eAnnotations xmi:id="_t21P9sifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21P98ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21P-MifEdqKbsHgCeX4yg" javaFieldType="VoiceMailMain" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21P-cifEdqKbsHgCeX4yg">
+      <body>Enters the main voicemail system for the checking of voicemail. The mailbox can be passed as the option, which will stop the voicemail system from prompting the user for the mailbox. If the mailbox is preceded by 's' then the password check will be skipped. If the mailbox is preceded by 'p' then the supplied mailbox is prepended to the user's entry and the resulting string is used as the mailbox number. This is useful for virtual hosting of voicemail boxes. If a context is specified, logins are considered in that voicemail context only. Returns -1 if the user hangs up or 0 otherwise.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21P-sifEdqKbsHgCeX4yg" name="s">
+      <eAnnotations xmi:id="_t21P-8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21P_MifEdqKbsHgCeX4yg" storageFieldname="s"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21P_cifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21P_sifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21P_8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21QAMifEdqKbsHgCeX4yg" name="mailbox">
+      <eAnnotations xmi:id="_t21QAcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QAsifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="mailbox"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QA8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QBMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QBcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21QBsifEdqKbsHgCeX4yg" name="context">
+      <eAnnotations xmi:id="_t21QB8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QCMifEdqKbsHgCeX4yg" ordOrder="2" storageFieldname="context"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QCcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QCsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QC8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21QDMifEdqKbsHgCeX4yg" name="Playback">
+    <eAnnotations xmi:id="_t21QDcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21QDsifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21QD8ifEdqKbsHgCeX4yg" javaFieldType="Playback" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21QEMifEdqKbsHgCeX4yg">
+      <body>Plays back a given filename (do not put extension). Options may also be included following a pipe symbol. The 'skip' option causes the playback of the message to be skipped if the channel is not in the 'up' state (i.e. it hasn't been answered yet. If 'skip' is  specified, the application will return immediately should the channel not be off hook. Otherwise, unless 'noanswer' is specified, the channel channel will be answered before the sound is played. Not all channels support playing messages while still hook. Returns -1 if the channel was hung up. If the file does not exist, will jump to priority n+101 if present.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21QEcifEdqKbsHgCeX4yg" name="filename">
+      <eAnnotations xmi:id="_t21QEsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QE8ifEdqKbsHgCeX4yg" storageFieldname="filename"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QFMifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QFcifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QFsifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21QF8ifEdqKbsHgCeX4yg" name="option">
+      <eAnnotations xmi:id="_t21QGMifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QGcifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="option"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QGsifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QG8ifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QHMifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21QHcifEdqKbsHgCeX4yg" name="DBdel">
+    <eAnnotations xmi:id="_t21QHsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21QH8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21QIMifEdqKbsHgCeX4yg" javaFieldType="DBdel" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21QIcifEdqKbsHgCeX4yg">
+      <body>Deletes a key from the Asterisk database. Always returns 0.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21QIsifEdqKbsHgCeX4yg" name="family">
+      <eAnnotations xmi:id="_t21QI8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QJMifEdqKbsHgCeX4yg" storageFieldname="family"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QJcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QJsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QJ8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21QKMifEdqKbsHgCeX4yg" name="key">
+      <eAnnotations xmi:id="_t21QKcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QKsifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="key"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QK8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QLMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QLcifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_t21QOcifEdqKbsHgCeX4yg" name="SendDTMF">
+    <eAnnotations xmi:id="_t21QOsifEdqKbsHgCeX4yg" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_t21QO8ifEdqKbsHgCeX4yg"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_t21QPMifEdqKbsHgCeX4yg" javaFieldType="SendDTMF" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_t21QPcifEdqKbsHgCeX4yg">
+      <body>Sends DTMF digits on a channel.   Accepted digits: 0-9, *#abcd  Returns 0 on success or -1 on a hangup.</body>
+    </ownedComment>
+    <generalization xmi:id="_3f7RoMlCEdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+    </generalization>
+    <ownedAttribute xmi:id="_t21QPsifEdqKbsHgCeX4yg" name="digits">
+      <eAnnotations xmi:id="_t21QP8ifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QQMifEdqKbsHgCeX4yg" storageFieldname="digits"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QQcifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QQsifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QQ8ifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t21QRMifEdqKbsHgCeX4yg" name="timeout_ms">
+      <eAnnotations xmi:id="_t21QRcifEdqKbsHgCeX4yg" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_t21QRsifEdqKbsHgCeX4yg" ordOrder="1" storageFieldname="timeout_ms"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_t21QR8ifEdqKbsHgCeX4yg"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t21QSMifEdqKbsHgCeX4yg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t21QScifEdqKbsHgCeX4yg" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+</uml:Model>

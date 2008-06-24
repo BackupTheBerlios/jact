@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.indicationsconf.ToneDefinitionsImpl" table="tbl_indicationsconf_tonedefinitions" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="countrycode" column="countrycode"/>	
+		<property name="description" column="description"/>	
+		<property name="alias" column="alias"/>	
+		<property name="ringcadence" column="ringcadence"/>	
+		<property name="dial" column="dial"/>	
+		<property name="busy" column="busy"/>	
+		<property name="ring" column="ring"/>	
+		<property name="congestion" column="congestion"/>	
+		<property name="callwaiting" column="callwaiting"/>	
+		<property name="dialrecall" column="dialrecall"/>	
+		<property name="record" column="record"/>	
+		<property name="info" column="info"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="customToneMap" cascade="all" 
+		table="tbl_indicationsconf_tonedefinitions_customtone">
+			<key column="tonedefinitions_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.indicationsconf.CustomToneImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

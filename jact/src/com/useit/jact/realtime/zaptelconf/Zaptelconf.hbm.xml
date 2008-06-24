@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.zaptelconf.ZaptelconfImpl" table="tbl_zaptelconf_zaptelconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="defaultzone" column="defaultzone"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="zaptelchannelsMap" cascade="all" 
+		table="tbl_zaptelconf_zaptelconf_zaptelchannels">
+			<key column="zaptelconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.zaptelconf.ZaptelchannelsImpl"/>
+        </list>	
+	
+	
+ 		<list name="zapteldynamicspanMap" cascade="all" 
+		table="tbl_zaptelconf_zaptelconf_zapteldynamicspan">
+			<key column="zaptelconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.zaptelconf.ZapteldynamicspanImpl"/>
+        </list>	
+	
+	
+ 		<list name="zaptelspanMap" cascade="all" 
+		table="tbl_zaptelconf_zaptelconf_zaptelspan">
+			<key column="zaptelconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.zaptelconf.ZaptelspanImpl"/>
+        </list>	
+	
+	
+ 		<list name="zapteltonezoneMap" cascade="all" 
+		table="tbl_zaptelconf_zaptelconf_zapteltonezone">
+			<key column="zaptelconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.zaptelconf.ZapteltonezoneImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

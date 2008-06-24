@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.voicemailconf.VoicemailgeneralImpl" table="tbl_voicemailconf_voicemailgeneral" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="attach" column="attach"/>	
+		<property name="delete" column="delete"/>	
+		<property name="mailcmd" column="mailcmd"/>	
+		<property name="maxsilence" column="maxsilence"/>	
+		<property name="envelope" column="envelope"/>	
+		<property name="externnotify" column="externnotify"/>	
+		<property name="silencethreshold" column="silencethreshold"/>	
+		<property name="serveremail" column="serveremail"/>	
+		<property name="maxmessage" column="maxmessage"/>	
+		<property name="minmessage" column="minmessage"/>	
+		<property name="format" column="format"/>	
+		<property name="maxgreet" column="maxgreet"/>	
+		<property name="skipms" column="skipms"/>	
+		<property name="maxlogins" column="maxlogins"/>	
+		<property name="cidinternalcontexts" column="cidinternalcontexts"/>	
+		<property name="review" column="review"/>	
+		<property name="operator" column="operator"/>	
+		<property name="saycid" column="saycid"/>	
+		<property name="dialout" column="dialout"/>	
+		<property name="callback" column="callback"/>	
+		<property name="dbuser" column="dbuser"/>	
+		<property name="dbpass" column="dbpass"/>	
+		<property name="dbhost" column="dbhost"/>	
+		<property name="dbname" column="dbname"/>	
+		<property name="dboption" column="dboption"/>	
+		<property name="pbxskip" column="pbxskip"/>	
+		<property name="fromstring" column="fromstring"/>	
+		<property name="emailsubject" column="emailsubject"/>	
+		<property name="emailbody" column="emailbody"/>	
+		<property name="exitcontext" column="exitcontext"/>	
+		<property name="nextaftercmd" column="nextaftercmd"/>	
+<!-- Agg -->
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

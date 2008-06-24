@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation extensionconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : extensionconf</h1>
+<p><h2>extensionconf ist the dialplan of the pbx</h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Extension</h3>
+ <h4>Extension names may be numbers, letters, or combinations thereof. If an extension name is prefixed by a '_' character, it is interpreted as a pattern rather than a literal.  In patterns, some characters have special meanings:</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >exten[String]</td><td valign="top">extension is the label of the extension, and can be either a literal constant string (alphanumeric plus a few special symols allowed) or a dynamically evaluated pattern (see below) to match many possible phone numbers, for example. Every command line that is part of a given extensions has this same label.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >priority[Integer]</td><td valign="top">priority is usually an integer (see note, however). It's just a sequence number for each command line of an extension. The first executable command of an extensions has the priority "1", so when Asterisk transfers a call to an extension, it will look for a command with priority 1. If there is not a line with a priority of 1, then the extension will not match the dialed number. After executing the priority 1 command, Asterisk will increment the priority to "2" unless the command itself determines the next priority to be executed. If this next priority is not defined in the extension, Asterisk finishes processing for this extension, even if there exists another command with a priority higher than the missing one.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >application[PbxApplication]</td><td valign="top">command is the name of the command (also called an "application") to execute.</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Context</h3>
+ <h4>The Dialplan constists of collection of contexts. These context definitions are the most important part of the extensions.conf file and are the most important part of Asterisk configuration. A context is just a collection of extensions.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >contextname[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >ignorepat[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >extensionMap[Extension]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >includecontextMap[Includecontext]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >switchMap[Switch]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Includecontext</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >contexname[PbxContext]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >timeing[String]</td><td valign="top"><time range>|<days of week>|<days of month>|<months></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Switch</h3>
+ <h4>The SWITCH statement permits a server to share the dialplain with another server. Use with care: Reciprocal switch statements are not allowed (e.g. both A -> B and B -> A), and the switched server needs to be on-line or else dialing can be severly delayed.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >switchdialstr[String]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Extensionconf</h3>
+ <h4>used by  the pbx_config module. This is where you configure all your   inbound and outbound calls in Asterisk.     This configuration file is reloaded   - With the "extensions reload" command in the CLI  - With the "reload" command (that reloads everything) in the CLI
+
+The "General" category is for certain variables.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >static_[Boolean]</td><td valign="top">If static is set to no, or omitted, then the pbx_config will rewrite  this file when extensions are modified.  Remember that all comments  made in the file will be lost when that happens.  XXX Not yet implemented XXX</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >writeprotect[Boolean]</td><td valign="top">if static yes and writeprotect no, you can save dialplan by CLI command 'save dialplan' too</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >autofallthrough[Boolean]</td><td valign="top">If autofallthrough is set, then if an extension runs out of  things to do, it will terminate the call with BUSY, CONGESTION  or HANGUP depending on Asterisk's best guess (strongly recommended).If autofallthrough is not set, then if an extension runs out of   things to do, asterisk will wait for a new extension to be dialed   (this is the original behavior of Asterisk 1.0 and earlier).</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >clearglobalvars[Boolean]</td><td valign="top">If clearglobalvars is set, global variables will be cleared   and reparsed on an extensions reload, or Asterisk reload.
+
+If clearglobalvars is not set, then global variables will persist  through reloads, and even if deleted from the extensions.conf or  one if its included files, will remain set to the previous value.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >contextMap[Context]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >globalvarsMap[Globalvars]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >includeconfigsMap[Includeconfigs]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Globalvars</h3>
+ <h4>The "Globals" category contains global variables that can be referenced in the dialplan with ${VARIABLE} or ${ENV(VARIABLE)} for Environmental variable ${${VARIABLE}} or ${text${VARIABLE}} or any hybrid</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >name[String]</td><td valign="top">name</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >value[String]</td><td valign="top">value</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Includeconfigs</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >configname[String]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="diagramm">
+		<section name="featuremap">
+			<item key="y" value="339"/>
+			<item key="areah" value="110"/>
+			<item key="x" value="63"/>
+			<item key="areaw" value="128"/>
+		</section>
+		<section name="featuresconf">
+			<item key="y" value="15"/>
+			<item key="areah" value="262"/>
+			<item key="x" value="65"/>
+			<item key="areaw" value="173"/>
+		</section>
+	</section>
+</section>

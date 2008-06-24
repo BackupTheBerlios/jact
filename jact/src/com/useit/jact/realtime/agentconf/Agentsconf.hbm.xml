@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.agentconf.AgentsconfImpl" table="tbl_agentconf_agentsconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="autologoff" column="autologoff"/>	
+		<property name="ackcall" column="ackcall"/>	
+		<property name="wrapuptime" column="wrapuptime"/>	
+		<property name="music_class" column="music_class"/>	
+		<property name="custom_beep" column="custom_beep"/>	
+		<property name="group" column="group_"/>	
+<!-- Agg -->
+	<many-to-one name="fAgentsrecording" access="field"
+	class="com.useit.jact.model.agentconf.AgentsrecordingImpl"
+	 column="agentsrecording_fk"
+	 cascade="all" />
+<!-- maps -->
+		<list name="agentsMap" cascade="all" 
+		table="tbl_agentconf_agentsconf_agents">
+			<key column="agentsconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.agentconf.AgentsImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

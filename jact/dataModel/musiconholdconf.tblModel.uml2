@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_5dVbkHVmEdqu-MgwmX9MXw" name="musiconholdconf" appliedProfile="_5dVblXVmEdqu-MgwmX9MXw">
+  <eAnnotations xmi:id="_5dVbkXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_5dVbknVmEdqu-MgwmX9MXw"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_5dVbk3VmEdqu-MgwmX9MXw"/>
+  <packageImport xmi:id="_5dVblHVmEdqu-MgwmX9MXw">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_5dVblXVmEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_5dVblnVmEdqu-MgwmX9MXw" source="attributes">
+      <details xmi:id="_5dVbl3VmEdqu-MgwmX9MXw" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_5dVbmHVmEdqu-MgwmX9MXw" name="types">
+    <eAnnotations xmi:id="_5dVbmXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_5dVbmnVmEdqu-MgwmX9MXw"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_5dVbm3VmEdqu-MgwmX9MXw" name="MohClasses">
+    <eAnnotations xmi:id="_5dVbnHVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_5dVbnXVmEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_5dVbnnVmEdqu-MgwmX9MXw" javaFieldType="MohClasses" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_5dVbn3VmEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_5dVboHVmEdqu-MgwmX9MXw" name="name">
+      <eAnnotations xmi:id="_5dVboXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_5dVbonVmEdqu-MgwmX9MXw" storageFieldname="name"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_5dVbo3VmEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5dVbpHVmEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5dVbpXVmEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5dVbpnVmEdqu-MgwmX9MXw" name="player">
+      <eAnnotations xmi:id="_5dVbp3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_5dVbqHVmEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="player"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_5dVbqXVmEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5dVbqnVmEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5dVbq3VmEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5dVbrHVmEdqu-MgwmX9MXw" name="mohdir">
+      <eAnnotations xmi:id="_5dVbrXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_5dVbrnVmEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="mohdir"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_5dVbr3VmEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5dVbsHVmEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5dVbsXVmEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5dVbsnVmEdqu-MgwmX9MXw" name="mohpara">
+      <eAnnotations xmi:id="_5dVbs3VmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_5dVbtHVmEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="mohpara"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_5dVbtXVmEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5dVbtnVmEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5dVbt3VmEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_5dVbuHVmEdqu-MgwmX9MXw" name="Music_on_HoldConf">
+    <eAnnotations xmi:id="_5dVbuXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_5dVbunVmEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_5dVbu3VmEdqu-MgwmX9MXw" javaFieldType="Music_on_HoldConf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_5dVbvHVmEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_5dVbxHVmEdqu-MgwmX9MXw" name="mohClassesMap" type="_5dVbm3VmEdqu-MgwmX9MXw" association="_5dVbyXVmEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_5dVbxXVmEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_5dVbxnVmEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5dVbx3VmEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5dVbyHVmEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_5dVbyXVmEdqu-MgwmX9MXw" name="Music_on_HoldConf->MohClasses" memberEnd="_5dVbxHVmEdqu-MgwmX9MXw _5dVbynVmEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_5dVbynVmEdqu-MgwmX9MXw" type="_5dVbuHVmEdqu-MgwmX9MXw" association="_5dVbyXVmEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5dVby3VmEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5dVbzHVmEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

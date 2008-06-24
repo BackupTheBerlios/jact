@@ -1,0 +1,112 @@
+/*
+ * (c) urs zeidler
+ */
+package com.useit.jact.io.voicemailconf;
+
+import org.w3c.dom.Document;
+
+import com.useit.jact.io.BasicSax;
+
+/**
+ * <p>
+ * XmlHandlerImpl
+ * </p>
+ * Created : 15.08.2005
+ * 
+ * @author urs
+ * @version $Revision: 1.1 $, $Id: XmlHandlerImpl.java,v 1.6 2006/01/13 19:28:10
+ *          urs Exp $
+ */
+public class XmlHandlerImpl extends XmlHandler {
+
+    private Object conf;
+
+    /**
+     * 
+     */
+    public XmlHandlerImpl() {
+        super();
+    }
+
+    public Object getConf() {
+        return conf;
+    }
+
+    /**
+     * @param attributes
+     * @return VoicemailConf
+     */
+    protected void linkVoicemailConf() {
+        if (currentVoicemailConf != null) {
+            conf = currentVoicemailConf;
+        }
+    }
+
+    /**
+     * @param attributes
+     * @return Zonemessages
+     */
+    protected void linkZonemessages() {
+        if (currentVoicemailConf != null) {
+            currentVoicemailConf.addZonemessages(currentZonemessages);
+        }
+    }
+
+    /**
+     * @param attributes
+     * @return Voicemailcontext
+     */
+    protected void linkVoicemailcontext() {
+        if (currentVoicemailConf != null) {
+            currentVoicemailConf.addVoicemailcontext(currentVoicemailcontext);
+        }
+    }
+
+    /**
+     * @param attributes
+     * @return Voicemailcontextentry
+     */
+    protected void linkVoicemailcontextentry() {
+        if (currentVoicemailcontext != null) {
+            currentVoicemailcontext
+                    .addVoicemailcontextentry(currentVoicemailcontextentry);
+        }
+    }
+
+    /**
+     * @param attributes
+     * @return Voicemailgeneral
+     */
+    protected void linkVoicemailgeneral() {
+        if (currentVoicemailConf != null) {
+            currentVoicemailConf.setVoicemailgeneral(currentVoicemailgeneral);
+        }
+    }
+
+    /**
+     * @param filename
+     * @param conf
+     */
+    public static void writeConf(String filename, Object conf) {
+        Document doc = BasicSax.createDomDocument();
+        writeConfObject(doc, conf);
+        // XmlWriter.writeSipConf(doc, (SipConf) conf);
+        BasicSax.writeXmlFile(doc, filename);
+
+    }
+
+    /**
+     * @param filename
+     * @param conf
+     */
+    public static void writeConfObject(Document doc, Object conf) {
+        XmlWriter.writeConf(doc, conf);
+    }
+
+    public static Object readConf(String filename) {
+        XmlHandlerImpl hnd = new XmlHandlerImpl();
+        BasicSax.parseXmlFile(filename, hnd, false);
+        return hnd.getConf();
+    }
+
+}

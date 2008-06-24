@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.queueconf.QueuesectionImpl" table="tbl_queueconf_queuesection" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="sectionname" column="section"/>	
+		<property name="musiconhold" column="musiconhold"/>	
+		<property name="announce" column="announce"/>	
+		<property name="strategy" column="strategy"/>	
+		<property name="servicelevel" column="servicelevel"/>	
+		<property name="context" column="context"/>	
+		<property name="timeout" column="timeout"/>	
+		<property name="retry" column="retry"/>	
+		<property name="weight" column="weight"/>	
+		<property name="wrapuptime" column="wrapuptime"/>	
+		<property name="maxlen" column="maxlen"/>	
+		<property name="announcefrequency" column="announcefrequency"/>	
+		<property name="announceholdtime" column="announceholdtime"/>	
+		<property name="announceroundseconds" column="announceroundseconds"/>	
+		<property name="monitorformat" column="monitorformat"/>	
+		<property name="monitorjoin" column="monitorjoin"/>	
+		<property name="joinempty" column="joinempty"/>	
+		<property name="leavewhenempty" column="leavewhenempty"/>	
+		<property name="eventwhencalled" column="eventwhencalled"/>	
+		<property name="eventmemberstatusoff" column="eventmemberstatusoff"/>	
+		<property name="reportholdtime" column="reportholdtime"/>	
+		<property name="memberdelay" column="memberdelay"/>	
+		<property name="timeoutrestart" column="timeoutrestart"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="queuememberMap" cascade="all" 
+		table="tbl_queueconf_queuesection_queuemember">
+			<key column="queuesection_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.queueconf.QueuememberImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

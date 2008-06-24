@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation zaptelconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : zaptelconf</h1>
+<p><h2>zaptelconf</h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Zaptelchannels</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >device[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >channellist[String]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Zapteltonezone</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >zonename[String]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Zaptelspan</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >span_num[Integer]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >timing[Integer]</td><td valign="top">The timing parameter determines the selection of primary, secondary, and so on sync sources.  If this span should be considered a primary sync source, then give it a value of "1".  For a secondary, use "2", and so on. To not use this as a sync source, just use "0" </td></tr>   
+		<tr><td></td><td  width="200" valign="top" >lbo[Integer]</td><td valign="top">The line build-out (or LBO) is an integer, from the following table: 0: 0 db (CSU) / 0-133 feet (DSX-1) 1: 133-266 feet (DSX-1) 2: 266-399 feet (DSX-1) 3: 399-533 feet (DSX-1) 4: 533-655 feet (DSX-1) 5: -7.5db (CSU) 6: -15db (CSU) 7: -22.5db (CSU) </td></tr>   
+		<tr><td></td><td  width="200" valign="top" >framing[String]</td><td valign="top">The framing is one of "d4" or "esf" for T1 or "cas" or "ccs" for E1  Note: "d4" could be referred to as "sf" or "superframe" </td></tr>   
+		<tr><td></td><td  width="200" valign="top" >coding[String]</td><td valign="top">The coding is one of "ami" or "b8zs" for T1 or "ami" or "hdb3" for E1 E1's may have the additional keyword "crc4" to enable CRC4 checking</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >yellow[String]</td><td valign="top">If the keyword "yellow" follows, yellow alarm is transmitted when no channels are open.</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Zapteldynamicspan</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >driver[String]</td><td valign="top">Where <driver> is the name of the driver (e.g. eth)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >address[String]</td><td valign="top"><address> is the  driver specific address (like a MAC for eth)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >numchans[Integer]</td><td valign="top"><numchans> is the number of channels</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >timing[Integer]</td><td valign="top"><timing> is a timing priority, like for a normal span</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Zaptelconf</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >defaultzone[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >zaptelchannelsMap[Zaptelchannels]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >zapteldynamicspanMap[Zapteldynamicspan]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >zaptelspanMap[Zaptelspan]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >zapteltonezoneMap[Zapteltonezone]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

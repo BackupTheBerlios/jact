@@ -1,0 +1,2251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_OuceAHVBEdq-GezyEkG4OQ" name="zapataconf" appliedProfile="_OuceBXVBEdq-GezyEkG4OQ">
+  <eAnnotations xmi:id="_OuceAXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+    <eAnnotations xmi:id="_dpwlgHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dpwlgXhcEdqTMIA4Csl2WQ" key="uuid" value="11358549483121"/>
+    </eAnnotations>
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_OuceAnVBEdq-GezyEkG4OQ"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_dpeRoHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+    <details xmi:id="_dpeRoXhcEdqTMIA4Csl2WQ" key="uuid" value="11358549482820"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_OuceA3VBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dpwlgnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dpwlg3hcEdqTMIA4Csl2WQ" key="uuid" value="11358549483123"/>
+    </eAnnotations>
+  </ownedComment>
+  <packageImport xmi:id="_OuceBHVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dpwlhHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dpwlhXhcEdqTMIA4Csl2WQ" key="uuid" value="11358549483124"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_OuceBXVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_OuceBnVBEdq-GezyEkG4OQ" source="attributes">
+      <eAnnotations xmi:id="_dpwliHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dpwliXhcEdqTMIA4Csl2WQ" key="uuid" value="11358549483126"/>
+      </eAnnotations>
+      <details xmi:id="_OuceB3VBEdq-GezyEkG4OQ" key="version" value="0"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dpwlhnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dpwlh3hcEdqTMIA4Csl2WQ" key="uuid" value="11358549483125"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_OuceCHVBEdq-GezyEkG4OQ" name="types">
+    <eAnnotations xmi:id="_OuceCXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dp2sIHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dp2sIXhcEdqTMIA4Csl2WQ" key="uuid" value="11358549483229"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_OuceCnVBEdq-GezyEkG4OQ"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dpwlinhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dpwli3hcEdqTMIA4Csl2WQ" key="uuid" value="11358549483128"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuceC3VBEdq-GezyEkG4OQ" name="Other">
+    <eAnnotations xmi:id="_OuceDHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dp2sJHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dp2sJXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494832212"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuceDXVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuceDnVBEdq-GezyEkG4OQ" javaFieldType="Other" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dp2sInhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dp2sI3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494832211"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuceD3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dp2sJnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dp2sJ3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494832215"/>
+      </eAnnotations>
+      <body>other stuff</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuceEHVBEdq-GezyEkG4OQ" name="mailbox">
+      <eAnnotations xmi:id="_OuceEXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dp8ywnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dp8yw3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494833217"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceEnVBEdq-GezyEkG4OQ" storageFieldname="mailbox"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dp8ywHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dp8ywXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494833216"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceE3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dp8yxHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dp8yxXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494833219"/>
+        </eAnnotations>
+        <body>If this option is defined for a channel, then when the handset is lifted, Asterisk will check the voicemail mailbox(es) specified here for new (unheard) messages. If there are any unheard messages in any of the mailboxes, Asterisk will use a stutter dialtone rather than the ordinary dialtone. On supported hardware, the message waiting light will also be activated � this probably requires that you also set adsi=yes. Update: This option does NOT require ADSI. It will send a standard FSK tone down the line that lights up the MWI on any capable analog phone. The parameters to this option are one or more comma-separated mailbox numbers, as defined in voicemail.conf.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceFHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dqJAAHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqJAAXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494835220"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceFXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dqhagHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqhagXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494835221"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceFnVBEdq-GezyEkG4OQ" name="group">
+      <eAnnotations xmi:id="_OuceF3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dqnhInhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqnhI3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494840223"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceGHVBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="group_"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dqnhIHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dqnhIXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494840222"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceGXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dqnhJHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqnhJXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494840225"/>
+        </eAnnotations>
+        <body>Allows you to group together a number of channels so that the Dial command will treat the group as a single channel. When Dial tries to make a call on a Zap group, the Zap channel module will use the first available (i.e. non-busy) channel in the group for the call. Multiple group memberships may be specified with commas, and to signify no group membership, the portion after the equals sign may be omitted. Group numbers can range from 0 to 31. The default value is an empty string, i.e. no groups.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceGnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dqtnwHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqtnwXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494841226"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceG3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dqtnwnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqtnw3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494841227"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceHHVBEdq-GezyEkG4OQ" name="language">
+      <eAnnotations xmi:id="_OuceHXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dqtnxnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqtnx3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494841229"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceHnVBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="language"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dqtnxHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dqtnxXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494841228"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceH3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dqzuYHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqzuYXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494842231"/>
+        </eAnnotations>
+        <body>Each channel has a default language code that affects which language version of prerecorded sounds Asterisk uses for this channel. See Setting up a Multi-Language Asterisk Installation. The default is an empty string.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceIHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dqzuYnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqzuY3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494842232"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceIXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dqzuZHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dqzuZXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494842233"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuceInVBEdq-GezyEkG4OQ" name="Analog_Handset_Features">
+    <eAnnotations xmi:id="_OuceI3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dqzuaHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dqzuaXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494842235"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuceJHVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuceJXVBEdq-GezyEkG4OQ" javaFieldType="Analog_Handset_Features" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dqzuZnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dqzuZ3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494842234"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuceJnVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dq51AHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dq51AXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494843238"/>
+      </eAnnotations>
+      <body>headset</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuceJ3VBEdq-GezyEkG4OQ" name="adsi">
+      <eAnnotations xmi:id="_OuceKHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dq51BHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dq51BXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494843240"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceKXVBEdq-GezyEkG4OQ" storageFieldname="adsi"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dq51AnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dq51A3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494843239"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceKnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dq51BnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dq51B3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494843242"/>
+        </eAnnotations>
+        <body>If your handset has ADSI (Analog Display Services Interface) capability, set set adsi=yes. The ADSI specification is system similar to Caller ID to pass encoded information to an analog handset. It allows the creation of interactive visual menus on a multiline display, offering access to services such as voicemail through a text interface.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceK3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dq51CHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dq51CXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494843243"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceLHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drGCQHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drGCQXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494845244"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceLXVBEdq-GezyEkG4OQ" name="immediate">
+      <eAnnotations xmi:id="_OuceLnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_drMI4nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drMI43hcEdqTMIA4Csl2WQ" key="uuid" value="113585494846246"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceL3VBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="immediate"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_drMI4HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_drMI4XhcEdqTMIA4Csl2WQ" key="uuid" value="113585494846245"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceMHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_drMI5HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drMI5XhcEdqTMIA4Csl2WQ" key="uuid" value="113585494846248"/>
+        </eAnnotations>
+        <body>Normally (i.e. with immediate set to 'no', the default), when you lift an FXS handset, the Zaptel driver provides you a dialtone and listens for digits that you dial, passing them on to Asterisk. Asterisk waits until the number you've dialed matches an extension, and then begins executing the first command on the matching extension. If you set immediate=yes, then Asterisk will instruct the Zaptel driver to not generate a dialtone when you lift a handset, instead passing control immediately to Asterisk. Asterisk will start executing the commands for this channel's &quot;s&quot; extension. This is sometimes referred to as &quot;batphone mode&quot;. Default no.    immediate=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceMXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drMI5nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drMI53hcEdqTMIA4Csl2WQ" key="uuid" value="113585494846249"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceMnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drMI6HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drMI6XhcEdqTMIA4Csl2WQ" key="uuid" value="113585494846250"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceM3VBEdq-GezyEkG4OQ" name="callwaiting">
+      <eAnnotations xmi:id="_OuceNHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_drSPgnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drSPg3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494847252"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceNXVBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="callwaiting"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_drSPgHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_drSPgXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494847251"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceNnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_drSPhHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drSPhXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494847254"/>
+        </eAnnotations>
+        <body>If enabled, Asterisk will generate &quot;call waiting pips&quot; when you are already in a conversation on your FXS handset when someone tries to call you. If the channel has call waiting by default, you can temporarily disable it by lifting the handset and dialing *70, whereupon you will get a dialrecall tone and may then dial the intended number. There is no corresponding way to temporarily enable call waiting for channels that have it off by default. Default no.    callwaiting=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceN3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drSPhnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drSPh3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494847255"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceOHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drSPiHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drSPiXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494847256"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceOXVBEdq-GezyEkG4OQ" name="callwaitingcallerid">
+      <eAnnotations xmi:id="_OuceOnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_drYWInhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drYWI3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494848258"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceO3VBEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="callwaitingcallerid"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_drYWIHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_drYWIXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494848257"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OucePHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_drYWJHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drYWJXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494848260"/>
+        </eAnnotations>
+        <body>Sets whether Asterisk will send Caller ID data to the handset during call waiting indication. Requires also setting callwaiting=yes. Default no.    callwaitingcallerid=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OucePXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drYWJnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drYWJ3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494848261"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OucePnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drecwHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drecwXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494849262"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceP3VBEdq-GezyEkG4OQ" name="threewaycalling">
+      <eAnnotations xmi:id="_OuceQHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_drecxHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drecxXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494849264"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceQXVBEdq-GezyEkG4OQ" ordOrder="4" storageFieldname="threewaycalling"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_drecwnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_drecw3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494849263"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceQnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_drecxnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drecx3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494849266"/>
+        </eAnnotations>
+        <body>If enabled, you can place a call on hold by pressing a hook flash, whereupon you get a dialrecall tone and can make another call. Default no.    threewaycalling=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceQ3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drecyHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drecyXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494849267"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceRHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drkjYHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drkjYXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494850268"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceRXVBEdq-GezyEkG4OQ" name="transfer">
+      <eAnnotations xmi:id="_OuceRnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_drkjZHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drkjZXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494850270"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceR3VBEdq-GezyEkG4OQ" ordOrder="5" storageFieldname="transfer"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_drkjYnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_drkjY3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494850269"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceSHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_drkjZnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drkjZ3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494850272"/>
+        </eAnnotations>
+        <body>This option has effect only when threewaycalling=yes. If threewaycalling=yes and transfer=yes, then once you've placed a call on hold with a hook flash, you can transfer that call to another extension by dialing the extension and hanging up. Default no.    transfer=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceSXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drkjaHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drkjaXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494850273"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceSnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_drqqAHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drqqAXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494851274"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceS3VBEdq-GezyEkG4OQ" name="cancallforward">
+      <eAnnotations xmi:id="_OuceTHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_drqqBHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drqqBXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494851276"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceTXVBEdq-GezyEkG4OQ" ordOrder="6" storageFieldname="cancallforward"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_drqqAnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_drqqA3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494851275"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceTnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_drwwoHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_drwwoXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494852278"/>
+        </eAnnotations>
+        <body>If enabled, you may activate &quot;call forwarding immediate&quot; by dialing *72 (whereupon you get a dialrecall tone) followed by the extension number you wish to forward your calls to. If someone dials your extension, the call will be redirected to the forwarding number. You may disable the call forwarding by dialing *73. Default no.    cancallforward=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceT3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dr23QHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr23QXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494853279"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceUHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dr23QnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr23Q3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494853280"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceUXVBEdq-GezyEkG4OQ" name="callreturn">
+      <eAnnotations xmi:id="_OuceUnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dr23RnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr23R3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494853282"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceU3VBEdq-GezyEkG4OQ" ordOrder="7" storageFieldname="callreturn"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dr23RHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dr23RXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494853281"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceVHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dr23SHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr23SXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494853284"/>
+        </eAnnotations>
+        <body>If enabled, you may dial *69 to have Asterisk read to you the caller ID of the last person to call. You will hear the dialrecall tone if there is no record of a last caller. Default no.    callreturn=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceVXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dr894HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr894XhcEdqTMIA4Csl2WQ" key="uuid" value="113585494854285"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceVnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dr894nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr8943hcEdqTMIA4Csl2WQ" key="uuid" value="113585494854286"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceV3VBEdq-GezyEkG4OQ" name="callgroup">
+      <eAnnotations xmi:id="_OuceWHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dr895nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr8953hcEdqTMIA4Csl2WQ" key="uuid" value="113585494854288"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceWXVBEdq-GezyEkG4OQ" ordOrder="8" storageFieldname="callgroup"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dr895HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dr895XhcEdqTMIA4Csl2WQ" key="uuid" value="113585494854287"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceWnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dr896HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dr896XhcEdqTMIA4Csl2WQ" key="uuid" value="113585494854290"/>
+        </eAnnotations>
+        <body>A channel may belong to zero or more callgroups. Callgroups specify who may answer this phone when it is ringing. If this channel is ringing, then any other channel whose pickupgroups include one of this channel's callgroups may answer the call by dialing *8#. This feature is supported by Zap, SIP, Skinny and MGCP channels. Group numbers can range from 0 to 31. The default value is an empty string, i.e. no groups.   group=1   callgroup=1,2,3</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceW3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsDEgHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDEgXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494855291"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceXHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsDEgnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDEg3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494855292"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceXXVBEdq-GezyEkG4OQ" name="pickupgroup">
+      <eAnnotations xmi:id="_OuceXnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsDEhnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDEh3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494855294"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceX3VBEdq-GezyEkG4OQ" ordOrder="9" storageFieldname="pickupgroup"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsDEhHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsDEhXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494855293"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceYHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dsDEiHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsDEiXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494855296"/>
+        </eAnnotations>
+        <body>A channel may belong to zero or more pickupgroups. Pickupgroups specify whose phones you may answer. If another channel is ringing, and this channel's pickupgroups include one of the ringing channel's callgroups, then this channel may answer the call by dialing *8#. Group numbers can range from 0 to 31. The default value is an empty string, i.e. no groups.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceYXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsJLIHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJLIXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494856297"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceYnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsJLInhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsJLI3hcEdqTMIA4Csl2WQ" key="uuid" value="113585494856298"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceY3VBEdq-GezyEkG4OQ" name="useincomingcalleridonzaptransfer">
+      <eAnnotations xmi:id="_OuceZHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsPRwHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsPRwXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948572100"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceZXVBEdq-GezyEkG4OQ" ordOrder="10" storageFieldname="useincomingcalleridonzaptransfer"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsJLJHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsJLJXhcEdqTMIA4Csl2WQ" key="uuid" value="113585494856299"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceZnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dsPRwnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsPRw3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948572102"/>
+        </eAnnotations>
+        <body>If you set this option (Use Incoming Caller ID On Zap Transfer) to 'yes', then when you transfer a call to another phone, the original caller's Caller ID will get forwarded on too. Default no.    useincomingcalleridonzaptransfer=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceZ3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsPRxHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsPRxXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948572103"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceaHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsPRxnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsPRx3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948572104"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuceaXVBEdq-GezyEkG4OQ" name="Timing_Parameters">
+    <eAnnotations xmi:id="_OuceanVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dsVYYnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsVYY3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948582106"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_Oucea3VBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OucebHVBEdq-GezyEkG4OQ" javaFieldType="Timing_Parameters" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dsVYYHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dsVYYXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948582105"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OucebXVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dsVYZHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsVYZXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948582109"/>
+      </eAnnotations>
+      <body>These keywords are used only with (non-PRI) T1 lines. All values are in milliseconds. These do not need to be set in most configurations, as the defaults work with most hardware. It has been noted that the common Adtran Atlas uses long winks of about 300 milliseconds, and channels from them should be configured accordingly.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OucebnVBEdq-GezyEkG4OQ" name="prewink">
+      <eAnnotations xmi:id="_Ouceb3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsbfAHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsbfAXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948592111"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucecHVBEdq-GezyEkG4OQ" storageFieldname="prewink"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsVYZnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsVYZ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948582110"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OucecXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dsbfAnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsbfA3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948592113"/>
+        </eAnnotations>
+        <body>Sets the pre-wink timing.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OucecnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsbfBHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsbfBXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948592114"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oucec3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsbfBnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsbfB3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948592115"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OucedHVBEdq-GezyEkG4OQ" name="preflash">
+      <eAnnotations xmi:id="_OucedXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dshlonhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dshlo3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948602117"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucednVBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="preflash"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dshloHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dshloXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948602116"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouced3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dsnsQHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsnsQXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948612119"/>
+        </eAnnotations>
+        <body>Sets the pre-flash timing.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceeHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsnsQnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsnsQ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948612120"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuceeXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsnsRHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsnsRXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948612121"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceenVBEdq-GezyEkG4OQ" name="wink">
+      <eAnnotations xmi:id="_Oucee3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsnsSHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsnsSXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948612123"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucefHVBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="wink"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsnsRnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsnsR3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948612122"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OucefXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dsnsSnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsnsS3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948612125"/>
+        </eAnnotations>
+        <body>Sets the wink timing.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OucefnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsty4HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsty4XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948622126"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oucef3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsty4nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsty43hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948622127"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OucegHVBEdq-GezyEkG4OQ" name="rxwink">
+      <eAnnotations xmi:id="_OucegXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsty5nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsty53hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948622129"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucegnVBEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="rxwink"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsty5HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsty5XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948622128"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouceg3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dsty6HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsty6XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948622131"/>
+        </eAnnotations>
+        <body>Sets the receive wink timing.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OucehHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsz5gHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsz5gXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948632132"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OucehXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dsz5gnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsz5g3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948632133"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OucehnVBEdq-GezyEkG4OQ" name="rxflash">
+      <eAnnotations xmi:id="_Ouceh3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dsz5hnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dsz5h3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948632135"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuceiHVBEdq-GezyEkG4OQ" ordOrder="4" storageFieldname="rxflash"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dsz5hHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dsz5hXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948632134"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuceiXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_ds6AIHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_ds6AIXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948642137"/>
+        </eAnnotations>
+        <body>Sets the receive flash timing.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuceinVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_ds6AInhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_ds6AI3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948642138"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oucei3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_ds6AJHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_ds6AJXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948642139"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OucejHVBEdq-GezyEkG4OQ" name="flash">
+      <eAnnotations xmi:id="_OucejXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_ds6AKHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_ds6AKXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948642141"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucejnVBEdq-GezyEkG4OQ" ordOrder="5" storageFieldname="flash"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_ds6AJnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_ds6AJ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948642140"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Oucej3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dtAGwHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtAGwXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948642143"/>
+        </eAnnotations>
+        <body>Sets the flash timing.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OucekHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtAGwnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtAGw3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948652144"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OucekXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtAGxHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtAGxXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948652145"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuceknVBEdq-GezyEkG4OQ" name="start">
+      <eAnnotations xmi:id="_Oucek3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtAGyHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtAGyXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948652147"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucelHVBEdq-GezyEkG4OQ" ordOrder="6" storageFieldname="start"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtAGxnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtAGx3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948652146"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OucelXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dtAGynhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtAGy3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948652149"/>
+        </eAnnotations>
+        <body>Sets the start timing.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OucelnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtGNYHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtGNYXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948662150"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oucel3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtGNYnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtGNY3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948662151"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OucemHVBEdq-GezyEkG4OQ" name="debounce">
+      <eAnnotations xmi:id="_OucemXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtMUAHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtMUAXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948672153"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucemnVBEdq-GezyEkG4OQ" ordOrder="7" storageFieldname="debounce"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtGNZHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtGNZXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948662152"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Oucem3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dtMUAnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtMUA3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948672155"/>
+        </eAnnotations>
+        <body>Sets the debounce timing. &quot;The debounce settings in the Asterisk configuration affects how Asterisk handles hookswitch transitions on its FXO/FXS interfaces.&quot;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OucenHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtMUBHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtMUBXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948672156"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OucenXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtSaoHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtSaoXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948682157"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OucennVBEdq-GezyEkG4OQ" name="Analog_Trunk_Features">
+    <eAnnotations xmi:id="_Oucen3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dtSapHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtSapXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948682159"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuceoHVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuceoXVBEdq-GezyEkG4OQ" javaFieldType="Analog_Trunk_Features" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dtSaonhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dtSao3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948682158"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuceonVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dtSapnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtSap3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948682162"/>
+      </eAnnotations>
+      <body>analog features</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_Ouceo3VBEdq-GezyEkG4OQ" name="usedistinctiveringdetection">
+      <eAnnotations xmi:id="_OucepHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtYhQnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtYhQ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948692164"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OucepXVBEdq-GezyEkG4OQ" storageFieldname="usedistinctiveringdetection"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtYhQHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtYhQXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948692163"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OucepnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dtYhRHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtYhRXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948692166"/>
+        </eAnnotations>
+        <body>Whether or not to attempt to recognize distinctive ring styles on incoming calls. This does not require audio analyisis because rings are simple transitions of the analog line. It's merely a matter of matching the transition pattern. Default no.    usedistinctiveringdetection=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuikoHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtYhRnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtYhR3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948692167"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuikoXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtYhSHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtYhSXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948692168"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuikonVBEdq-GezyEkG4OQ" name="dring1">
+      <eAnnotations xmi:id="_Ouiko3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dten4nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dten43hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948702170"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuikpHVBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="dring1"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dten4HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dten4XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948702169"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuikpXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dten5HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dten5XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948702172"/>
+        </eAnnotations>
+        <body>If you set usedistinctiveringdetection=yes, then you may define up to three different distinctive ring styles for Asterisk to attempt to recognize. Each style is defined as a comma separated list of up to three integers. Nobody has yet documented what these numbers mean, so you're on your own when it comes to trying to figure out what numbers to use for the distinctive ring syles used by your phone company in your country. But the tip is to use the Asterisk console in verbose mode, and apparently it reports numbers describing the ring patterns it sees. These patterns may be a starting point:</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuikpnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dten5nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dten53hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948702173"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouikp3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dten6HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dten6XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948702174"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuikqHVBEdq-GezyEkG4OQ" name="dring2">
+      <eAnnotations xmi:id="_OuikqXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtkugnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtkug3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948712176"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuikqnVBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="dring2"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtkugHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtkugXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948712175"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouikq3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dtkuhHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtkuhXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948712178"/>
+        </eAnnotations>
+        <body>see 1</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuikrHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtkuhnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtkuh3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948712179"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuikrXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtkuiHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtkuiXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948712180"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuikrnVBEdq-GezyEkG4OQ" name="dring3">
+      <eAnnotations xmi:id="_Ouikr3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtq1InhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtq1I3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948722182"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuiksHVBEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="dring3"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtq1IHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtq1IXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948722181"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuiksXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dtq1JHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtq1JXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948722184"/>
+        </eAnnotations>
+        <body>see 2</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuiksnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtw7wHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtw7wXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948732185"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouiks3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dtw7wnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtw7w3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948732186"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuiktHVBEdq-GezyEkG4OQ" name="dring1context">
+      <eAnnotations xmi:id="_OuiktXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dtw7xnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtw7x3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948732188"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuiktnVBEdq-GezyEkG4OQ" ordOrder="4" storageFieldname="dring1context"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dtw7xHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dtw7xXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948732187"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouikt3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dtw7yHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dtw7yXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948732190"/>
+        </eAnnotations>
+        <body>Along with setting up to three distinctive ring patterns with dring1, dring2 and dring3, you also set corresponding contexts for incoming calls matching those distinctive ring patterns to jump into. If an incoming call does not match any of the distinctive ring patterns defined, then of course it will enter Asterisk with the default context defined for this channel.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuikuHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dt3CYHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt3CYXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948742191"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuikuXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dt3CYnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt3CY3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948742192"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuikunVBEdq-GezyEkG4OQ" name="dring2context">
+      <eAnnotations xmi:id="_Ouiku3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dt3CZnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt3CZ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948742194"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuikvHVBEdq-GezyEkG4OQ" ordOrder="5" storageFieldname="dring2context"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dt3CZHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dt3CZXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948742193"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuikvXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dt3CaHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt3CaXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948742196"/>
+        </eAnnotations>
+        <body>see 1</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuikvnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dt9JAHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt9JAXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948752197"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouikv3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dt9JAnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt9JA3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948752198"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuikwHVBEdq-GezyEkG4OQ" name="dring3context">
+      <eAnnotations xmi:id="_OuikwXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dt9JBnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dt9JB3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948752200"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuikwnVBEdq-GezyEkG4OQ" ordOrder="6" storageFieldname="dring3context"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dt9JBHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dt9JBXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948752199"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouikw3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_duDPoHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duDPoXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948762202"/>
+        </eAnnotations>
+        <body>see 1 too</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuikxHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duDPonhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duDPo3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948762203"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuikxXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duDPpHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duDPpXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948762204"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuikxnVBEdq-GezyEkG4OQ" name="busydetect">
+      <eAnnotations xmi:id="_Ouikx3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duDPqHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duDPqXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948762206"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuikyHVBEdq-GezyEkG4OQ" ordOrder="7" storageFieldname="busydetect"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duDPpnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duDPp3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948762205"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuikyXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_duJWQHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duJWQXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948772208"/>
+        </eAnnotations>
+        <body>If enabled, Asterisk will analyze the audio coming in on the line during a call or a dial attempt to attempt to recognize busy signals. This is useful on analog trunk interfaces both to detect a busy signal when dialing out, and for detecting when the person has hung up. See also Disconnect Supervision. Be sure that you don't use this on digital interfaces like QuadBri cards and so on. Otherwise you will run in &quot;broken calls&quot; problems. default=no    busydetect=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuikynVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duJWQnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duJWQ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948772209"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouiky3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duJWRHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duJWRXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948772210"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuikzHVBEdq-GezyEkG4OQ" name="busycount">
+      <eAnnotations xmi:id="_OuikzXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duJWSHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duJWSXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948772212"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuikznVBEdq-GezyEkG4OQ" ordOrder="8" storageFieldname="busycount"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duJWRnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duJWR3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948772211"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouikz3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_duPc4HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duPc4XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948782214"/>
+        </eAnnotations>
+        <body>This option requires busydetect=yes. You can specify how many busy tones to wait before hanging up. The default is 3, but better results can be achieved if set to 6 or even 8. The higher the number, the more time is needed to detect a disconnected channel, but the lower the probability mistaking some other sound as being a busy tone.   busycount=5</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik0HVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duPc4nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duPc43hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948782215"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik0XVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duPc5HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duPc5XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948782216"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouik0nVBEdq-GezyEkG4OQ" name="callprogress">
+      <eAnnotations xmi:id="_Ouik03VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duVjgnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duVjg3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948792218"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_Ouik1HVBEdq-GezyEkG4OQ" ordOrder="9" storageFieldname="callprogress"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duVjgHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duVjgXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948792217"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouik1XVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_duVjhHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duVjhXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948792220"/>
+        </eAnnotations>
+        <body>Asterisk can attempt to monitor the state of the call to listen for a ringing tone, busy tone, congestion tone, and sounds indicating that the line has been answered. It appears that this feature is independent of the busydetect feature; it seems that both can run in parallel, and both will independently attempt to recognize a busy tone. The callprogress feature is highly experimental and can easily detect false answers, so don't count on it being very accurate. Also, it is currently configured only for standard U.S. phone tones. Default no.   callprogress = yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik1nVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duVjhnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duVjh3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948792221"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik13VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_duVjiHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duVjiXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948792222"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouik2HVBEdq-GezyEkG4OQ" name="pulse">
+      <eAnnotations xmi:id="_Ouik2XVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dubqInhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dubqI3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948802224"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_Ouik2nVBEdq-GezyEkG4OQ" ordOrder="10" storageFieldname="pulse"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dubqIHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dubqIXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948802223"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouik23VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dubqJHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dubqJXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948802226"/>
+        </eAnnotations>
+        <body>The standard installation of Asterisk does not permit you to specify that a Zaptel device use pulse dialing, even though the Zaptel driver supports pulse dialing. But you can apply a patch file to enable you to specify pulse dialing with the pulse keyword. See Pulse Dialing on Zap Channels for the patch.    pulse=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik3HVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dubqJnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dubqJ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948802227"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik3XVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dubqKHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dubqKXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948802228"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_Ouik3nVBEdq-GezyEkG4OQ" name="ISDN_PRI_Switch">
+    <eAnnotations xmi:id="_Ouik33VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_duhwwnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duhww3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948812230"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_Ouik4HVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_Ouik4XVBEdq-GezyEkG4OQ" javaFieldType="ISDN_PRI_Switch" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_duhwwHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_duhwwXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948812229"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_Ouik4nVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_duhwxHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duhwxXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948812233"/>
+      </eAnnotations>
+      <body>If you have a PRI line, specify your type of switch here. (PRI is a type of ISDN typically used to connect a PBX to a telephone exchange. They have multiple channels on the one connection.)</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_Ouik43VBEdq-GezyEkG4OQ" name="switchtype">
+      <eAnnotations xmi:id="_Ouik5HVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_duhwyHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_duhwyXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948812235"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_Ouik5XVBEdq-GezyEkG4OQ" storageFieldname="switchtype"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_duhwxnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_duhwx3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948812234"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouik5nVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dun3YHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dun3YXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948822237"/>
+        </eAnnotations>
+        <body>Sets the type of PRI switch being used. Defaultnational. Acceptable values are:     * national:National ISDN type2 (common in the US)     * ni1:National ISDN type 1     * dms100:Nortel DMS100     * 4ess:AT&amp;T 4ESS     * 5ess:Lucent 5ESS     * euroisdn:EuroISDN     * qsig:Minimalistic protocol to build a &quot;network&quot; with two or more PBX of different vendors!</body>
+      </ownedComment>
+      <type xmi:type="uml:Enumeration" href="/jact/dataModel/pbxTypes.tblModel.uml2#_j9Rn8G1ZEdqxieKi6KtVZg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik53VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dun3YnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dun3Y3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948822238"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik6HVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dun3ZHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dun3ZXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948822239"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouik6XVBEdq-GezyEkG4OQ" name="overlapdial">
+      <eAnnotations xmi:id="_Ouik6nVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dun3aHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dun3aXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948822241"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_Ouik63VBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="overlapdial"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dun3ZnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dun3Z3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948822240"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouik7HVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dut-AHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dut-AXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948832243"/>
+        </eAnnotations>
+        <body>Whether Asterisk can dial this switch using overlap digits. Default    overlapdial=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik7XVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dut-AnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dut-A3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948832244"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik7nVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dut-BHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dut-BXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948832245"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouik73VBEdq-GezyEkG4OQ" name="pridialplan">
+      <eAnnotations xmi:id="_Ouik8HVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dut-CHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dut-CXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948832247"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_Ouik8XVBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="pridialplan"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dut-BnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dut-B3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948832246"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouik8nVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_du0EoHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du0EoXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948842249"/>
+        </eAnnotations>
+        <body>Sets an option required for some (rare) switches that require a dialplan parameter to be passed. This option is ignored by most PRI switches. It may be necessary on a few pieces of hardware. Valid options are unknown, local, private, national, and international. This option can almost always be left unchanged from the default. Default national.    pridialplan=local</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik83VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_du6LQHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du6LQXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948852250"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik9HVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_du6LQnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du6LQ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948852251"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouik9XVBEdq-GezyEkG4OQ" name="priindication">
+      <eAnnotations xmi:id="_Ouik9nVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_du6LRnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du6LR3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948852253"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_Ouik93VBEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="priindication"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_du6LRHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_du6LRXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948852252"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_Ouik-HVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_du6LSHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_du6LSXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948852255"/>
+        </eAnnotations>
+        <body>Tells how Asterisk should indicate Busy() and Congestion() to the switch/user. Default inband. Accepted values are:     * inband:Asterisk plays indication tones without answering; not available on all PRI/BRI subscription lines     * outofband:Asterisk disconnects with busy/congestion information code so the switch will play the indication tones to the caller. Busy() will now do same as setting PRI_CAUSE=17 and Hangup().     priindication=outofband</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik-XVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvAR4HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvAR4XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948862256"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik-nVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvAR4nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvAR43hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948862257"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouik-3VBEdq-GezyEkG4OQ" name="multilink_PPP" type="_OuilAHVBEdq-GezyEkG4OQ" association="_OuilHXVBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_Ouik_HVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvAR5nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvAR53hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948862259"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_Ouik_XVBEdq-GezyEkG4OQ" storageFieldname="multilink_PPP"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvAR5HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvAR5XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948862258"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouik_nVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvAR6HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvAR6XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948862261"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouik_3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvGYgHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvGYgXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948872262"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuilAHVBEdq-GezyEkG4OQ" name="Multilink_PPP">
+    <eAnnotations xmi:id="_OuilAXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dvGYhHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvGYhXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948872264"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuilAnVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuilA3VBEdq-GezyEkG4OQ" javaFieldType="Multilink_PPP" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dvGYgnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dvGYg3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948872263"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuilBHVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dvGYhnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvGYh3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948872267"/>
+      </eAnnotations>
+      <body>If you have an ISDN PRI, you may be able to run multi-link PPP over it, to provide you with a data connection. Multi-link PPP is a technology that allows channels on a PRI to be dynamically allocated between voice and data. Asterisk can take voice channels allocated to it, dial a Remote Access Server, and dump the channels into a special extension that delivers the channel to the zaptel data layer. Configure the settings here, and then see the ZapRAS command to make it happen. PRI channels can have an idle extension and a minunused number. So long as at least minunused channels are idle, the Zap channel module will try to dial idledial on them, and then Asterisk will begin executing the commands for the context and extension specified by idleext. When channels are needed for voice calls, the &quot;idle&quot; calls are disconnected (so long as there are at least minidle calls still running, of course) to make more channels available. The primary use of this is to create a dynamic service, where idle channels are bundled through multilink PPP, thus more efficiently utilizing combined voice/data services than conventional fixed mappings/muxings.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuilBXVBEdq-GezyEkG4OQ" name="minunused">
+      <eAnnotations xmi:id="_OuilBnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvMfInhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvMfI3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948882269"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilB3VBEdq-GezyEkG4OQ" storageFieldname="minunused"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvMfIHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvMfIXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948882268"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilCHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dvMfJHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvMfJXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948882271"/>
+        </eAnnotations>
+        <body>The minimum number of unused channels available. If there are fewer channels available, Asterisk will not attempt to bundle any channels and give them to the data connection. Takes an integer.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilCXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvMfJnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvMfJ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948882272"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilCnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvMfKHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvMfKXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948882273"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilC3VBEdq-GezyEkG4OQ" name="minidle">
+      <eAnnotations xmi:id="_OuilDHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvSlwnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvSlw3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948892275"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilDXVBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="minidle"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvSlwHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvSlwXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948892274"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilDnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dvSlxHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvSlxXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948892277"/>
+        </eAnnotations>
+        <body>The minimum number of idle channels to bundle for the data link. Asterisk will keep this number of channels open for data, rather than taking them back for voice channels when needed. Takes an integer.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilD3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvSlxnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvSlx3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948892278"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilEHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvSlyHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvSlyXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948892279"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilEXVBEdq-GezyEkG4OQ" name="idledial">
+      <eAnnotations xmi:id="_OuilEnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvYsYnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvYsY3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948902281"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilE3VBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="idledial"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvYsYHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvYsYXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948902280"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilFHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dvYsZHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvYsZXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948902283"/>
+        </eAnnotations>
+        <body>The number to dial as the idle number. This is typically the number to dial a Remote Access Server (RAS). Channels being idled for data will be sent to this extension. Takes an integer that does not conflict with any other extension in the Dialplan, and has been defined as an idleext.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilFXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvezAHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvezAXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948912284"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilFnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvezAnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvezA3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948912285"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilF3VBEdq-GezyEkG4OQ" name="idleext">
+      <eAnnotations xmi:id="_OuilGHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvezBnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvezB3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948912287"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilGXVBEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="idleext"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvezBHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvezBXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948912286"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilGnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dvk5oHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvk5oXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948922289"/>
+        </eAnnotations>
+        <body>The extension to use as the idle extension. Takes a value in the form of exten@context. Typically, the extension would be an extension to run the ZapRAS command.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilG3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvk5onhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvk5o3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948922290"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilHHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvk5pHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvk5pXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948922291"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_OuilHXVBEdq-GezyEkG4OQ" name="ISDN_PRI_Switch->Multilink_PPP" memberEnd="_Ouik-3VBEdq-GezyEkG4OQ _OuilHnVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dvk5pnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dvk5p3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948922292"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuilHnVBEdq-GezyEkG4OQ" type="_Ouik3nVBEdq-GezyEkG4OQ" association="_OuilHXVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dvrAQHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvrAQXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948932293"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilH3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvrAQnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvrAQ3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948932294"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilIHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dvrARHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvrARXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948932295"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuilIXVBEdq-GezyEkG4OQ" name="Audio_Quality_Tuning_Options">
+    <eAnnotations xmi:id="_OuilInVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dvxG4HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvxG4XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948942297"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuilI3VBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuilJHVBEdq-GezyEkG4OQ" javaFieldType="Audio_Quality_Tuning_Options" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dvrARnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dvrAR3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948932296"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuilJXVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dvxG4nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvxG43hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948942300"/>
+      </eAnnotations>
+      <body>These options adjust certain parameters of Asterisk that affect the audio quality of Zapata channels. See also:     * Echo Cancellation on the Wildcard X100P     * Echo Cancellation in Asterisk     * Asterisk Echo Cancellation&lt;paraDesc>FXO and FXS lines     * Asterisk Echo Avoidance     * Echo Analysis for Voice over IP</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuilJnVBEdq-GezyEkG4OQ" name="relaxdtmf">
+      <eAnnotations xmi:id="_OuilJ3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dvxG5nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvxG53hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948942302"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilKHVBEdq-GezyEkG4OQ" storageFieldname="relaxdtmf"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dvxG5HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dvxG5XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948942301"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilKXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dvxG6HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dvxG6XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948942304"/>
+        </eAnnotations>
+        <body>If you are having trouble with DTMF detection, you can relax the DTMF detection parameters. Relaxing them may make the DTMF detector more likely to have &quot;talkoff&quot; where DTMF is detected when it shouldn't be. Default:no.    relaxdtmf=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilKnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dv3NgHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv3NgXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948952305"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilK3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dv3NgnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv3Ng3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948952306"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilLHVBEdq-GezyEkG4OQ" name="echocancel">
+      <eAnnotations xmi:id="_OuilLXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dv97MHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv97MXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948952308"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilLnVBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="echocancel"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dv3NhHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dv3NhXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948952307"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilL3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dv97MnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv97M3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948963310"/>
+        </eAnnotations>
+        <body>Disable or enable echo cancellation (default is 'yes'). It is recommended that you do not turn this off. You may specify echocancel as 'yes' (128 taps), 'no' (0 taps, disabled), or a preset number of taps which are one of 16, 32, 64, 128, or 256. Each tap is one sample from the data stream, so on a T1 this will be 1/8000 of a second. Accordingly the number of taps equate to a 2ms, 4ms, 8ms, 16ms or 32ms tail length. Beware that if you set echocancel to a different value, Asterisk will fall back to the default of 128 taps without warning.    echocancel=no</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilMHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dv97NHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dv97NXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948963311"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilMXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwEB0HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEB0XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948973312"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilMnVBEdq-GezyEkG4OQ" name="echocancelwhenbridged">
+      <eAnnotations xmi:id="_OuilM3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwEB1HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEB1XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948973314"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilNHVBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="echocancelwhenbridged"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwEB0nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwEB03hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948973313"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilNXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dwEB1nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEB13hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948973316"/>
+        </eAnnotations>
+        <body>Enables or disables echo cancellation during a bridged TDM call. In principle, TDM bridged calls should not require echo cancellation, but often times audio performance is improved with this option enabled. Default:no.    echocancelwhenbridged=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilNnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwEB2HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwEB2XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948973317"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilN3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwKIcHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwKIcXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948983318"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilOHVBEdq-GezyEkG4OQ" name="echotraining">
+      <eAnnotations xmi:id="_OuilOXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwKIdHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwKIdXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948983320"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilOnVBEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="echotraining"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwKIcnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwKIc3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948983319"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilO3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dwKIdnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwKId3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948983322"/>
+        </eAnnotations>
+        <body>In some cases, the echo canceller doesn't train quickly enough and there is echo at the beginning of the call which then quickly fades out. Enabling echo training will cause Asterisk to briefly mute the channel, send an impulse, and use the impulse response to pre-train the echo canceller so it can start out with a much closer idea of the actual echo. However, the characteristics of some trunks may change as the endpoints become connected and, if there is a considerable delay between the circuit being 'up' and the endpoints being finalised, the training impulse may measure the characteristics of the open trunk rather than the completed circuit. Accordingly you may either specify a value between 10ms and 4000ms to delay before starting the impulse response process or 'yes', which equates to 400ms. Default:undefined.    echotraining=no</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilPHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwKIeHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwKIeXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948983323"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilPXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwQPEHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwQPEXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948993324"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilPnVBEdq-GezyEkG4OQ" name="rxgain">
+      <eAnnotations xmi:id="_OuilP3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwQPFHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwQPFXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948993326"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilQHVBEdq-GezyEkG4OQ" ordOrder="4" storageFieldname="rxgain"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwQPEnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwQPE3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948993325"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilQXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dwQPFnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwQPF3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854948993328"/>
+        </eAnnotations>
+        <body>Adjusts receive gain. This can be used to raise or lower the incoming volume to compensate for hardware differences. You specify gain as a decimal number from -100 to 100 representing 100% to 100% of capacity. Default value 0.0    rxgain=4.2</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYMEWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilQnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwQPGHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwQPGXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854948993329"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilQ3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwWVsHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwWVsXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949003330"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilRHVBEdq-GezyEkG4OQ" name="txgain">
+      <eAnnotations xmi:id="_OuilRXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwWVtHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwWVtXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949003332"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilRnVBEdq-GezyEkG4OQ" ordOrder="5" storageFieldname="txgain"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwWVsnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwWVs3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949003331"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilR3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dwWVtnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwWVt3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949003334"/>
+        </eAnnotations>
+        <body>Adjusts transmit gain. This can be used to raise or lower the outgoing volume to compensate for hardware differences. Takes the same type of argument as rxgain. Default:0.0    txgain=-15.9</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYMEWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilSHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwWVuHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwWVuXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949003335"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilSXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwccUHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwccUXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949013336"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuilSnVBEdq-GezyEkG4OQ" name="Zaptelchannel">
+    <eAnnotations xmi:id="_OuilS3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dwccVHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwccVXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949013338"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuilTHVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuilTXVBEdq-GezyEkG4OQ" javaFieldType="Zaptelchannel" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dwccUnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dwccU3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949013337"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuilTnVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dwccVnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwccV3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949013341"/>
+      </eAnnotations>
+      <body>zaptel channel def</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuilT3VBEdq-GezyEkG4OQ" name="signalling">
+      <eAnnotations xmi:id="_OuilUHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwii8HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwii8XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949023343"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilUXVBEdq-GezyEkG4OQ" storageFieldname="signalling"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwccWHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwccWXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949013342"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilUnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dwopkHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwopkXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949033345"/>
+        </eAnnotations>
+        <body>Sets the channel signaling type. These parameters should match the Zaptel driver configuration. The setting to use depends partly on which interface card you have. Asterisk will fail to start if a channel signaling definition is incorrect or unworkable, if the statements do not match the Zaptel driver configuration, or if the device is not present or properly configured. The correct setting to use is almost certainly one of the following four: fxs_ks, fxo_ks, pri_cpe or pri_net. This setting has no default value; you must set a value before allocating a channel.</body>
+      </ownedComment>
+      <type xmi:type="uml:Enumeration" href="/jact/dataModel/pbxTypes.tblModel.uml2#_j9RoCW1ZEdqxieKi6KtVZg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilU3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwopknhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwopk3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949033346"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilVHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwoplHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwoplXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949033347"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilVXVBEdq-GezyEkG4OQ" name="context">
+      <eAnnotations xmi:id="_OuilVnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dwuwMnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwuwM3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949043349"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilV3VBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="context"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dwuwMHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dwuwMXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949043348"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilWHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dwuwNHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwuwNXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949043351"/>
+        </eAnnotations>
+        <body>This specifies which context a call will start in. The context controls how Asterisk will handle the call. Contexts are defined in the Dialplan. Default:&quot;default&quot;.    context=internal</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_uM9T0EWgEdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilWXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwuwNnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwuwN3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949043352"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilWnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dwuwOHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dwuwOXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949043353"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilW3VBEdq-GezyEkG4OQ" name="channel">
+      <eAnnotations xmi:id="_OuilXHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dw020nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw0203hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949053355"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuilXXVBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="channel"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dw020HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw020XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949053354"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuilXnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dw021HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw021XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949053357"/>
+        </eAnnotations>
+        <body>This keyword is unlike all the other keywords in this configuration file, because where all the other keywords merely specify settings to use, this keyword causes Asterisk to actually allocate a channel with the settings that have been specified earlier in the file. The channel keyword defines one or more channels. Each channel definition will inherit all options stated ahead of it in this file. Channels maybe specified individually, separated by commas, or as a range separated by a hyphen. Allocating a channel will not &quot;clear&quot; the settings, so any channels defined later on in this file will inherit the options for this channel unless you override settings.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilX3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dw021nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw0213hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949053358"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilYHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dw022HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw022XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949053359"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilYXVBEdq-GezyEkG4OQ" name="analog_Handset_Features" type="_OuceInVBEdq-GezyEkG4OQ" association="_OuiliXVBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_OuilYnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dw69cnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw69c3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949063361"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_OuilY3VBEdq-GezyEkG4OQ" storageFieldname="analog_Handset_Features"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dw69cHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dw69cXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949063360"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilZHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dw69dHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw69dXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949063363"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilZXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dw69dnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dw69d3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949063364"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilZnVBEdq-GezyEkG4OQ" name="analog_Trunk_Features" type="_OucennVBEdq-GezyEkG4OQ" association="_OuiljXVBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_OuilZ3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxBEEnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBEE3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949073366"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_OuilaHVBEdq-GezyEkG4OQ" storageFieldname="analog_Trunk_Features"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxBEEHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxBEEXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949073365"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilaXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxBEFHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBEFXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949073368"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilanVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxBEFnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxBEF3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949073369"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouila3VBEdq-GezyEkG4OQ" name="audio_Quality_Tuning_Options" type="_OuilIXVBEdq-GezyEkG4OQ" association="_OuilkXVBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_OuilbHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxHKsHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxHKsXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949083371"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_OuilbXVBEdq-GezyEkG4OQ" storageFieldname="audio_Quality_Tuning_Options"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxBEGHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxBEGXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949073370"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilbnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxHKsnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxHKs3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949083373"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouilb3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxHKtHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxHKtXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949083374"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilcHVBEdq-GezyEkG4OQ" name="call_Logging_Options" type="_OuillXVBEdq-GezyEkG4OQ" association="_OuorUHVBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_OuilcXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxNRUHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxNRUXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949083376"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_OuilcnVBEdq-GezyEkG4OQ" storageFieldname="call_Logging_Options"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxHKtnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxHKt3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949083375"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouilc3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxNRUnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxNRU3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949093378"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuildHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxNRVHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxNRVXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949093379"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuildXVBEdq-GezyEkG4OQ" name="caller_ID_Options" type="_OuorVHVBEdq-GezyEkG4OQ" association="_Ouord3VBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_OuildnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxNRWHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxNRWXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949093381"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_Ouild3VBEdq-GezyEkG4OQ" storageFieldname="caller_ID_Options"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxNRVnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxNRV3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949093380"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuileHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxTX8HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxTX8XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949103383"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuileXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxTX8nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxTX83hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949103384"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilenVBEdq-GezyEkG4OQ" name="iSDN_PRI_Switch" type="_Ouik3nVBEdq-GezyEkG4OQ" association="_Ouore3VBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_Ouile3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxZekHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxZekXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949113386"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_OuilfHVBEdq-GezyEkG4OQ" storageFieldname="iSDN_PRI_Switch"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxTX9HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxTX9XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949103385"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilfXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxZeknhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxZek3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949113388"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilfnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxZelHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxZelXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949113389"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouilf3VBEdq-GezyEkG4OQ" name="timing_Parameters" type="_OuceaXVBEdq-GezyEkG4OQ" association="_Ouorf3VBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_OuilgHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxZemHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxZemXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949113391"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_OuilgXVBEdq-GezyEkG4OQ" storageFieldname="timing_Parameters"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxZelnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxZel3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949113390"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuilgnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxflMHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxflMXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949123393"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ouilg3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxflMnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxflM3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949123394"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuilhHVBEdq-GezyEkG4OQ" name="other" type="_OuceC3VBEdq-GezyEkG4OQ" association="_Ouorg3VBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_OuilhXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dxflNnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxflN3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949123396"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__aggfield" xmi:id="_OuilhnVBEdq-GezyEkG4OQ" storageFieldname="other"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dxflNHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxflNXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949123395"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouilh3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxflOHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxflOXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949123398"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuiliHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxlr0HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxlr0XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949133399"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_OuiliXVBEdq-GezyEkG4OQ" name="Zaptelchannel->Analog_Handset_Features" memberEnd="_OuilYXVBEdq-GezyEkG4OQ _OuilinVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dxlr0nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dxlr03hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949133400"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuilinVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_OuiliXVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dxlr1HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxlr1XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949133401"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouili3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxlr1nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxlr13hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949133402"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuiljHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxrycHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxrycXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949143403"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_OuiljXVBEdq-GezyEkG4OQ" name="Zaptelchannel->Analog_Trunk_Features" memberEnd="_OuilZnVBEdq-GezyEkG4OQ _OuiljnVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dxrycnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dxryc3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949143404"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuiljnVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_OuiljXVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dxx5EHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dxx5EXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949153405"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouilj3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxx5EnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxx5E3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949153406"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuilkHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dxx5FHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dxx5FXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949153407"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_OuilkXVBEdq-GezyEkG4OQ" name="Zaptelchannel->Audio_Quality_Tuning_Options" memberEnd="_Ouila3VBEdq-GezyEkG4OQ _OuilknVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dxx5FnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dxx5F3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949153408"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuilknVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_OuilkXVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dx-GUHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dx-GUXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949173409"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouilk3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dx-GUnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dx-GU3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949173410"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuillHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dx-GVHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dx-GVXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949173411"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuillXVBEdq-GezyEkG4OQ" name="Call_Logging_Options">
+    <eAnnotations xmi:id="_OuorQHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dyEM8HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dyEM8XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949183413"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuorQXVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuorQnVBEdq-GezyEkG4OQ" javaFieldType="Call_Logging_Options" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dx-GVnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dx-GV3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949173412"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuorQ3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dyEM8nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dyEM83hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949183416"/>
+      </eAnnotations>
+      <body>Asterisk normally generates Call Detail Records (CDR), being a log or database of the calls made through Asterisk. This data can be used for Automated Machine Accounting (AMA). See Asterisk Billing.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuorRHVBEdq-GezyEkG4OQ" name="accountcode">
+      <eAnnotations xmi:id="_OuorRXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dyEM9nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyEM93hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949183418"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuorRnVBEdq-GezyEkG4OQ" storageFieldname="accountcode"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dyEM9HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dyEM9XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949183417"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuorR3VBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dyKTkHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyKTkXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949193420"/>
+        </eAnnotations>
+        <body>Sets the data for the &quot;account code&quot; field in the CDR for calls placed from this channel. The account code may be any alphanumeric string. It may be overridden at call time with the (( Asterisk cmd SetAccount|SetAccount)) command.   accountcode=spencer145</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorSHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyKTknhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyKTk3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949193421"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorSXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyKTlHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyKTlXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949193422"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuorSnVBEdq-GezyEkG4OQ" name="amaflags">
+      <eAnnotations xmi:id="_OuorS3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dyKTmHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyKTmXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949193424"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuorTHVBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="amaflags"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dyKTlnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dyKTl3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949193423"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuorTXVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dyQaMHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyQaMXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949203426"/>
+        </eAnnotations>
+        <body>Sets the AMA flags, affecting the categorization of entries in the call detail records. Possible values are:     * default:Let the CDR system use its default value.     * omit:Do not record calls.     * billing:Mark the entry for billing     * documentation:Mark the entry for documentation.    amaflags=billing</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorTnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyQaMnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyQaM3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949203427"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorT3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyQaNHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyQaNXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949203428"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_OuorUHVBEdq-GezyEkG4OQ" name="Zaptelchannel->Call_Logging_Options" memberEnd="_OuilcHVBEdq-GezyEkG4OQ _OuorUXVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dyQaNnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dyQaN3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949203429"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuorUXVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_OuorUHVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dyWg0HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dyWg0XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949213430"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorUnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyWg0nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyWg03hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949213431"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorU3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyWg1HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyWg1XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949213432"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_OuorVHVBEdq-GezyEkG4OQ" name="Caller_ID_Options">
+    <eAnnotations xmi:id="_OuorVXVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dycncHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dycncXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949223434"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuorVnVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuorV3VBEdq-GezyEkG4OQ" javaFieldType="Caller_ID_Options" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dyWg1nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dyWg13hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949213433"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_OuorWHVBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dycncnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dycnc3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949223437"/>
+      </eAnnotations>
+      <body>caller id</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuorWXVBEdq-GezyEkG4OQ" name="callerid">
+      <eAnnotations xmi:id="_OuorWnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dyiuEHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyiuEXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949233439"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuorW3VBEdq-GezyEkG4OQ" storageFieldname="callerid"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dycndHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dycndXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949223438"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuorXHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dyiuEnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyiuE3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949233441"/>
+        </eAnnotations>
+        <body>Sets the Caller ID string to forward to the recipient when calls come in from this channel. You normally use this to set the Caller ID for handsets. Specify the Caller ID name in double quotation marks, followed by the Caller ID number in &lt;> symbols. For trunk lines, set to &quot;asreceived&quot; to pass the received Caller ID forward.   callerid=&quot;Mark Spencer&quot; &lt;256 428-6000>   callerid=   callerid=asreceived Important Note: :Caller ID can only be transmitted to the public phone network with supported hardware, such as a PRI. It is not possible to set external caller ID on analog lines.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorXXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyiuFHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyiuFXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949233442"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorXnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyo0sHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyo0sXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949243443"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuorX3VBEdq-GezyEkG4OQ" name="usecallerid">
+      <eAnnotations xmi:id="_OuorYHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dyo0tHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyo0tXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949243445"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuorYXVBEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="usecallerid"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dyo0snhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dyo0s3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949243444"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuorYnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dyo0tnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyo0t3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949243447"/>
+        </eAnnotations>
+        <body>For handsets, this option will cause Asterisk to send Caller ID data to the handset when ringing it. For trunk lines, this option causes Asterisk to look for Caller ID on incoming calls. Default:yes.    usecallerid=no</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorY3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyo0uHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyo0uXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949243448"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorZHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyu7UHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyu7UXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949253449"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuorZXVBEdq-GezyEkG4OQ" name="hidecallerid">
+      <eAnnotations xmi:id="_OuorZnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dyu7VHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyu7VXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949253451"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuorZ3VBEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="hidecallerid"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dyu7UnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dyu7U3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949253450"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuoraHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dyu7VnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyu7V3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949253453"/>
+        </eAnnotations>
+        <body>(Not for FXO trunk lines) For PRI channels, this will stop the sending of Caller ID on outgoing calls. For FXS handsets, this will stop Asterisk from sending this channel's Caller ID information to the called party when you make a call using this handset. FXS handset users may enable or disable sending of their Caller ID for the current call only by lifting the handset and dialing *82 (enable) or *67 (disable); you will then get a &quot;dialrecall&quot; tone whereupon you can dial the number of the extension you wish to contact. Default:no.    hidecallerid=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuoraXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dyu7WHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dyu7WXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949253454"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuoranVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dy1B8HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy1B8XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949263455"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ouora3VBEdq-GezyEkG4OQ" name="restrictcid">
+      <eAnnotations xmi:id="_OuorbHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dy1B9HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy1B9XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949263457"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_OuorbXVBEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="restrictcid"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dy1B8nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dy1B83hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949263456"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuorbnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dy1B9nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy1B93hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949263459"/>
+        </eAnnotations>
+        <body>(PRI channels only) This option has effect only when hidecallerid=no. If hidecallerid=no and restrictcid=yes, Asterisk will prevent the sending of the Caller ID data as a presentation number when making outgoing calls (ANI data is still sent). Default:no.    restrictcid=yes</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ouorb3VBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dy1B-HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy1B-XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949263460"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorcHVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dy7IkHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy7IkXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949273461"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OuorcXVBEdq-GezyEkG4OQ" name="usecallingpres">
+      <eAnnotations xmi:id="_OuorcnVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dy7IlHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy7IlXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949273463"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_Ouorc3VBEdq-GezyEkG4OQ" ordOrder="4" storageFieldname="usecallingpres"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dy7IknhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dy7Ik3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949273462"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_OuordHVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dy7IlnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy7Il3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949273465"/>
+        </eAnnotations>
+        <body>(PRI channels only) Whether or not to use the Caller ID presentation for the outgoing call that the calling switch is sending. See also the CallingPres command.    usecallingpres=no</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuordXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dy7ImHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dy7ImXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949273466"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuordnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzBPMHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzBPMXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949283467"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_Ouord3VBEdq-GezyEkG4OQ" name="Zaptelchannel->Caller_ID_Options" memberEnd="_OuildXVBEdq-GezyEkG4OQ _OuoreHVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dzBPMnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dzBPM3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949283468"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuoreHVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_Ouord3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dzBPNHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzBPNXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949283469"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuoreXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzHV0HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzHV0XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949293470"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorenVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzHV0nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzHV03hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949293471"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_Ouore3VBEdq-GezyEkG4OQ" name="Zaptelchannel->ISDN_PRI_Switch" memberEnd="_OuilenVBEdq-GezyEkG4OQ _OuorfHVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dzNccHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dzNccXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949303472"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuorfHVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_Ouore3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dzNccnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzNcc3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949303473"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorfXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzNcdHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzNcdXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949303474"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorfnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzNcdnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzNcd3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949303475"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_Ouorf3VBEdq-GezyEkG4OQ" name="Zaptelchannel->Timing_Parameters" memberEnd="_Ouilf3VBEdq-GezyEkG4OQ _OuorgHVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dzTjEHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dzTjEXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949313476"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuorgHVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_Ouorf3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dzTjEnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzTjE3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949313477"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorgXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzTjFHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzTjFXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949313478"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorgnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzZpsHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzZpsXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949323479"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_Ouorg3VBEdq-GezyEkG4OQ" name="Zaptelchannel->Other" memberEnd="_OuilhHVBEdq-GezyEkG4OQ _OuorhHVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dzZpsnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dzZps3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949323480"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuorhHVBEdq-GezyEkG4OQ" type="_OuilSnVBEdq-GezyEkG4OQ" association="_Ouorg3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dzZptHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzZptXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949323481"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorhXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzfwUHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzfwUXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333482"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorhnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzfwUnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzfwU3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333483"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_Ouorh3VBEdq-GezyEkG4OQ" name="Zapataconf">
+    <eAnnotations xmi:id="_OuoriHVBEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <eAnnotations xmi:id="_dzfwVnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzfwV3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333485"/>
+      </eAnnotations>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_OuoriXVBEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_OuorinVBEdq-GezyEkG4OQ" javaFieldType="Zapataconf" import="com.useit.jact.model.zapataconf.*" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_dzfwVHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dzfwVXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333484"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_Ouori3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dzfwWHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzfwWXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333488"/>
+      </eAnnotations>
+      <body>The format of the zapata.conf file is unfortunately not as simple as it could be. Most keywords do not do anything by themselves; they merely set up the parameters of any channel definitions that follow. The channel keyword actually creates the channel, using the settings specified before it.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_OuorknVBEdq-GezyEkG4OQ" name="zaptelchannelMap" type="_OuilSnVBEdq-GezyEkG4OQ" association="_Ouorl3VBEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_Ouork3VBEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <eAnnotations xmi:id="_dzfwXHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzfwXXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333490"/>
+        </eAnnotations>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_OuorlHVBEdq-GezyEkG4OQ" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_dzfwWnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzfwW3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333489"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuorlXVBEdq-GezyEkG4OQ" value="-1">
+        <eAnnotations xmi:id="_dzfwXnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzfwX3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333492"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuorlnVBEdq-GezyEkG4OQ">
+        <eAnnotations xmi:id="_dzfwYHhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzfwYXhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333493"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_Ouorl3VBEdq-GezyEkG4OQ" name="Zapataconf->Zaptelchannel" memberEnd="_OuorknVBEdq-GezyEkG4OQ _OuormHVBEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_dzfwYnhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+      <details xmi:id="_dzfwY3hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949333494"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_OuormHVBEdq-GezyEkG4OQ" type="_Ouorh3VBEdq-GezyEkG4OQ" association="_Ouorl3VBEdq-GezyEkG4OQ">
+      <eAnnotations xmi:id="_dzl28HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+        <details xmi:id="_dzl28XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949343495"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuormXVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzl28nhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzl283hcEdqTMIA4Csl2WQ" key="uuid" value="1135854949343496"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuormnVBEdq-GezyEkG4OQ" value="1">
+        <eAnnotations xmi:id="_dzl29HhcEdqTMIA4Csl2WQ" source="http://www.topcased.org/uuid">
+          <details xmi:id="_dzl29XhcEdqTMIA4Csl2WQ" key="uuid" value="1135854949343497"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

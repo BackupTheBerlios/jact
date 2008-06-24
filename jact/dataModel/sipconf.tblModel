@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="sipregister"/>
+			<item value="Sipauth"/>
+			<item value="sipgeneral"/>
+			<item value="SipConf"/>
+			<item value="sippeers"/>
+		</list>
+		<section name="sipregister">
+			<item key="ElementDescription" value="Register with a SIP provider"/>
+			<item key="TableName" value="sipregister"/>
+			<item key="JavaClassName" value="Sipregister"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="user"/>
+				<item value="authuser"/>
+				<item value="secret"/>
+				<item value="host"/>
+				<item value="port"/>
+				<item value="extension"/>
+			</list>
+			<section name="extension">
+				<item key="ElementDescription" value="the Asterisk contact extension. 1234 is put into the contact header in the SIP Register message. The contact extension is used by remote SIP server when it needs to send a call to Asterisk. See the example below. The default context extension is &quot;s&quot;."/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Extension"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="extension"/>
+			</section>
+			<section name="authuser">
+				<item key="ElementDescription" value="is the optional authorization user for the SIP server"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Authuser"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="authuser"/>
+			</section>
+			<section name="user">
+				<item key="ElementDescription" value="is the user id for this SIP server (ex 2345)"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="User"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="user"/>
+			</section>
+			<section name="host">
+				<item key="ElementDescription" value="is the domain or host name for the SIP server. This SIP server needs a definition in a section of its own in SIP.conf (mysipprovider.com)."/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Host"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="host"/>
+			</section>
+			<section name="port">
+				<item key="ElementDescription" value="send the register request to this port at host. Defaults to 5060"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Port"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="port"/>
+			</section>
+			<section name="secret">
+				<item key="ElementDescription" value="is the user&apos;s password"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="secret"/>
+			</section>
+		</section>
+		<section name="Sipauth">
+			<item key="ElementDescription" value="Global credentials for outbound calls, i.e. when a proxy challenges your  Asterisk server for authentication. These credentials override  any credentials in peer/register definition if realm is matched.   This way, Asterisk can authenticate for outbound calls to other  realms. We match realm on the proxy challenge and pick an set of   credentials from this list"/>
+			<item key="TableName" value="Sipauth"/>
+			<item key="JavaClassName" value="Sipauth"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="user"/>
+				<item value="secret"/>
+				<item value="md5secret"/>
+				<item value="realm"/>
+			</list>
+			<section name="md5secret">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Md5secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="md5secret"/>
+			</section>
+			<section name="user">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="User"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="user"/>
+			</section>
+			<section name="realm">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Realm"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="realm"/>
+			</section>
+			<section name="secret">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="secret"/>
+			</section>
+		</section>
+		<section name="SipConf">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="SipConf"/>
+			<item key="JavaClassName" value="SipConf"/>
+			<list key="aggfields">
+				<item value="sipgeneral"/>
+			</list>
+			<list key="TableFKFields" value="sipgeneral">
+				<item value="sipgeneral"/>
+			</list>
+			<list key="TablePKFields" value="sipgeneral">
+				<item value="sipconfid"/>
+			</list>
+			<list key="TableMapFields" value="sipconfid">
+				<item value="sippeers"/>
+			</list>
+			<list key="TableFields" value="sippeers">
+				<item value="sipconfid"/>
+			</list>
+			<section name="sipconfid">
+				<item key="ElementDescription" value="the id"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Sipconfid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sipconfid"/>
+			</section>
+		</section>
+		<section name="sipgeneral">
+			<item key="ElementDescription" value="The [general] section of sip.conf includes the following variables"/>
+			<item key="TableName" value="sipgeneral"/>
+			<item key="JavaClassName" value="Sipgeneral"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="bindaddr"/>
+			</list>
+			<list key="TableMapFields" value="bindaddr">
+				<item value="Sipauth"/>
+				<item value="sipregister"/>
+			</list>
+			<list key="TableFields" value="sipregister">
+				<item value="Autocreatepeer"/>
+				<item value="bindaddr"/>
+				<item value="bindport"/>
+				<item value="canreinvite"/>
+				<item value="context"/>
+				<item value="defaultexpirey"/>
+				<item value="dtmfmode"/>
+				<item value="externip"/>
+				<item value="externhost"/>
+				<item value="externrefresh"/>
+				<item value="localnet"/>
+				<item value="fromdomain"/>
+				<item value="maxexpirey"/>
+				<item value="nat"/>
+				<item value="notifymimetype"/>
+				<item value="pedantic"/>
+				<item value="port"/>
+				<item value="promiscredir"/>
+				<item value="srvlookup"/>
+				<item value="tos"/>
+				<item value="videosupport"/>
+				<item value="useragent"/>
+				<item value="trustrpid"/>
+				<item value="realm"/>
+				<item value="relaxdtmf"/>
+				<item value="rtptimeout"/>
+				<item value="rtpholdtimeout"/>
+				<item value="progressinband"/>
+				<item value="usereqphone"/>
+				<item value="compactheaders"/>
+				<item value="sipdebug"/>
+				<item value="checkmwi"/>
+				<item value="recordhistory"/>
+				<item value="allow"/>
+				<item value="disallow"/>
+			</list>
+			<section name="bindaddr">
+				<item key="ElementDescription" value="0.0.0.0 :IP Address to bind to (listen on)"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Bindaddr"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="bindaddr"/>
+			</section>
+			<section name="videosupport">
+				<item key="ElementDescription" value="yes|no : Turn on support for SIP video"/>
+				<item key="OrdinalPosition" value="21"/>
+				<item key="JavaFieldName" value="Videosupport"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="videosupport"/>
+			</section>
+			<section name="checkmwi">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="31"/>
+				<item key="JavaFieldName" value="Checkmwi"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="checkmwi"/>
+			</section>
+			<section name="rtptimeout">
+				<item key="ElementDescription" value="Terminate call if xx seconds of no RTP activity when we&apos;re not on hold"/>
+				<item key="OrdinalPosition" value="25"/>
+				<item key="JavaFieldName" value="Rtptimeout"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="rtptimeout"/>
+			</section>
+			<section name="externhost">
+				<item key="ElementDescription" value="hostname.tld : (new in Asterisk 1.2.x)"/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="Externhost"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="externhost"/>
+			</section>
+			<section name="trustrpid">
+				<item key="ElementDescription" value="yes|no : If Remote-Party-ID should be trusted"/>
+				<item key="OrdinalPosition" value="23"/>
+				<item key="JavaFieldName" value="Trustrpid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="trustrpid"/>
+			</section>
+			<section name="compactheaders">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="29"/>
+				<item key="JavaFieldName" value="Compactheaders"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="compactheaders"/>
+			</section>
+			<section name="srvlookup">
+				<item key="ElementDescription" value="yes|no :Enable DNS SRV lookups on calls"/>
+				<item key="OrdinalPosition" value="19"/>
+				<item key="JavaFieldName" value="Srvlookup"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="srvlookup"/>
+			</section>
+			<section name="rtpholdtimeout">
+				<item key="ElementDescription" value="when we&apos;re on hold (must be &gt; rtptimeout)"/>
+				<item key="OrdinalPosition" value="26"/>
+				<item key="JavaFieldName" value="Rtpholdtimeout"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="rtpholdtimeout"/>
+			</section>
+			<section name="port">
+				<item key="ElementDescription" value="&lt;portno&gt;: Default SIP port. (this is not the port for Asterisk to listen. See bindport)"/>
+				<item key="OrdinalPosition" value="17"/>
+				<item key="JavaFieldName" value="Port"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="port"/>
+			</section>
+			<section name="recordhistory">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="32"/>
+				<item key="JavaFieldName" value="Recordhistory"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="recordhistory"/>
+			</section>
+			<section name="externip">
+				<item key="ElementDescription" value="200.201.202.203 :Address that we&apos;re going to put in SIP messages if we&apos;re behind a NAT"/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Externip"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="externip"/>
+			</section>
+			<section name="context">
+				<item key="ElementDescription" value="&lt;contextname&gt; :This is the default context and is used when a endpoint has no context property. The context in secton of a endpoint is used to route calls from that endpoint to the wanted destination. The context body is located in extensions.conf."/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Context"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="context"/>
+			</section>
+			<section name="fromdomain">
+				<item key="ElementDescription" value="&lt;domain&gt; : Sets default From: domain in SIP messages when acting as a SIP ua (client)"/>
+				<item key="OrdinalPosition" value="12"/>
+				<item key="JavaFieldName" value="Fromdomain"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fromdomain"/>
+			</section>
+			<section name="canreinvite">
+				<item key="ElementDescription" value="update | yes | no (global setting)"/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Canreinvite"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="canreinvite"/>
+			</section>
+			<section name="dtmfmode">
+				<item key="ElementDescription" value="inband | info | rfc2833 (global setting)"/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Dtmfmode"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="Dtmfmode"/>
+				<item key="TblFieldName" value="dtmfmode"/>
+			</section>
+			<section name="bindport">
+				<item key="ElementDescription" value="5060 :port to bind to (listen on)"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Bindport"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="bindport"/>
+			</section>
+			<section name="tos">
+				<item key="ElementDescription" value="&lt;value&gt;: Set IP QoS? parameters for outgoing media streams (numeric values are also accepted, like tos=184 )"/>
+				<item key="OrdinalPosition" value="20"/>
+				<item key="JavaFieldName" value="Tos"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="tos"/>
+			</section>
+			<section name="externrefresh">
+				<item key="ElementDescription" value="xxx : Specify how often a hostname DNS lookup should be performed for the value entered in &apos;externhost&apos; (new in Asterisk 1.2.x)"/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Externrefresh"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="externrefresh"/>
+			</section>
+			<section name="defaultexpirey">
+				<item key="ElementDescription" value="120 :Default length of incoming/outoing registration"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Defaultexpirey"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="defaultexpirey"/>
+			</section>
+			<section name="disallow">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="34"/>
+				<item key="JavaFieldName" value="Disallow"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="disallow"/>
+			</section>
+			<section name="promiscredir">
+				<item key="ElementDescription" value="yes | no Allows support for 302 Redirects; (No will redirect them all to the local extension returned in Contact rather than to that extension at the destination)"/>
+				<item key="OrdinalPosition" value="18"/>
+				<item key="JavaFieldName" value="Promiscredir"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="promiscredir"/>
+			</section>
+			<section name="realm">
+				<item key="ElementDescription" value="my realm (Change authentication realm from Asterisk (default) to your own. Requires Asterisk v1.x)"/>
+				<item key="OrdinalPosition" value="24"/>
+				<item key="JavaFieldName" value="Realm"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="realm"/>
+			</section>
+			<section name="nat">
+				<item key="ElementDescription" value="yes | no (per connection setting) Please note that in Asterisk 1.0.x nat can now have the values: no | never | route | yes."/>
+				<item key="OrdinalPosition" value="14"/>
+				<item key="JavaFieldName" value="Nat"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="nat"/>
+			</section>
+			<section name="notifymimetype">
+				<item key="ElementDescription" value="text/plain :Allow overriding of mime type in MWI NOTIFY used in voicemail online messages."/>
+				<item key="OrdinalPosition" value="15"/>
+				<item key="JavaFieldName" value="Notifymimetype"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="notifymimetype"/>
+			</section>
+			<section name="allow">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="33"/>
+				<item key="JavaFieldName" value="Allow"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="allow"/>
+			</section>
+			<section name="localnet">
+				<item key="ElementDescription" value="192.168.1.0/255.255.255.0 :local network and mask"/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Localnet"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="localnet"/>
+			</section>
+			<section name="maxexpirey">
+				<item key="ElementDescription" value="3600 :Max length of incoming registration we allow"/>
+				<item key="OrdinalPosition" value="13"/>
+				<item key="JavaFieldName" value="Maxexpirey"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="maxexpirey"/>
+			</section>
+			<section name="sipdebug">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="30"/>
+				<item key="JavaFieldName" value="Sipdebug"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="sipdebug"/>
+			</section>
+			<section name="relaxdtmf">
+				<item key="ElementDescription" value="Relax dtmf handling"/>
+				<item key="OrdinalPosition" value="25"/>
+				<item key="JavaFieldName" value="Relaxdtmf"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="relaxdtmf"/>
+			</section>
+			<section name="useragent">
+				<item key="ElementDescription" value="Allow the SIP header &quot;User-Agent&quot; to be customized"/>
+				<item key="OrdinalPosition" value="22"/>
+				<item key="JavaFieldName" value="Useragent"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="useragent"/>
+			</section>
+			<section name="pedantic">
+				<item key="ElementDescription" value="yes|no :Enable slow, pedantic checking of Call-ID:s, multiline SIP headers and URI-encoded headers"/>
+				<item key="OrdinalPosition" value="16"/>
+				<item key="JavaFieldName" value="Pedantic"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="pedantic"/>
+			</section>
+			<section name="Autocreatepeer">
+				<item key="ElementDescription" value="yes | no: If set, anyone will be able to log in as a peer (with no check of credentials; useful for operation with SER)."/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Autocreatepeer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="Autocreatepeer"/>
+			</section>
+			<section name="usereqphone">
+				<item key="ElementDescription" value="If yes, &quot;;user=phone&quot; is added to uri that contains a valid phone number."/>
+				<item key="OrdinalPosition" value="28"/>
+				<item key="JavaFieldName" value="Usereqphone"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="usereqphone"/>
+			</section>
+			<section name="progressinband">
+				<item key="ElementDescription" value="If we should generate in-band ringing always"/>
+				<item key="OrdinalPosition" value="27"/>
+				<item key="JavaFieldName" value="Progressinband"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="progressinband"/>
+			</section>
+		</section>
+		<section name="sippeers">
+			<item key="ElementDescription" value="These variables can be configured for each SIP peer definition: "/>
+			<item key="TableName" value="sippeers"/>
+			<item key="JavaClassName" value="Sippeers"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+				<item value="sectionname"/>
+			</list>
+			<list key="TableMapFields" value="sectionname">
+				<item value="Sipauth"/>
+			</list>
+			<list key="TableFields" value="Sipauth">
+				<item value="sectionname"/>
+				<item value="accountcode"/>
+				<item value="amaflags"/>
+				<item value="callgroup"/>
+				<item value="canreinvite"/>
+				<item value="context"/>
+				<item value="defaultip"/>
+				<item value="dtmfmode"/>
+				<item value="fromuser"/>
+				<item value="fromdomain"/>
+				<item value="host"/>
+				<item value="incominglimit"/>
+				<item value="outgoinglimit"/>
+				<item value="insecure"/>
+				<item value="language"/>
+				<item value="mailbox"/>
+				<item value="md5secret"/>
+				<item value="nat"/>
+				<item value="pickupgroup"/>
+				<item value="port"/>
+				<item value="qualify"/>
+				<item value="restrictcid"/>
+				<item value="rtptimeout"/>
+				<item value="rtpholdtimeout"/>
+				<item value="secret"/>
+				<item value="type"/>
+				<item value="username"/>
+				<item value="musiconhold"/>
+				<item value="callerid"/>
+				<item value="allow"/>
+				<item value="disallow"/>
+				<item value="allow"/>
+			</list>
+			<section name="musiconhold">
+				<item key="ElementDescription" value="Set class of musiconhold on calls from SIP phone. Calls to the phone require SetMusicOnHold cmd of higher priority (lower numerical value of priority) than Dial cmd in dialplan in order to set this class for the call. Calls have the MusicOnHold class set on a per call basis, not on a per phone basis, and making a call through any extension specifying SetMusicOnHold will override this value for the call."/>
+				<item key="OrdinalPosition" value="28"/>
+				<item key="JavaFieldName" value="Musiconhold"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="musiconhold"/>
+			</section>
+			<section name="rtptimeout">
+				<item key="ElementDescription" value="Terminate call if x seconds of no RTP activity when we&apos;re not on hold"/>
+				<item key="OrdinalPosition" value="23"/>
+				<item key="JavaFieldName" value="Rtptimeout"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="rtptimeout"/>
+			</section>
+			<section name="rtpholdtimeout">
+				<item key="ElementDescription" value="Terminate call if x seconds of no RTP activity when we&apos;re on hold (must be larger than rtptimeout)"/>
+				<item key="OrdinalPosition" value="24"/>
+				<item key="JavaFieldName" value="Rtpholdtimeout"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="rtpholdtimeout"/>
+			</section>
+			<section name="amaflags">
+				<item key="ElementDescription" value="Categorization for CDR records. Choices are default, omit, billing, documentation. See Asterisk billing"/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Amaflags"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="amaflags"/>
+			</section>
+			<section name="port">
+				<item key="ElementDescription" value=" SIP port of the client"/>
+				<item key="OrdinalPosition" value="20"/>
+				<item key="JavaFieldName" value="Port"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="port"/>
+			</section>
+			<section name="md5secret">
+				<item key="ElementDescription" value="MD5-Hash of &quot;&lt;user&gt;:asterisk:&lt;secret&gt;&quot; (can be used instead of secret)"/>
+				<item key="OrdinalPosition" value="17"/>
+				<item key="JavaFieldName" value="Md5secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="md5secret"/>
+			</section>
+			<section name="callerid">
+				<item key="ElementDescription" value="the callerid"/>
+				<item key="OrdinalPosition" value="29"/>
+				<item key="JavaFieldName" value="Callerid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="callerid"/>
+			</section>
+			<section name="host">
+				<item key="ElementDescription" value=" How to find the client - IP # or host name. If you want the phone to register itself, use the keyword dynamic instead of Host IP"/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Host"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="host"/>
+			</section>
+			<section name="context">
+				<item key="ElementDescription" value=" Context in the dialplan for outbound calls from this client"/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Context"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="pbxcontext"/>
+				<item key="TblFieldName" value="context"/>
+			</section>
+			<section name="fromdomain">
+				<item key="ElementDescription" value="&lt;domain&gt; Sets default From domain in SIP messages when placing calls _to_ peer"/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Fromdomain"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fromdomain"/>
+			</section>
+			<section name="canreinvite">
+				<item key="ElementDescription" value="If the client is able to support SIP re-invites"/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="Canreinvite"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="canreinvite"/>
+			</section>
+			<section name="username">
+				<item key="ElementDescription" value="If Asterisk is acting as a SIP client to a remote SIP server that requires SIP INVITE authentication, then this field is used to authenticate SIP INVITEs that Asterisk sends to the remote SIP server. Also, for peers that register with Asterisk, this username is used in INVITEs until we have a registration."/>
+				<item key="OrdinalPosition" value="27"/>
+				<item key="JavaFieldName" value="Username"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="username"/>
+			</section>
+			<section name="defaultip">
+				<item key="ElementDescription" value="Default IP address of client host= is specified as DYNAMIC. Used if client have not been registred at any other IP adress."/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Defaultip"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="defaultip"/>
+			</section>
+			<section name="dtmfmode">
+				<item key="ElementDescription" value="How the client handles DMTF? signalling"/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Dtmfmode"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="Dtmfmode"/>
+				<item key="TblFieldName" value="dtmfmode"/>
+			</section>
+			<section name="secret">
+				<item key="ElementDescription" value=" If Asterisk is acting as a SIP Server, then this SIP client must login with this Password (A shared secret). If Asterisk is acting as a SIP client to a remote SIP server that requires SIP INVITE authentication, then this field is used to authenticate SIP INVITEs that Asterisk sends to the remote SIP server."/>
+				<item key="OrdinalPosition" value="25"/>
+				<item key="JavaFieldName" value="Secret"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="secret"/>
+			</section>
+			<section name="accountcode">
+				<item key="ElementDescription" value="Users may be associated with an accountcode. See Asterisk billing"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Accountcode"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="accountcode"/>
+			</section>
+			<section name="disallow">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="30"/>
+				<item key="JavaFieldName" value="Disallow"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="disallow"/>
+			</section>
+			<section name="callgroup">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Callgroup"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="callgroup"/>
+			</section>
+			<section name="type">
+				<item key="ElementDescription" value="Relationship to client - outbound provider or full client?"/>
+				<item key="OrdinalPosition" value="26"/>
+				<item key="JavaFieldName" value="Type"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="PeerType"/>
+				<item key="TblFieldName" value="type"/>
+			</section>
+			<section name="fromuser">
+				<item key="ElementDescription" value="Specify user to put in &quot;from&quot; instead of callerid (overrides the callerid) when placing calls _to_ peer (another SIP proxy)"/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="Fromuser"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="fromuser"/>
+			</section>
+			<section name="sectionname">
+				<item key="ElementDescription" value="Peer Section Name"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Sectionname"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="sectionname"/>
+			</section>
+			<section name="restrictcid">
+				<item key="ElementDescription" value=" (yes/no) To have the callerid restricted -&gt; sent as ANI; use this to hide the caller ID"/>
+				<item key="OrdinalPosition" value="22"/>
+				<item key="JavaFieldName" value="Restrictcid"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="restrictcid"/>
+			</section>
+			<section name="insecure">
+				<item key="ElementDescription" value="Don&apos;t check host ip and port for peer (not user)"/>
+				<item key="OrdinalPosition" value="14"/>
+				<item key="JavaFieldName" value="Insecure"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="insecure"/>
+			</section>
+			<section name="outgoinglimit">
+				<item key="ElementDescription" value="Limits for number of simultaneous active calls for a SIP client"/>
+				<item key="OrdinalPosition" value="13"/>
+				<item key="JavaFieldName" value="Outgoinglimit"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="outgoinglimit"/>
+			</section>
+			<section name="nat">
+				<item key="ElementDescription" value="This variable changes the behaviour of Asterisk for clients behind a firewall. This does not solve the problem if Asterisk is behind the firewall and the client on the outside."/>
+				<item key="OrdinalPosition" value="18"/>
+				<item key="JavaFieldName" value="Nat"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="bool"/>
+				<item key="TblFieldName" value="nat"/>
+			</section>
+			<section name="allow">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="31"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="CodecsSet"/>
+				<item key="TblFieldName" value="allow"/>
+			</section>
+			<section name="language">
+				<item key="ElementDescription" value="A language code defined in indications.conf - defines language for prompts and specific local phone signals"/>
+				<item key="OrdinalPosition" value="15"/>
+				<item key="JavaFieldName" value="Language"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="language"/>
+			</section>
+			<section name="incominglimit">
+				<item key="ElementDescription" value="Limits for number of simultaneous active calls for a SIP client"/>
+				<item key="OrdinalPosition" value="12"/>
+				<item key="JavaFieldName" value="Incominglimit"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="int"/>
+				<item key="TblFieldName" value="incominglimit"/>
+			</section>
+			<section name="mailbox">
+				<item key="ElementDescription" value="Voicemail extension (for message waiting indications)"/>
+				<item key="OrdinalPosition" value="16"/>
+				<item key="JavaFieldName" value="Mailbox"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="mailbox"/>
+			</section>
+			<section name="pickupgroup">
+				<item key="ElementDescription" value=" Group that can pickup fellow workers&apos; calls using *8 and the Pickup() application on the *8 extension"/>
+				<item key="OrdinalPosition" value="19"/>
+				<item key="JavaFieldName" value="Pickupgroup"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="pickupgroup"/>
+			</section>
+			<section name="qualify">
+				<item key="ElementDescription" value="Check if client is reachable"/>
+				<item key="OrdinalPosition" value="21"/>
+				<item key="JavaFieldName" value="Qualify"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="qualify"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="D:\javaprojekte\workspaceE3\jact\dataModel\simpleTypemap.typemap"/>
+		<item key="ProjectName" value="sipconf"/>
+	</section>
+</section>

@@ -1,0 +1,34 @@
+     JACT (java asterisk configuration tool) README FILE
+
+1. preparation 
+you need the following software :
+
+log4j - http://logging.apache.org/log4j/
+
+for database persitence :
+
+hibernate - www.hibernate.org/
+hsql - www.hsqldb.org/
+
+for the base application all libaries has to be in the lib directory.
+
+   1.1 prepare the database
+   
+	Configure the hibernate.cfg.xml.
+	You can hibernate let create your database, for details see www.hibernate.org/ .
+	A database schema for hsql is supplied in the file jactbasicschema.sql. 
+	
+
+2. using jact
+
+Jact is more a framework as an appication, so you can ues it as a lib, all you have to do
+is to add the jact jar (and the dependecies of course) to the classpath of your application.
+
+   2.1 using the reference application
+   A basic swing gui is part of the reference implentiation, it's the manifest main class,
+   so you can start it with the simple java -jar jact.jar.
+   the applications looks for the hibernate.cfg.xml in the main path, if it cannot be found,
+   it takes a one from the classpath, and this might not be your configuration of course.
+
+   
+copyright urs zeidler,   	 urszeidler@users.berlios.de

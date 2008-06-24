@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.sipconf.SipgeneralImpl" table="tbl_sipconf_sipgeneral" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="autocreatepeer" column="autocreatepeer"/>	
+		<property name="bindaddr" column="bindaddr"/>	
+		<property name="bindport" column="bindport"/>	
+		<property name="canreinvite" column="canreinvite"/>	
+		<property name="context" column="context"/>	
+		<property name="defaultexpirey" column="defaultexpirey"/>	
+		<property name="dtmfmode" column="dtmfmode"/>	
+		<property name="externip" column="externip"/>	
+		<property name="externhost" column="externhost"/>	
+		<property name="externrefresh" column="externrefresh"/>	
+		<property name="localnet" column="localnet"/>	
+		<property name="fromdomain" column="fromdomain"/>	
+		<property name="maxexpirey" column="maxexpirey"/>	
+		<property name="nat" column="nat"/>	
+		<property name="notifymimetype" column="notifymimetype"/>	
+		<property name="pedantic" column="pedantic"/>	
+		<property name="port" column="port"/>	
+		<property name="promiscredir" column="promiscredir"/>	
+		<property name="srvlookup" column="srvlookup"/>	
+		<property name="tos" column="tos"/>	
+		<property name="videosupport" column="videosupport"/>	
+		<property name="useragent" column="useragent"/>	
+		<property name="trustrpid" column="trustrpid"/>	
+		<property name="realm" column="realm"/>	
+		<property name="relaxdtmf" column="relaxdtmf"/>	
+		<property name="rtptimeout" column="rtptimeout"/>	
+		<property name="rtpholdtimeout" column="rtpholdtimeout"/>	
+		<property name="progressinband" column="progressinband"/>	
+		<property name="usereqphone" column="usereqphone"/>	
+		<property name="compactheaders" column="compactheaders"/>	
+		<property name="sipdebug" column="sipdebug"/>	
+		<property name="checkmwi" column="checkmwi"/>	
+		<property name="recordhistory" column="recordhistory"/>	
+		<property name="allow" column="allow"/>	
+		<property name="disallow" column="disallow"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="sipauthMap" cascade="all" 
+		table="tbl_sipconf_sipgeneral_sipauth">
+			<key column="sipgeneral_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.sipconf.SipauthImpl"/>
+        </list>	
+	
+	
+ 		<list name="sipregisterMap" cascade="all" 
+		table="tbl_sipconf_sipgeneral_sipregister">
+			<key column="sipgeneral_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.sipconf.SipregisterImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

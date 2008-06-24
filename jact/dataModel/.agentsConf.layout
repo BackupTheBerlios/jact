@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="diagramm">
+		<section name="agents">
+			<item key="y" value="258"/>
+			<item key="areah" value="118"/>
+			<item key="x" value="22"/>
+			<item key="areaw" value="171"/>
+		</section>
+		<section name="agentsconf">
+			<item key="y" value="12"/>
+			<item key="areah" value="154"/>
+			<item key="x" value="79"/>
+			<item key="areaw" value="155"/>
+		</section>
+		<section name="agentsrecording">
+			<item key="y" value="189"/>
+			<item key="areah" value="153"/>
+			<item key="x" value="295"/>
+			<item key="areaw" value="169"/>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="diagramm">
+		<section name="signalling">
+			<item key="y" value="20"/>
+			<item key="areah" value="618"/>
+			<item key="x" value="10"/>
+			<item key="areaw" value="172"/>
+		</section>
+	</section>
+</section>

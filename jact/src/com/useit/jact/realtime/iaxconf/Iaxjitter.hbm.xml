@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.iaxconf.IaxjitterImpl" table="tbl_iaxconf_iaxjitter" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="jitterbuffer" column="jitterbuffer"/>	
+		<property name="forcejitterbuffer" column="forcejitterbuffer"/>	
+		<property name="dropcount" column="dropcount"/>	
+		<property name="maxjitterbuffer" column="maxjitterbuffer"/>	
+		<property name="resyncthreshold" column="resyncthreshold"/>	
+		<property name="maxjitterinterps" column="maxjitterinterps"/>	
+		<property name="maxexcessbuffer" column="maxexcessbuffer"/>	
+		<property name="minexcessbuffer" column="minexcessbuffer"/>	
+		<property name="jittershrinkrate" column="jittershrinkrate"/>	
+<!-- Agg -->
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

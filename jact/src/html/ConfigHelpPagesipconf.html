@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation sipconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : sipconf</h1>
+<p><h2>sipconf</h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Sipregister</h3>
+ <h4>Register with a SIP provider</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >user[String]</td><td valign="top">is the user id for this SIP server (ex 2345)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >authuser[String]</td><td valign="top">is the optional authorization user for the SIP server</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >secret[String]</td><td valign="top">is the user's password</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >host[String]</td><td valign="top">is the domain or host name for the SIP server. This SIP server needs a definition in a section of its own in SIP.conf (mysipprovider.com).</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >port[Integer]</td><td valign="top">send the register request to this port at host. Defaults to 5060</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >extension[String]</td><td valign="top">the Asterisk contact extension. 1234 is put into the contact header in the SIP Register message. The contact extension is used by remote SIP server when it needs to send a call to Asterisk. See the example below. The default context extension is "s".</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Sipauth</h3>
+ <h4>Global credentials for outbound calls, i.e. when a proxy challenges your  Asterisk server for authentication. These credentials override  any credentials in peer/register definition if realm is matched.   This way, Asterisk can authenticate for outbound calls to other  realms. We match realm on the proxy challenge and pick an set of   credentials from this list</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >user[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >secret[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >md5secret[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >realm[String]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;SipConf</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >sipgeneral[Sipgeneral]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >sippeersMap[Sippeers]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Sippeers</h3>
+ <h4>These variables can be configured for each SIP peer definition: </h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >sectionname[String]</td><td valign="top">Peer Section Name</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >accountcode[String]</td><td valign="top">Users may be associated with an accountcode. See Asterisk billing</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >amaflags[Amaflags]</td><td valign="top">Categorization for CDR records. Choices are default, omit, billing, documentation. See Asterisk billing</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callgroup[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >canreinvite[String]</td><td valign="top">If the client is able to support SIP re-invites</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top"> Context in the dialplan for outbound calls from this client</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >defaultip[String]</td><td valign="top">Default IP address of client host= is specified as DYNAMIC. Used if client have not been registred at any other IP adress.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dtmfmode[Dtmfmode]</td><td valign="top">How the client handles DMTF? signalling</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >fromuser[String]</td><td valign="top">Specify user to put in "from" instead of callerid (overrides the callerid) when placing calls _to_ peer (another SIP proxy)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >fromdomain[String]</td><td valign="top"><domain> Sets default From domain in SIP messages when placing calls _to_ peer</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >host[String]</td><td valign="top"> How to find the client - IP # or host name. If you want the phone to register itself, use the keyword dynamic instead of Host IP</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >incominglimit[Integer]</td><td valign="top">Limits for number of simultaneous active calls for a SIP client</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >outgoinglimit[Integer]</td><td valign="top">Limits for number of simultaneous active calls for a SIP client</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >insecure[String]</td><td valign="top">Don't check host ip and port for peer (not user)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >language[String]</td><td valign="top">A language code defined in indications.conf - defines language for prompts and specific local phone signals</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >mailbox[String]</td><td valign="top">Voicemail extension (for message waiting indications)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >md5secret[String]</td><td valign="top">MD5-Hash of "<user>:asterisk:<secret>" (can be used instead of secret)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >nat[Boolean]</td><td valign="top">This variable changes the behaviour of Asterisk for clients behind a firewall. This does not solve the problem if Asterisk is behind the firewall and the client on the outside.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pickupgroup[String]</td><td valign="top"> Group that can pickup fellow workers' calls using *8 and the Pickup() application on the *8 extension</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >port[Integer]</td><td valign="top"> SIP port of the client</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >qualify[String]</td><td valign="top">Check if client is reachable</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >restrictcid[Boolean]</td><td valign="top"> (yes/no) To have the callerid restricted -> sent as ANI; use this to hide the caller ID</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtptimeout[Integer]</td><td valign="top">Terminate call if x seconds of no RTP activity when we're not on hold</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtpholdtimeout[Integer]</td><td valign="top">Terminate call if x seconds of no RTP activity when we're on hold (must be larger than rtptimeout)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >secret[String]</td><td valign="top"> If Asterisk is acting as a SIP Server, then this SIP client must login with this Password (A shared secret). If Asterisk is acting as a SIP client to a remote SIP server that requires SIP INVITE authentication, then this field is used to authenticate SIP INVITEs that Asterisk sends to the remote SIP server.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >type[PeerType]</td><td valign="top">Relationship to client - outbound provider or full client?</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >username[String]</td><td valign="top">If Asterisk is acting as a SIP client to a remote SIP server that requires SIP INVITE authentication, then this field is used to authenticate SIP INVITEs that Asterisk sends to the remote SIP server. Also, for peers that register with Asterisk, this username is used in INVITEs until we have a registration.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >musiconhold[String]</td><td valign="top">Set class of musiconhold on calls from SIP phone. Calls to the phone require SetMusicOnHold cmd of higher priority (lower numerical value of priority) than Dial cmd in dialplan in order to set this class for the call. Calls have the MusicOnHold class set on a per call basis, not on a per phone basis, and making a call through any extension specifying SetMusicOnHold will override this value for the call.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callerid[String]</td><td valign="top">the callerid</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >disallow[CodecsSet]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >allow[CodecsSet]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >sipauthMap[Sipauth]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Sipgeneral</h3>
+ <h4>The [general] section of sip.conf includes the following variables</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >autocreatepeer[Boolean]</td><td valign="top">yes | no: If set, anyone will be able to log in as a peer (with no check of credentials; useful for operation with SER).</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >bindaddr[String]</td><td valign="top">0.0.0.0 :IP Address to bind to (listen on)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >bindport[Integer]</td><td valign="top">5060 :port to bind to (listen on)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >canreinvite[String]</td><td valign="top">update | yes | no (global setting)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top"><contextname> :This is the default context and is used when a endpoint has no context property. The context in secton of a endpoint is used to route calls from that endpoint to the wanted destination. The context body is located in extensions.conf.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >defaultexpirey[Integer]</td><td valign="top">120 :Default length of incoming/outoing registration</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dtmfmode[Dtmfmode]</td><td valign="top">inband | info | rfc2833 (global setting)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >externip[String]</td><td valign="top">200.201.202.203 :Address that we're going to put in SIP messages if we're behind a NAT</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >externhost[String]</td><td valign="top">hostname.tld : (new in Asterisk 1.2.x)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >externrefresh[String]</td><td valign="top">xxx : Specify how often a hostname DNS lookup should be performed for the value entered in 'externhost' (new in Asterisk 1.2.x)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >localnet[String]</td><td valign="top">192.168.1.0/255.255.255.0 :local network and mask</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >fromdomain[String]</td><td valign="top"><domain> : Sets default From: domain in SIP messages when acting as a SIP ua (client)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >maxexpirey[Integer]</td><td valign="top">3600 :Max length of incoming registration we allow</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >nat[Boolean]</td><td valign="top">yes | no (per connection setting) Please note that in Asterisk 1.0.x nat can now have the values: no | never | route | yes.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >notifymimetype[String]</td><td valign="top">text/plain :Allow overriding of mime type in MWI NOTIFY used in voicemail online messages.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pedantic[Boolean]</td><td valign="top">yes|no :Enable slow, pedantic checking of Call-ID:s, multiline SIP headers and URI-encoded headers</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >port[Integer]</td><td valign="top"><portno>: Default SIP port. (this is not the port for Asterisk to listen. See bindport)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >promiscredir[Boolean]</td><td valign="top">yes | no Allows support for 302 Redirects; (No will redirect them all to the local extension returned in Contact rather than to that extension at the destination)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >srvlookup[Boolean]</td><td valign="top">yes|no :Enable DNS SRV lookups on calls</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >tos[String]</td><td valign="top"><value>: Set IP QoS? parameters for outgoing media streams (numeric values are also accepted, like tos=184 )</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >videosupport[Boolean]</td><td valign="top">yes|no : Turn on support for SIP video</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >useragent[String]</td><td valign="top">Allow the SIP header "User-Agent" to be customized</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >trustrpid[Boolean]</td><td valign="top">yes|no : If Remote-Party-ID should be trusted</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >realm[String]</td><td valign="top">my realm (Change authentication realm from Asterisk (default) to your own. Requires Asterisk v1.x)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >relaxdtmf[Boolean]</td><td valign="top">Relax dtmf handling</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtptimeout[Integer]</td><td valign="top">Terminate call if xx seconds of no RTP activity when we're not on hold</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rtpholdtimeout[Integer]</td><td valign="top">when we're on hold (must be > rtptimeout)</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >progressinband[String]</td><td valign="top">If we should generate in-band ringing always</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >usereqphone[Boolean]</td><td valign="top">If yes, ";user=phone" is added to uri that contains a valid phone number.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >compactheaders[Boolean]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >sipdebug[Boolean]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >checkmwi[Integer]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >recordhistory[Boolean]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >allow[CodecsSet]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >disallow[CodecsSet]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >sipauthMap[Sipauth]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >sipregisterMap[Sipregister]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

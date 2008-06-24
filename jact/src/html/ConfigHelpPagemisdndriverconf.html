@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation misdndriverconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : misdndriverconf</h1>
+<p><h2>misdndriverconf</h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;MisdncardPorts</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >portN[Integer]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >portOption[MisdnPortOptions]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >mPortOption[MPortOptionSet]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;MisdnCards</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >cardName[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >cardType[MisdnCardTypes]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >cardOptions[MCardOptionSet]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >misdncardPortsMap[MisdncardPorts]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;MisdnDriverConf</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >poll[Integer]</td><td valign="top">Only one poll value must be given for all cards. Give the number of samples for each fifo process. By default 128 is used. Decrease to reduce delay, increase to reduce cpu load. If unsure, don't mess with it! Valid is 8, 16, 32, 64, 128, 256.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pcm[Boolean]</td><td valign="top">Give the id of the PCM bus. All PCM busses with the same ID are expected to be connected and have equal slots. Only one chip of the PCM bus must be master, the others slave. -1 means no support of PCM bus.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >debug[Integer]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >misdnCardsMap[MisdnCards]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

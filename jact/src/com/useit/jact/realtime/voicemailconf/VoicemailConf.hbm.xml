@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.voicemailconf.VoicemailConfImpl" table="tbl_voicemailconf_voicemailconf" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+<!-- Agg -->
+	<many-to-one name="fVoicemailgeneral" access="field"
+	class="com.useit.jact.model.voicemailconf.VoicemailgeneralImpl"
+	 column="voicemailgeneral_fk"
+	 cascade="all" />
+<!-- maps -->
+		<list name="voicemailcontextMap" cascade="all" 
+		table="tbl_voicemailconf_voicemailconf_voicemailcontext">
+			<key column="voicemailconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.voicemailconf.VoicemailcontextImpl"/>
+        </list>	
+	
+	
+ 		<list name="zonemessagesMap" cascade="all" 
+		table="tbl_voicemailconf_voicemailconf_zonemessages">
+			<key column="voicemailconf_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.voicemailconf.ZonemessagesImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

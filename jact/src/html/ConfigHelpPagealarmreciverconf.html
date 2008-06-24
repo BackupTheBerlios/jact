@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation alarmreciverconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : alarmreciverconf</h1>
+<p><h2></h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Alarmreceiverconf</h3>
+ <h4>Configuration file for the Asterisk alarm receiver application.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >timestampformat[String]</td><td valign="top">Specify a timestamp format for the metadata section of the event files Default is %a %b %d, %Y @ %H:%M:%S %Z</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >eventcmd[String]</td><td valign="top">Specify a command to execute when the caller hangs up Default is none</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >eventspooldir[String]</td><td valign="top">Specify a spool directory for the event files. This setting is required if you want the app to be useful. Event files written to the spool directory will be of the template event-XXXXXX, where XXXXXX is a random and unique alphanumeric string. Default is none, and the events will be dropped on the floor.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >logindividualevents[String]</td><td valign="top">The alarmreceiver app can either log the events one-at-a-time to individual files in the spool  directory, or it can store them until the caller disconnects and write them all to one file.  The default setting for logindividualevents is no.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >fdtimeout[Integer]</td><td valign="top">The timeout for receiving the first DTMF digit is adjustable from  1000 msec. to 10000 msec. The default is 2000 msec. Note: if you wish to test the receiver by entering digits manually, set this to a reasonable time out like 10000 milliseconds.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >sdtimeout[Integer]</td><td valign="top">The timeout for receiving subsequent DTMF digits is adjustable from  110 msec. to 4000 msec. The default is 200 msec. Note: if you wish to test the receiver by entering digits manually, set this to a reasonable time out like 4000 milliseconds.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >loudness[Integer]</td><td valign="top">The loudness of the ACK and Kissoff tones is adjustable from 100 to 8192. The default is 8192 This shouldn't need to be messed with, but is included just in case there are problems with  signal levels.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dbfamily[String]</td><td valign="top">The db-family setting allows the user to capture statistics on the number of calls, and the errors the alarm receiver sees. The default is for no db-family name to be defined and the database logging to be turned off.</td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

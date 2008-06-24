@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.sipconf.SippeersImpl" table="tbl_sipconf_sippeers" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="sectionname" column="sectionname"/>	
+		<property name="accountcode" column="accountcode"/>	
+		<property name="amaflags" column="amaflags"/>	
+		<property name="callgroup" column="callgroup"/>	
+		<property name="canreinvite" column="canreinvite"/>	
+		<property name="context" column="context"/>	
+		<property name="defaultip" column="defaultip"/>	
+		<property name="dtmfmode" column="dtmfmode"/>	
+		<property name="fromuser" column="fromuser"/>	
+		<property name="fromdomain" column="fromdomain"/>	
+		<property name="host" column="host"/>	
+		<property name="incominglimit" column="incominglimit"/>	
+		<property name="outgoinglimit" column="outgoinglimit"/>	
+		<property name="insecure" column="insecure"/>	
+		<property name="language" column="language"/>	
+		<property name="mailbox" column="mailbox"/>	
+		<property name="md5secret" column="md5secret"/>	
+		<property name="nat" column="nat"/>	
+		<property name="pickupgroup" column="pickupgroup"/>	
+		<property name="port" column="port"/>	
+		<property name="qualify" column="qualify"/>	
+		<property name="restrictcid" column="restrictcid"/>	
+		<property name="rtptimeout" column="rtptimeout"/>	
+		<property name="rtpholdtimeout" column="rtpholdtimeout"/>	
+		<property name="secret" column="secret"/>	
+		<property name="type" column="type"/>	
+		<property name="username" column="username"/>	
+		<property name="musiconhold" column="musiconhold"/>	
+		<property name="callerid" column="callerid"/>	
+		<property name="disallow" column="disallow"/>	
+		<property name="allow" column="allow"/>	
+<!-- Agg -->
+<!-- maps -->
+		<list name="sipauthMap" cascade="all" 
+		table="tbl_sipconf_sippeers_sipauth">
+			<key column="sippeers_id" />
+			<list-index  column="listorder" />  
+        	<many-to-many class="com.useit.jact.model.sipconf.SipauthImpl"/>
+        </list>	
+	
+	
+     </class>
+</hibernate-mapping>
+        

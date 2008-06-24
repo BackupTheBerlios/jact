@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+<section name="TypeMappers">
+<list key="MapperList">
+<item value="bool"/>
+<item value="date"/>
+<item value="float"/>
+<item value="int"/>
+<item value="jstring"/>
+<item value="time"/>
+<item value="pbxcontext"/>
+<item value="MisdnPortOptions"/>
+<item value="MCardOption"/>
+<item value="MisdnCardTypes"/>
+<item value="MPortOption"/>
+<item value="Codecs"/>
+<item value="Dialplan"/>
+<item value="PeerType"/>
+<item value="Presentation"/>
+<item value="Dtmfmode"/>
+<item value="MisdnPortOptionsSet"/>
+<item value="MCardOptionSet"/>
+<item value="MisdnCardTypesSet"/>
+<item value="MPortOptionSet"/>
+<item value="CodecsSet"/>
+<item value="DialplanSet"/>
+<item value="PeerTypeSet"/>
+<item value="PresentationSet"/>
+<item value="DtmfmodeSet"/>
+</list>
+<list key="float">
+<item value="float"/>
+<item value="Float"/>
+<item value="getFloat"/>
+<item value="setFloat"/>
+<item value="{0}.floatValue()"/>
+<item value=""/>
+<item value="FloatTextField"/>
+</list>
+<list key="pbxcontext">
+<item value="pbxcontext"/>
+<item value="PbxContext"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="PbxContextTextField"/>
+</list>
+<list key="jstring">
+<item value="jstring"/>
+<item value="String"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value="{0}"/>
+<item value=""/>
+<item value="StringTextField"/>
+</list>
+<list key="date">
+<item value="date"/>
+<item value="Date"/>
+<item value="getDate"/>
+<item value="setDate"/>
+<item value="new java.sql.Date({0}.getDate())"/>
+<item value=".getDate()"/>
+<item value="DateTextField"/>
+</list>
+<list key="time">
+<item value="time"/>
+<item value="java.sql.Time"/>
+<item value="getTime"/>
+<item value="setTime"/>
+<item value="{0}"/>
+<item value=".getDate()"/>
+<item value="TimeTextField"/>
+</list>
+<list key="bool">
+<item value="bool"/>
+<item value="Boolean"/>
+<item value="getBoolean"/>
+<item value="setBoolean"/>
+<item value="{0}.booleanValue()"/>
+<item value=""/>
+<item value="CustomCheckBox"/>
+</list>
+<list key="int">
+<item value="int"/>
+<item value="Integer"/>
+<item value="getInt"/>
+<item value="setInt"/>
+<item value="{0}.intValue()"/>
+<item value=""/>
+<item value="IntegerTextField"/>
+</list>
+<list key="MisdnPortOptions">
+<item value="MisdnPortOptions"/>
+<item value="MisdnPortOptions"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxMisdnPortOptions"/>
+</list>
+<list key="MCardOption">
+<item value="MCardOption"/>
+<item value="MCardOption"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxMCardOption"/>
+</list>
+<list key="MisdnCardTypes">
+<item value="MisdnCardTypes"/>
+<item value="MisdnCardTypes"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxMisdnCardTypes"/>
+</list>
+<list key="MPortOption">
+<item value="MPortOption"/>
+<item value="MPortOption"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxMPortOption"/>
+</list>
+<list key="Codecs">
+<item value="Codecs"/>
+<item value="Codecs"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxCodecs"/>
+</list>
+<list key="Dialplan">
+<item value="Dialplan"/>
+<item value="Dialplan"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxDialplan"/>
+</list>
+<list key="PeerType">
+<item value="PeerType"/>
+<item value="PeerType"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxPeerType"/>
+</list>
+<list key="Presentation">
+<item value="Presentation"/>
+<item value="Presentation"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxPresentation"/>
+</list>
+<list key="Dtmfmode">
+<item value="Dtmfmode"/>
+<item value="Dtmfmode"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxDtmfmode"/>
+</list>
+<list key="MisdnPortOptionsSet">
+<item value="MisdnPortOptionsSet"/>
+<item value="MisdnPortOptionsSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldMisdnPortOptions"/>
+</list>
+<list key="MCardOptionSet">
+<item value="MCardOptionSet"/>
+<item value="MCardOptionSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldMCardOption"/>
+</list>
+<list key="MisdnCardTypesSet">
+<item value="MisdnCardTypesSet"/>
+<item value="MisdnCardTypesSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldMisdnCardTypes"/>
+</list>
+<list key="MPortOptionSet">
+<item value="MPortOptionSet"/>
+<item value="MPortOptionSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldMPortOption"/>
+</list>
+<list key="CodecsSet">
+<item value="CodecsSet"/>
+<item value="CodecsSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldCodecs"/>
+</list>
+<list key="DialplanSet">
+<item value="DialplanSet"/>
+<item value="DialplanSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldDialplan"/>
+</list>
+<list key="PeerTypeSet">
+<item value="PeerTypeSet"/>
+<item value="PeerTypeSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldPeerType"/>
+</list>
+<list key="PresentationSet">
+<item value="PresentationSet"/>
+<item value="PresentationSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldPresentation"/>
+</list>
+<list key="DtmfmodeSet">
+<item value="DtmfmodeSet"/>
+<item value="DtmfmodeSet"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="EnumSetTextFieldDtmfmode"/>
+</list>
+</section>
+</section>

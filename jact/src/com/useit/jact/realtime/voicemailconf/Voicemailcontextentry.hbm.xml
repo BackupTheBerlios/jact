@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="com.useit.jact.model.voicemailconf.VoicemailcontextentryImpl" table="tbl_voicemailconf_voicemailcontextentry" >
+    	 <id name="id" type="integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+		<property name="element_name" column="element_name"/>	
+		<property name="element_description" column="element_description"/>	
+		<property name="mailbox" column="mailbox"/>	
+		<property name="voicemail_password" column="voicemail_password"/>	
+		<property name="user_name" column="user_name"/>	
+		<property name="user_email_address" column="user_email_address"/>	
+		<property name="pager_email_address" column="pager_email_address"/>	
+		<property name="user_options" column="user_options"/>	
+<!-- Agg -->
+<!-- maps -->
+    </class>
+</hibernate-mapping>
+        

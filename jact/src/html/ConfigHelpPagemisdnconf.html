@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dokumentation misdnconf</title>
+</head>
+<body bgcolor="#a5d2f3">
+<table>
+<tr>
+       <td>
+<h1>Dokumentation : misdnconf</h1>
+<p><h2></h2></p>
+        
+<br>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;Misdnconf</h3>
+ <h4>chan_misdn sample config general section:  for debugging and general setup, things that are not bound to port groups</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >debug[Integer]</td><td valign="top">set debugging flag:  0 - No Debug  1 - mISDN Messages and * - Messages, and * - State changes  2 - Messages + Message specific Informations (e.g. bearer capability)  3 - very Verbose, the above + lots of Driver specific infos 4 - even more Verbose than 3</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >tracefile[String]</td><td valign="top">the big trace</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >trace_calls[Boolean]</td><td valign="top">single call trace files set to true if you want to have them  they depend on debug level</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >trace_dir[String]</td><td valign="top">single call trace files  set to true if you want to have them  they depend on debug level</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >bridging[Boolean]</td><td valign="top">set to yes if you want mISDN_dsp to bridge the calls in HW</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >stop_tone_after_first_digit[Boolean]</td><td valign="top">Stops dialtone after getting first digit on nt Port</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >append_digits2exten[Boolean]</td><td valign="top">Wether to append overlapdialed Digits to Extension or not</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >l1_info_ok[Boolean]</td><td valign="top">set this to yes if you have jollys mISDN which sends correct L1 Infos</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >clear_l3[Boolean]</td><td valign="top">set this to yes if you want to clear the l3 in case the l2 deactivates some environments have a flickering l2 which causes this option to  damage active calls .. highly experimental</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dynamic_crypt[Boolean]</td><td valign="top">CRYPTION STUFF  Wether to look for dynamic crypting attempt</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >crypt_prefix[String]</td><td valign="top">crypt_prefix, what is used for crypting Protocol</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >fileid[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >misdnSections[MisdnSections]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >misdnCryptkeyMap[MisdnCryptkey]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >misdnSectionsMap[MisdnSections]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;MisdnCryptkey</h3>
+ <h4>Keys for cryption, you reference them in the dialplan later also in dynamic encr.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >keyname[String]</td><td valign="top">key name</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >keyvalue[String]</td><td valign="top">key value</td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;MisdnSections</h3>
+ <h4>name your sections as you which but not "general" !  the secions are Groups, you can dial out in extensions.conf with Dial(mISDN/g:extern/101) where extern is a section name,  chan_misdn tries every port in this section to find a  new free channel The default section is not a group section, it just contains config elements  which are inherited by group sections.</h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >context[PbxContext]</td><td valign="top">define your default context here</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >language[String]</td><td valign="top">Group Specific Language</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >nationalprefix[String]</td><td valign="top">Prefixes for national and international, those are putted before the 
+  oad if an according dialplan is set by the other end.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >internationalprefix[String]</td><td valign="top">Prefixes for national and international, those are putted before the  oad if an according dialplan is set by the other end.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >rxgain[Integer]</td><td valign="top">set rx/tx gains between -8 and 8 to change the RX/TX Gain</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >txgain[Integer]</td><td valign="top">set rx/tx gains between -8 and 8 to change the RX/TX Gain</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >te_choose_channel[Boolean]</td><td valign="top">Some telcos espacially in NL seem to need this set to yes, this is disabled  by default, also in switzerland this seems to be important</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >early_bconnect[Boolean]</td><td valign="top">wether to connect bchannel when getting proceeding</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >dialplan[Dialplan]</td><td valign="top">dialplan options:   0 - unknown  1 - National  2 - International  4 - Subscriber This setting is used for outgoing calls</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >use_callingpres[Boolean]</td><td valign="top">This is only for asterisk head and will result in only considering  misdn.confs and misdn_set_opts callingpresentation informations if set to no. Otherwise asterisks callingpresentation overwrites misdn.confs settings.</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >always_immediate[Boolean]</td><td valign="top">uncomment the following to get into s extension at extension conf
+  there you can use DigitTimeout if you can't or don't want to use
+  isdn overlap dial. 
+  note: This will jump into the s exten for every exten !</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >immediate[Boolean]</td><td valign="top">uncomment the following if you want callers which called exactly the 
+  base number (so no extension is set) jump to the s extension.
+  if the user dials something more it jumps to the correct extension 
+  instead</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >hold_allowed[Boolean]</td><td valign="top">uncomment the following to have hold and retrieve support hold_allowed</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >pickgroup[String]</td><td valign="top">Pickup and Callgroup</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >callgroup[String]</td><td valign="top">Pickup and Callgroup</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >presentation[Presentation]</td><td valign="top">Allows/Screens Callerid  possible values:  allowed not_screened be aware, if you set to allowed you need to set a correct  callerid in the dialplan or set it here in the misdn.conf Some Telcos don't care about wrong callerids, others do !</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >echocancel[Boolean]</td><td valign="top">this enables echocancelation, with the given number of taps  be aware, move this setting only to outgoing portgroups !</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >echocancelwhenbridged[Boolean]</td><td valign="top">this disables echocancellation when the call is bridged between  mISDN channels</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >echotraining[String]</td><td valign="top">Set this to 0 to disable echotraining</td></tr>   
+		<tr><td></td><td  width="200" valign="top" >sectionname[String]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >misdnPortsMap[MisdnPorts]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+<table  width="800">
+<tr><td valign="top" width="100"><img src="../icons/./${class.JavaClassName}48.png" border="0"></td>
+<td colspan=2 ><h3>&nbsp;MisdnPorts</h3>
+ <h4></h4></td>
+ </tr> 
+		<tr><td></td><td  width="200" valign="top" >portN[Integer]</td><td valign="top"></td></tr>   
+		<tr><td></td><td  width="200" valign="top" >portOption[MisdnPortOptions]</td><td valign="top"></td></tr>   
+</table>  
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

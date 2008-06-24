@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_SW0dcHVCEdq-GezyEkG4OQ" name="misdndriverconf" appliedProfile="_SW0ddXVCEdq-GezyEkG4OQ">
+  <eAnnotations xmi:id="_SW0dcXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_SW0dcnVCEdq-GezyEkG4OQ"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_SW0dc3VCEdq-GezyEkG4OQ">
+    <body>misdndriverconf</body>
+  </ownedComment>
+  <packageImport xmi:id="_SW0ddHVCEdq-GezyEkG4OQ">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_SW0ddXVCEdq-GezyEkG4OQ">
+    <eAnnotations xmi:id="_SW0ddnVCEdq-GezyEkG4OQ" source="attributes">
+      <details xmi:id="_SW0dd3VCEdq-GezyEkG4OQ" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_SW0deHVCEdq-GezyEkG4OQ" name="types">
+    <eAnnotations xmi:id="_SW0deXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_SW0denVCEdq-GezyEkG4OQ"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_SW0de3VCEdq-GezyEkG4OQ" name="MisdncardPorts">
+    <eAnnotations xmi:id="_SW0dfHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_SW0dfXVCEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_SW0dfnVCEdq-GezyEkG4OQ" javaFieldType="MisdncardPorts" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_SW0df3VCEdq-GezyEkG4OQ"/>
+    <ownedAttribute xmi:id="_SW0dgHVCEdq-GezyEkG4OQ" name="portN">
+      <eAnnotations xmi:id="_SW0dgXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0dgnVCEdq-GezyEkG4OQ" storageFieldname="portN"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_SW0dg3VCEdq-GezyEkG4OQ"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dhHVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0dhXVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dhnVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0dh3VCEdq-GezyEkG4OQ" name="portOption">
+      <eAnnotations xmi:id="_SW0diHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0diXVCEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="portOption"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dinVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:Enumeration" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYPEWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0di3VCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0djHVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0djXVCEdq-GezyEkG4OQ" name="mPortOption">
+      <eAnnotations xmi:id="_SW0djnVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0dj3VCEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="mPortOption"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dkHVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e50e8UWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0dkXVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dknVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_SW0dk3VCEdq-GezyEkG4OQ" name="MisdnCards">
+    <eAnnotations xmi:id="_SW0dlHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_SW0dlXVCEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_SW0dlnVCEdq-GezyEkG4OQ" javaFieldType="MisdnCards" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_SW0dl3VCEdq-GezyEkG4OQ"/>
+    <ownedAttribute xmi:id="_SW0dmHVCEdq-GezyEkG4OQ" name="cardName">
+      <eAnnotations xmi:id="_SW0dmXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0dmnVCEdq-GezyEkG4OQ" storageFieldname="cardName"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_SW0dm3VCEdq-GezyEkG4OQ"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dnHVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0dnXVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dnnVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0dn3VCEdq-GezyEkG4OQ" name="cardType">
+      <eAnnotations xmi:id="_SW0doHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0doXVCEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="cardType"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0donVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:Enumeration" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYYEWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0do3VCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dpHVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0dpXVCEdq-GezyEkG4OQ" name="cardOptions">
+      <eAnnotations xmi:id="_SW0dpnVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0dp3VCEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="cardOptions"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dqHVCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYWUWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0dqXVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dqnVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0dq3VCEdq-GezyEkG4OQ" name="misdncardPortsMap" type="_SW0de3VCEdq-GezyEkG4OQ" association="_SW0dsHVCEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_SW0drHVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_SW0drXVCEdq-GezyEkG4OQ" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0drnVCEdq-GezyEkG4OQ" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dr3VCEdq-GezyEkG4OQ"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_SW0dsHVCEdq-GezyEkG4OQ" name="MisdnCards->MisdncardPorts" memberEnd="_SW0dq3VCEdq-GezyEkG4OQ _SW0dsXVCEdq-GezyEkG4OQ">
+    <ownedEnd xmi:id="_SW0dsXVCEdq-GezyEkG4OQ" type="_SW0dk3VCEdq-GezyEkG4OQ" association="_SW0dsHVCEdq-GezyEkG4OQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0dsnVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0ds3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_SW0dtHVCEdq-GezyEkG4OQ" name="MisdnDriverConf">
+    <eAnnotations xmi:id="_SW0dtXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_SW0dtnVCEdq-GezyEkG4OQ"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_SW0dt3VCEdq-GezyEkG4OQ" javaFieldType="MisdnDriverConf" import="com.useit.jact.model.misdndriverconf.*" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_SW0duHVCEdq-GezyEkG4OQ"/>
+    <ownedAttribute xmi:id="_SW0dwHVCEdq-GezyEkG4OQ" name="poll">
+      <eAnnotations xmi:id="_SW0dwXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0dwnVCEdq-GezyEkG4OQ" ordOrder="1" storageFieldname="poll"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dw3VCEdq-GezyEkG4OQ">
+        <body>Only one poll value must be given for all cards. Give the number of samples for each fifo process. By default 128 is used. Decrease to reduce delay, increase to reduce cpu load. If unsure, don't mess with it! Valid is 8, 16, 32, 64, 128, 256.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0dxHVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dxXVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0dxnVCEdq-GezyEkG4OQ" name="pcm">
+      <eAnnotations xmi:id="_SW0dx3VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0dyHVCEdq-GezyEkG4OQ" ordOrder="2" storageFieldname="pcm"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dyXVCEdq-GezyEkG4OQ">
+        <body>Give the id of the PCM bus. All PCM busses with the same ID are expected to be connected and have equal slots. Only one chip of the PCM bus must be master, the others slave. -1 means no support of PCM bus.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0dynVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0dy3VCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0dzHVCEdq-GezyEkG4OQ" name="debug">
+      <eAnnotations xmi:id="_SW0dzXVCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_SW0dznVCEdq-GezyEkG4OQ" ordOrder="3" storageFieldname="debug"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_SW0dz3VCEdq-GezyEkG4OQ"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0d0HVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0d0XVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SW0d0nVCEdq-GezyEkG4OQ" name="misdnCardsMap" type="_SW0dk3VCEdq-GezyEkG4OQ" association="_SW0d13VCEdq-GezyEkG4OQ" aggregation="composite">
+      <eAnnotations xmi:id="_SW0d03VCEdq-GezyEkG4OQ" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_SW0d1HVCEdq-GezyEkG4OQ" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0d1XVCEdq-GezyEkG4OQ" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0d1nVCEdq-GezyEkG4OQ"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_SW0d13VCEdq-GezyEkG4OQ" name="MisdnDriverConf->MisdnCards" memberEnd="_SW0d0nVCEdq-GezyEkG4OQ _SW0d2HVCEdq-GezyEkG4OQ">
+    <ownedEnd xmi:id="_SW0d2HVCEdq-GezyEkG4OQ" type="_SW0dtHVCEdq-GezyEkG4OQ" association="_SW0d13VCEdq-GezyEkG4OQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW0d2XVCEdq-GezyEkG4OQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW0d2nVCEdq-GezyEkG4OQ" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

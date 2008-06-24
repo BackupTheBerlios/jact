@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<section name="Tables">
+		<list key="TableNames">
+			<item value="MisdnPortOptions"/>
+			<item value="MCardOption"/>
+			<item value="MisdnCardTypes"/>
+			<item value="codecs"/>
+			<item value="MPortOption"/>
+			<item value="Dialplan"/>
+			<item value="peerType"/>
+			<item value="Presentation"/>
+			<item value="Dtmfmode"/>
+		</list>
+		<section name="MisdnPortOptions">
+			<item key="ElementDescription" value="Port betriebsarten"/>
+			<item key="TableName" value="MisdnPortOptions"/>
+			<item key="JavaClassName" value="MisdnPortOptions"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="te_ptmp"/>
+				<item value="te_ptp"/>
+				<item value="nt_ptp"/>
+				<item value="nt_ptmp"/>
+			</list>
+			<section name="te_ptp">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Te_ptp"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="te_ptp"/>
+			</section>
+			<section name="te_ptmp">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Te_ptmp"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="te_ptmp"/>
+			</section>
+			<section name="nt_ptp">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Nt_ptp"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="nt_ptp"/>
+			</section>
+			<section name="nt_ptmp">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Nt_ptmp"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="nt_ptmp"/>
+			</section>
+		</section>
+		<section name="MCardOption">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="MCardOption"/>
+			<item key="JavaClassName" value=""/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="ulaw"/>
+				<item value="dtmf"/>
+				<item value="pcm_slave"/>
+			</list>
+			<section name="pcm_slave">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="pcm_slave"/>
+			</section>
+			<section name="ulaw">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="ulaw"/>
+			</section>
+			<section name="dtmf">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value=""/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="dtmf"/>
+			</section>
+		</section>
+		<section name="MisdnCardTypes">
+			<item key="ElementDescription" value="Kartentypen"/>
+			<item key="TableName" value="MisdnCardTypes"/>
+			<item key="JavaClassName" value="MisdnCardTypes"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="hfcmulti4S0"/>
+				<item value="hfcmulti8S0"/>
+				<item value="hfpci"/>
+				<item value="avmfritz"/>
+				<item value="hfcmulti"/>
+			</list>
+			<section name="avmfritz">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Avmfritz"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="avmfritz"/>
+			</section>
+			<section name="hfcmulti">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Hfcmulti"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="hfcmulti"/>
+			</section>
+			<section name="hfcmulti8S0">
+				<item key="ElementDescription" value="8Port"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Hfcmulti8S0"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="hfcmulti8S0"/>
+			</section>
+			<section name="hfcmulti4S0">
+				<item key="ElementDescription" value="4port"/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Hfcmulti4S0"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="hfcmulti4S0"/>
+			</section>
+			<section name="hfpci">
+				<item key="ElementDescription" value="1port"/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Hfpci"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="hfpci"/>
+			</section>
+		</section>
+		<section name="MPortOption">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="MPortOption"/>
+			<item key="JavaClassName" value="MPortOption"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="master_clock"/>
+				<item value="optical"/>
+				<item value="los"/>
+				<item value="ais"/>
+				<item value="slip"/>
+			</list>
+			<section name="optical">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Optical"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="optical"/>
+			</section>
+			<section name="slip">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Slip"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="slip"/>
+			</section>
+			<section name="ais">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Ais"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="ais"/>
+			</section>
+			<section name="los">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Los"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="los"/>
+			</section>
+			<section name="master_clock">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Master_clock"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="master_clock"/>
+			</section>
+		</section>
+		<section name="codecs">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="codecs"/>
+			<item key="JavaClassName" value="Codecs"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="all"/>
+				<item value="g723_1"/>
+				<item value="gsm"/>
+				<item value="ulaw"/>
+				<item value="alaw"/>
+				<item value="g726"/>
+				<item value="adpcm"/>
+				<item value="slin"/>
+				<item value="lpc10"/>
+				<item value="g729"/>
+				<item value="speex"/>
+				<item value="ilbc"/>
+			</list>
+			<section name="gsm">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Gsm"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="gsm"/>
+			</section>
+			<section name="ilbc">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="11"/>
+				<item key="JavaFieldName" value="Ilbc"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="ilbc"/>
+			</section>
+			<section name="g729">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="9"/>
+				<item key="JavaFieldName" value="G729"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="g729"/>
+			</section>
+			<section name="lpc10">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="8"/>
+				<item key="JavaFieldName" value="Lpc10"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="lpc10"/>
+			</section>
+			<section name="ulaw">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Ulaw"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="ulaw"/>
+			</section>
+			<section name="g723_1">
+				<item key="ElementDescription" value="G.723.1 is an ITU standard codec.Its reasonably low bit rate (6.3Kbps or 5.3Kbps) and used in the H.323 standard  Use of this codec in a product requires lisencing by Sipro Lab Telecom"/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="G723_1"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="g723_1"/>
+			</section>
+			<section name="adpcm">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="6"/>
+				<item key="JavaFieldName" value="Adpcm"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="adpcm"/>
+			</section>
+			<section name="alaw">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="4"/>
+				<item key="JavaFieldName" value="Alaw"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="alaw"/>
+			</section>
+			<section name="all">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="All"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="all"/>
+			</section>
+			<section name="speex">
+				<item key="ElementDescription" value="Speex is an Open Source/Free Software patent-free audio compression format designed for speech. The Speex Project aims to lower the barrier of entry for voice applications by providing a free alternative to expensive proprietary speech codecs. Moreover, Speex is well-adapted to Internet applications and provides useful features that are not present in most other codecs. Finally, Speex is part of the GNU Project and is available under the Xiph.org variant of the BSD license."/>
+				<item key="OrdinalPosition" value="10"/>
+				<item key="JavaFieldName" value="Speex"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="speex"/>
+			</section>
+			<section name="slin">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="7"/>
+				<item key="JavaFieldName" value="Slin"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="slin"/>
+			</section>
+			<section name="g726">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="5"/>
+				<item key="JavaFieldName" value="G726"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="g726"/>
+			</section>
+		</section>
+		<section name="Dialplan">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="Dialplan"/>
+			<item key="JavaClassName" value="Dialplan"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="unknown"/>
+				<item value="national"/>
+				<item value="international"/>
+				<item value="subscriber"/>
+			</list>
+			<section name="national">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="National"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="national"/>
+			</section>
+			<section name="unknown">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Unknown"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="unknown"/>
+			</section>
+			<section name="subscriber">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="3"/>
+				<item key="JavaFieldName" value="Subscriber"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="subscriber"/>
+			</section>
+			<section name="international">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="International"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="international"/>
+			</section>
+		</section>
+		<section name="peerType">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="peerType"/>
+			<item key="JavaClassName" value="PeerType"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="user"/>
+				<item value="peer"/>
+				<item value="friend"/>
+			</list>
+			<section name="user">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="User"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="user"/>
+			</section>
+			<section name="peer">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Peer"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="peer"/>
+			</section>
+			<section name="friend">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Friend"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="friend"/>
+			</section>
+		</section>
+		<section name="Presentation">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="Presentation"/>
+			<item key="JavaClassName" value="Presentation"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="allowed"/>
+				<item value="not_screened"/>
+			</list>
+			<section name="not_screened">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Not_screened"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="not_screened"/>
+			</section>
+			<section name="allowed">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Allowed"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="allowed"/>
+			</section>
+		</section>
+		<section name="Dtmfmode">
+			<item key="ElementDescription" value=""/>
+			<item key="TableName" value="Dtmfmode"/>
+			<item key="JavaClassName" value="Dtmfmode"/>
+			<list key="aggfields">
+			</list>
+			<list key="TableFKFields">
+			</list>
+			<list key="TablePKFields">
+			</list>
+			<list key="TableMapFields">
+			</list>
+			<list key="TableFields">
+				<item value="inband"/>
+				<item value="info"/>
+				<item value="rfc2833"/>
+			</list>
+			<section name="info">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="1"/>
+				<item key="JavaFieldName" value="Info"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="info"/>
+			</section>
+			<section name="inband">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="0"/>
+				<item key="JavaFieldName" value="Inband"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="inband"/>
+			</section>
+			<section name="rfc2833">
+				<item key="ElementDescription" value=""/>
+				<item key="OrdinalPosition" value="2"/>
+				<item key="JavaFieldName" value="Rfc2833"/>
+				<item key="ForainTableName" value=""/>
+				<item key="TblFieldType" value="jstring"/>
+				<item key="TblFieldName" value="rfc2833"/>
+			</section>
+		</section>
+	</section>
+	<section name="ProjectConfig">
+		<item key="TypeMapperFileName" value="\jact\dataModel\simpleTypemap_old.typemap"/>
+		<item key="ProjectName" value="pxbtypes"/>
+	</section>
+</section>

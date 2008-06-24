@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:useitgenmodel_0="http:///useitgenmodel_0_.profile.uml2" xsi:schemaLocation="http:///useitgenmodel_0_.profile.uml2 pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnrHo13BEdqUzdmByP3kDQ" xmi:id="_1Y5gUHVnEdqu-MgwmX9MXw" name="extensionconf" appliedProfile="_1Y5gVXVnEdqu-MgwmX9MXw">
+  <eAnnotations xmi:id="_1Y5gUXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+    <contents xmi:type="useitgenmodel_0:useitgenmodel__modeldomain" xmi:id="_1Y5gUnVnEdqu-MgwmX9MXw"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_1Y5gU3VnEdqu-MgwmX9MXw">
+    <body>extensionconf ist the dialplan of the pbx</body>
+  </ownedComment>
+  <packageImport xmi:id="_1Y5gVHVnEdqu-MgwmX9MXw">
+    <importedPackage xmi:type="uml:Model" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYIEWREdqK0bGccdxdZA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_1Y5gVXVnEdqu-MgwmX9MXw">
+    <eAnnotations xmi:id="_1Y5gVnVnEdqu-MgwmX9MXw" source="attributes">
+      <details xmi:id="_1Y5gV3VnEdqu-MgwmX9MXw" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+    <importedProfile href="pathmap://USEIT_PROFILES/genmodel.profile.uml2#_mnlBAF3BEdqUzdmByP3kDQ"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_1Y5gWHVnEdqu-MgwmX9MXw" name="types">
+    <eAnnotations xmi:id="_1Y5gWXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__packtypmapper" xmi:id="_1Y5gWnVnEdqu-MgwmX9MXw"/>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_1Y5gW3VnEdqu-MgwmX9MXw" name="Extension">
+    <eAnnotations xmi:id="_1Y5gXHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_1Y5gXXVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_1Y5gXnVnEdqu-MgwmX9MXw" javaFieldType="Extension" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_cZg2QMlIEdqYtvvQTQe83A" source="diagram">
+      <details xmi:id="_cZg2QclIEdqYtvvQTQe83A" key="figure" value="State"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_1Y5gX3VnEdqu-MgwmX9MXw">
+      <body>Extension names may be numbers, letters, or combinations thereof. If an extension name is prefixed by a '_' character, it is interpreted as a pattern rather than a literal.  In patterns, some characters have special meanings:</body>
+    </ownedComment>
+    <generalization xmi:id="_U4SPkMk_EdqSzop7az5EPg">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_94vxsMk-EdqSzop7az5EPg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_1Y5gYHVnEdqu-MgwmX9MXw" name="exten">
+      <eAnnotations xmi:id="_1Y5gYXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5gYnVnEdqu-MgwmX9MXw" storageFieldname="exten"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5gY3VnEdqu-MgwmX9MXw">
+        <body>extension is the label of the extension, and can be either a literal constant string (alphanumeric plus a few special symols allowed) or a dynamically evaluated pattern (see below) to match many possible phone numbers, for example. Every command line that is part of a given extensions has this same label.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gZHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gZXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5gZnVnEdqu-MgwmX9MXw" name="priority">
+      <eAnnotations xmi:id="_1Y5gZ3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5gaHVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="priority"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5gaXVnEdqu-MgwmX9MXw">
+        <body>priority is usually an integer (see note, however). It's just a sequence number for each command line of an extension. The first executable command of an extensions has the priority &quot;1&quot;, so when Asterisk transfers a call to an extension, it will look for a command with priority 1. If there is not a line with a priority of 1, then the extension will not match the dialed number. After executing the priority 1 command, Asterisk will increment the priority to &quot;2&quot; unless the command itself determines the next priority to be executed. If this next priority is not defined in the extension, Asterisk finishes processing for this extension, even if there exists another command with a priority higher than the missing one.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYM0WREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5ganVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5ga3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5geHVnEdqu-MgwmX9MXw" name="application" aggregation="composite">
+      <eAnnotations xmi:id="_1Y5geXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5genVnEdqu-MgwmX9MXw" ordOrder="4" storageFieldname="application"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5ge3VnEdqu-MgwmX9MXw">
+        <body>command is the name of the command (also called an &quot;application&quot;) to execute.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_8Rb_0F_6EdqKNcePR5sh9Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gfHVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gfXVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_1Y5ghHVnEdqu-MgwmX9MXw" name="Context">
+    <eAnnotations xmi:id="_1Y5ghXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_1Y5ghnVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_1Y5gh3VnEdqu-MgwmX9MXw" javaFieldType="Context" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_gbgRwMbnEdqYd6p6YHSQ6g" source="diagram">
+      <details xmi:id="_pVejIMbnEdqYd6p6YHSQ6g" key="figure" value="Container"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_1Y5giHVnEdqu-MgwmX9MXw">
+      <body>The Dialplan constists of collection of contexts. These context definitions are the most important part of the extensions.conf file and are the most important part of Asterisk configuration. A context is just a collection of extensions.</body>
+    </ownedComment>
+    <generalization xmi:id="_569sALvhEdq0MMTURN_tiA">
+      <general xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_uM9T0EWgEdqK0bGccdxdZA"/>
+    </generalization>
+    <ownedAttribute xmi:id="_AthfwOzIEdqLevsbXoR4Tg" name="contextname" isDerived="true">
+      <eAnnotations xmi:id="_jKi4IOzJEdqNyJSau_lO4w" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_LGvEYOzKEdqG16aBiAHMtQ" ordOrder="1" storageFieldname="contextname"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_AthfwezIEdqLevsbXoR4Tg" value="1">
+        <eAnnotations xmi:id="_AthfwuzIEdqLevsbXoR4Tg" source="http://www.topcased.org/uuid">
+          <details xmi:id="_Athfw-zIEdqLevsbXoR4Tg" key="uuid" value="1134408180434211"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AthfxOzIEdqLevsbXoR4Tg" value="1"/>
+      <redefinedProperty href="/jact/dataModel/pbxTypes.tblModel.uml2#_P8A5IMR5Edq7Y9X3fkbAsg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5gj3VnEdqu-MgwmX9MXw" name="ignorepat">
+      <eAnnotations xmi:id="_1Y5gkHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5gkXVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="ignorepat"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5gknVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gk3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5glHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5glXVnEdqu-MgwmX9MXw" name="extensionMap" type="_1Y5gW3VnEdqu-MgwmX9MXw" association="_1Y5gpHVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_1Y5glnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_1Y5gl3VnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gmHVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gmXVnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5gmnVnEdqu-MgwmX9MXw" name="includecontextMap" type="_1Y5gqHVnEdqu-MgwmX9MXw" association="_1Y5guXVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_1Y5gm3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_1Y5gnHVnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gnXVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gnnVnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5gn3VnEdqu-MgwmX9MXw" name="switchMap" type="_1Y5gvXVnEdqu-MgwmX9MXw" association="_1Y5gyXVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_1Y5goHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_1Y5goXVnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gonVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5go3VnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_1Y5gpHVnEdqu-MgwmX9MXw" name="Context->Extension" memberEnd="_1Y5glXVnEdqu-MgwmX9MXw _1Y5gpXVnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_1Y5gpXVnEdqu-MgwmX9MXw" type="_1Y5ghHVnEdqu-MgwmX9MXw" association="_1Y5gpHVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gpnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gp3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_1Y5gqHVnEdqu-MgwmX9MXw" name="Includecontext">
+    <eAnnotations xmi:id="_1Y5gqXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_1Y5gqnVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_1Y5gq3VnEdqu-MgwmX9MXw" javaFieldType="Includecontext" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_1Y5grHVnEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_1Y5grXVnEdqu-MgwmX9MXw" name="contexname">
+      <eAnnotations xmi:id="_1Y5grnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5gr3VnEdqu-MgwmX9MXw" storageFieldname="contexname"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5gsHVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:Class" href="/jact/dataModel/pbxTypes.tblModel.uml2#_uM9T0EWgEdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gsXVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gsnVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5gs3VnEdqu-MgwmX9MXw" name="timeing">
+      <eAnnotations xmi:id="_1Y5gtHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5gtXVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="timeing"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5gtnVnEdqu-MgwmX9MXw">
+        <body>&lt;time range>|&lt;days of week>|&lt;days of month>|&lt;months></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gt3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5guHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_1Y5guXVnEdqu-MgwmX9MXw" name="Context->Includecontext" memberEnd="_1Y5gmnVnEdqu-MgwmX9MXw _1Y5gunVnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_1Y5gunVnEdqu-MgwmX9MXw" type="_1Y5ghHVnEdqu-MgwmX9MXw" association="_1Y5guXVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gu3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gvHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_1Y5gvXVnEdqu-MgwmX9MXw" name="Switch">
+    <eAnnotations xmi:id="_1Y5gvnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_1Y5gv3VnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_1Y5gwHVnEdqu-MgwmX9MXw" javaFieldType="Switch" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Xe1E8MlIEdqYtvvQTQe83A" source="diagram">
+      <details xmi:id="_Xe1E8clIEdqYtvvQTQe83A" key="figure" value="Label"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_1Y5gwXVnEdqu-MgwmX9MXw">
+      <body>The SWITCH statement permits a server to share the dialplain with another server. Use with care: Reciprocal switch statements are not allowed (e.g. both A -> B and B -> A), and the switched server needs to be on-line or else dialing can be severly delayed.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_1Y5gwnVnEdqu-MgwmX9MXw" name="switchdialstr">
+      <eAnnotations xmi:id="_1Y5gw3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5gxHVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="switchdialstr"/>
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__primarykey" xmi:id="_1Y5gxXVnEdqu-MgwmX9MXw"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5gxnVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gx3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gyHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_1Y5gyXVnEdqu-MgwmX9MXw" name="Context->Switch" memberEnd="_1Y5gn3VnEdqu-MgwmX9MXw _1Y5gynVnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_1Y5gynVnEdqu-MgwmX9MXw" type="_1Y5ghHVnEdqu-MgwmX9MXw" association="_1Y5gyXVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5gy3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5gzHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_1Y5gzXVnEdqu-MgwmX9MXw" name="Extensionconf">
+    <eAnnotations xmi:id="_1Y5gznVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_1Y5gz3VnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_1Y5g0HVnEdqu-MgwmX9MXw" javaFieldType="Extensionconf" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_h98IIMlIEdqYtvvQTQe83A" source="diagram">
+      <details xmi:id="_h98IIclIEdqYtvvQTQe83A" key="figure" value="Package"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_1Y5g0XVnEdqu-MgwmX9MXw">
+      <body>used by  the pbx_config module. This is where you configure all your   inbound and outbound calls in Asterisk.     This configuration file is reloaded   - With the &quot;extensions reload&quot; command in the CLI  - With the &quot;reload&quot; command (that reloads everything) in the CLI
+
+The &quot;General&quot; category is for certain variables.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_1Y5g0nVnEdqu-MgwmX9MXw" name="static_">
+      <eAnnotations xmi:id="_1Y5g03VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5g1HVnEdqu-MgwmX9MXw" storageFieldname="static"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5g1XVnEdqu-MgwmX9MXw">
+        <body>If static is set to no, or omitted, then the pbx_config will rewrite  this file when extensions are modified.  Remember that all comments  made in the file will be lost when that happens.  XXX Not yet implemented XXX</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5g1nVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5g13VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5g2HVnEdqu-MgwmX9MXw" name="writeprotect">
+      <eAnnotations xmi:id="_1Y5g2XVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5g2nVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="writeprotect"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5g23VnEdqu-MgwmX9MXw">
+        <body>if static yes and writeprotect no, you can save dialplan by CLI command 'save dialplan' too</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5g3HVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5g3XVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5g3nVnEdqu-MgwmX9MXw" name="autofallthrough">
+      <eAnnotations xmi:id="_1Y5g33VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5g4HVnEdqu-MgwmX9MXw" ordOrder="2" storageFieldname="autofallthrough"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5g4XVnEdqu-MgwmX9MXw">
+        <body>If autofallthrough is set, then if an extension runs out of  things to do, it will terminate the call with BUSY, CONGESTION  or HANGUP depending on Asterisk's best guess (strongly recommended).If autofallthrough is not set, then if an extension runs out of   things to do, asterisk will wait for a new extension to be dialed   (this is the original behavior of Asterisk 1.0 and earlier).</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5g4nVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5g43VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5g5HVnEdqu-MgwmX9MXw" name="clearglobalvars">
+      <eAnnotations xmi:id="_1Y5g5XVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5g5nVnEdqu-MgwmX9MXw" ordOrder="3" storageFieldname="clearglobalvars"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5g53VnEdqu-MgwmX9MXw">
+        <body>If clearglobalvars is set, global variables will be cleared   and reparsed on an extensions reload, or Asterisk reload.
+
+If clearglobalvars is not set, then global variables will persist  through reloads, and even if deleted from the extensions.conf or  one if its included files, will remain set to the previous value.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYKkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5g6HVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5g6XVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5g8XVnEdqu-MgwmX9MXw" name="contextMap" type="_1Y5ghHVnEdqu-MgwmX9MXw" association="_1Y5hAHVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_1Y5g8nVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_1Y5g83VnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5g9HVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5g9XVnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5g9nVnEdqu-MgwmX9MXw" name="globalvarsMap" type="_1Y5hBHVnEdqu-MgwmX9MXw" association="_1Y5hFXVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_1Y5g93VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_1Y5g-HVnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5g-XVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5g-nVnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5g-3VnEdqu-MgwmX9MXw" name="includeconfigsMap" type="_1Y5hGXVnEdqu-MgwmX9MXw" association="_1Y5hJHVnEdqu-MgwmX9MXw" aggregation="composite">
+      <eAnnotations xmi:id="_1Y5g_HVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__mapfield" xmi:id="_1Y5g_XVnEdqu-MgwmX9MXw" importtype="java.util.HashMap" mapimpl="HashMap"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5g_nVnEdqu-MgwmX9MXw" value="-1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5g_3VnEdqu-MgwmX9MXw"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_1Y5hAHVnEdqu-MgwmX9MXw" name="Extensionconf->Context" memberEnd="_1Y5g8XVnEdqu-MgwmX9MXw _1Y5hAXVnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_1Y5hAXVnEdqu-MgwmX9MXw" type="_1Y5gzXVnEdqu-MgwmX9MXw" association="_1Y5hAHVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5hAnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5hA3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_1Y5hBHVnEdqu-MgwmX9MXw" name="Globalvars">
+    <eAnnotations xmi:id="_1Y5hBXVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_1Y5hBnVnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_1Y5hB3VnEdqu-MgwmX9MXw" javaFieldType="Globalvars" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_1Y5hCHVnEdqu-MgwmX9MXw">
+      <body>The &quot;Globals&quot; category contains global variables that can be referenced in the dialplan with ${VARIABLE} or ${ENV(VARIABLE)} for Environmental variable ${${VARIABLE}} or ${text${VARIABLE}} or any hybrid</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_1Y5hCXVnEdqu-MgwmX9MXw" name="name">
+      <eAnnotations xmi:id="_1Y5hCnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5hC3VnEdqu-MgwmX9MXw" storageFieldname="name"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5hDHVnEdqu-MgwmX9MXw">
+        <body>name</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5hDXVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5hDnVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1Y5hD3VnEdqu-MgwmX9MXw" name="value">
+      <eAnnotations xmi:id="_1Y5hEHVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5hEXVnEdqu-MgwmX9MXw" ordOrder="1" storageFieldname="value"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5hEnVnEdqu-MgwmX9MXw">
+        <body>value</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5hE3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5hFHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_1Y5hFXVnEdqu-MgwmX9MXw" name="Extensionconf->Globalvars" memberEnd="_1Y5g9nVnEdqu-MgwmX9MXw _1Y5hFnVnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_1Y5hFnVnEdqu-MgwmX9MXw" type="_1Y5gzXVnEdqu-MgwmX9MXw" association="_1Y5hFXVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5hF3VnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5hGHVnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_1Y5hGXVnEdqu-MgwmX9MXw" name="Includeconfigs">
+    <eAnnotations xmi:id="_1Y5hGnVnEdqu-MgwmX9MXw" source="appliedStereotypes">
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__dataclass" xmi:id="_1Y5hG3VnEdqu-MgwmX9MXw"/>
+      <contents xmi:type="useitgenmodel_0:useitgenmodel__typemapper" xmi:id="_1Y5hHHVnEdqu-MgwmX9MXw" javaFieldType="Includeconfigs" widget="Factory.createWidget({0})" typemapper_from_string="new " typemapper_to_string="{0}.toString()"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_1Y5hHXVnEdqu-MgwmX9MXw"/>
+    <ownedAttribute xmi:id="_1Y5hHnVnEdqu-MgwmX9MXw" name="configname">
+      <eAnnotations xmi:id="_1Y5hH3VnEdqu-MgwmX9MXw" source="appliedStereotypes">
+        <contents xmi:type="useitgenmodel_0:useitgenmodel__datafield" xmi:id="_1Y5hIHVnEdqu-MgwmX9MXw" storageFieldname="configname"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_1Y5hIXVnEdqu-MgwmX9MXw"/>
+      <type xmi:type="uml:PrimitiveType" href="/jact/dataModel/pbxTypes.tblModel.uml2#_e5uYNkWREdqK0bGccdxdZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5hInVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5hI3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Association" xmi:id="_1Y5hJHVnEdqu-MgwmX9MXw" name="Extensionconf->Includeconfigs" memberEnd="_1Y5g-3VnEdqu-MgwmX9MXw _1Y5hJXVnEdqu-MgwmX9MXw">
+    <ownedEnd xmi:id="_1Y5hJXVnEdqu-MgwmX9MXw" type="_1Y5gzXVnEdqu-MgwmX9MXw" association="_1Y5hJHVnEdqu-MgwmX9MXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Y5hJnVnEdqu-MgwmX9MXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Y5hJ3VnEdqu-MgwmX9MXw" value="1"/>
+    </ownedEnd>
+  </ownedMember>
+</uml:Model>

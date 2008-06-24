@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+<section name="TypeMappers">
+<list key="MapperList">
+<item value="bool"/>
+<item value="date"/>
+<item value="float"/>
+<item value="int"/>
+<item value="jstring"/>
+<item value="time"/>
+<item value="context"/>
+<item value="MisdnPortOptions"/>
+<item value="MisdnCardTypes"/>
+<item value="PeerType"/>
+<item value="Dtmfmode"/>
+</list>
+<list key="float">
+<item value="float"/>
+<item value="Float"/>
+<item value="getFloat"/>
+<item value="setFloat"/>
+<item value="{0}.floatValue()"/>
+<item value=""/>
+<item value="FloatTextField"/>
+</list>
+<list key="context">
+<item value="context"/>
+<item value="context"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="StringTextField"/>
+</list>
+<list key="jstring">
+<item value="jstring"/>
+<item value="String"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value="{0}"/>
+<item value=""/>
+<item value="StringTextField"/>
+</list>
+<list key="date">
+<item value="date"/>
+<item value="Date"/>
+<item value="getDate"/>
+<item value="setDate"/>
+<item value="new java.sql.Date({0}.getDate())"/>
+<item value=".getDate()"/>
+<item value="DateTextField"/>
+</list>
+<list key="time">
+<item value="time"/>
+<item value="java.sql.Time"/>
+<item value="getTime"/>
+<item value="setTime"/>
+<item value="{0}"/>
+<item value=".getDate()"/>
+<item value="TimeTextField"/>
+</list>
+<list key="bool">
+<item value="bool"/>
+<item value="Boolean"/>
+<item value="getBoolean"/>
+<item value="setBoolean"/>
+<item value="{0}.booleanValue()"/>
+<item value=""/>
+<item value="CustomCheckBox"/>
+</list>
+<list key="int">
+<item value="int"/>
+<item value="Integer"/>
+<item value="getInt"/>
+<item value="setInt"/>
+<item value="{0}.intValue()"/>
+<item value=""/>
+<item value="IntegerTextField"/>
+</list>
+<list key="MisdnPortOptions">
+<item value="MisdnPortOptions"/>
+<item value="MisdnPortOptions"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxMisdnPortOptions"/>
+</list>
+<list key="MisdnCardTypes">
+<item value="MisdnCardTypes"/>
+<item value="MisdnCardTypes"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxMisdnCardTypes"/>
+</list>
+<list key="PeerType">
+<item value="PeerType"/>
+<item value="PeerType"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxPeerType"/>
+</list>
+<list key="Dtmfmode">
+<item value="Dtmfmode"/>
+<item value="Dtmfmode"/>
+<item value="getString"/>
+<item value="setString"/>
+<item value=""/>
+<item value=""/>
+<item value="JEnumComboboxDtmfmode"/>
+</list>
+</section>
+</section>
